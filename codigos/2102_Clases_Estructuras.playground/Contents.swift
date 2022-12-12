@@ -189,3 +189,23 @@ if a.isPositive() {
 } else {
     print("\(a) es negativo")
 }
+
+class Cliente {
+    
+    let id: Int
+    let nombre: String
+    
+    init(id: Int, nombre: String) {
+        self.id = id
+        self.nombre = nombre
+    }
+    
+    func describir() -> String {
+        return "\(self.id) \(self.nombre)"
+    }
+    
+}
+
+var cliente = Cliente(id: 1, nombre: "Pepe")
+
+print("CLIENTE: \(cliente.describir())")
