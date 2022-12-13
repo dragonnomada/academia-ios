@@ -209,3 +209,9 @@ class Cliente {
 var cliente = Cliente(id: 1, nombre: "Pepe")
 
 print("CLIENTE: \(cliente.describir())")
+
+func iguales<T: Comparable>(a: T, b: T) -> Bool {
+    return a == b
+}
+
+print(iguales(a: 123, b: 123))
