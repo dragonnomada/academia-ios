@@ -2,6 +2,7 @@ import UIKit
 
 // Manejo de Errores
 
+//
 // - Diseña una función capaz de arrojar errores
 //   que reciba una lista de productos de la estructura Producto
 //   y devuelva el precio total de todos los productos.
@@ -20,10 +21,22 @@ import UIKit
 //   * Exista un producto con precio mayor a 1_000
 //
 //   Utiliza do { try } catch {  } para validar cada error
+//
 
 // Subscripts
 
-// -
+//
+// - Diseña una estructura llamada `Mensaje` que guarde el `id: Int`,
+//   `usuario: String` y `contenido: String` del mensaje.
+//   Diseña una clase llamada `HistorialMensajes` que retenga un
+//   arreglo de mensajes.
+//
+//  Diseña un subscript para recuperar los mensajes por `id: Int`
+//
+//  Diseña un subscript para recuperar los mensajes por `usuario: String`
+//
+//  Nota: Los subscripts deberán devolver un `Mensaje?`
+//
 
 // Concurrencia
 
