@@ -27,3 +27,7 @@ Por [Alan Badillo Salas](https://www.nomadacode.com)
 ## Comentarios
 
 ## Referencias
+
+Enlace | Descripción
+--- | ---
+[xxxx](xxxx) | -
