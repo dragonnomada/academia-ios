@@ -16,6 +16,7 @@
 		CE41BE42295112970063A4FB /* _105_P31_TableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41BE41295112970063A4FB /* _105_P31_TableViewTests.swift */; };
 		CE41BE4C295112970063A4FB /* _105_P31_TableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41BE4B295112970063A4FB /* _105_P31_TableViewUITests.swift */; };
 		CE41BE4E295112970063A4FB /* _105_P31_TableViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41BE4D295112970063A4FB /* _105_P31_TableViewUITestsLaunchTests.swift */; };
+		CE41BE5B295116820063A4FB /* ContactosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41BE5A295116820063A4FB /* ContactosTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CE41BE47295112970063A4FB /* 3105_P31_TableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3105_P31_TableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE41BE4B295112970063A4FB /* _105_P31_TableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _105_P31_TableViewUITests.swift; sourceTree = "<group>"; };
 		CE41BE4D295112970063A4FB /* _105_P31_TableViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _105_P31_TableViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE41BE5A295116820063A4FB /* ContactosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				CE41BE2C295112950063A4FB /* SceneDelegate.swift */,
 				CE41BE2E295112950063A4FB /* ViewController.swift */,
 				CE41BE30295112950063A4FB /* Main.storyboard */,
+				CE41BE5A295116820063A4FB /* ContactosTableViewController.swift */,
 				CE41BE33295112970063A4FB /* Assets.xcassets */,
 				CE41BE35295112970063A4FB /* LaunchScreen.storyboard */,
 				CE41BE38295112970063A4FB /* Info.plist */,
@@ -260,6 +263,7 @@
 			files = (
 				CE41BE2F295112950063A4FB /* ViewController.swift in Sources */,
 				CE41BE2B295112950063A4FB /* AppDelegate.swift in Sources */,
+				CE41BE5B295116820063A4FB /* ContactosTableViewController.swift in Sources */,
 				CE41BE2D295112950063A4FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
