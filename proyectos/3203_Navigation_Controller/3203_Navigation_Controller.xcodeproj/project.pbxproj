@@ -16,6 +16,7 @@
 		CE41BEFA2952345D0063A4FB /* _203_Navigation_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41BEF92952345D0063A4FB /* _203_Navigation_ControllerTests.swift */; };
 		CE41BF042952345D0063A4FB /* _203_Navigation_ControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41BF032952345D0063A4FB /* _203_Navigation_ControllerUITests.swift */; };
 		CE41BF062952345D0063A4FB /* _203_Navigation_ControllerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41BF052952345D0063A4FB /* _203_Navigation_ControllerUITestsLaunchTests.swift */; };
+		CE41BF1329523E290063A4FB /* PantallaDetallesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41BF1229523E290063A4FB /* PantallaDetallesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CE41BEFF2952345D0063A4FB /* 3203_Navigation_ControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3203_Navigation_ControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE41BF032952345D0063A4FB /* _203_Navigation_ControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _203_Navigation_ControllerUITests.swift; sourceTree = "<group>"; };
 		CE41BF052952345D0063A4FB /* _203_Navigation_ControllerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _203_Navigation_ControllerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE41BF1229523E290063A4FB /* PantallaDetallesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaDetallesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				CE41BEE22952345B0063A4FB /* AppDelegate.swift */,
 				CE41BEE42952345B0063A4FB /* SceneDelegate.swift */,
 				CE41BEE62952345B0063A4FB /* ViewController.swift */,
+				CE41BF1229523E290063A4FB /* PantallaDetallesViewController.swift */,
 				CE41BEE82952345B0063A4FB /* Main.storyboard */,
 				CE41BEEB2952345D0063A4FB /* Assets.xcassets */,
 				CE41BEED2952345D0063A4FB /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE41BEE72952345B0063A4FB /* ViewController.swift in Sources */,
+				CE41BF1329523E290063A4FB /* PantallaDetallesViewController.swift in Sources */,
 				CE41BEE32952345B0063A4FB /* AppDelegate.swift in Sources */,
 				CE41BEE52952345B0063A4FB /* SceneDelegate.swift in Sources */,
 			);
