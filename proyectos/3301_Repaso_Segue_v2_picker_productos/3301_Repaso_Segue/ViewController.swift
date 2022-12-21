@@ -23,28 +23,6 @@ class ViewController: UIViewController {
         myPickerView.dataSource = self
         myPickerView.delegate = self
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Recuperar:
-        // 1. El ViewController destino (segue.destination)
-        // 2. Los datos que queremos enviar (sender)
-        
-        if segue.identifier == "mySegue" {
-            if let productoDetallesviewController = segue.destination as? ProductoDetallesViewController {
-                
-                if let productoSeleccionado = sender as? Producto {
-                    productoDetallesviewController.producto = productoSeleccionado
-                }
-                
-            }
-        }
-    }
-    
-    @IBAction func verDetallesAction(_ sender: Any) {
-        print("Hola")
-        performSegue(withIdentifier: "mySegue", sender: productoSeleccionado)
-    }
-    
 
 }
 
@@ -92,10 +70,9 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         
         productoSeleccionado = producto
         
-        myLabel.text = "\(producto.nombre) $\(producto.precio)"
-        
         myButton.isEnabled = true
         
+        myLabel.text = "\(producto.nombre) $\(producto.precio)"
     }
     
 }

@@ -16,7 +16,6 @@
 		CE41BF382953585D0063A4FB /* _301_Repaso_SegueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41BF372953585D0063A4FB /* _301_Repaso_SegueTests.swift */; };
 		CE41BF422953585D0063A4FB /* _301_Repaso_SegueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41BF412953585D0063A4FB /* _301_Repaso_SegueUITests.swift */; };
 		CE41BF442953585D0063A4FB /* _301_Repaso_SegueUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41BF432953585D0063A4FB /* _301_Repaso_SegueUITestsLaunchTests.swift */; };
-		CE41BF51295369620063A4FB /* ProductoDetallesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41BF50295369620063A4FB /* ProductoDetallesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		CE41BF3D2953585D0063A4FB /* 3301_Repaso_SegueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3301_Repaso_SegueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE41BF412953585D0063A4FB /* _301_Repaso_SegueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _301_Repaso_SegueUITests.swift; sourceTree = "<group>"; };
 		CE41BF432953585D0063A4FB /* _301_Repaso_SegueUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _301_Repaso_SegueUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		CE41BF50295369620063A4FB /* ProductoDetallesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoDetallesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,6 @@
 				CE41BF22295358590063A4FB /* SceneDelegate.swift */,
 				CE41BF24295358590063A4FB /* ViewController.swift */,
 				CE41BF26295358590063A4FB /* Main.storyboard */,
-				CE41BF50295369620063A4FB /* ProductoDetallesViewController.swift */,
 				CE41BF292953585C0063A4FB /* Assets.xcassets */,
 				CE41BF2B2953585C0063A4FB /* LaunchScreen.storyboard */,
 				CE41BF2E2953585C0063A4FB /* Info.plist */,
@@ -261,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE41BF51295369620063A4FB /* ProductoDetallesViewController.swift in Sources */,
 				CE41BF25295358590063A4FB /* ViewController.swift in Sources */,
 				CE41BF21295358590063A4FB /* AppDelegate.swift in Sources */,
 				CE41BF23295358590063A4FB /* SceneDelegate.swift in Sources */,
