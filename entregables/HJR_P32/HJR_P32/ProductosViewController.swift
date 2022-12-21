@@ -18,18 +18,25 @@ class ProductosViewController: UIViewController {
         ProdcutosTableVIew.dataSource = self
     }
 }
+// [1] Pasar a la siguiente pantalla a traves del segue (inicio de perform)
+performSegue(withIdentifier: "mySegue", sender: productoSeleccionado)
 
-func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    switch segue.identifier {
-    case "detallesProductoSegue":
-        
-        guard let detallesProductos = segue.destination as? ProductoDetailViewController else { return }
-        
-        guard let producto = sender as? String else { return }
-        
-        detallesProductos.sendData(producto: producto)
-    default:
-        print("No sé qué hacer para otro segue")
+// [2] Seguimiento de el sugue
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // Recuperar:
+    // 1. El ViewController destino (segue.destination)
+    // 2. Los datos que queremos enviar (sender)
+    
+    // Validar el id del segue
+    if segue.identifier == "mySegue" {
+        // Validar el destino
+        if let productoDetallesViewController = segue.destination as? ProductoDetailViewController {
+            
+            // Pasamos el elemento deseado para mostrarlo en la siguiente pantalla
+            if let productoSeleccionado = sender as? Producto {
+                productoDetallesViewController.producto = productoSeleccionado
+            }
+        }
     }
 }
 
