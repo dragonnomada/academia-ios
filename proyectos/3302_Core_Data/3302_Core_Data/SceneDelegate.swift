@@ -6,10 +6,46 @@
 //
 
 import UIKit
+import CoreData
+
+///
+/// # Introducción a Core Data
+///
+/// **Core Data** sirve para almacenar modelos predecibles mediante un contexto,
+/// el cuál servirá para administrar nuestros objetos y poder almacenarlos o consultarlos.
+///
+/// Se dive en un *Contexto* (*NSManagedObiectContext*)
+/// y un *Modelo* (*NSManagedObiectModel*).
+///
+/// Estos generarán objetos automáticos sobre nuestro código, los cuáles podremos
+/// extender para mejorar su uso.
+///
+/// ## Configurar el Core Data
+///
+/// Lo primero es importar el framework de *CoreData* mediante el `import` en
+/// el `AppDelegate`.
+///
+/// Lo siguiente será definir el `persistenContainer` dentro del `AppDelegate`.
+///
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    /// **PASO 1** - Definir un `persistentContainer` a nivel `AppDelegate`
+    private lazy var persistentContainer: NSPersistentContainer = {
+        /// 1. Creamos un contenedor persistente
+        let container = NSPersistentContainer(name: "ProductoModel")
+        /// 2. Configuramos el contenedor persistente
+        container.loadPersistentStores {
+            (storeDescription, error) in
+            if let error = error {
+                fatalError("No se pudo configurar el contenedor persistente \(error)")
+            }
+        }
+        /// 3. Devolvemos el contenedor persistente
+        return container
+    }() /// **NOTA:** Esta clausura debe auto-ejecutarse
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -17,6 +53,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        /// **PASO 2** - Recuperar el RootViewController (el controlador principal)
+        ///                y asociar al `persistentContainer`
+        ///                para que tenga acceso a él
+        
+        /// Recuperarmos el `viewController` de la clase `ViewController`
+        if let viewController = window?.rootViewController as? ViewController {
+            /// Asociar el `persistentContainer` al `rootViewController`
+            viewController.persistentContainer = persistentContainer
+            /// **NOTA:** Como **PASO 3** debemos ir al `ViewController`
+            ///             y crear la variable:
+            /// ```swift
+            /// var persistentContainer: NSPersistentContainer?
+            /// ```
+        }
+        
+        /// **ADVERTENCIA:** Si el `rootViewController` es un `NavigationViewController`,
+        /// debemos recuperar el `ViewController` principal.
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
