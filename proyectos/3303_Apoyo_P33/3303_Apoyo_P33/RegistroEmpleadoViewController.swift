@@ -6,16 +6,27 @@
 //
 
 import UIKit
+import CoreData
 
 class RegistroEmpleadoViewController: UIViewController {
 
+    weak var persistentContainer: NSPersistentContainer?
+    
+    weak var viewController: ViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func confirmarAction(_ sender: Any) {
+        // TODO: Guardar un nuevo Empleado en el persistentContainer
+        
+        // Actualizar la tabla
+        viewController?.myTableView.reloadData()
+    }
+    
     /*
     // MARK: - Navigation
 

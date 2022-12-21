@@ -6,17 +6,33 @@
 //
 
 import UIKit
+import CoreData
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    private lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "Empresa")
+        container.loadPersistentStores {
+            (storeDescription, error) in
+            if let error = error {
+                fatalError("No se pudo configurar el contenedor persistente \(error)")
+            }
+        }
+        /// 3. Devolvemos el contenedor persistente
+        return container
+    }()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        if let viewController = window?.rootViewController as? ViewController {
+            viewController.persistentContainer = persistentContainer
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
