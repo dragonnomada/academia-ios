@@ -22,7 +22,7 @@ class ProductosViewController: UIViewController {
 performSegue(withIdentifier: "mySegue", sender: productoSeleccionado)
 
 // [2] Seguimiento de el sugue
-override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     // Recuperar:
     // 1. El ViewController destino (segue.destination)
     // 2. Los datos que queremos enviar (sender)

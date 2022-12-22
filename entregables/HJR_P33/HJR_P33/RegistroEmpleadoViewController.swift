@@ -11,9 +11,9 @@ import CoreData
 // Clase Registro empleaod
 class RegistroEmpleadoViewController: UIViewController {
     
-    var persistentContainer: NSPersistentContainer?
+    weak var persistentContainer: NSPersistentContainer?
     
-    var viewController: ViewController?
+    weak var viewController: ViewController?
     
     @IBOutlet weak var nombreTextField: UITextField!
     
@@ -34,6 +34,7 @@ class RegistroEmpleadoViewController: UIViewController {
             
             let requestEmpleados = Empleado.fetchRequest()
             
+            // Se eintenta generar fetch, y si se logra obtenemos un arreglo de Empleados
             if let empleados = try? context.fetch(requestEmpleados) {
                 
                 for empleado in empleados {
@@ -51,6 +52,8 @@ class RegistroEmpleadoViewController: UIViewController {
     @IBAction func guardarEmpleados(_ sender: Any) {
         
         if let context = persistentContainer?.viewContext {
+            
+            //Generacion de empleado
             let empleado = Empleado(context: context)
             
             empleado.id = Int32.random(in: 1...100)
@@ -58,6 +61,7 @@ class RegistroEmpleadoViewController: UIViewController {
             empleado.edad = Int32(edadTextField.text ?? "0") ?? 0
             empleado.telefono = Int32(telefonoTextField.text ?? "0") ?? 0
             
+            // Intenta guardar todos los valores y resetear los valores ingresados.
             do {
                 try context.save()
                 print("Empleado guardado")
@@ -68,6 +72,7 @@ class RegistroEmpleadoViewController: UIViewController {
                 telefonoTextField.text = ""
                 // Nos regresa al campo de nombreTextField
                 idTextField.becomeFirstResponder()
+                viewController?.empleadosTableView.reloadData()
                 // Manadr a llamar par actualizar productos
                 cargarEmpleados()
             } catch {
