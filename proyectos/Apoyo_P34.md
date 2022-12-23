@@ -1,5 +1,7 @@
 # Apoyo Práctica 34
 
+Por [Alan Badillo Salas](https://www.nomadacode.com)
+
 1. En la *Pantalla 1* se muestra un `UITableView` con una lista de empleados
 2. En la *Pantalla 1* al pulsar un registro de la tabla se recupera el empleado y se realiza un `performSegue` con el empleado seleccionado como `sender`
 3. En la *Pantalla 1* se prepara el `segue` para configurar `empleadoSubject` y `empleado` en la *Pantalla 2*
