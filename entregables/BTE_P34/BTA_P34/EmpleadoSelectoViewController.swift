@@ -1,6 +1,6 @@
 //
 //  EmpleadoSelectoViewController.swift
-//  BTA_P34
+//  BTE_P34
 //
 //  Created by MacBook Pro on 22/12/22.
 //
@@ -28,6 +28,10 @@ class EmpleadoSelectoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Una vez que nuestros empleado a sido traido por nuestra segue de la
+        // vista anterior, se cargarán y llenarán el los textfield de esta vista
+        
         idTextField.text = "\(empleadoSeleccionado!.id)"
         nombreTextField.text = "\(empleadoSeleccionado!.nombre)"
         edadTextField.text = "\(empleadoSeleccionado!.edad)"
@@ -41,6 +45,10 @@ class EmpleadoSelectoViewController: UIViewController {
     
     
     @IBAction func guardarAction(_ sender: Any) {
+        
+        // Nos traemos los nuevos datos modificados de los texfield, los guardamos
+        // en variables desempaquetandolas. y posteriormente enviamos el empleado
+        // Actualizado mediante nuestro Sujeto
         
         let id: Int = Int(idTextField.text!)!
         let nombre: String = nombreTextField.text!

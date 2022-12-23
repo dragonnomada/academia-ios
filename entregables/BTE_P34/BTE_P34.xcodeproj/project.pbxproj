@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		52EBA8C029550BA7007D77E4 /* BTA_P34.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTA_P34.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52EBA8C029550BA7007D77E4 /* BTE_P34.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTE_P34.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EBA8C329550BA7007D77E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52EBA8C529550BA7007D77E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		52EBA8C729550BA7007D77E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		52EBA8C129550BA7007D77E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				52EBA8C029550BA7007D77E4 /* BTA_P34.app */,
+				52EBA8C029550BA7007D77E4 /* BTE_P34.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		52EBA8BF29550BA7007D77E4 /* BTA_P34 */ = {
+		52EBA8BF29550BA7007D77E4 /* BTE_P34 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52EBA8D429550BA9007D77E4 /* Build configuration list for PBXNativeTarget "BTA_P34" */;
+			buildConfigurationList = 52EBA8D429550BA9007D77E4 /* Build configuration list for PBXNativeTarget "BTE_P34" */;
 			buildPhases = (
 				52EBA8BC29550BA7007D77E4 /* Sources */,
 				52EBA8BD29550BA7007D77E4 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = BTA_P34;
+			name = BTE_P34;
 			productName = BTA_P34;
-			productReference = 52EBA8C029550BA7007D77E4 /* BTA_P34.app */;
+			productReference = 52EBA8C029550BA7007D77E4 /* BTE_P34.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 52EBA8BB29550BA7007D77E4 /* Build configuration list for PBXProject "BTA_P34" */;
+			buildConfigurationList = 52EBA8BB29550BA7007D77E4 /* Build configuration list for PBXProject "BTE_P34" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				52EBA8BF29550BA7007D77E4 /* BTA_P34 */,
+				52EBA8BF29550BA7007D77E4 /* BTE_P34 */,
 			);
 		};
 /* End PBXProject section */
@@ -341,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		52EBA8BB29550BA7007D77E4 /* Build configuration list for PBXProject "BTA_P34" */ = {
+		52EBA8BB29550BA7007D77E4 /* Build configuration list for PBXProject "BTE_P34" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52EBA8D229550BA9007D77E4 /* Debug */,
@@ -350,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52EBA8D429550BA9007D77E4 /* Build configuration list for PBXNativeTarget "BTA_P34" */ = {
+		52EBA8D429550BA9007D77E4 /* Build configuration list for PBXNativeTarget "BTE_P34" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52EBA8D529550BA9007D77E4 /* Debug */,
