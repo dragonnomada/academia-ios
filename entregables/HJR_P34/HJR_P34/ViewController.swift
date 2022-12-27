@@ -104,15 +104,18 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return empleados.count
     }
     
+    // Regresaamos una celda
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Recuperamos una celda desde tableView, pasandole su identificador "empleadosTableViewCell".
         let cell = tableView.dequeueReusableCell(withIdentifier: "empleadosTableViewCell")!
+        
         // Configuramos que solo aparezca el nombre de los empleados
         cell.textLabel?.text = "\(empleados[indexPath.row].nombre)"
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Almacenamos el empleado seleccionado en empleadoSellecionado
         empleadoSeleccionado = empleados[indexPath.row]
         performSegue(withIdentifier: "goToEmpleadosDetalles", sender: nil)
         }
