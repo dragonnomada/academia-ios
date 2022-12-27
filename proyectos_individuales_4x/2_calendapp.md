@@ -15,21 +15,14 @@ La aplicación consta de las siguientes pantallas:
 ## Rúbricas
 
 * `[REQUERIDO]` Diseñó la **Pantalla Principal**
-* `[REQUERIDO]` Diseñó la **Pantalla Reclutar**
-* `[REQUERIDO]` Diseñó la **Pantalla Detalles**
-* `[REQUERIDO]` Diseñó la **Pantalla Proceso Entrevistar**
-* `[REQUERIDO]` Diseñó la **Pantalla Proceso Validar**
-* `[REQUERIDO]` Diseñó la **Pantalla Proceso Completar**
+* `[REQUERIDO]` Diseñó la **Pantalla Nuevo Evento**
+* `[REQUERIDO]` Diseñó la **Pantalla Detalles Evento**
 * `[REQUERIDO]` Creó la navegación entre pantallas usando *segues*
 * `[REQUERIDO]` Agregó la funcionalidad de la **Pantalla Principal**
-* `[REQUERIDO]` Agregó la funcionalidad de la **Pantalla Reclutar**
-* `[REQUERIDO]` Agregó la funcionalidad de la **Pantalla Detalles**
-* `[REQUERIDO]` Agregó la funcionalidad de la **Pantalla Proceso Entrevistar**
-* `[REQUERIDO]` Agregó la funcionalidad de la **Pantalla Proceso Validar**
-* `[REQUERIDO]` Agregó la funcionalidad de la **Pantalla Reclutar**
-* `[REQUERIDO]` Agregó la funcionalidad de la **Pantalla Proceso Completar**
-* Agregó la funcionalidad para la carga de la imagen del perfil
-* Mostró la imagen del perfil en las diferentes pantallas
+* `[REQUERIDO]` Agregó la funcionalidad de la **Pantalla Nuevo Evento**
+* `[REQUERIDO]` Agregó la funcionalidad de la **Pantalla Detalles Evento**
+* Agregó la funcionalidad para el color del evento
+* Mostró el color del evento en las diferentes pantallas
 * Utilizó *CoreData* para la persistencia de datos
 * El alumno documentó las cabeceras de sus códigos
 * El alumno documentó cada pieza importante de código
