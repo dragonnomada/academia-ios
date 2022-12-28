@@ -33,12 +33,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         if let viewController = window?.rootViewController as? ViewController {
-                  viewController.prospectosModel = prospectosModel
+                  viewController.prospectoPersistentContainer = prospectosModel
               }
               
               if let navigationController = window?.rootViewController as? UINavigationController {
                   if let viewController = navigationController.viewControllers.first as? ViewController {
-                      viewController.prospectosModel = prospectosModel
+                      viewController.prospectoPersistentContainer = prospectosModel
                   }
               }
         

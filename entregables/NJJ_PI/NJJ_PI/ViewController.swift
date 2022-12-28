@@ -11,32 +11,75 @@ import CoreData
 class ViewController: UIViewController {
     
     @IBOutlet weak var myTableView: UITableView!
-
-    var prospectosModel: NSPersistentContainer?
+    
+    var prospectoPersistentContainer: NSPersistentContainer?
     
     var prospectos: [Prospecto] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         cargarProspectos()
-        // Do any additional setup after loading the view.
+        myTableView.delegate = self
+        myTableView.dataSource = self
     }
+    
     func cargarProspectos() {
-        if let context = prospectosModel?.viewContext {
+        if let context = prospectoPersistentContainer?.viewContext {
             
             let requestProspectos = Prospecto.fetchRequest()
             
             if let prospectos = try? context.fetch(requestProspectos) {
-                self.prospectos = prospectos
-//                for _ in prospectos {
-//
+//                for prospecto in prospectos {
+//                    context.delete(prospecto)
 //                }
+//                do {
+//                    try context.save()
+//                    print("Borrados")
+//                } catch {
+//                    context.rollback()
+//                    print("No se pudieron borrar. Error: \(error)")
+//                }
+                self.prospectos = prospectos
+                print(prospectos)
+                self.myTableView.reloadData()
             }
             
         }
     }
 
+}
 
+extension ViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.cargarProspectos()
+    }
+    
+}
+
+extension ViewController {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "AddProspectoSegue":
+            if let reclutarViewController = segue.destination as? ReclutarViewController {
+                reclutarViewController.prospectosModel = self.prospectoPersistentContainer
+            }
+        case "PerfilSegue":
+            if let perfilViewController = segue.destination as? PerfilViewController {
+                ///Reconvertimos el `sender`como  `Prospecto` (lo envia el performSegue)
+                if let prospecto = sender as? Prospecto {
+                    ///Ajuste o configuraciòn de la fruta opccional para la pantalla **PerfilViewController**
+                    perfilViewController.prospecto = prospecto
+                }
+            }
+            
+        default:
+            print("Identificador de segue no válido")
+        }
+            
+    }
+    
 }
 
 extension ViewController: UITableViewDataSource {
@@ -49,11 +92,23 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EmpleadoCell")!
         
         if let cell = cell as? CustomTableViewCell {
+            
             let prospecto = self.prospectos[indexPath.row]
-            cell.nombreLabel.text = "\(prospecto.nombre) \(prospecto.apellido_paterno) \(prospecto.apellido_materno)"
+            
+            if let nombre = prospecto.nombre,
+               let apellidoP = prospecto.apellidoPaterno,
+               let apellidoM = prospecto.apellidoMaterno {
+                
+                cell.nombreLabel.text = "\(apellidoP) \(apellidoM), \(nombre)"
+                
+            }
+            
             cell.estadoLabel.text = prospecto.estado
-            cell.fechaInicioLabel.text = prospecto.fechaInicio
-            cell.fechaActualizado.text = prospecto.fechaActualizado
+            
+            cell.fechaInicioLabel.text = "\(prospecto.fechaInicio ?? Date.now)"
+    
+            cell.fechaActualizadoLabel.text = "\( prospecto.fechaActualizado)"
+
         }
         
         return cell
@@ -73,7 +128,13 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         print("Presionado")
+        
+        // TODO: Recupera el prospecto en el índice indexPath.row
+        let prospecto = self.prospectos[indexPath.row]
+        
+        performSegue(withIdentifier: "PerfilSegue", sender: prospecto)
     }
     
 }

@@ -6,24 +6,56 @@
 //
 
 import UIKit
+import CoreData
 
-class PerfilViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class PerfilViewController: UIViewController, UITextViewDelegate {
+    
+    var prospectoPersistentContainer: NSPersistentContainer?
+    ///Variable hecha para avisarle a mi PerfilView que va a recibir un prospecto dado por el perform y su didselectrow
+    var prospecto: Prospecto?
+    
+    @IBAction func entrevistarActionButton(_ sender: Any) {
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func valorarActionLabel(_ sender: Any) {
     }
-    */
+    
+    @IBAction func contratarLabel(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var entrevistarIconLabel: UILabel!
+    
+    @IBOutlet weak var valorarIconLabel: UILabel!
+    
+    @IBOutlet weak var contratarIconLabel: UILabel!
+    
+    @IBOutlet weak var nombreLabel: UILabel!
+    
+    @IBOutlet weak var estadoLabel: UILabel!
+    
+    @IBOutlet weak var fechaInicioLabel: UILabel!
+    
+    @IBOutlet weak var fechaActualizadoLabel: UILabel!
+    
+    @IBOutlet weak var diasEstimadosLabel: UILabel!
+    
+    @IBOutlet weak var diasRetrasoLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if let prospecto = prospecto {
+            nombreLabel.text = "\(prospecto.apellidoPaterno) \(prospecto.apellidoMaterno), \(prospecto.nombre)"
+            estadoLabel.text = prospecto.estado
+            fechaInicioLabel.text = "\(prospecto.fechaInicio)"
+            fechaActualizadoLabel.text = "\(prospecto.fechaActualizado)"
+            
+        }
+        
 
+    }
 }
+    
+    
+
+

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22A400" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Prospecto" representedClassName="Prospecto" syncable="YES" codeGenerationType="class">
-        <attribute name="apellido_materno" optional="YES" attributeType="String"/>
-        <attribute name="apellido_paterno" optional="YES" attributeType="String"/>
-        <attribute name="direccion" optional="YES" attributeType="String"/>
-        <attribute name="estado" optional="YES" attributeType="String"/>
-        <attribute name="fechaActualizado" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="fechaInicio" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="apellidoMaterno" attributeType="String"/>
+        <attribute name="apellidoPaterno" attributeType="String"/>
+        <attribute name="direccion" attributeType="String"/>
+        <attribute name="estado" attributeType="String" defaultValueString="RECLUTADO"/>
+        <attribute name="fechaActualizado" attributeType="Date" defaultDateTimeInterval="693786600" usesScalarValueType="YES"/>
+        <attribute name="fechaInicio" attributeType="Date" defaultDateTimeInterval="693959460" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="imagenPerfil" optional="YES" attributeType="Binary"/>
-        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="nombre" attributeType="String"/>
         <attribute name="referido" optional="YES" attributeType="String"/>
     </entity>
 </model>
