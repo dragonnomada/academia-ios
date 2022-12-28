@@ -67,7 +67,7 @@ class ViewController: UIViewController {
             
             if let data = data {
                 if let text = String(data: data, encoding: .utf8) {
-                    print(text)
+                    print("EL texto es: \(text)")
                 }
                 if let peopleResponse = try? JSONDecoder().decode(PeopleResponse.self, from: data) {
                     print(peopleResponse)
