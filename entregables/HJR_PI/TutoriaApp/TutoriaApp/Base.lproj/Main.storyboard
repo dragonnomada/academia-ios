@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TutoriaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TutoriApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dp9-3e-ElC">
+                                <rect key="frame" x="97.666666666666686" y="313" width="198" height="52"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageVC" translatesAutoresizingMaskIntoConstraints="NO" id="FoZ-3A-QEm">
+                                <rect key="frame" x="65" y="89" width="263" height="194"/>
+                            </imageView>
+                            <textView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TutoriApp es una herramienta que te ayudara a documnetarte en el tema que te sea de mayor interes." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ibo-AQ-q8E">
+                                <rect key="frame" x="60" y="495" width="273" height="168"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FoZ-3A-QEm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="BlU-Hr-2io"/>
+                            <constraint firstItem="Dp9-3e-ElC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DQN-id-a7S"/>
+                            <constraint firstItem="Ibo-AQ-q8E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Nvd-Ks-ROP"/>
+                            <constraint firstItem="Ibo-AQ-q8E" firstAttribute="top" secondItem="Dp9-3e-ElC" secondAttribute="bottom" constant="130" id="RwU-qW-byG"/>
+                            <constraint firstItem="Dp9-3e-ElC" firstAttribute="top" secondItem="FoZ-3A-QEm" secondAttribute="bottom" constant="30" id="Sxo-d5-lZw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FoZ-3A-QEm" secondAttribute="trailing" constant="65" id="fDW-Ft-aMj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ibo-AQ-q8E" secondAttribute="trailing" constant="60" id="j6h-xt-m44"/>
+                            <constraint firstItem="FoZ-3A-QEm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="kef-2E-pMo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ibo-AQ-q8E" secondAttribute="bottom" constant="155" id="q4W-eb-ZFC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="U8l-mK-9Bo" kind="show" identifier="goViewController2" id="SeC-fc-NZ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="WaD-Wt-3jR">
+            <objects>
+                <viewController id="U8l-mK-9Bo" customClass="ViewController2" customModule="TutoriaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gqf-Fa-hl9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagenVC2" translatesAutoresizingMaskIntoConstraints="NO" id="ohS-fb-m2Y">
+                                <rect key="frame" x="24" y="85" width="345" height="146"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Es muy facil de usar. solo buscas el video que te sea de tu interes, debes dar clic para reproducir y listo.😃" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="U8b-Ml-FjA">
+                                <rect key="frame" x="75" y="381" width="243" height="181"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dqy-uH-lL3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U8b-Ml-FjA" firstAttribute="leading" secondItem="dqy-uH-lL3" secondAttribute="leading" constant="75" id="AaC-bR-OZg"/>
+                            <constraint firstItem="dqy-uH-lL3" firstAttribute="trailing" secondItem="ohS-fb-m2Y" secondAttribute="trailing" constant="24" id="Bcb-X8-gOl"/>
+                            <constraint firstItem="U8b-Ml-FjA" firstAttribute="top" secondItem="ohS-fb-m2Y" secondAttribute="bottom" constant="150" id="JhZ-7T-bD6"/>
+                            <constraint firstItem="ohS-fb-m2Y" firstAttribute="top" secondItem="dqy-uH-lL3" secondAttribute="top" constant="26" id="OK6-NQ-gig"/>
+                            <constraint firstItem="dqy-uH-lL3" firstAttribute="trailing" secondItem="U8b-Ml-FjA" secondAttribute="trailing" constant="75" id="STA-Ld-TUO"/>
+                            <constraint firstItem="dqy-uH-lL3" firstAttribute="bottom" secondItem="U8b-Ml-FjA" secondAttribute="bottom" constant="221" id="Sz8-P4-eVA"/>
+                            <constraint firstItem="ohS-fb-m2Y" firstAttribute="leading" secondItem="dqy-uH-lL3" secondAttribute="leading" constant="24" id="pZr-mg-uNl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ad1-XM-PkG"/>
+                    <connections>
+                        <segue destination="Urk-pW-QRr" kind="show" identifier="goViewController3" id="lOD-ke-rcR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ny-2C-jHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867.93893129770993" y="-2.1126760563380285"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="pqA-sQ-pgz">
+            <objects>
+                <viewController id="Urk-pW-QRr" customClass="ViewController3" customModule="TutoriaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fTL-nD-IhC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgenVC3" translatesAutoresizingMaskIntoConstraints="NO" id="Maj-2I-Hfj">
+                                <rect key="frame" x="88.666666666666686" y="89" width="216" height="233"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disfrutala" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twc-ZP-Fzi">
+                                <rect key="frame" x="114.66666666666669" y="418" width="164" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sR2-Sh-cFI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="twc-ZP-Fzi" firstAttribute="top" secondItem="Maj-2I-Hfj" secondAttribute="bottom" constant="96" id="AZ8-dg-DmK"/>
+                            <constraint firstItem="twc-ZP-Fzi" firstAttribute="centerX" secondItem="fTL-nD-IhC" secondAttribute="centerX" id="G9m-TD-hiw"/>
+                            <constraint firstItem="Maj-2I-Hfj" firstAttribute="top" secondItem="sR2-Sh-cFI" secondAttribute="top" constant="30" id="HD4-lJ-yqP"/>
+                            <constraint firstItem="Maj-2I-Hfj" firstAttribute="centerX" secondItem="fTL-nD-IhC" secondAttribute="centerX" id="IMG-sn-rY4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vOW-0r-TJA"/>
+                    <connections>
+                        <segue destination="KtZ-4w-t4z" kind="show" identifier="goVideosViewController" id="elR-AX-exe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zaB-BL-ZaH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1620.6106870229007" y="-2.1126760563380285"/>
+        </scene>
+        <!--Videos View Controller-->
+        <scene sceneID="hIH-Vv-cKz">
+            <objects>
+                <viewController id="KtZ-4w-t4z" customClass="VideosViewController" customModule="TutoriaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J30-z3-pIX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ntk-OE-pRJ">
+                                <rect key="frame" x="10" y="69" width="373" height="704"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gxf-Ae-EFP">
+                                        <rect key="frame" x="0.0" y="50" width="373" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gxf-Ae-EFP" id="Hrb-SX-Suc">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GBK-JE-ysF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ntk-OE-pRJ" firstAttribute="top" secondItem="GBK-JE-ysF" secondAttribute="top" constant="10" id="PDL-NV-6tu"/>
+                            <constraint firstItem="GBK-JE-ysF" firstAttribute="bottom" secondItem="ntk-OE-pRJ" secondAttribute="bottom" constant="10" id="gjv-yu-a1f"/>
+                            <constraint firstItem="ntk-OE-pRJ" firstAttribute="leading" secondItem="GBK-JE-ysF" secondAttribute="leading" constant="10" id="mNC-N9-7WV"/>
+                            <constraint firstItem="GBK-JE-ysF" firstAttribute="trailing" secondItem="ntk-OE-pRJ" secondAttribute="trailing" constant="10" id="rVx-DW-fhV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GFU-ej-E8Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ez8-vS-Z65" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2399" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imageVC" width="259" height="194"/>
+        <image name="imagenVC2" width="345" height="146"/>
+        <image name="imgenVC3" width="216" height="233"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
