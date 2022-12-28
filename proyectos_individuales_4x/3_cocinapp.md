@@ -4,9 +4,13 @@ Por [Alan Badillo Salas](https://www.nomadacode.com)
 
 ## Introuducción
 
-`CocinApp` es una aplicación para *IOS* diseñada con *Swift* y *UIKit* que ayuda a los miembros de recursos humanos en el proceso de reclutamiento de perfiles hasta contratarlos como empleados formales.
+`CocinApp` es una aplicación para *IOS* diseñada con *Swift* y *UIKit* que ayuda a los cocineros a darle seguimiento a los pedidos de platillos y administrar nuevos platillos.
 
 La aplicación consta de las siguientes pantallas:
+
+* **Pantalla Principal** - Muestra una lista con los platillos pendientes de entrega.
+* **Pantalla Nuevo Evento** - Muestra un formulario con los datos del nuevo evento, se considera el color del evento, el título, la descripción, la hora de inicio y la hora de fin.
+* **Pantalla Detalles Evento** - Muestra los detalles del evento, el color, el título, la descripción, la hora de inicio y la hora de fin. Cuenta con un botón para eliminar el evento en la barra de navegación a la derecha.
 
 ## Rúbricas
 
