@@ -26,7 +26,7 @@ class CustomTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        myImageView.layer.cornerRadius = myImageView.bounds.size.width / 2.0
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -8,6 +8,22 @@
 import UIKit
 import CoreData
 
+extension Date {
+    
+    func toString() -> String {
+        let formato = DateFormatter()
+        
+        formato.locale = Locale(identifier: "es_MX")
+        
+        formato.dateStyle = .short
+
+        formato.setLocalizedDateFormatFromTemplate("YYYY/MMM/dd")
+        
+        return formato.string(from: self)
+    }
+    
+}
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var myTableView: UITableView!
@@ -105,9 +121,17 @@ extension ViewController: UITableViewDataSource {
             
             cell.estadoLabel.text = prospecto.estado
             
-            cell.fechaInicioLabel.text = "\(prospecto.fechaInicio ?? Date.now)"
+            if let fechaInicio = prospecto.fechaInicio {
+                cell.fechaInicioLabel.text = fechaInicio.toString()
+            }
+            
+            //cell.fechaInicioLabel.text = "\(prospecto.fechaInicio ?? Date.now)"
     
-            cell.fechaActualizadoLabel.text = "\( prospecto.fechaActualizado)"
+            if let fechaActualizado = prospecto.fechaActualizado {
+                cell.fechaActualizadoLabel.text = fechaActualizado.toString()
+            }
+            
+            //cell.fechaActualizadoLabel.text = "\( prospecto.fechaActualizado)"
 
         }
         

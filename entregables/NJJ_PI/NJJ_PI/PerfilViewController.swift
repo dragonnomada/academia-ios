@@ -15,6 +15,7 @@ class PerfilViewController: UIViewController, UITextViewDelegate {
     var prospecto: Prospecto?
     
     @IBAction func entrevistarActionButton(_ sender: Any) {
+        
     }
     
     @IBAction func valorarActionLabel(_ sender: Any) {
@@ -35,27 +36,46 @@ class PerfilViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var fechaInicioLabel: UILabel!
     
+    @IBOutlet weak var perfilImageView: UIImageView!
+    
     @IBOutlet weak var fechaActualizadoLabel: UILabel!
     
     @IBOutlet weak var diasEstimadosLabel: UILabel!
     
     @IBOutlet weak var diasRetrasoLabel: UILabel!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let prospecto = prospecto {
-            nombreLabel.text = "\(prospecto.apellidoPaterno) \(prospecto.apellidoMaterno), \(prospecto.nombre)"
-            estadoLabel.text = prospecto.estado
-            fechaInicioLabel.text = "\(prospecto.fechaInicio)"
-            fechaActualizadoLabel.text = "\(prospecto.fechaActualizado)"
-            
-        }
+        perfilImageView.layer.cornerRadius = perfilImageView.bounds.size.width / 2.0
         
+        if let prospecto = prospecto {
+            
+            if let nombreProspecto = prospecto.nombre {
+                let apellidoP = prospecto.apellidoPaterno
+                let apellidoM = prospecto.apellidoMaterno
+                nombreLabel.text = "\(apellidoP ?? "") \(apellidoM ?? ""), \(nombreProspecto)"
+            }
+            
+            if let estadoProspecto = prospecto.estado {
+                estadoLabel.text = estadoProspecto
+            }
+            
+            if let fechaInicio = prospecto.fechaInicio {
+                fechaInicioLabel.text = "\(fechaInicio.toString())"
+            }
+            
+            if let fechaActualizado = prospecto.fechaActualizado {
+                fechaActualizadoLabel.text = "\(fechaActualizado.toString())"
+            }
+        }
 
     }
-}
     
+}
+
     
 
 

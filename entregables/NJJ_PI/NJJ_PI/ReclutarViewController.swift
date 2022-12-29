@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import Combine
 import CoreData
+
 
 class ReclutarViewController: UIViewController, UITextViewDelegate {
     
@@ -31,13 +31,18 @@ class ReclutarViewController: UIViewController, UITextViewDelegate {
         if let nombre = nombreTextField.text,
            let apellidoP = apellidoPaternoTextField.text,
            let apellidoM = apellidoMaternoTextField.text,
-           let direreccion = direccionTextField.text {
+           let direccion = direccionTextField.text {
+            
+            if nombre == "" {
+                // TODO: Alertar al usuario
+                return
+            }
             
             print("Se creará un nuevo prospecto:")
             print("\(nombre)")
             print("\(apellidoP)")
             print("\(apellidoM)")
-            print("\(direreccion)")
+            print("\(direccion)")
             
             let referido = referidoTextField.text
             
@@ -48,10 +53,12 @@ class ReclutarViewController: UIViewController, UITextViewDelegate {
                 prospecto.nombre = nombre
                 prospecto.apellidoPaterno = apellidoP
                 prospecto.apellidoMaterno = apellidoM
-                prospecto.direccion = direreccion
+                prospecto.direccion = direccion
                 prospecto.referido = referido
                 prospecto.estado = "RECLUTADO"
                 prospecto.fechaInicio = Date.now
+                prospecto.fechaActualizado = Date.now
+                
                 
                 print("Se ha creado el prospecto en el contexto")
                 
@@ -74,6 +81,8 @@ class ReclutarViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
     }
     
 
