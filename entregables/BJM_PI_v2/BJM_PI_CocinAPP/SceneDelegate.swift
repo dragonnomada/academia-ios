@@ -1,55 +1,22 @@
 //
 //  SceneDelegate.swift
-//  4401_Repaso_CoreData
+//  BJM_PI_v1
 //
-//  Created by User on 29/12/22.
+//  Created by User on 27/12/22.
 //
 
 import UIKit
-import CoreData
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    
-    //Clousure auto-invokable () -> NSPersistentContainer
-    
-    /// **PASO 1** - Crear el contenedor
-    let appPersistentContainer: NSPersistentContainer = {
-        
-        let container = NSPersistentContainer(name: "AppModel")
-        
-        container.loadPersistentStores { _, error in
-            if let error = error {
-                fatalError("No se pudo recuperar el contenedor. Error: \(error)")
-            }
-        }
-        
-        return container
-    }()
+
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
-        
-        ///**PASO 3** - Conecta la instancia del ´appPersistentContainer´ hacia la vista
-        ///
-        ///**IMPORTANTE:** Hay que hacer las conversiones (reconversiones) necesarias para poder utilizar
-        ///nuestra vista correctamente.
-        if let viewController = self.window?.rootViewController as? ViewController {
-            //Le explicamos a la vista que su contenedor es nuestro contenedor
-            viewController.appPersistentContainer = self.appPersistentContainer
-        }
-        
-        ///**IMPORTANTE:** Si la vista principal es ´rootViewController´) es un ´UINavigationController´,
-        ///tendremos que recuperar el ´ViewController´desde el ´navigationController´, lo cual aumentará la complejidad
-        if let navigationController = self.window?.rootViewController as? UINavigationController{
-            if let viewController = navigationController.viewControllers.first as? ViewController {
-                viewController.appPersistentContainer = self.appPersistentContainer
-            }
-        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
