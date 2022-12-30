@@ -24,7 +24,7 @@ function validateCode(code) {
 function parseCodeAsBrandAndId(code) {
     validateCode(code)
 
-    const [_, brand, id] = code.match(/^([a-z]+)\-(\d+)$/)
+    const [_, brand, id] = code.match(/^([a-z0-9]+)\-(\d+)$/)
     console.log({ brand, id })
     return { brand, id }
 }
