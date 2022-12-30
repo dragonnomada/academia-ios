@@ -10,18 +10,17 @@ router.all("/cobrapp/login", (request, response) => {
         ...(request.body || {})
     }
 
-    const user = signIn(username, password)
-
-    if (user) {
+    try { 
+        const user = signIn(username, password)
         response.send({
             error: false,
             message: "ok",
             user
         })
-    } else {
+    } catch (error) {
         response.send({
             error: true,
-            message: `Invalid user credentials for <${username}>`,
+            message: `${error}`,
             user: null
         })
     }
