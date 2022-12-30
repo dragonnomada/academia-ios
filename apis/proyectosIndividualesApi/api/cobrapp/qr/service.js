@@ -18,7 +18,7 @@ function getProductByBrandAndId(brand, id) {
 }
 
 function validateCode(code) {
-    if (!(/^[a-z]+\-\d+$/.test(code || ""))) throw new Error(`Invalid code format for <${code}>`)
+    if (!(/^[a-z0-9]+\-\d+$/.test(code || ""))) throw new Error(`Invalid code format for <${code}>`)
 }
 
 function parseCodeAsBrandAndId(code) {
