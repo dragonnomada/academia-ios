@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G1020" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DemoEntity" representedClassName="DemoEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="pulsado" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ProductoEntity" representedClassName="ProductoEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="existencias" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="precio" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <fetchedProperty name="productosMayores100" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="ProductoEntity" predicateString="precio &gt; 100"/>
+        </fetchedProperty>
+    </entity>
+    <elements>
+        <element name="DemoEntity" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="ProductoEntity" positionX="-54" positionY="18" width="128" height="110"/>
+    </elements>
+</model>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G1020" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Prospecto" representedClassName="Prospecto" syncable="YES" codeGenerationType="class">
+        <attribute name="diasEstimados" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="direccion" optional="YES" attributeType="String"/>
+        <attribute name="estado" optional="YES" attributeType="String"/>
+        <attribute name="fechaActualizado" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fechaInicio" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imagen" optional="YES" attributeType="Binary"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="referido" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Prospecto" positionX="-63" positionY="-18" width="128" height="164"/>
+    </elements>
+</model>
