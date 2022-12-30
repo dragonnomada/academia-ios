@@ -17,55 +17,70 @@ class ValorarViewController: UIViewController {
     // TODO: Recibir el objeto persistente
     var prospecto: Prospecto?
     
+    @IBOutlet weak var valorarButton: UIButton!
+    
     //  cada switch como @IBOutlet
     @IBOutlet weak var sqlSwitch: UISwitch!
     @IBOutlet weak var pythonSwitch: UISwitch!
     @IBOutlet weak var promedioSwitch: UISwitch!
     @IBOutlet weak var mencionHonorificaSwitch: UISwitch!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if let prospecto = prospecto {
+            sqlSwitch.isOn = prospecto.tieneSql
+            pythonSwitch.isOn = prospecto.tienePyhton
+            promedioSwitch.isOn = prospecto.tieneAprobatorio
+            mencionHonorificaSwitch.isOn = prospecto.tieneHonorifica
+        }
+        
+        if prospecto?.tieneSql == false || prospecto?.tienePyhton == false || prospecto?.tieneAprobatorio == false || prospecto?.tieneHonorifica == false {
+            valorarButton.isEnabled = false
+        } else {
+            valorarButton.isEnabled = true
+        }
+        
+    }
+    
     @IBAction func saveValorarAction(_ sender: Any) {
         if let context = reclutappPersistentContainer?.viewContext {
-            if context.hasChanges {
-                do {
-                    try context.save()
-                } catch {
-                    context.rollback()
-                }
+            print("Recuperé el contexto: TIENE CAMBIOS? \(context.hasChanges ? "SI" : "NO")")
+            do {
+                try context.save()
+                print("Se guardó el prospecto")
+                self.navigationController?.popViewController(animated: true)
+            } catch {
+                context.rollback()
+                print("NO PUDE GUARDAR EL CONTEXTO AL ENTREVISTAR")
             }
         }
     }
     
     
     @IBAction func sqlSwitchAction(_ sender: Any) {
-        if sqlSwitch.isOn {
-            prospecto?.tieneSql = true
-            prospecto?.fechaActualizado = Date.now
-        }
+        prospecto?.tieneSql = sqlSwitch.isOn
+        prospecto?.fechaActualizado = Date.now
     }
     
     @IBAction func pythonSwitchAction(_ sender: Any) {
-        
+        prospecto?.tienePyhton = pythonSwitch.isOn
+        prospecto?.fechaActualizado = Date.now
     }
     
     @IBAction func promedioSwitchAction(_ sender: Any) {
-        
+        prospecto?.tieneAprobatorio = promedioSwitch.isOn
+        prospecto?.fechaActualizado = Date.now
     }
     
     @IBAction func completarValoraciónActionButton(_ sender: Any) {
-        
+        prospecto?.estado = "VALORADO"
     }
     
     @IBAction func honorificMentionSwitchAction(_ sender: Any) {
-        
+        prospecto?.tieneHonorifica   = mencionHonorificaSwitch.isOn
+        prospecto?.fechaActualizado = Date.now
     }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-    }
-    
-
     
 }

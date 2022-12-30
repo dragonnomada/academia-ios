@@ -87,6 +87,8 @@ extension ViewController {
                 if let prospecto = sender as? Prospecto {
                     ///Ajuste o configuraciòn de la fruta opccional para la pantalla **PerfilViewController**
                     perfilViewController.prospecto = prospecto
+                    // TODO: Pasar el container
+                    perfilViewController.prospectoPersistentContainer = prospectoPersistentContainer
                 }
             }
             
