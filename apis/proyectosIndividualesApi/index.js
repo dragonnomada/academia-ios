@@ -11,6 +11,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.use("/api/", require("./api/tutoriapp/videos"))
 app.use("/api/", require("./api/cobrapp/login"))
+app.use("/api/", require("./api/cobrapp/qr/send"))
 
 const server = http.createServer(app)
 
