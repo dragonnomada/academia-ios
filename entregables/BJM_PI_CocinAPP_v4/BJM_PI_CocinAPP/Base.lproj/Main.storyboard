@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fOA-BS-tEx">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CocinAPP-->
+        <scene sceneID="A19-si-nBI">
+            <objects>
+                <viewController id="bpC-UM-YmN" customClass="HomeViewController" customModule="BJM_PI_CocinAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8BR-gi-6FP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="c3L-yI-dIJ">
+                                <rect key="frame" x="0.0" y="103" width="393" height="658"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="orderDishCell" textLabel="B39-Mg-DHu" detailTextLabel="Bpv-Bx-d4D" style="IBUITableViewCellStyleValue1" id="tHr-bt-lIE">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tHr-bt-lIE" id="qNP-bV-vPB">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B39-Mg-DHu">
+                                                    <rect key="frame" x="20" y="15" width="25" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bpv-Bx-d4D">
+                                                    <rect key="frame" x="340.33333333333331" y="15" width="32.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqO-oY-Njk">
+                                <rect key="frame" x="71" y="769" width="251" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Uuk-Iy-pcm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Administrar Platillos">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleBody"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="createDish:" destination="bpC-UM-YmN" eventType="touchUpInside" id="b1g-Yb-nXl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PTP-nQ-BdR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sqO-oY-Njk" firstAttribute="leading" secondItem="PTP-nQ-BdR" secondAttribute="leading" constant="71" id="MN1-ef-YWs"/>
+                            <constraint firstItem="c3L-yI-dIJ" firstAttribute="top" secondItem="PTP-nQ-BdR" secondAttribute="top" id="d5h-vY-Qae"/>
+                            <constraint firstItem="c3L-yI-dIJ" firstAttribute="leading" secondItem="PTP-nQ-BdR" secondAttribute="leading" id="ibt-PF-OaW"/>
+                            <constraint firstItem="sqO-oY-Njk" firstAttribute="top" secondItem="c3L-yI-dIJ" secondAttribute="bottom" constant="8" id="k3b-Ca-Qeu"/>
+                            <constraint firstItem="sqO-oY-Njk" firstAttribute="centerX" secondItem="c3L-yI-dIJ" secondAttribute="centerX" id="xeS-Ee-kbt"/>
+                            <constraint firstItem="PTP-nQ-BdR" firstAttribute="bottom" secondItem="sqO-oY-Njk" secondAttribute="bottom" id="y3v-Sc-Poy"/>
+                            <constraint firstItem="sqO-oY-Njk" firstAttribute="centerX" secondItem="8BR-gi-6FP" secondAttribute="centerX" id="zgJ-1L-Zqu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CocinAPP" id="kCV-lU-f6X">
+                        <barButtonItem key="rightBarButtonItem" id="Prp-5t-03k">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="CdB-io-1pb">
+                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="+"/>
+                                <connections>
+                                    <action selector="createNewOrder:" destination="bpC-UM-YmN" eventType="touchUpInside" id="KHO-hB-KE8"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ordersTableView" destination="c3L-yI-dIJ" id="AdX-5a-io1"/>
+                        <segue destination="PZs-9L-mpp" kind="show" identifier="ToAddOrder" id="CAH-ND-sS4"/>
+                        <segue destination="SkB-Yi-gmv" kind="show" identifier="ToAddNewDish" id="yDf-CC-VVO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OqR-FE-Nq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620.61068702290072" y="3.5211267605633805"/>
+        </scene>
+        <!--Platillo Nuevo-->
+        <scene sceneID="zcV-vg-uSe">
+            <objects>
+                <viewController id="SkB-Yi-gmv" customClass="AddNewDishViewController" customModule="BJM_PI_CocinAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NyX-T9-ZwS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Q6R-pH-FDf">
+                                <rect key="frame" x="16" y="157" width="377" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3e-zO-Q1i">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ej. Enchiladas Suizas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2WT-Bt-uYK">
+                                        <rect key="frame" x="71" y="0.0" width="306" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnb-R3-DFr">
+                                <rect key="frame" x="154.33333333333334" y="753.66666666666663" width="84.666666666666657" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Agregar"/>
+                                <connections>
+                                    <action selector="addNewDish:" destination="SkB-Yi-gmv" eventType="touchUpInside" id="wTs-lc-dlG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rZI-UJ-qFW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qnb-R3-DFr" firstAttribute="centerX" secondItem="rZI-UJ-qFW" secondAttribute="centerX" id="AI9-sH-K4y"/>
+                            <constraint firstItem="rZI-UJ-qFW" firstAttribute="trailing" secondItem="Q6R-pH-FDf" secondAttribute="trailing" id="I8h-DA-fSd"/>
+                            <constraint firstItem="Q6R-pH-FDf" firstAttribute="top" secondItem="rZI-UJ-qFW" secondAttribute="top" constant="54" id="XCC-EQ-8jo"/>
+                            <constraint firstItem="rZI-UJ-qFW" firstAttribute="bottom" secondItem="qnb-R3-DFr" secondAttribute="bottom" constant="30" id="mkX-BK-RPe"/>
+                            <constraint firstItem="2WT-Bt-uYK" firstAttribute="leading" secondItem="rZI-UJ-qFW" secondAttribute="leading" constant="87" id="tMO-CO-Lim"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Platillo Nuevo" id="KGL-ql-mOg"/>
+                    <connections>
+                        <outlet property="newDishName" destination="2WT-Bt-uYK" id="Itc-X7-CSQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4b-Ww-snT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1467.9389312977098" y="398.59154929577466"/>
+        </scene>
+        <!--Crear Orden-->
+        <scene sceneID="shL-4g-fON">
+            <objects>
+                <viewController id="PZs-9L-mpp" customClass="NewOrderViewController" customModule="BJM_PI_CocinAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sae-b8-dEw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# ORDEN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jc0-Ih-DLM">
+                                <rect key="frame" x="138.33333333333334" y="103" width="116.66666666666666" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6F-Nx-DUV">
+                                <rect key="frame" x="163.66666666666666" y="769" width="66" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Crear"/>
+                                <connections>
+                                    <action selector="createOrderActionButton:" destination="PZs-9L-mpp" eventType="touchUpInside" id="mVS-ik-fUt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdd-CK-rVl">
+                                <rect key="frame" x="127" y="144" width="139" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="MK2-rr-fAc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Agregar Platillo"/>
+                                <connections>
+                                    <action selector="addDishToOrder:" destination="PZs-9L-mpp" eventType="touchUpInside" id="Irg-yL-Jao"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bGv-GH-by9">
+                                <rect key="frame" x="0.0" y="189" width="393" height="570"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newOrderDishCell" textLabel="Vix-if-wc4" detailTextLabel="TV6-oC-d6F" style="IBUITableViewCellStyleValue1" id="C8g-GK-J9Y">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C8g-GK-J9Y" id="H2a-PN-nkJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vix-if-wc4">
+                                                    <rect key="frame" x="20" y="15" width="25" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TV6-oC-d6F">
+                                                    <rect key="frame" x="340.33333333333331" y="15" width="32.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CH6-Of-e3v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jc0-Ih-DLM" firstAttribute="centerX" secondItem="sae-b8-dEw" secondAttribute="centerX" id="1qH-hn-8qZ"/>
+                            <constraint firstItem="Pdd-CK-rVl" firstAttribute="top" secondItem="Jc0-Ih-DLM" secondAttribute="bottom" constant="7.3333333333333428" id="2oL-nz-FyP"/>
+                            <constraint firstItem="CH6-Of-e3v" firstAttribute="trailing" secondItem="bGv-GH-by9" secondAttribute="trailing" id="5Fx-zK-ktJ"/>
+                            <constraint firstItem="CH6-Of-e3v" firstAttribute="bottom" secondItem="C6F-Nx-DUV" secondAttribute="bottom" constant="14.666666666666629" id="5mr-8d-zJf"/>
+                            <constraint firstItem="Pdd-CK-rVl" firstAttribute="centerX" secondItem="CH6-Of-e3v" secondAttribute="centerX" id="Ghj-v1-NKx"/>
+                            <constraint firstItem="bGv-GH-by9" firstAttribute="leading" secondItem="CH6-Of-e3v" secondAttribute="leading" id="MB1-G4-GL5"/>
+                            <constraint firstItem="bGv-GH-by9" firstAttribute="top" secondItem="Pdd-CK-rVl" secondAttribute="bottom" constant="10" id="PF2-lt-YTf"/>
+                            <constraint firstItem="C6F-Nx-DUV" firstAttribute="centerX" secondItem="CH6-Of-e3v" secondAttribute="centerX" id="Pxv-g2-P8x"/>
+                            <constraint firstItem="bGv-GH-by9" firstAttribute="leading" secondItem="CH6-Of-e3v" secondAttribute="leading" id="ZHh-WK-xRu"/>
+                            <constraint firstItem="bGv-GH-by9" firstAttribute="trailing" secondItem="CH6-Of-e3v" secondAttribute="trailing" id="i23-la-US1"/>
+                            <constraint firstItem="Jc0-Ih-DLM" firstAttribute="top" secondItem="CH6-Of-e3v" secondAttribute="top" id="s9N-7H-cic"/>
+                            <constraint firstItem="C6F-Nx-DUV" firstAttribute="top" secondItem="bGv-GH-by9" secondAttribute="bottom" constant="10" id="zL4-QQ-LwK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crear Orden" id="b0l-lH-LDa"/>
+                    <connections>
+                        <outlet property="currentOrderLabelView" destination="Jc0-Ih-DLM" id="mMM-EU-Pmv"/>
+                        <outlet property="currentOrderTableView" destination="bGv-GH-by9" id="ZDk-J1-Msb"/>
+                        <segue destination="IvM-yl-e1l" kind="show" identifier="ToAddDishInOrder" id="RVY-ug-KyQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ur-w4-iGy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1467.9389312977098" y="-265.49295774647891"/>
+        </scene>
+        <!--Agregar Platillo-->
+        <scene sceneID="1mp-WQ-AZu">
+            <objects>
+                <viewController id="IvM-yl-e1l" customClass="AddDishViewController" customModule="BJM_PI_CocinAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eVf-di-5kr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9zc-AV-dN6">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="addDishCell" id="9bG-8f-Q1V">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9bG-8f-Q1V" id="JOA-9j-tij">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dbc-WN-ZcC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9zc-AV-dN6" firstAttribute="top" secondItem="dbc-WN-ZcC" secondAttribute="top" id="4EA-4N-gg7"/>
+                            <constraint firstItem="dbc-WN-ZcC" firstAttribute="trailing" secondItem="9zc-AV-dN6" secondAttribute="trailing" id="D3y-Ko-iSo"/>
+                            <constraint firstItem="9zc-AV-dN6" firstAttribute="leading" secondItem="dbc-WN-ZcC" secondAttribute="leading" id="EJ3-id-cEu"/>
+                            <constraint firstItem="dbc-WN-ZcC" firstAttribute="bottom" secondItem="9zc-AV-dN6" secondAttribute="bottom" id="jcl-lh-UqT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Agregar Platillo" id="PEc-l7-iUB"/>
+                    <connections>
+                        <outlet property="availableDishesTableView" destination="9zc-AV-dN6" id="xD9-AP-zLO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVk-ck-7Lq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2262" y="-265"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WjY-Yf-UbZ">
+            <objects>
+                <navigationController id="fOA-BS-tEx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NnJ-a1-tbE">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bpC-UM-YmN" kind="relationship" relationship="rootViewController" id="ZNM-Mh-GZP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jSY-8x-d8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-219" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

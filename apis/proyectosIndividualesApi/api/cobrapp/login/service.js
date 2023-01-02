@@ -6,14 +6,24 @@ function signIn(username, password) {
         user.password === password
     )
 
-    if (user) return {
+    if (!user) throw `Invalid user credentials for <${username}>`
+
+    return {
         ...user,
         password: "******"
     }
+}
 
-    return null
+function validateUserAndToken(username, token) {
+    let user = users.find(user => 
+        user.username === username && 
+        user.token === token
+    )
+
+    if (!user) throw `Invalid user token for ${username}`
 }
 
 module.exports = {
-    signIn
+    signIn,
+    validateUserAndToken
 }

@@ -35,6 +35,45 @@ class ReclutarViewController: UIViewController, UITextViewDelegate {
             
             if nombre == "" {
                 // TODO: Alertar al usuario
+                let alert = UIAlertController(title: "No se pudo guardar", message: "El nombre es requerido", preferredStyle: .alert)
+                alert.addAction (
+                    UIAlertAction(title: "Aceptar", style: .default)
+                    
+                )
+                self.present(alert, animated: true)
+                return
+            }
+            
+            if apellidoP == "" {
+                // TODO: Alertar al usuario
+                let alert = UIAlertController(title: "No se pudo guardar", message: "El apellido es requerido", preferredStyle: .alert)
+                alert.addAction (
+                    UIAlertAction(title: "Aceptar", style: .default)
+                    
+                )
+                self.present(alert, animated: true)
+                return
+            }
+            
+            if apellidoM == "" {
+                // TODO: Alertar al usuario
+                let alert = UIAlertController(title: "No se pudo guardar", message: "El apellido es requerido", preferredStyle: .alert)
+                alert.addAction (
+                    UIAlertAction(title: "Aceptar", style: .default)
+                    
+                )
+                self.present(alert, animated: true)
+                return
+            }
+            
+            if direccion == "" {
+                // TODO: Alertar al usuario
+                let alert = UIAlertController(title: "No se pudo guardar", message: "La dirección es requerida", preferredStyle: .alert)
+                alert.addAction (
+                    UIAlertAction(title: "Aceptar", style: .default)
+                    
+                )
+                self.present(alert, animated: true)
                 return
             }
             

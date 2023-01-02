@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YnO-4J-nBk">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="uAt-2C-BNF">
+            <objects>
+                <navigationController id="YnO-4J-nBk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mm9-oA-cwl">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8A0-n1-hIw" kind="relationship" relationship="rootViewController" id="rjA-zH-ms8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3h-dn-VdO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-883" y="4"/>
+        </scene>
+        <!--Doña Blanca App-->
+        <scene sceneID="sMA-oW-xub">
+            <objects>
+                <viewController id="8A0-n1-hIw" customClass="ViewController" customModule="_501_Delegados" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WLP-aV-BZd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="9sy-B2-nwX">
+                                <rect key="frame" x="161.33333333333334" y="374.33333333333331" width="70.666666666666657" height="103.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOMBRE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1V-fl-zHB">
+                                        <rect key="frame" x="0.0" y="0.0" width="70.666666666666671" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRECIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCK-sI-QE1">
+                                        <rect key="frame" x="0.0" y="83.333333333333371" width="70.666666666666671" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vXi-lx-3XA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9sy-B2-nwX" firstAttribute="centerX" secondItem="WLP-aV-BZd" secondAttribute="centerX" id="KSn-43-Lmv"/>
+                            <constraint firstItem="9sy-B2-nwX" firstAttribute="centerY" secondItem="WLP-aV-BZd" secondAttribute="centerY" id="r1t-ga-xT2"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Doña Blanca App" id="f3r-Vo-ifR">
+                        <barButtonItem key="rightBarButtonItem" id="Eel-bl-k0p">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="pam-Nn-DdM">
+                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="agregarPlatilloAction:" destination="8A0-n1-hIw" eventType="touchUpInside" id="5m9-wS-Lzz"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="nombreLabel" destination="f1V-fl-zHB" id="aTK-Uz-MOo"/>
+                        <outlet property="precioLabel" destination="bCK-sI-QE1" id="G9g-8Z-I1g"/>
+                        <segue destination="InV-Cc-cQI" kind="show" identifier="SeleccionarPlatilloSegue" id="nAK-xu-3ge"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UbV-jH-rNc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8" y="4"/>
+        </scene>
+        <!--Seleccionar Platillo-->
+        <scene sceneID="oFK-BV-9KT">
+            <objects>
+                <viewController id="InV-Cc-cQI" customClass="SeleccionarPlatilloViewController" customModule="_501_Delegados" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Shf-X0-vTW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="5Ef-BT-nYn">
+                                <rect key="frame" x="143" y="292.66666666666669" width="107" height="267.00000000000006"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jn0-vy-ZpO">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Enchiladas"/>
+                                        <connections>
+                                            <action selector="seleccionarEnchiladasAction:" destination="InV-Cc-cQI" eventType="touchUpInside" id="BjZ-Dm-mf7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZx-GK-BzY">
+                                        <rect key="frame" x="0.0" y="116.3333333333333" width="107" height="34.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Chilaquiles"/>
+                                        <connections>
+                                            <action selector="seleccionarChilaquilesAction:" destination="InV-Cc-cQI" eventType="touchUpInside" id="DWc-yy-smi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrJ-Yh-vGO">
+                                        <rect key="frame" x="0.0" y="232.66666666666669" width="107" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Pambazo"/>
+                                        <connections>
+                                            <action selector="seleccionarPambazoAction:" destination="InV-Cc-cQI" eventType="touchUpInside" id="30T-NI-hJP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Brj-yI-4Cu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Ef-BT-nYn" firstAttribute="centerY" secondItem="Shf-X0-vTW" secondAttribute="centerY" id="O8E-Zp-uVF"/>
+                            <constraint firstItem="5Ef-BT-nYn" firstAttribute="centerX" secondItem="Shf-X0-vTW" secondAttribute="centerX" id="P3O-GB-Uxa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Seleccionar Platillo" id="xsr-7G-UiN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zN2-IR-T16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
