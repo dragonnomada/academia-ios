@@ -6,30 +6,24 @@
 //
 
 import UIKit
-import CoreData
+import CoreData //Importacion de CoreData para los datos persistentes.
 
 class PerfilViewController: UIViewController, UITextViewDelegate {
-    
     var prospectoPersistentContainer: NSPersistentContainer?
     ///Variable hecha para avisarle a mi PerfilView que va a recibir un prospecto dado por el perform y su didselectrow
     var prospecto: Prospecto?
     
+    ///Labels utilizados enlazados al storyboard
     @IBAction func entrevistarActionButton(_ sender: Any) {
-        if prospecto?.estado == "RECLUTADO" {
-            
-        }
+       
     }
     
     @IBAction func valorarActionLabel(_ sender: Any) {
-        if prospecto?.estado == "ENTREVISTADO" {
-            
-        }
+      
     }
     
     @IBAction func contratarLabel(_ sender: Any) {
-        if prospecto?.estado == "VALORADO" {
-            
-        }
+       
     }
     
     @IBOutlet weak var entrevistarIconLabel: UILabel!
@@ -52,6 +46,7 @@ class PerfilViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var diasRetrasoLabel: UILabel!
     
+    /// PrepareSegue para cada uno de los botones que nos redigiran hacia otras pantallas. pasando el prospecto a cada uno.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier  {
         case "EntrevistarSegue":
@@ -90,9 +85,9 @@ class PerfilViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         perfilImageView.layer.cornerRadius = perfilImageView.bounds.size.width / 2.0
-        
+        ///Instancia al prospecto
         if let prospecto = prospecto {
-            
+            //Switch para mostrar el estado en el que se encuentra el prospecto.
             switch prospecto.estado {
             case "ENTREVISTADO":
                 entrevistarIconLabel.text = "✅"
@@ -111,7 +106,7 @@ class PerfilViewController: UIViewController, UITextViewDelegate {
                 valorarIconLabel.text = "⌛️"
                 contratarIconLabel.text = "⌛️"
             }
-            
+            /// Asignación de los datos del prospecto
             if let nombreProspecto = prospecto.nombre {
                 let apellidoP = prospecto.apellidoPaterno
                 let apellidoM = prospecto.apellidoMaterno

@@ -1,27 +1,29 @@
 //
 //  SceneDelegate.swift
 //  NJJ_PI
-//
+//  Joel Brayan Navor Jimenez (joelnavorjimenez@gmail.com)
+//  Trabajo Creado el 27/12/22.
+//  Proyecto Individual ReclutaApp
 //  Created by MacBook on 27/12/22.
 //
 
 import UIKit
-import CoreData
+import CoreData // Impooración de core data para el uso de datos persistentes
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    
+    //Creación de la variable prospectosModel para asignarle los datos del contenedor recibidos del modelo con su key ("Prospectos")
     lazy var prospectosModel: NSPersistentContainer = {
           let container = NSPersistentContainer(name: "Prospectos")
-           
+           //container cargara los datos y de no lograrlo nos arrojara un error.
            container.loadPersistentStores(completionHandler: {
                (_, error) in
                if let error = error {
                    fatalError("No se puedieron cargar los datos del contenedor. Error: \(error)")
                }
            })
-           
+           //Si los carga correctamente los retornara.
            return container
        }()
 
@@ -31,12 +33,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        //vamos a instanciar una constante ya sea del tipo viewController para pantallas creadas con view controller o navigationController para pantallas creadas con NavigationController.
         
         if let viewController = window?.rootViewController as? ViewController {
+                  //le asignamos el modelo de datos persistentes a nuestro viewController
                   viewController.prospectoPersistentContainer = prospectosModel
               }
-              
+              //Tratamos de instancias una constante del tipo navigation controller de tipo rootViewController para despues asignarselo a nuestro viewController
               if let navigationController = window?.rootViewController as? UINavigationController {
+                  // Tratamos de crear una constante viewController para pasarle nuestro navigationController y proveerle de los datos persistentes del modelo.
                   if let viewController = navigationController.viewControllers.first as? ViewController {
                       viewController.prospectoPersistentContainer = prospectosModel
                   }

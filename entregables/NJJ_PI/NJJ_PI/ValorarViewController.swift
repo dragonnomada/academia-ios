@@ -11,15 +11,15 @@ import CoreData
 class ValorarViewController: UIViewController {
 
     
-    // TODO: Conectar el persistent
+    /// Conexion al persistent Container
     var reclutappPersistentContainer: NSPersistentContainer?
     
-    // TODO: Recibir el objeto persistente
+    /// Instancia a prospecto de tipo Prospecto
     var prospecto: Prospecto?
     
     @IBOutlet weak var valorarButton: UIButton!
     
-    //  cada switch como @IBOutlet
+    /// Cada switch como @IBOutlet
     @IBOutlet weak var sqlSwitch: UISwitch!
     @IBOutlet weak var pythonSwitch: UISwitch!
     @IBOutlet weak var promedioSwitch: UISwitch!
@@ -27,14 +27,14 @@ class ValorarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /// Asosiación de cada switch al atributos del prospecto
         if let prospecto = prospecto {
             sqlSwitch.isOn = prospecto.tieneSql
             pythonSwitch.isOn = prospecto.tienePyhton
             promedioSwitch.isOn = prospecto.tieneAprobatorio
             mencionHonorificaSwitch.isOn = prospecto.tieneHonorifica
         }
-        
+        /// Comprobación de que los switches esten todos "on" para permitir cambiar el esto del prospecto al presionar el botón
         if prospecto?.tieneSql == false || prospecto?.tienePyhton == false || prospecto?.tieneAprobatorio == false || prospecto?.tieneHonorifica == false {
             valorarButton.isEnabled = false
         } else {
@@ -42,22 +42,25 @@ class ValorarViewController: UIViewController {
         }
         
     }
-    
+    /// Función para guardar el estado de los switches enlazados a los atributos del prospecto
     @IBAction func saveValorarAction(_ sender: Any) {
+        /// Recuperación del contexto
         if let context = reclutappPersistentContainer?.viewContext {
             print("Recuperé el contexto: TIENE CAMBIOS? \(context.hasChanges ? "SI" : "NO")")
             do {
+                /// Guardar los cambios en el contexto
                 try context.save()
-                print("Se guardó el prospecto")
+                /// Animación ejecutada al presionar el botón
                 self.navigationController?.popViewController(animated: true)
             } catch {
+                /// Si ocurre algun error ejecutar rollback()
                 context.rollback()
-                print("NO PUDE GUARDAR EL CONTEXTO AL ENTREVISTAR")
+                
             }
         }
     }
     
-    
+    /// Switchs que al activarse indicara que el prospecto cuenta con cada uno de los atributos que se presentan a continuación solo si cuenta con cada uno.
     @IBAction func sqlSwitchAction(_ sender: Any) {
         prospecto?.tieneSql = sqlSwitch.isOn
         prospecto?.fechaActualizado = Date.now
@@ -72,7 +75,7 @@ class ValorarViewController: UIViewController {
         prospecto?.tieneAprobatorio = promedioSwitch.isOn
         prospecto?.fechaActualizado = Date.now
     }
-    
+    /// Botón para cambiar el estado a "VALORADO"
     @IBAction func completarValoraciónActionButton(_ sender: Any) {
         prospecto?.estado = "VALORADO"
     }
