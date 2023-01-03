@@ -14,6 +14,8 @@
 		FA5F53402964C4A400035FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5F533F2964C4A400035FEE /* Assets.xcassets */; };
 		FA5F53432964C4A400035FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5F53412964C4A400035FEE /* LaunchScreen.storyboard */; };
 		FA5F534C2964C50400035FEE /* ModelUsuario.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA5F534A2964C50400035FEE /* ModelUsuario.xcdatamodeld */; };
+		FA5F534F2964DCCF00035FEE /* inventarioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F534E2964DCCF00035FEE /* inventarioModel.swift */; };
+		FA5F53542964F20600035FEE /* TestInventaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F53532964F20600035FEE /* TestInventaryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FA5F53422964C4A400035FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA5F53442964C4A400035FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA5F534B2964C50400035FEE /* ModelUsuario.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelUsuario.xcdatamodel; sourceTree = "<group>"; };
+		FA5F534E2964DCCF00035FEE /* inventarioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventarioModel.swift; sourceTree = "<group>"; };
+		FA5F53532964F20600035FEE /* TestInventaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInventaryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,9 @@
 		FA5F53352964C4A300035FEE /* InventarioApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA5F53522964F1DC00035FEE /* Tests */,
+				FA5F53512964E38C00035FEE /* Controllers */,
+				FA5F534D2964DCA100035FEE /* InventarioModel */,
 				FA5F53362964C4A300035FEE /* AppDelegate.swift */,
 				FA5F53382964C4A300035FEE /* SceneDelegate.swift */,
 				FA5F533A2964C4A300035FEE /* ViewController.swift */,
@@ -68,6 +75,29 @@
 				FA5F534A2964C50400035FEE /* ModelUsuario.xcdatamodeld */,
 			);
 			path = InventarioApp;
+			sourceTree = "<group>";
+		};
+		FA5F534D2964DCA100035FEE /* InventarioModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F534E2964DCCF00035FEE /* inventarioModel.swift */,
+			);
+			path = InventarioModel;
+			sourceTree = "<group>";
+		};
+		FA5F53512964E38C00035FEE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA5F53522964F1DC00035FEE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F53532964F20600035FEE /* TestInventaryModel.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +175,8 @@
 				FA5F53372964C4A300035FEE /* AppDelegate.swift in Sources */,
 				FA5F534C2964C50400035FEE /* ModelUsuario.xcdatamodeld in Sources */,
 				FA5F53392964C4A300035FEE /* SceneDelegate.swift in Sources */,
+				FA5F53542964F20600035FEE /* TestInventaryModel.swift in Sources */,
+				FA5F534F2964DCCF00035FEE /* inventarioModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
