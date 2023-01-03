@@ -1,4 +1,4 @@
-# Proyecto Individual 1 - CalendApp
+# Proyecto Individual 2 - CalendApp
 
 Por [Alan Badillo Salas](https://www.nomadacode.com)
 
