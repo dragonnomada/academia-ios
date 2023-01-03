@@ -1,7 +1,9 @@
 //
 //  ValorarViewController.swift
 //  NJJ_PI
-//
+//  Joel Brayan Navor Jimenez (joelnavorjimenez@gmail.com)
+//  Trabajo Creado el 27/12/22.
+//  Proyecto Individual ReclutaApp
 //  Created by MacBook on 27/12/22.
 //
 
