@@ -19,6 +19,9 @@ class InventModel {
             print("data core cargado exitosamente")
         }
         
+        
+        
+        
         return container
     }()
     
@@ -103,29 +106,23 @@ class InventModel {
         }
     }
     
-    func addTransaccion(productoId: Int64, balance: Int64, entrada: Bool, unidades: Int64) -> TransaccionEntity? {
+    func addTransaccion(balance: Int64, entrada: Bool, unidades: Int64, producto: ProductoEntity) -> TransaccionEntity? {
+        let context = self.persistentContainer.viewContext
+        let transaccion = TransaccionEntity(context: context)
         
-        if let producto = self.getProducto(id: productoId) {
-            let context = self.persistentContainer.viewContext
-            let transaccion = TransaccionEntity(context: context)
-            
-            transaccion.balance = balance
-            transaccion.entrada = entrada
-            transaccion.unidades = unidades
-            transaccion.producto = producto
-            
-            do{
-                try context.save()
-                self.loadTransacciones()
-                return transaccion
-            }catch{
-                context.rollback()
-                return nil
-            }
-        } else {
+        transaccion.balance = balance
+        transaccion.entrada = entrada
+        transaccion.unidades = unidades
+        transaccion.producto = producto
+        
+        do{
+            try context.save()
+            self.loadTransacciones()
+            return transaccion
+        }catch{
+            context.rollback()
             return nil
         }
-        
     }
     
     func addUsuario(nombre: String, password: String) -> UsuarioEntity? {
