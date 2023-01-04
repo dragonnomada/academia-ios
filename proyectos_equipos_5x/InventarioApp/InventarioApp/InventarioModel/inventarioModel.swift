@@ -16,6 +16,7 @@ class InventModel {
             if let error = error{
                 fatalError("no existe el contenedor \(error)")
             }
+            print("data core cargado exitosamente")
         }
         return container
     }()
@@ -49,30 +50,109 @@ class InventModel {
         }
     }
     
-    func getProducto(index: Int) -> ProductoEntity? {
-        guard index >= 0 && index < productos.count else {
-            return nil
+    func getProducto(id: Int64) -> ProductoEntity? {
+        var resultado: ProductoEntity?
+
+        for producto in productos {
+            if producto.id == id {
+                resultado = producto
+            }
         }
-        return self.productos[index]
+
+        return resultado
     }
 
     
-    func getTranssacion(index: Int) -> TransaccionEntity? {
-        guard index >= 0 && index < transsaciones.count else {
+//    func getTranssacion(index: Int) -> TransaccionEntity? {
+//        guard index >= 0 && index < transsaciones.count else {
+//            return nil
+//        }
+//        return self.transsaciones[index]
+//    }
+    
+    
+//    func getUsuario(index: Int) -> UsuarioEntity? {
+//        guard index >= 0 && index < usuarios.count else {
+//            return nil
+//        }
+//        return self.usuarios[index]
+//    }
+
+    
+    
+    func addProducto(existencias: Int64, image: Data, nombre: String, precio: Double) -> ProductoEntity? {
+        // recordemos que la informacion esta en el contexto, hasta que ejecutemos el metodo save del contexto
+        let context = self.persistentContainer.viewContext
+        let producto = ProductoEntity(context: context)
+        
+        producto.id = Int64.random(in: 1...1_000_000)
+        producto.image = image
+        producto.existencias = existencias
+        producto.nombre = nombre
+        producto.precio = precio
+        
+        
+        do{
+            try context.save()
+            self.loadProductos()
+            return producto
+        }catch{
+            context.rollback()
             return nil
         }
-        return self.transsaciones[index]
     }
     
-    
-    func getUsuario(index: Int) -> UsuarioEntity? {
-        guard index >= 0 && index < usuarios.count else {
+    func addTransaccion(balance: Int64, entrada: Bool, unidades: Int64, producto: ProductoEntity) -> TransaccionEntity? {
+        let context = self.persistentContainer.viewContext
+        let transaccion = TransaccionEntity(context: context)
+        
+        transaccion.balance = balance
+        transaccion.entrada = entrada
+        transaccion.unidades = unidades
+        transaccion.producto = producto
+        
+        do{
+            try context.save()
+            self.loadTransacciones()
+            return transaccion
+        }catch{
+            context.rollback()
             return nil
         }
-        return self.usuarios[index]
     }
-
-
     
+    func addUsuario(nombre: String, password: String) -> UsuarioEntity? {
+        let context = self.persistentContainer.viewContext
+        let usuario = UsuarioEntity(context: context)
+        
+        usuario.nombre = nombre
+        usuario.password = password
+        
+        do{
+            try context.save()
+            self.loadUsuarios()
+            return usuario
+        }catch{
+            context.rollback()
+            return nil
+        }
+    }
     
+    func updateProducto(id: Int64, existencias: Int64?, imagen: Data?, nombre: String?, precio: Double?) -> ProductoEntity? {
+        if let producto = getProducto(id: id){
+            if let existencias = existencias{
+                producto.existencias = existencias
+            }
+            if let imagen = imagen{
+                producto.image = imagen
+            }
+            if let name = nombre{
+                producto.nombre = name
+            }
+            if let precio = precio{
+                producto.precio = precio
+            }
+        }
+        return nil
+    }
 }
