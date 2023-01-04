@@ -62,6 +62,7 @@
 		FA5F53352964C4A300035FEE /* InventarioApp */ = {
 			isa = PBXGroup;
 			children = (
+				FAD4F5ED2965FE0C00A02BDB /* views */,
 				FA5F53522964F1DC00035FEE /* Tests */,
 				FA5F53512964E38C00035FEE /* Controllers */,
 				FA5F534D2964DCA100035FEE /* InventarioModel */,
@@ -98,6 +99,13 @@
 				FA5F53532964F20600035FEE /* TestInventaryModel.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		FAD4F5ED2965FE0C00A02BDB /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
