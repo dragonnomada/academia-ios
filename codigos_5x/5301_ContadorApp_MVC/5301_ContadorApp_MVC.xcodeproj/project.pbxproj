@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8993AF12965CE3E00F8CDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993AF02965CE3E00F8CDDA /* AppDelegate.swift */; };
+		D8993AF32965CE3E00F8CDDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993AF22965CE3E00F8CDDA /* SceneDelegate.swift */; };
+		D8993AF52965CE3E00F8CDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993AF42965CE3E00F8CDDA /* ViewController.swift */; };
+		D8993AF82965CE3F00F8CDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8993AF62965CE3F00F8CDDA /* Main.storyboard */; };
+		D8993AFA2965CE5500F8CDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8993AF92965CE5500F8CDDA /* Assets.xcassets */; };
+		D8993AFD2965CE5500F8CDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8993AFB2965CE5500F8CDDA /* LaunchScreen.storyboard */; };
+		D8993B082965CE5700F8CDDA /* _301_ContadorApp_MVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993B072965CE5700F8CDDA /* _301_ContadorApp_MVCTests.swift */; };
+		D8993B122965CE5700F8CDDA /* _301_ContadorApp_MVCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993B112965CE5700F8CDDA /* _301_ContadorApp_MVCUITests.swift */; };
+		D8993B142965CE5700F8CDDA /* _301_ContadorApp_MVCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993B132965CE5700F8CDDA /* _301_ContadorApp_MVCUITestsLaunchTests.swift */; };
+		D8993B252965CF0E00F8CDDA /* ContadorApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8993B232965CF0E00F8CDDA /* ContadorApp.xcdatamodeld */; };
+		D8993B272965CF5200F8CDDA /* ContadorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993B262965CF5200F8CDDA /* ContadorModel.swift */; };
+		D8993B292965D1EE00F8CDDA /* ContadorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993B282965D1EE00F8CDDA /* ContadorController.swift */; };
+		D8993B2B2965D36100F8CDDA /* ContadorHomeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993B2A2965D36100F8CDDA /* ContadorHomeDelegate.swift */; };
+		D8993B2D2965D4CE00F8CDDA /* ContadorOperationsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993B2C2965D4CE00F8CDDA /* ContadorOperationsDelegate.swift */; };
+		D8993B2F2965D70000F8CDDA /* ContadorHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993B2E2965D70000F8CDDA /* ContadorHomeViewController.swift */; };
+		D8993B312965D72E00F8CDDA /* ContadorOperationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993B302965D72E00F8CDDA /* ContadorOperationsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8993B042965CE5700F8CDDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8993AE52965CE3E00F8CDDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8993AEC2965CE3E00F8CDDA;
+			remoteInfo = 5301_ContadorApp_MVC;
+		};
+		D8993B0E2965CE5700F8CDDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8993AE52965CE3E00F8CDDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8993AEC2965CE3E00F8CDDA;
+			remoteInfo = 5301_ContadorApp_MVC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8993AED2965CE3E00F8CDDA /* 5301_ContadorApp_MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5301_ContadorApp_MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8993AF02965CE3E00F8CDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8993AF22965CE3E00F8CDDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D8993AF42965CE3E00F8CDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8993AF72965CE3F00F8CDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8993AF92965CE5500F8CDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8993AFC2965CE5500F8CDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8993AFE2965CE5500F8CDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8993B032965CE5700F8CDDA /* 5301_ContadorApp_MVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 5301_ContadorApp_MVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8993B072965CE5700F8CDDA /* _301_ContadorApp_MVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _301_ContadorApp_MVCTests.swift; sourceTree = "<group>"; };
+		D8993B0D2965CE5700F8CDDA /* 5301_ContadorApp_MVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 5301_ContadorApp_MVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8993B112965CE5700F8CDDA /* _301_ContadorApp_MVCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _301_ContadorApp_MVCUITests.swift; sourceTree = "<group>"; };
+		D8993B132965CE5700F8CDDA /* _301_ContadorApp_MVCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _301_ContadorApp_MVCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D8993B242965CF0E00F8CDDA /* ContadorApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContadorApp.xcdatamodel; sourceTree = "<group>"; };
+		D8993B262965CF5200F8CDDA /* ContadorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorModel.swift; sourceTree = "<group>"; };
+		D8993B282965D1EE00F8CDDA /* ContadorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorController.swift; sourceTree = "<group>"; };
+		D8993B2A2965D36100F8CDDA /* ContadorHomeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorHomeDelegate.swift; sourceTree = "<group>"; };
+		D8993B2C2965D4CE00F8CDDA /* ContadorOperationsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorOperationsDelegate.swift; sourceTree = "<group>"; };
+		D8993B2E2965D70000F8CDDA /* ContadorHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorHomeViewController.swift; sourceTree = "<group>"; };
+		D8993B302965D72E00F8CDDA /* ContadorOperationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorOperationsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8993AEA2965CE3E00F8CDDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8993B002965CE5700F8CDDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8993B0A2965CE5700F8CDDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8993AE42965CE3E00F8CDDA = {
+			isa = PBXGroup;
+			children = (
+				D8993AEF2965CE3E00F8CDDA /* 5301_ContadorApp_MVC */,
+				D8993B062965CE5700F8CDDA /* 5301_ContadorApp_MVCTests */,
+				D8993B102965CE5700F8CDDA /* 5301_ContadorApp_MVCUITests */,
+				D8993AEE2965CE3E00F8CDDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8993AEE2965CE3E00F8CDDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8993AED2965CE3E00F8CDDA /* 5301_ContadorApp_MVC.app */,
+				D8993B032965CE5700F8CDDA /* 5301_ContadorApp_MVCTests.xctest */,
+				D8993B0D2965CE5700F8CDDA /* 5301_ContadorApp_MVCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8993AEF2965CE3E00F8CDDA /* 5301_ContadorApp_MVC */ = {
+			isa = PBXGroup;
+			children = (
+				D8993B222965CEE700F8CDDA /* Controllers */,
+				D8993B212965CEDC00F8CDDA /* Models */,
+				D8993B202965CEC100F8CDDA /* Views */,
+				D8993AF02965CE3E00F8CDDA /* AppDelegate.swift */,
+				D8993AF22965CE3E00F8CDDA /* SceneDelegate.swift */,
+				D8993AF42965CE3E00F8CDDA /* ViewController.swift */,
+				D8993AF62965CE3F00F8CDDA /* Main.storyboard */,
+				D8993AF92965CE5500F8CDDA /* Assets.xcassets */,
+				D8993AFB2965CE5500F8CDDA /* LaunchScreen.storyboard */,
+				D8993AFE2965CE5500F8CDDA /* Info.plist */,
+			);
+			path = 5301_ContadorApp_MVC;
+			sourceTree = "<group>";
+		};
+		D8993B062965CE5700F8CDDA /* 5301_ContadorApp_MVCTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8993B072965CE5700F8CDDA /* _301_ContadorApp_MVCTests.swift */,
+			);
+			path = 5301_ContadorApp_MVCTests;
+			sourceTree = "<group>";
+		};
+		D8993B102965CE5700F8CDDA /* 5301_ContadorApp_MVCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8993B112965CE5700F8CDDA /* _301_ContadorApp_MVCUITests.swift */,
+				D8993B132965CE5700F8CDDA /* _301_ContadorApp_MVCUITestsLaunchTests.swift */,
+			);
+			path = 5301_ContadorApp_MVCUITests;
+			sourceTree = "<group>";
+		};
+		D8993B202965CEC100F8CDDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8993B2E2965D70000F8CDDA /* ContadorHomeViewController.swift */,
+				D8993B302965D72E00F8CDDA /* ContadorOperationsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D8993B212965CEDC00F8CDDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D8993B232965CF0E00F8CDDA /* ContadorApp.xcdatamodeld */,
+				D8993B262965CF5200F8CDDA /* ContadorModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D8993B222965CEE700F8CDDA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8993B282965D1EE00F8CDDA /* ContadorController.swift */,
+				D8993B2A2965D36100F8CDDA /* ContadorHomeDelegate.swift */,
+				D8993B2C2965D4CE00F8CDDA /* ContadorOperationsDelegate.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8993AEC2965CE3E00F8CDDA /* 5301_ContadorApp_MVC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8993B172965CE5700F8CDDA /* Build configuration list for PBXNativeTarget "5301_ContadorApp_MVC" */;
+			buildPhases = (
+				D8993AE92965CE3E00F8CDDA /* Sources */,
+				D8993AEA2965CE3E00F8CDDA /* Frameworks */,
+				D8993AEB2965CE3E00F8CDDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 5301_ContadorApp_MVC;
+			productName = 5301_ContadorApp_MVC;
+			productReference = D8993AED2965CE3E00F8CDDA /* 5301_ContadorApp_MVC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8993B022965CE5700F8CDDA /* 5301_ContadorApp_MVCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8993B1A2965CE5700F8CDDA /* Build configuration list for PBXNativeTarget "5301_ContadorApp_MVCTests" */;
+			buildPhases = (
+				D8993AFF2965CE5700F8CDDA /* Sources */,
+				D8993B002965CE5700F8CDDA /* Frameworks */,
+				D8993B012965CE5700F8CDDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8993B052965CE5700F8CDDA /* PBXTargetDependency */,
+			);
+			name = 5301_ContadorApp_MVCTests;
+			productName = 5301_ContadorApp_MVCTests;
+			productReference = D8993B032965CE5700F8CDDA /* 5301_ContadorApp_MVCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8993B0C2965CE5700F8CDDA /* 5301_ContadorApp_MVCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8993B1D2965CE5700F8CDDA /* Build configuration list for PBXNativeTarget "5301_ContadorApp_MVCUITests" */;
+			buildPhases = (
+				D8993B092965CE5700F8CDDA /* Sources */,
+				D8993B0A2965CE5700F8CDDA /* Frameworks */,
+				D8993B0B2965CE5700F8CDDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8993B0F2965CE5700F8CDDA /* PBXTargetDependency */,
+			);
+			name = 5301_ContadorApp_MVCUITests;
+			productName = 5301_ContadorApp_MVCUITests;
+			productReference = D8993B0D2965CE5700F8CDDA /* 5301_ContadorApp_MVCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8993AE52965CE3E00F8CDDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D8993AEC2965CE3E00F8CDDA = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					D8993B022965CE5700F8CDDA = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D8993AEC2965CE3E00F8CDDA;
+					};
+					D8993B0C2965CE5700F8CDDA = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D8993AEC2965CE3E00F8CDDA;
+					};
+				};
+			};
+			buildConfigurationList = D8993AE82965CE3E00F8CDDA /* Build configuration list for PBXProject "5301_ContadorApp_MVC" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8993AE42965CE3E00F8CDDA;
+			productRefGroup = D8993AEE2965CE3E00F8CDDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8993AEC2965CE3E00F8CDDA /* 5301_ContadorApp_MVC */,
+				D8993B022965CE5700F8CDDA /* 5301_ContadorApp_MVCTests */,
+				D8993B0C2965CE5700F8CDDA /* 5301_ContadorApp_MVCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8993AEB2965CE3E00F8CDDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8993AFD2965CE5500F8CDDA /* LaunchScreen.storyboard in Resources */,
+				D8993AFA2965CE5500F8CDDA /* Assets.xcassets in Resources */,
+				D8993AF82965CE3F00F8CDDA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8993B012965CE5700F8CDDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8993B0B2965CE5700F8CDDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8993AE92965CE3E00F8CDDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8993B312965D72E00F8CDDA /* ContadorOperationsViewController.swift in Sources */,
+				D8993B2D2965D4CE00F8CDDA /* ContadorOperationsDelegate.swift in Sources */,
+				D8993AF52965CE3E00F8CDDA /* ViewController.swift in Sources */,
+				D8993AF12965CE3E00F8CDDA /* AppDelegate.swift in Sources */,
+				D8993AF32965CE3E00F8CDDA /* SceneDelegate.swift in Sources */,
+				D8993B292965D1EE00F8CDDA /* ContadorController.swift in Sources */,
+				D8993B252965CF0E00F8CDDA /* ContadorApp.xcdatamodeld in Sources */,
+				D8993B2F2965D70000F8CDDA /* ContadorHomeViewController.swift in Sources */,
+				D8993B2B2965D36100F8CDDA /* ContadorHomeDelegate.swift in Sources */,
+				D8993B272965CF5200F8CDDA /* ContadorModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8993AFF2965CE5700F8CDDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8993B082965CE5700F8CDDA /* _301_ContadorApp_MVCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8993B092965CE5700F8CDDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8993B142965CE5700F8CDDA /* _301_ContadorApp_MVCUITestsLaunchTests.swift in Sources */,
+				D8993B122965CE5700F8CDDA /* _301_ContadorApp_MVCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8993B052965CE5700F8CDDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8993AEC2965CE3E00F8CDDA /* 5301_ContadorApp_MVC */;
+			targetProxy = D8993B042965CE5700F8CDDA /* PBXContainerItemProxy */;
+		};
+		D8993B0F2965CE5700F8CDDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8993AEC2965CE3E00F8CDDA /* 5301_ContadorApp_MVC */;
+			targetProxy = D8993B0E2965CE5700F8CDDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8993AF62965CE3F00F8CDDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8993AF72965CE3F00F8CDDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8993AFB2965CE5500F8CDDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8993AFC2965CE5500F8CDDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8993B152965CE5700F8CDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8993B162965CE5700F8CDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8993B182965CE5700F8CDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 5301_ContadorApp_MVC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-301-ContadorApp-MVC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8993B192965CE5700F8CDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 5301_ContadorApp_MVC/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-301-ContadorApp-MVC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8993B1B2965CE5700F8CDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-301-ContadorApp-MVCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/5301_ContadorApp_MVC.app/5301_ContadorApp_MVC";
+			};
+			name = Debug;
+		};
+		D8993B1C2965CE5700F8CDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-301-ContadorApp-MVCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/5301_ContadorApp_MVC.app/5301_ContadorApp_MVC";
+			};
+			name = Release;
+		};
+		D8993B1E2965CE5700F8CDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-301-ContadorApp-MVCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 5301_ContadorApp_MVC;
+			};
+			name = Debug;
+		};
+		D8993B1F2965CE5700F8CDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-301-ContadorApp-MVCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 5301_ContadorApp_MVC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8993AE82965CE3E00F8CDDA /* Build configuration list for PBXProject "5301_ContadorApp_MVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8993B152965CE5700F8CDDA /* Debug */,
+				D8993B162965CE5700F8CDDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8993B172965CE5700F8CDDA /* Build configuration list for PBXNativeTarget "5301_ContadorApp_MVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8993B182965CE5700F8CDDA /* Debug */,
+				D8993B192965CE5700F8CDDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8993B1A2965CE5700F8CDDA /* Build configuration list for PBXNativeTarget "5301_ContadorApp_MVCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8993B1B2965CE5700F8CDDA /* Debug */,
+				D8993B1C2965CE5700F8CDDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8993B1D2965CE5700F8CDDA /* Build configuration list for PBXNativeTarget "5301_ContadorApp_MVCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8993B1E2965CE5700F8CDDA /* Debug */,
+				D8993B1F2965CE5700F8CDDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8993B232965CF0E00F8CDDA /* ContadorApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8993B242965CF0E00F8CDDA /* ContadorApp.xcdatamodel */,
+			);
+			currentVersion = D8993B242965CF0E00F8CDDA /* ContadorApp.xcdatamodel */;
+			path = ContadorApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D8993AE52965CE3E00F8CDDA /* Project object */;
+}
