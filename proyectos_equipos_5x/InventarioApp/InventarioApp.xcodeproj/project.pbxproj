@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		52AE1B5029664327003AAE8A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AE1B4E29664327003AAE8A /* TableViewCell.swift */; };
 		52AE1B5129664327003AAE8A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AE1B4F29664327003AAE8A /* TableViewCell.xib */; };
+		52AE1B5329664A0C003AAE8A /* InventarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AE1B5229664A0C003AAE8A /* InventarioController.swift */; };
 		FA5F53372964C4A300035FEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F53362964C4A300035FEE /* AppDelegate.swift */; };
 		FA5F53392964C4A300035FEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F53382964C4A300035FEE /* SceneDelegate.swift */; };
 		FA5F533B2964C4A300035FEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F533A2964C4A300035FEE /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		52AE1B4E29664327003AAE8A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		52AE1B4F29664327003AAE8A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		52AE1B5229664A0C003AAE8A /* InventarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InventarioController.swift; path = InventarioApp/InventarioController.swift; sourceTree = SOURCE_ROOT; };
 		FA5F53332964C4A300035FEE /* InventarioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventarioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5F53362964C4A300035FEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA5F53382964C4A300035FEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		FA5F53512964E38C00035FEE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				52AE1B5229664A0C003AAE8A /* InventarioController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				FA5F534C2964C50400035FEE /* ModelUsuario.xcdatamodeld in Sources */,
 				FA5F53392964C4A300035FEE /* SceneDelegate.swift in Sources */,
 				FA5F53542964F20600035FEE /* TestInventaryModel.swift in Sources */,
+				52AE1B5329664A0C003AAE8A /* InventarioController.swift in Sources */,
 				52AE1B5029664327003AAE8A /* TableViewCell.swift in Sources */,
 				FA5F534F2964DCCF00035FEE /* inventarioModel.swift in Sources */,
 			);
