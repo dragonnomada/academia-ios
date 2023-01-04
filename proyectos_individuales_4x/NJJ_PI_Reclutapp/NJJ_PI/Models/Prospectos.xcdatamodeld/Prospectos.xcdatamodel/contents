@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22A400" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Prospecto" representedClassName="Prospecto" syncable="YES" codeGenerationType="class">
+        <attribute name="apellidoMaterno" optional="YES" attributeType="String"/>
+        <attribute name="apellidoPaterno" optional="YES" attributeType="String"/>
+        <attribute name="direccion" optional="YES" attributeType="String"/>
+        <attribute name="estado" optional="YES" attributeType="String" defaultValueString="RECLUTADO"/>
+        <attribute name="examenAptitudes" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="examenFisico" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="fechaActualizado" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fechaInicio" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imagenPerfil" optional="YES" attributeType="Binary"/>
+        <attribute name="nombre" optional="YES" attributeType="String"/>
+        <attribute name="referido" optional="YES" attributeType="String"/>
+        <attribute name="tieneActaNacimiento" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="tieneAprobatorio" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="tieneCedula" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="tieneCirculoCredito" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="tieneCurp" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="tieneExamenHabilidades" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="tieneHonorifica" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="tienePsicometric" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="tienePyhton" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="tieneSql" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+</model>
