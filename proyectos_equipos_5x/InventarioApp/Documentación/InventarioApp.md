@@ -1,55 +1,114 @@
-**Controller**
-    // let productSelected
+# **Inventario App MVC**
+## **Model**
 
-    // LoginView
-    getUsuario(nombre: String, password: String) // Verifica usuario en el Modelo
+```Swift
+// Usuario
+struct UsuarioEntity {
+    var nombre: String?
+    var password: String?
+}
+```
+```Swift
+// Producto
+struct ProductoEntity {
+    var imangen: Data?
+    var id: Int?
+    var nombre: String?
+    var precio: Double?
+    var existencia: Int?
+}
+```
+```Swift
+//Transaccion
+struct TransaccionEntity {
+    var producto: ProductoEntity?
+    var entrada: Bool?
+    var unidades: Int?
+    var balance: Int?
+}
+```
+
+```Swift
+// Usuario
+class InventarioAppModel {
+    let container: NSPersistentContainer
+    var productSelected: ProductEntity?
+    var ...
+}
+```
+
+
+
+## **Controller**
+
+```Swift
+    /// LoginView
+    getUsuario(nombre: String, password: String) 
     
-    // HomeView
+    /// HomeView
     getAllproducts()
     selectProducto(index: Int)
     
-    // AddProductView
-    addProduct(nombre: String, imagen: Data, precio: Double) // Agrega Producto
+    /// AddProductView
+    addProduct(nombre: String, imagen: Data, precio: Double) 
     
-    // DetailsProductView
+    /// DetailsProductView
     getSelectedProduct()
     filterSelectedProductTransactions()
     
-    // EditProductView
+    /// EditProductView
     editProduct(nombre: String, imagen: Data, precio: Double)
     
-    // AddTransaction
-    addSelectedProductTransaccion(entrada: Boolean, unidades: Int, Balance: Int) // Agrega Transaccion
+    /// AddTransaction
+    addSelectedProductTransaccion(entrada: Bool, unidades: Int, Balance: Int) 
+```
+
     
     
-    
-**InventarioLoginDelegate**
+## **InventarioLoginDelegate**
+
+```Swift
+    /// LoginView
     login(usuarioSeleccionado: UsuarioEntity)
     loginError(loginError error: String)
+```
+## **InventarioHomeDelegate**
 
-**InventarioHomeDelegate**
-    inventario(productos:[(producto: ProductoEntity, transacciones: [TransactionEntity])])
+```Swift
+    /// HomeView
+    inventario(productos:[(producto: ProductoEntity, transacciones: [TransaccionEntity])])
     inventario(loadInvenatarioError error: String)
+```
 
-**InventarioAddProductDelegate**
+## **InventarioAddProductDelegate**
+
+```Swift
+    /// AddProductView
     inventario(productAdded producto: ProductoEntity)
     inventario(addProductError error: String)
+```
 
-**InventarioDetailsDelegate**
-    inventarioDetails(productoSelected: producto: ProductoEntity, transacciones: [TransactionEntity])
+
+## **InventarioDetailsDelegate**
+
+```Swift
+    /// DetailsProductView
+    inventarioDetails(productoSelected: producto: ProductoEntity, transacciones: [TransaccionEntity])
     inventario(filterTransactionsError error: String)
     inventario(selectProductError error: String)
+```
+## **InventarioEditProductDelegate**
 
-**InventarioEditProductDelegate**
+```Swift
+    /// EditProductView
     inventario(productEditted: ProductoEntity)
     inventario(editError: String)
+```
 
-**InventarioAddEntradaDelegate**
-    inventario(productSelected product: ProductoEntity, transacciones: [TransactionEntity])
-    inventario(addTransactionError error: String)
+## **InventarioAddEntradaDelegate**
 
-    extension Vista: IndeAppDEle {
-        inventario(productAdded producto: ProductoEntity){
-          dismiss  
-        }
-    }
+```Swift
+    /// AddTransaction
+    inventario(productSelected product: ProductoEntity, transacciones: [TransaccionEntity])
+    inventario(addTransaccionError error: String)
+```
