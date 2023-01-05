@@ -100,11 +100,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fQY-T7-jqZ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cLa-ic-sVz"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cLa-ic-sVz">
+                            <connections>
+                                <action selector="qw:" destination="OU2-U5-LdU" id="yjQ-yY-Fhk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="i83-IJ-Dof" kind="show" identifier="Home_add_Segue" id="ury-EM-zTf"/>
-                        <segue destination="h5h-c9-gCw" kind="show" identifier="Home_details_Suwgw" id="Y6l-zz-SOi"/>
+                        <segue destination="i83-IJ-Dof" kind="show" identifier="Home_Add_Segue" id="ury-EM-zTf"/>
+                        <segue destination="h5h-c9-gCw" kind="show" identifier="Home_Details_Segue" id="Y6l-zz-SOi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P8C-EE-H8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -226,35 +230,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mhS-9H-OHV">
-                                <rect key="frame" x="0.0" y="103" width="393" height="160"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DL1-kJ-ApC">
+                                <rect key="frame" x="10" y="113" width="373" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rzf-Re-oKs">
+                                        <rect key="frame" x="10" y="0.0" width="353" height="300"/>
+                                    </imageView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="qa7-s5-Okj"/>
+                                    <constraint firstItem="rzf-Re-oKs" firstAttribute="leading" secondItem="DL1-kJ-ApC" secondAttribute="leading" constant="10" id="Kz7-31-oNf"/>
+                                    <constraint firstAttribute="height" constant="300" id="lXj-Lj-5A0"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIC-0g-Wnn">
-                                <rect key="frame" x="20" y="273" width="353" height="4"/>
-                                <color key="backgroundColor" red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="0.32586639606400042" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="4" id="vsy-ji-AHf"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="trL-60-R6l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="XIC-0g-Wnn" firstAttribute="top" secondItem="mhS-9H-OHV" secondAttribute="bottom" constant="10" id="8Ed-ng-X7u"/>
-                            <constraint firstItem="XIC-0g-Wnn" firstAttribute="leading" secondItem="trL-60-R6l" secondAttribute="leading" constant="20" id="Cwi-NY-wk3"/>
-                            <constraint firstItem="mhS-9H-OHV" firstAttribute="top" secondItem="trL-60-R6l" secondAttribute="top" id="a2i-f0-lIq"/>
-                            <constraint firstItem="mhS-9H-OHV" firstAttribute="centerX" secondItem="XIC-0g-Wnn" secondAttribute="centerX" id="a73-xa-Zr1"/>
-                            <constraint firstItem="mhS-9H-OHV" firstAttribute="leading" secondItem="obH-Ru-WV4" secondAttribute="leading" id="j57-dP-bta"/>
-                            <constraint firstAttribute="trailing" secondItem="mhS-9H-OHV" secondAttribute="trailing" id="sFf-mD-hkk"/>
+                            <constraint firstItem="DL1-kJ-ApC" firstAttribute="leading" secondItem="trL-60-R6l" secondAttribute="leading" constant="10" id="YCh-DV-rFD"/>
+                            <constraint firstItem="DL1-kJ-ApC" firstAttribute="top" secondItem="trL-60-R6l" secondAttribute="top" constant="10" id="nNi-IU-kdp"/>
+                            <constraint firstItem="trL-60-R6l" firstAttribute="trailing" secondItem="DL1-kJ-ApC" secondAttribute="trailing" constant="10" id="yU7-bP-ZSA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ee6-TT-k7t"/>
                     <connections>
-                        <segue destination="IqU-Dw-0GW" kind="show" id="Qap-Hn-bIL"/>
-                        <segue destination="eXt-A6-pAk" kind="show" id="RuT-Yg-e5u"/>
+                        <segue destination="IqU-Dw-0GW" kind="show" identifier="Details-Editar-Segue" id="Qap-Hn-bIL"/>
+                        <segue destination="eXt-A6-pAk" kind="show" identifier="Details-Transaccion-Segue" id="RuT-Yg-e5u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zlq-Jd-5XR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -275,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Jd-tf-8jC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3740" y="617"/>
+            <point key="canvasLocation" x="3676" y="688"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="12k-Rn-Clv">
