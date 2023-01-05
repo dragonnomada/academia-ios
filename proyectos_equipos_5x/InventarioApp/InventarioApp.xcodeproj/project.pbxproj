@@ -25,6 +25,7 @@
 		FAFEDAA02967612700B45A3C /* DetailsProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEDA9B2967612700B45A3C /* DetailsProductViewController.swift */; };
 		FAFEDAA12967612700B45A3C /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEDA9C2967612700B45A3C /* AddProductViewController.swift */; };
 		FAFEDAA22967612700B45A3C /* EditProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEDA9D2967612700B45A3C /* EditProductViewController.swift */; };
+		FAFEDAA529677B3500B45A3C /* InventarioLoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEDAA429677B3500B45A3C /* InventarioLoginDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		FAFEDA9B2967612700B45A3C /* DetailsProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsProductViewController.swift; sourceTree = "<group>"; };
 		FAFEDA9C2967612700B45A3C /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 		FAFEDA9D2967612700B45A3C /* EditProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProductViewController.swift; sourceTree = "<group>"; };
+		FAFEDAA429677B3500B45A3C /* InventarioLoginDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventarioLoginDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		FA5F53352964C4A300035FEE /* InventarioApp */ = {
 			isa = PBXGroup;
 			children = (
+				FAFEDAA3296766CC00B45A3C /* Protocolos */,
 				FAD4F5F229664EEF00A02BDB /* Views */,
 				52AE1B5429664A9C003AAE8A /* Controllers */,
 				FA5F53522964F1DC00035FEE /* Tests */,
@@ -133,6 +136,14 @@
 				FAD4F5F029664EDE00A02BDB /* LoginViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FAFEDAA3296766CC00B45A3C /* Protocolos */ = {
+			isa = PBXGroup;
+			children = (
+				FAFEDAA429677B3500B45A3C /* InventarioLoginDelegate.swift */,
+			);
+			path = Protocolos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +232,7 @@
 				52AE1B5329664A0C003AAE8A /* InventarioController.swift in Sources */,
 				52AE1B5029664327003AAE8A /* TableViewCell.swift in Sources */,
 				FA5F534F2964DCCF00035FEE /* inventarioModel.swift in Sources */,
+				FAFEDAA529677B3500B45A3C /* InventarioLoginDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
