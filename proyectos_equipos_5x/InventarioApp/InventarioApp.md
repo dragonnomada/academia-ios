@@ -10,11 +10,11 @@ struct UsuarioEntity {
 ```Swift
 // Producto
 struct ProductoEntity {
-    var imangen: Data?
+    var imange: Data?
     var id: Int?
     var nombre: String?
     var precio: Double?
-    var existencia: Int?
+    var existencias: Int?
 }
 ```
 ```Swift
