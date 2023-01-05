@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+class InventarioController {
+
+    let model = InventModel()
+
+    func getUsuario(nombre: String, password: String) {
+
+    }
+
+}
