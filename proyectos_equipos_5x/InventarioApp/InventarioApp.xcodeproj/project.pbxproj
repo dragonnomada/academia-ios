@@ -20,6 +20,11 @@
 		FA5F534F2964DCCF00035FEE /* inventarioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F534E2964DCCF00035FEE /* inventarioModel.swift */; };
 		FA5F53542964F20600035FEE /* TestInventaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F53532964F20600035FEE /* TestInventaryModel.swift */; };
 		FAD4F5F129664EDE00A02BDB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4F5F029664EDE00A02BDB /* LoginViewController.swift */; };
+		FAFEDA9E2967612700B45A3C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEDA992967612700B45A3C /* HomeViewController.swift */; };
+		FAFEDA9F2967612700B45A3C /* AddTransaccionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEDA9A2967612700B45A3C /* AddTransaccionesViewController.swift */; };
+		FAFEDAA02967612700B45A3C /* DetailsProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEDA9B2967612700B45A3C /* DetailsProductViewController.swift */; };
+		FAFEDAA12967612700B45A3C /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEDA9C2967612700B45A3C /* AddProductViewController.swift */; };
+		FAFEDAA22967612700B45A3C /* EditProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEDA9D2967612700B45A3C /* EditProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		FA5F534E2964DCCF00035FEE /* inventarioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventarioModel.swift; sourceTree = "<group>"; };
 		FA5F53532964F20600035FEE /* TestInventaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInventaryModel.swift; sourceTree = "<group>"; };
 		FAD4F5F029664EDE00A02BDB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FAFEDA992967612700B45A3C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FAFEDA9A2967612700B45A3C /* AddTransaccionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransaccionesViewController.swift; sourceTree = "<group>"; };
+		FAFEDA9B2967612700B45A3C /* DetailsProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsProductViewController.swift; sourceTree = "<group>"; };
+		FAFEDA9C2967612700B45A3C /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		FAFEDA9D2967612700B45A3C /* EditProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +125,11 @@
 		FAD4F5F229664EEF00A02BDB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAFEDA9C2967612700B45A3C /* AddProductViewController.swift */,
+				FAFEDA9A2967612700B45A3C /* AddTransaccionesViewController.swift */,
+				FAFEDA9B2967612700B45A3C /* DetailsProductViewController.swift */,
+				FAFEDA9D2967612700B45A3C /* EditProductViewController.swift */,
+				FAFEDA992967612700B45A3C /* HomeViewController.swift */,
 				FAD4F5F029664EDE00A02BDB /* LoginViewController.swift */,
 			);
 			path = Views;
@@ -192,12 +207,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFEDAA22967612700B45A3C /* EditProductViewController.swift in Sources */,
 				FAD4F5F129664EDE00A02BDB /* LoginViewController.swift in Sources */,
 				FA5F533B2964C4A300035FEE /* ViewController.swift in Sources */,
 				FA5F53372964C4A300035FEE /* AppDelegate.swift in Sources */,
 				FA5F534C2964C50400035FEE /* ModelUsuario.xcdatamodeld in Sources */,
 				FA5F53392964C4A300035FEE /* SceneDelegate.swift in Sources */,
+				FAFEDA9E2967612700B45A3C /* HomeViewController.swift in Sources */,
+				FAFEDA9F2967612700B45A3C /* AddTransaccionesViewController.swift in Sources */,
+				FAFEDAA02967612700B45A3C /* DetailsProductViewController.swift in Sources */,
 				FA5F53542964F20600035FEE /* TestInventaryModel.swift in Sources */,
+				FAFEDAA12967612700B45A3C /* AddProductViewController.swift in Sources */,
 				52AE1B5329664A0C003AAE8A /* InventarioController.swift in Sources */,
 				52AE1B5029664327003AAE8A /* TableViewCell.swift in Sources */,
 				FA5F534F2964DCCF00035FEE /* inventarioModel.swift in Sources */,
