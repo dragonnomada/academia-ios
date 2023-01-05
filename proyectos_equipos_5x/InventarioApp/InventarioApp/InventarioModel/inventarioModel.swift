@@ -22,9 +22,12 @@ class InventModel {
         return container
     }()
     
+    var usuarioIniciado: UsuarioEntity?
+    var productoSeleccionado: ProductoEntity?
+    var transaccionesProductoSeleccionado: [TransaccionEntity] = []
     
     var productos: [ProductoEntity] = []
-    var transsaciones: [TransaccionEntity] = []
+    var transacciones: [TransaccionEntity] = []
     var usuarios: [UsuarioEntity] = []
     
     func loadProductos() {
@@ -35,20 +38,37 @@ class InventModel {
         }
     }
     
-    func loadTransacciones(){
+    func loadTransacciones() {
         let context = self.persistentContainer.viewContext
         let requestTransaccionEntity = TransaccionEntity.fetchRequest()
         if let transaccionEntity = try? context.fetch(requestTransaccionEntity){
-            self.transsaciones = transaccionEntity
+            self.transacciones = transaccionEntity
         }
     }
+
+    func installUsuariosPruebas() -> Bool {
+        guard let usuarioMaster = self.addUsuario(nombre: "admin", password: "admin123") else { return false }
+        guard let usuarioMaster = self.addUsuario(nombre: "test1", password: "test1") else { return false }
+        guard let usuarioMaster = self.addUsuario(nombre: "test2", password: "test2") else { return false }
+        guard let usuarioMaster = self.addUsuario(nombre: "test3", password: "test3") else { return false }
+        self.loadUsuarios()
+        return true
+    }
     
-    func loadUsuarios(){
+    func loadUsuarios() -> Bool {
         let context = self.persistentContainer.viewContext
         let requestUsuarioEntity = UsuarioEntity.fetchRequest()
-        if let usuarioEntity = try? context.fetch(requestUsuarioEntity){
-            self.usuarios = usuarioEntity
+        if let usuariosEntity = try? context.fetch(requestUsuarioEntity) {
+            if usuariosEntity.count == 0 {
+                return self.installUsuariosPruebas()
+            } else {
+                self.usuarios = usuariosEntity
+                return true
+            }
+        } else {
+            return self.installUsuariosPruebas()
         }
+        return false
     }
     
     func getProducto(id: Int64) -> ProductoEntity? {
@@ -65,10 +85,10 @@ class InventModel {
 
     
 //    func getTranssacion(index: Int) -> TransaccionEntity? {
-//        guard index >= 0 && index < transsaciones.count else {
+//        guard index >= 0 && index < transacciones.count else {
 //            return nil
 //        }
-//        return self.transsaciones[index]
+//        return self.transacciones[index]
 //    }
     
     
