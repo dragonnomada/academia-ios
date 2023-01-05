@@ -11,8 +11,8 @@ class LoginViewController: UIViewController {
     
     
     
-    @IBOutlet weak var usuario: UITextField!
-    @IBOutlet weak var password: UITextField
+    @IBOutlet weak var usuarioTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +20,8 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func submitBtnClicked(_ sender: UIButton){
-        getUsuario(nombre: String, password: String)
+    @IBAction func submitClicked(_ sender: UIButton){
+        performSegue(withIdentifier: "Login-Home-Segue", sender: self)
     }
    
-}
-
-extension LoginViewController: InventarioLoginDelegate {
-    
 }
