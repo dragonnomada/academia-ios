@@ -68,7 +68,7 @@ class InventarioAppModel {
 
 ```Swift
     /// LoginView
-    login(usuarioSeleccionado: UsuarioEntity)
+    login(usuarioIniciado: UsuarioEntity)
     loginError(loginError error: String)
 ```
 ## **InventarioHomeDelegate**
@@ -76,7 +76,8 @@ class InventarioAppModel {
 ```Swift
     /// HomeView
     inventario(productos:[(producto: ProductoEntity, transacciones: [TransaccionEntity])])
-    inventario(loadInvenatarioError error: String)
+    inventario(inventarioError error: String)
+    inventario(productoSeleccionado producto: ProductoEntity)
 ```
 
 ## **InventarioAddProductDelegate**
@@ -92,7 +93,7 @@ class InventarioAppModel {
 
 ```Swift
     /// DetailsProductView
-    inventarioDetails(productoSelected: producto: ProductoEntity, transacciones: [TransaccionEntity])
+    inventario(productoSelected producto: ProductoEntity, transacciones: [TransaccionEntity])
     inventario(filterTransactionsError error: String)
     inventario(selectProductError error: String)
 ```
