@@ -16,6 +16,7 @@
 		FA5F534C2964C50400035FEE /* ModelUsuario.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA5F534A2964C50400035FEE /* ModelUsuario.xcdatamodeld */; };
 		FA5F534F2964DCCF00035FEE /* inventarioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F534E2964DCCF00035FEE /* inventarioModel.swift */; };
 		FA5F53542964F20600035FEE /* TestInventaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F53532964F20600035FEE /* TestInventaryModel.swift */; };
+		FAD4F5EF2966451C00A02BDB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4F5EE2966451C00A02BDB /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FA5F534B2964C50400035FEE /* ModelUsuario.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelUsuario.xcdatamodel; sourceTree = "<group>"; };
 		FA5F534E2964DCCF00035FEE /* inventarioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventarioModel.swift; sourceTree = "<group>"; };
 		FA5F53532964F20600035FEE /* TestInventaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInventaryModel.swift; sourceTree = "<group>"; };
+		FAD4F5EE2966451C00A02BDB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		FA5F53512964E38C00035FEE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FAD4F5EE2966451C00A02BDB /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD4F5EF2966451C00A02BDB /* LoginViewController.swift in Sources */,
 				FA5F533B2964C4A300035FEE /* ViewController.swift in Sources */,
 				FA5F53372964C4A300035FEE /* AppDelegate.swift in Sources */,
 				FA5F534C2964C50400035FEE /* ModelUsuario.xcdatamodeld in Sources */,
