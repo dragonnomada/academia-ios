@@ -21,7 +21,7 @@ class TodoController {
     // var addDelegate: [TodoAddDelegate] = []
     
     func selectTodo(index: Int, todo: TodoEntity) {
-        self.model.selectTodo(index: index, todo: todo)
+        model.selectTodo(index: index, todo: todo)
         detailDelegate?.todo(todoUpdated: todo)
     }
     
