@@ -15,7 +15,6 @@
 
 >EmpleadoEntity
 ```swift
-
 struct EmpleadoEntity {
 
     let id: Int
@@ -30,16 +29,11 @@ struct EmpleadoEntity {
     let fechaVacacionesFin: Date
     let estaVacaciones: Bool
     let tienePrestamo: Bool
-    //
-    let cantidadPrestamo: Double // $$
-    let cantidadRestantePrestamo: Double // $$
-    let numeroAbono: Int // Numero pagos realizados 
 }
 ```
-
+    
 >PagoEntity
 ```swift
-
 struct PagoEntity {
 
     let nombreEmpleado: String
@@ -48,73 +42,182 @@ struct PagoEntity {
     let viaticos: Double?
     let prestamo: Double?
     let descripcionPrestamo: String?
-    let cantidadRestantePrestamo: Double? // 
+    let cantidadRestantePrestamo: Double? //
     let numeroAbono: Int? // Numero pagos realizados
 }
 ```
-
 >NominaModel
 ```swift
-
 class NominaModel {
-
-        enum TipoFecha {
-            case inicioVacaciones
-            case finVacaciones
-            case fechaContratacion
-            case fechaPago
-        }
     
-        let container: NSPersistentContainer
-        var empleadoSeleccionado: EmpleadoEntity?
-        var empleados: [EmpleadoEntity]
-        var pagoSeleccionado: PagoEntity?
-        var pagos: [PagoEntity]
-
-        /// Carga los `empleados` desde el CoreData
-        func loadEmpleados() {
-            // 1. Recupera el contexto
-            // 2. Crea un request de `EmpleadoEntity`
-            // 3. Haz un fetch en el contexto
-            // 4. Actualiza los `empleados`
-            // 5. devuélvelos 
-        }
-
-        // Funcion que loguea un usuario
-        func empleadoLogin(correo: String, password: String) -> EmpleadoEntity {
-            // ...
-        }
-        /// Devuelve los `empleados`
-        func getEmpleados() -> [EmpleadoEntity] {
-            // ...
-        }
-
-        /// Agrega un nuevo `EmpleadoEntity` con valores
-        /// por defecto y guarda el contexto 
-        /// del contenedor
-        func addEmpleado(id: String, nombre: String, area: String, departamento: String, puesto: String, fechaContratacion: Date, antiguedad: Int, salario: Double, fechaVacacionesInicio: Date, fechaVacacionesFin: Date, estaDeVacaciones: Bool, tienePrestamo: Bool, cantidadPrestamo: Double) -> EmpleadoEntity? {
-            // ...
-        }
+    let container: NSPersistentContainer
     
-        /// Busca el `empleado` en los `empleados` con ese
-        /// índice y guárdalo en empleadoSeleccionado
-        func seleccionarEmpleado(index: Int) -> EmpleadoEntity? {
-            // ...
-        }
-        // Selecciona una fecha
-        func seleccionarFecha(fechaSeleccionada: Date, tipoFecha: TipoFecha) -> Date {
-            // ...
-        }
+    // Variable global que almacenara al empleado seleccionado
+    var empleadoSeleccionado: EmpleadoEntity?
+    
+    // Variable global que almacenara todos los empleadosz 
+    var empleados: [EmpleadoEntity]
+    
+    // Variable global que almacenara el pago seleccionado
+    var pagoSeleccionado: PagoEntity?
+    
+    // Variable global que almacenara todos los pagos
+    var pagos: [PagoEntity]
+    
+    /// Carga los `empleados` desde el CoreData
+    func loadEmpleados() {
+        // 1. Recupera el contexto
+        // 2. Crea un request de `EmpleadoEntity`
+        // 3. Haz un fetch en el contexto
+        // 4. Actualiza los `empleados`
+        // 5. devuélvelos
+    }
 
-        func obtenerHistorialPagos() -> [PagoEntity] {
-            // ...
-        }
-        
-        func seleccionarPago(index: Int) -> PagoEntity {
-            // ...
-        }
-        
-        func agregarPago(let nombreEmpleado: Strinf, let fechaPago: Date, let viaticos: Double, let prestamo: Double, let numeroAbono: Int, let descripcionPrestamo: String) {
-            // ...
-        }
+    // Funcion que loguea un usuario
+    func empleadoLogin(correo: String, password: String) -> EmpleadoEntity
+
+    /// Devuelve los `empleados`
+    func getEmpleados() -> [EmpleadoEntity]
+
+    /// Agrega un nuevo `EmpleadoEntity` con valores
+    /// por defecto y guarda el contexto
+    /// del contenedor
+    func addEmpleado(id: Int, nombre: String, area: String, departamento: String, puesto: String, fechaContratacion: Date, antiguedad: Int, salario: Double, fechaVacacionesInicio: Date, fechaVacacionesFin: Date, estaVacaciones: Bool, tienePrestamo: Bool) -> EmpleadoEntity? 
+    
+    /// Busca el `empleado` en los `empleados` con ese
+    /// índice y guárdalo en empleadoSeleccionado
+    func seleccionarEmpleado(index: Int) -> EmpleadoEntity?
+
+    // Selecciona una fecha
+    func seleccionarFecha(fechaSeleccionada: Date, tipoFecha: TipoFecha) -> Date
+
+    func obtenerHistorialPagos() -> [PagoEntity]
+
+    func seleccionarPago(index: Int) -> PagoEntity
+
+    func agregarPago(nombreEmpleado: String, fechaPago: Date, sueldo: Double, viaticos: Double?, prestamo: Double?, descripcionPrestamo: String?, cantidadRestantePrestamo: Double?, numeroAbono: Int?) -> PagoEntity
+} 
+```
+>Enum TipoFecha
+```swift
+enum TipoFecha {
+        case inicioVacaciones
+        case finVacaciones
+        case fechaContratacion
+        case fechaPago
+    }
+```
+
+## Controller
+
+> NominaController
+```swift
+class NominaController {
+    
+    // Singleton
+    static let shared = NominaController()
+    
+    // Instancia a NominaModel
+    let model = NominaModel()
+    
+    // Delegados para hacer notificaciones a las vistas
+    var viewControllerDelegate = ViewControllerDelegate?
+    var catalogoEmpleadosDelegate = CatalogoEmpleadosDelegate?
+    var addEmpleadoDelegate = AddEmpleadoDelegate?
+    var calendarioDelegate = CalendarioDelegate?
+    var detallesEmpleadoDelegate = DetallesEmpleadoDelegate?
+    var seleccionarVacacionesDelegate = SeleccionarVacacionesDelegate?
+    var historialNominaDelegate = HistorialNominaDelegate?
+    var detallePagoDelegate = DetallePagoDelegate?
+    var addPagoDelegate = AddPagoDelegate?
+    
+    // Funciones 
+    func empleadoLogin(correo: String, password: String) 
+    
+    func addEmpleado(id: Int, nombre: String, area: String, departamento: String, puesto: String, fechaContratacion: Date, antiguedad: Int, salario: Double, fechaVacacionesInicio: Date, fechaVacacionesFin: Date, estaVacaciones: Bool, tienePrestamo: Bool)
+    
+    func seleccionarEmpleado(index: Int)
+    
+    // Selecciona una fecha
+    func seleccionarFecha(fechaSeleccionada: Date, tipoFecha: TipoFecha) 
+
+    func obtenerHistorialPagos()
+
+    func seleccionarPago(index: Int)
+
+    func agregarPago(nombreEmpleado: String, fechaPago: Date, sueldo: Double, viaticos: Double?, prestamo: Double?, descripcionPrestamo: String?, cantidadRestantePrestamo: Double?, numeroAbono: Int?)
+}
+```
+
+>ViewControllerDelegate
+```swift
+protocol ViewControllerDelegate {
+
+    func empleado(empleadoLogin empleado: EmpleadoEntity)
+    func empleado(empleadoLoginError message: String)
+}
+```
+>CatalogoEmpleadosDelegate
+```swift
+protocol CatalogoEmpleadosDelegate {
+
+    func empleado(empleadosCargados empleados: [EmpleadoEntity])
+    func empleado(empleadoCreado empleado: EmpleadoEntity)
+    func empleado(empleadoCreadoError message: String)
+}
+```
+>AddEmpleadoDelegate
+```swift
+protocol AddEmpleadoDelegate {
+
+    func empleado(fechaContratado fecha: Date)
+    func empleado(empleadoCreado empleado: EmpleadoEntity)
+    func empleado(empleadoCreadoError message: String)
+}
+```
+>CalendarioDelegate
+```swift
+protocol CalendarioDelegate {
+
+    func empleado(fechaSeleccionada fecha: Date)
+    func empleado(fechaSeleccionadaError message: String)
+}
+```
+>DetallesEmpleadoDelegate
+```swift
+protocol DetallesEmpleadoDelegate {
+
+    func empleado(empleadoSeleccionado index: Int)
+    func empleado(vacacionesSeleccionadas vacaciones: Date, tipoFecha tipo: TipoFecha)
+}
+```
+>SeleccionarVacacionesDelegate
+```swift
+protocol SeleccionarVacacionesDelegate {
+
+    func empleado(fechaSeleccionada fecha: Date, tipoFecha tipo: TipoFecha)
+}
+```
+>HistorialNominaDelegate
+```swift
+protocol HistorialNominaDelegate {
+
+    func salario(historialSalario historial: [PagoEntity]
+}
+```
+>DetallePagoDelegate
+```swift
+protocol DetallePagoDelegate {
+
+    func salario(pagoSeleccionado pago: PagoEntity
+}
+```
+>AddPagoDelegate
+```swift
+protocol AddPagoDelegate {
+
+    func salario(salarioCreado salario: PagoEntity)
+    func salario(salarioCreadoError message: String)
+    func salario(fechaPago fecha: Date, tipoFech tipo: TipoFecha)
+}
 ```
