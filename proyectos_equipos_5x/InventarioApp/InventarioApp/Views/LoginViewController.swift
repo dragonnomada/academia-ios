@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func submitClicked(_ sender: UIButton){
+    @IBAction func submitClicked(_ sender: Any){
         performSegue(withIdentifier: "Login-Home-Segue", sender: self)
     }
    

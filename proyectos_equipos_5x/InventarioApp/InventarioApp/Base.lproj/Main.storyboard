@@ -11,7 +11,7 @@
         <!--InventariApp Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InventarioApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="InventarioApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,6 +55,9 @@
                                         <rect key="frame" x="0.0" y="208.66666666666669" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Iniciar Sesión"/>
+                                        <connections>
+                                            <action selector="submitClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BvN-uz-g3I"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -70,6 +73,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="InventariApp Login" id="pBz-VF-tlL"/>
                     <connections>
+                        <outlet property="passwordTextField" destination="LdZ-jZ-Uhv" id="8cY-jF-1Rm"/>
+                        <outlet property="usuarioTextField" destination="0RI-rT-0Rm" id="VBM-rl-Dk1"/>
                         <segue destination="OU2-U5-LdU" kind="show" identifier="Login-Home-Segue" id="aGu-HY-RLp"/>
                     </connections>
                 </viewController>
@@ -77,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="856" y="4"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="Nuf-ob-Pxb">
             <objects>
-                <viewController id="OU2-U5-LdU" sceneMemberID="viewController">
+                <viewController id="OU2-U5-LdU" customClass="HomeViewController" customModule="InventarioApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hcv-RE-J84">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="1634" y="4"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Product View Controller-->
         <scene sceneID="p2K-AN-bjg">
             <objects>
-                <viewController id="i83-IJ-Dof" sceneMemberID="viewController">
+                <viewController id="i83-IJ-Dof" customClass="AddProductViewController" customModule="InventarioApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EUy-ad-cJw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,10 +227,10 @@
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Details Product View Controller-->
         <scene sceneID="v4e-Ja-155">
             <objects>
-                <viewController id="h5h-c9-gCw" sceneMemberID="viewController">
+                <viewController id="h5h-c9-gCw" customClass="DetailsProductViewController" customModule="InventarioApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="obH-Ru-WV4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,10 +266,10 @@
             </objects>
             <point key="canvasLocation" x="2568.7022900763359" y="537.32394366197184"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Transacciones View Controller-->
         <scene sceneID="r2M-Z5-V7n">
             <objects>
-                <viewController id="eXt-A6-pAk" sceneMemberID="viewController">
+                <viewController id="eXt-A6-pAk" customClass="AddTransaccionesViewController" customModule="InventarioApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uX4-Sr-Lf9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -277,10 +282,10 @@
             </objects>
             <point key="canvasLocation" x="3676" y="688"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Product View Controller-->
         <scene sceneID="12k-Rn-Clv">
             <objects>
-                <viewController id="IqU-Dw-0GW" sceneMemberID="viewController">
+                <viewController id="IqU-Dw-0GW" customClass="EditProductViewController" customModule="InventarioApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0sS-aP-Giw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
