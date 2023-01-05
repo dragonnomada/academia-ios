@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		52AE1B4E29664327003AAE8A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		52AE1B4F29664327003AAE8A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		52AE1B5229664A0C003AAE8A /* InventarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InventarioController.swift; path = InventarioApp/InventarioController.swift; sourceTree = SOURCE_ROOT; };
+		52AE1B5229664A0C003AAE8A /* InventarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InventarioController.swift; path = InventarioApp/Controllers/InventarioController.swift; sourceTree = SOURCE_ROOT; };
 		FA5F53332964C4A300035FEE /* InventarioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventarioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5F53362964C4A300035FEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA5F53382964C4A300035FEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52AE1B5429664A9C003AAE8A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				52AE1B5229664A0C003AAE8A /* InventarioController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		FA5F532A2964C4A300035FEE = {
 			isa = PBXGroup;
 			children = (
@@ -68,9 +76,8 @@
 		FA5F53352964C4A300035FEE /* InventarioApp */ = {
 			isa = PBXGroup;
 			children = (
-				FAD4F5ED2965FE0C00A02BDB /* views */,
+				52AE1B5429664A9C003AAE8A /* Controllers */,
 				FA5F53522964F1DC00035FEE /* Tests */,
-				FA5F53512964E38C00035FEE /* Controllers */,
 				FA5F534D2964DCA100035FEE /* InventarioModel */,
 				FA5F53362964C4A300035FEE /* AppDelegate.swift */,
 				FA5F53382964C4A300035FEE /* SceneDelegate.swift */,
@@ -94,27 +101,12 @@
 			path = InventarioModel;
 			sourceTree = "<group>";
 		};
-		FA5F53512964E38C00035FEE /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				52AE1B5229664A0C003AAE8A /* InventarioController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		FA5F53522964F1DC00035FEE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				FA5F53532964F20600035FEE /* TestInventaryModel.swift */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		FAD4F5ED2965FE0C00A02BDB /* views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
