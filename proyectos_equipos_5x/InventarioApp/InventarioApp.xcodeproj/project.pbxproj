@@ -19,6 +19,7 @@
 		FA5F534C2964C50400035FEE /* ModelUsuario.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA5F534A2964C50400035FEE /* ModelUsuario.xcdatamodeld */; };
 		FA5F534F2964DCCF00035FEE /* inventarioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F534E2964DCCF00035FEE /* inventarioModel.swift */; };
 		FA5F53542964F20600035FEE /* TestInventaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F53532964F20600035FEE /* TestInventaryModel.swift */; };
+		FAD4F5F129664EDE00A02BDB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4F5F029664EDE00A02BDB /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FA5F534B2964C50400035FEE /* ModelUsuario.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelUsuario.xcdatamodel; sourceTree = "<group>"; };
 		FA5F534E2964DCCF00035FEE /* inventarioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventarioModel.swift; sourceTree = "<group>"; };
 		FA5F53532964F20600035FEE /* TestInventaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInventaryModel.swift; sourceTree = "<group>"; };
+		FAD4F5F029664EDE00A02BDB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		FA5F53352964C4A300035FEE /* InventarioApp */ = {
 			isa = PBXGroup;
 			children = (
+				FAD4F5F229664EEF00A02BDB /* Views */,
 				52AE1B5429664A9C003AAE8A /* Controllers */,
 				FA5F53522964F1DC00035FEE /* Tests */,
 				FA5F534D2964DCA100035FEE /* InventarioModel */,
@@ -107,6 +110,14 @@
 				FA5F53532964F20600035FEE /* TestInventaryModel.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		FAD4F5F229664EEF00A02BDB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAD4F5F029664EDE00A02BDB /* LoginViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD4F5F129664EDE00A02BDB /* LoginViewController.swift in Sources */,
 				FA5F533B2964C4A300035FEE /* ViewController.swift in Sources */,
 				FA5F53372964C4A300035FEE /* AppDelegate.swift in Sources */,
 				FA5F534C2964C50400035FEE /* ModelUsuario.xcdatamodeld in Sources */,
