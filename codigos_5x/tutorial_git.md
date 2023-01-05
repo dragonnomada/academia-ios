@@ -65,3 +65,15 @@ git commit -m "ProyectoNominApp actualizado a su última versión"
 
 git push origin main
 ```
+
+## Actualizar una rama desde el main
+
+La fusión hacia abajo significa recuperar los cambios más actuales del main hacia nuestra rama, aquí podrían haber problemas de conflictos entre archivos.
+
+Dentro del Github (web) podemos ver en cada rama cuántos `commits` hay desde el main hacia la rama (`behind`) y podemos solicitar un `pull request` para completar un `merge` desde la rama principal (`main`) hacia nuestra rama.
+
+## Actualizar el main desde una rama
+
+La fusión hacia arriba significa publicar los cambios más actuales de nuestra rama hacia el main, aquí podrían haber problemas de conflictos entre archivos.
+
+Dentro del Github (web) podemos ver en cada rama cuántos `commits` hay desde nuestra rama hacia el main (`ahead`) y podemos solicitar un `pull request` para completar un `merge` desde nuestra rama hacia la rama principal (`main`).
