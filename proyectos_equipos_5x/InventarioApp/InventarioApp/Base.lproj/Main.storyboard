@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--InventariApp Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InventarioApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,7 +68,7 @@
                             <constraint firstItem="Yce-2O-Gvn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d0a-Tb-XEz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="pBz-VF-tlL"/>
+                    <navigationItem key="navigationItem" title="InventariApp Login" id="pBz-VF-tlL"/>
                     <connections>
                         <segue destination="OU2-U5-LdU" kind="show" identifier="Login-Home-Segue" id="aGu-HY-RLp"/>
                     </connections>
