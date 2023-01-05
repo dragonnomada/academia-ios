@@ -10,6 +10,7 @@ import CoreData
 
 class TodoModel {
     
+    // 1.- Se crea el contenedor.
     let persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "TodoApp")
         
@@ -23,9 +24,12 @@ class TodoModel {
         return container
     }()
     
+    // Variable global donde se almacenaran todos los "Todos creados"
     var todos: [TodoEntity] = []
     
+    // Variable global que retendra el "Todo" seleccionado
     var todoSelected: TodoEntity?
+    // Variable global que retendra el index(posicion) del "Todo" seleccionado
     var todoSelectedIndex: Int?
     
     
@@ -34,6 +38,7 @@ class TodoModel {
         self.todoSelectedIndex = index
     }
     
+    // Funcon para cargar los "Todos" existentes en nuestro contenedor
     func loadTodos() {
         
         let context = self.persistentContainer.viewContext
