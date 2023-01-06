@@ -31,12 +31,15 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 //    TODO: Crear una entrada de Imagen
-    func setupCell( id: String, nombre: String, descripcion: String, existencias: String) {
+    func setupCell( id: String, nombre: String, descripcion: String, existencias: String, imagen: Data?, transacciones: [TransaccionEntity]) {
         //self.imageProducto = imageProducto // Casteo
         self.idProductoLabel.text = id
         self.nombreProductoLabel.text = nombre
         self.descripcionProductoLabel.text = descripcion
         self.existenciasLabel.text = existencias
+        if let image = imagen {
+            imageProducto.image = UIImage(data: image)
+        }
     }
         
 }
