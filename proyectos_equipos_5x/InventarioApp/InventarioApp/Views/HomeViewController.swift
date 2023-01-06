@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
         productTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
         // le de decimos al inventaryController que esta clase se va encargar de
         // definir los metodos del delegadoinventario homedelegate
-        InventarioController.shared.inventarioHomeDelegate = self
+        InventarioController.shared.inventarioHomeDelegate = self 
     }
     
     override func viewWillAppear(_ animated: Bool) {
