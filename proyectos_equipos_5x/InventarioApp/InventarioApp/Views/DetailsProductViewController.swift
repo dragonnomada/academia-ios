@@ -18,20 +18,52 @@ class DetailsProductViewController: UIViewController {
     @IBOutlet var transaccionesTableView: UITableView!
     
     
+    var producto: ProductoEntity?
     var transacciones: [TransaccionEntity] = []
 
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
         transaccionesTableView.dataSource = self
         //tableView.delegate = self
         
+        InventarioController.shared.inventarioDetailsDelegate = self
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        InventarioController.shared.getSelectedProduct()
     }
     
     @IBAction func agregarTransaccion(_ sender: Any) {
-        //
+        // Segue automático
     }
 
+}
+
+extension DetailsProductViewController: InventarioDetailsDelegate {
+    
+    func inventario(productoSelected producto: ProductoEntity, transacciones: [TransaccionEntity]) {
+        self.producto = producto
+        self.transacciones = transacciones
+        
+        self.productNameView.text = producto.nombre
+        self.productDescripcionView.text = producto.descripcion
+        if let imagen = producto.image {
+            self.productImageView.image = UIImage(data: imagen)
+        }
+        self.productExistenciasView.text = "\(producto.existencias)"
+    }
+    
+    func inventario(filterTransactionsError error: String) {
+        self.present(UIAlertController.simpleErrorAlert(message: error), animated: true)
+    }
+    
+    func inventario(selectProductError error: String) {
+        self.present(UIAlertController.simpleErrorAlert(message: error), animated: true)
+    }
+    
 }
 
 extension DetailsProductViewController: UITableViewDataSource{
@@ -45,13 +77,15 @@ extension DetailsProductViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "")!
-        let transaccion = self.transacciones[indexPath.row]
-        var confing = cell.defaultContentConfiguration()
         
-//        if let entrada = transaccion.entrada{
-//            confing.text = "\(transaccion.entrada ? "▲" : "▼") \(entrada)"
-//        }
-//        if
+        let transaccion = self.transacciones[indexPath.row]
+        
+        var config = cell.defaultContentConfiguration()
+        
+        config.text = "\(transaccion.entrada ? "⬆️" : "⬇️")"
+        config.secondaryText = "\(transaccion.entrada ? "+" : "-")\(transaccion.unidades) ➡️ \(transaccion.balance)"
+        
+        cell.contentConfiguration = config
         
         return cell
     }
