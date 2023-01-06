@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
 
         productTableView.dataSource = self
         productTableView.delegate = self
+        productTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,15 +42,15 @@ extension HomeViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductHomeCell")!
-        let transaccion = self.transacciones[indexPath.row]
-        var confing = cell.defaultContentConfiguration()
-        
-//        if let entrada = transaccion.entrada{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell")!
+//        let transaccion = self.transacciones[indexPath.row]
+//        var confing = cell.defaultContentConfiguration()
+//
+////        if let entrada = transaccion.entrada{
 //            confing.text = "\(transaccion.entrada ? "▲" : "▼") \(entrada)"
 //        }
 //        if
-        
+       
         return cell
     }
 }
