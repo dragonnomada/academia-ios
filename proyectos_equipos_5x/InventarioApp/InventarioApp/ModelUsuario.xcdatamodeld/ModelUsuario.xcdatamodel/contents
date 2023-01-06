@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G1020" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22A400" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="ProductoEntity" representedClassName="ProductoEntity" syncable="YES" codeGenerationType="class">
         <attribute name="descripcion" optional="YES" attributeType="String"/>
         <attribute name="existencias" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
@@ -17,9 +17,4 @@
         <attribute name="nombre" optional="YES" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
     </entity>
-    <elements>
-        <element name="ProductoEntity" positionX="160" positionY="192" width="128" height="104"/>
-        <element name="TransaccionEntity" positionX="160" positionY="192" width="128" height="89"/>
-        <element name="UsuarioEntity" positionX="160" positionY="192" width="128" height="59"/>
-    </elements>
 </model>
