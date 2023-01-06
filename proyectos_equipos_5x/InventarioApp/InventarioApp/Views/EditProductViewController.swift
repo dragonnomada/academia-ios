@@ -18,6 +18,10 @@ class EditProductViewController: UIViewController {
 
         InventarioController.shared.inventarioEditProductDelegate = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        InventarioController.shared.getSelectedProduct()
+    }
 
     @IBAction func cancelar(_ sender: Any) {
         //
@@ -32,7 +36,14 @@ class EditProductViewController: UIViewController {
 }
 
 extension EditProductViewController: InventarioEditProductDelegate {
+    
+    func inventario(productLoaded: ProductoEntity) {
+        editProductName.text = productLoaded.nombre
+        editProductdescripcion.text = productLoaded.descripcion
+    }
+    
     func inventario(productEditted: ProductoEntity) {
+        print("Producto actualizado")
         self.navigationController?.popViewController(animated: true)
     }
     

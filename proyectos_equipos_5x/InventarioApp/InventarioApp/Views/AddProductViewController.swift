@@ -15,7 +15,8 @@ class AddProductViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        InventarioController.shared.inventarioEditProductDelegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -28,4 +29,16 @@ class AddProductViewController: UIViewController {
         //
     }
 
+}
+
+extension AddProductViewController: InventarioAddProductDelegate {
+    func inventario(productAdded producto: ProductoEntity) {
+        <#code#>
+    }
+    
+    func inventario(addProductError error: String) {
+        <#code#>
+    }
+    
+    
 }

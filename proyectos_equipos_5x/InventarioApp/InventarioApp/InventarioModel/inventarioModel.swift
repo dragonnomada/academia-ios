@@ -125,7 +125,6 @@ class InventModel {
         producto.nombre = nombre
         producto.descripcion = descripcion
         
-        
         do {
             try context.save()
             self.loadProductos()
@@ -191,6 +190,15 @@ class InventModel {
             }
             if let descripcion = descripcion {
                 producto.descripcion = descripcion
+            }
+            let context = persistentContainer.viewContext
+            do {
+                try context.save()
+                self.loadProductos()
+                return producto
+            } catch {
+                context.rollback()
+                return nil
             }
         }
         return nil
