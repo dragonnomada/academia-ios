@@ -42,6 +42,7 @@ protocol InventarioEditProductDelegate {
 }
 
 protocol InventarioAddEntradaDelegate {
-    func inventario(productSelected product: ProductoEntity, transacciones: [TransaccionEntity])
+    func inventario(transaccionCreada transaccion: TransaccionEntity)
+    func inventario(productSelected product: ProductoEntity)
     func inventario(addTransaccionError error: String)
 }
