@@ -9,7 +9,7 @@ import UIKit
 
 class AddProductViewController: UIViewController {
 
-    @IBOutlet weak var addProductImage: UIImage!
+    @IBOutlet weak var addProductImage: UIImageView!
     @IBOutlet weak var addProductName: UITextField!
     @IBOutlet weak var addProductDescripcion: UITextField!
     

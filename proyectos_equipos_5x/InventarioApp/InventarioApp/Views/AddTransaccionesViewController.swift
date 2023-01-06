@@ -10,7 +10,7 @@ import UIKit
 class AddTransaccionesViewController: UIViewController {
     
     
-    @IBOutlet weak var productImageView: UIImage!
+    @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var productNameView: UILabel!
     @IBOutlet weak var productDescripcionView: UILabel!
     @IBOutlet weak var productIdView: UILabel!
