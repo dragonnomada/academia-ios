@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ym2-7P-Agg">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -28,7 +29,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0RI-rT-0Rm">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0RI-rT-0Rm">
                                                 <rect key="frame" x="0.0" y="40.333333333333314" width="353" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -44,7 +45,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LdZ-jZ-Uhv">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LdZ-jZ-Uhv">
                                                 <rect key="frame" x="0.0" y="40.333333333333314" width="353" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -113,8 +114,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="productTableView" destination="b6P-A3-7aa" id="nNe-et-aYB"/>
-                        <segue destination="i83-IJ-Dof" kind="show" identifier="Home_Add_Segue" id="ury-EM-zTf"/>
-                        <segue destination="h5h-c9-gCw" kind="show" identifier="Home_Details_Segue" id="Y6l-zz-SOi"/>
+                        <segue destination="i83-IJ-Dof" kind="show" identifier="Home-Add-Segue" id="ury-EM-zTf"/>
+                        <segue destination="h5h-c9-gCw" kind="show" identifier="Home-Details-Segue" id="Y6l-zz-SOi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P8C-EE-H8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -148,7 +149,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRv-bU-dKr">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRv-bU-dKr">
                                                 <rect key="frame" x="86" y="0.0" width="227" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -164,7 +165,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zR6-LI-6Qh">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripcción" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zR6-LI-6Qh">
                                                 <rect key="frame" x="115.33333333333336" y="0.0" width="197.66666666666663" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -315,6 +316,7 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="+"/>
                                 <connections>
                                     <action selector="agregarTransaccion:" destination="h5h-c9-gCw" eventType="touchUpInside" id="ito-sg-XLx"/>
+                                    <segue destination="eXt-A6-pAk" kind="show" identifier="Details-Transaccion-Segue" id="Rhv-wM-REe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Agregar Transaccion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ci4-DJ-kXM">
@@ -324,19 +326,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6bp-HV-Q0V">
-                                <rect key="frame" x="16" y="358" width="361" height="460"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GYS-fd-oJw">
+                                <rect key="frame" x="16" y="350" width="361" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GYS-fd-oJw">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="460"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </tableView>
-                                </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="I8s-76-MlG"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="cfl-38-CnP"/>
-                            </scrollView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="trL-60-R6l"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -368,7 +362,6 @@
                         <outlet property="productNameView" destination="hJP-if-VFb" id="XMS-hV-hF6"/>
                         <outlet property="transaccionesTableView" destination="GYS-fd-oJw" id="vle-Hi-rSO"/>
                         <segue destination="IqU-Dw-0GW" kind="show" identifier="Details-Editar-Segue" id="Qap-Hn-bIL"/>
-                        <segue destination="eXt-A6-pAk" kind="show" identifier="Details-Transaccion-Segue" id="RuT-Yg-e5u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zlq-Jd-5XR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -483,7 +476,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y5E-1b-1QD">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Unidades" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y5E-1b-1QD">
                                 <rect key="frame" x="164" y="480" width="143" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -494,12 +487,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Agregar"/>
+                                <connections>
+                                    <action selector="agregar:" destination="eXt-A6-pAk" eventType="touchUpInside" id="ZqF-bn-eNG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pd7-e5-zui">
                                 <rect key="frame" x="90" y="604" width="91.66666666666697" height="34.333333333333258"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Cancelar"/>
+                                <connections>
+                                    <action selector="cancelar:" destination="eXt-A6-pAk" eventType="touchUpInside" id="0uF-I8-rQW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PAy-4n-PCt"/>
@@ -522,10 +521,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="c3l-LM-MO8"/>
+                    <connections>
+                        <outlet property="ProductIngresar" destination="Y5E-1b-1QD" id="ank-pn-bpJ"/>
+                        <outlet property="productDescripcionView" destination="BWP-VI-VOX" id="09n-w8-Vau"/>
+                        <outlet property="productExistenciasView" destination="wWP-Pn-lhd" id="AmO-ar-wrL"/>
+                        <outlet property="productIdView" destination="Jey-4O-B48" id="X1R-qw-WRr"/>
+                        <outlet property="productImageView" destination="rEg-Rd-CPR" id="ako-su-wvz"/>
+                        <outlet property="productNameView" destination="7jJ-ej-dsz" id="8so-PO-RSs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Jd-tf-8jC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3675.5725190839694" y="687.32394366197184"/>
+            <point key="canvasLocation" x="3676" y="746"/>
         </scene>
         <!--Edit Product View Controller-->
         <scene sceneID="12k-Rn-Clv">
@@ -554,7 +561,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="viW-wP-BFN">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="viW-wP-BFN">
                                                 <rect key="frame" x="86" y="0.0" width="227" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -570,7 +577,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hbn-JU-Io5">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hbn-JU-Io5">
                                                 <rect key="frame" x="115.33333333333336" y="0.0" width="197.66666666666663" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
