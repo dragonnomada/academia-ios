@@ -13,7 +13,7 @@ class InventModel {
     let persistentContainer : NSPersistentContainer = {
         let container = NSPersistentContainer(name: "ModelUsuario")
         container.loadPersistentStores { _, error in
-            if let error = error{
+            if let error = error {
                 fatalError("no existe el contenedor \(error)")
             }
             print("data core cargado exitosamente")
@@ -33,7 +33,7 @@ class InventModel {
     func loadProductos() {
         let context = self.persistentContainer.viewContext
         let requestProductoEntity = ProductoEntity.fetchRequest()
-        if let productoEntity = try? context.fetch(requestProductoEntity){
+        if let productoEntity = try? context.fetch(requestProductoEntity) {
             self.productos = productoEntity
         }
     }
@@ -41,7 +41,7 @@ class InventModel {
     func loadTransacciones() {
         let context = self.persistentContainer.viewContext
         let requestTransaccionEntity = TransaccionEntity.fetchRequest()
-        if let transaccionEntity = try? context.fetch(requestTransaccionEntity){
+        if let transaccionEntity = try? context.fetch(requestTransaccionEntity) {
             self.transacciones = transaccionEntity
         }
     }
@@ -100,7 +100,7 @@ class InventModel {
 
     
     
-    func addProducto(existencias: Int64, image: Data, nombre: String, precio: Double) -> ProductoEntity? {
+    func addProducto(existencias: Int64, image: Data, nombre: String, descripcion: String) -> ProductoEntity? {
         // recordemos que la informacion esta en el contexto, hasta que ejecutemos el metodo save del contexto
         let context = self.persistentContainer.viewContext
         let producto = ProductoEntity(context: context)
@@ -109,14 +109,14 @@ class InventModel {
         producto.image = image
         producto.existencias = existencias
         producto.nombre = nombre
-        producto.precio = precio
+        producto.descripcion = descripcion
         
         
-        do{
+        do {
             try context.save()
             self.loadProductos()
             return producto
-        }catch{
+        } catch {
             context.rollback()
             return nil
         }
@@ -133,11 +133,11 @@ class InventModel {
             transaccion.unidades = unidades
             transaccion.producto = producto
             
-            do{
+            do {
                 try context.save()
                 self.loadTransacciones()
                 return transaccion
-            }catch{
+            }catch {
                 context.rollback()
                 return nil
             }
@@ -154,29 +154,29 @@ class InventModel {
         usuario.nombre = nombre
         usuario.password = password
         
-        do{
+        do {
             try context.save()
-            self.loadUsuarios()
+            let _ = self.loadUsuarios()
             return usuario
-        }catch{
+        } catch {
             context.rollback()
             return nil
         }
     }
     
-    func updateProducto(id: Int64, existencias: Int64?, imagen: Data?, nombre: String?, precio: Double?) -> ProductoEntity? {
-        if let producto = getProducto(id: id){
-            if let existencias = existencias{
+    func updateProducto(id: Int64, existencias: Int64?, imagen: Data?, nombre: String?, descripcion: String?) -> ProductoEntity? {
+        if let producto = getProducto(id: id) {
+            if let existencias = existencias {
                 producto.existencias = existencias
             }
-            if let imagen = imagen{
+            if let imagen = imagen {
                 producto.image = imagen
             }
-            if let name = nombre{
+            if let name = nombre {
                 producto.nombre = name
             }
-            if let precio = precio{
-                producto.precio = precio
+            if let descripcion = descripcion {
+                producto.descripcion = descripcion
             }
         }
         return nil

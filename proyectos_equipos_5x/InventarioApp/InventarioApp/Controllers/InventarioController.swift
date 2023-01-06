@@ -77,8 +77,8 @@ class InventarioController {
     }
     
     /// AddProductView
-    func addProduct(nombre: String, imagen: Data, precio: Double) {
-        guard let producto = self.model.addProducto(existencias: 0, image: imagen, nombre: nombre, precio: precio) else {
+    func addProduct(nombre: String, imagen: Data, descripcion: String) {
+        guard let producto = self.model.addProducto(existencias: 0, image: imagen, nombre: nombre, descripcion: descripcion) else {
             inventarioAddProductDelegate?.inventario(addProductError: "Error al crear el producto \(nombre)")
             return
         }
@@ -115,13 +115,13 @@ class InventarioController {
     }
     
     /// EditProductView
-    func editProduct(nombre: String?, imagen: Data?, precio: Double?) {
+    func editProduct(nombre: String?, imagen: Data?, descripcion: String?) {
         guard let productoSeleccionado = self.model.productoSeleccionado else {
             inventarioEditProductDelegate?.inventario(editError: "No hay producto seleccionado para editarse")
             return
         }
 
-        if let producto = self.model.updateProducto(id: productoSeleccionado.id, existencias: productoSeleccionado.existencias, imagen: imagen, nombre: nombre, precio: precio) {
+        if let producto = self.model.updateProducto(id: productoSeleccionado.id, existencias: productoSeleccionado.existencias, imagen: imagen, nombre: nombre, descripcion: descripcion) {
             self.inventarioEditProductDelegate?.inventario(productEditted: producto)
         }
     }
@@ -138,26 +138,28 @@ class InventarioController {
             return
         }
 
+        var balance: Int64 = 0
+        
         if entrada {
-            let balance = productoSeleccionado.existencias + Int64(unidades)
-            guard let transaccion = self.model.addTransaccion(productoId: productoSeleccionado.id, balance: Int64(balance), entrada: true, unidades: Int64(unidades)) else {
-                inventarioAddEntradaDelegate?.inventario(addTransaccionError: "No se pudo crear la transacción")
-                return
-            }
-            if let producto = self.model.updateProducto(id: productoSeleccionado.id, existencias: balance, imagen: nil, nombre: nil, precio: nil) {
-                //self.inventarioDetailsDelegate.
-            }
+            balance = productoSeleccionado.existencias + Int64(unidades)
         } else {
-            let balance = productoSeleccionado.existencias - Int64(unidades)
-            guard balance < 0 else {
-                inventarioAddEntradaDelegate?.inventario(addTransaccionError: "No se pueden retirar más unidades que las existentes")
-                return
-            }
-            guard let transaccion = self.model.addTransaccion(productoId: productoSeleccionado.id, balance: Int64(balance), entrada: false, unidades: Int64(unidades)) else {
-                inventarioAddEntradaDelegate?.inventario(addTransaccionError: "No se pudo crear la transacción")
-                return
-            }
-            self.model.updateProducto(id: productoSeleccionado.id, existencias: balance, imagen: nil, nombre: nil, precio: nil)
+           balance = productoSeleccionado.existencias - Int64(unidades)
+        }
+        
+        guard let transaccion = self.model.addTransaccion(productoId: productoSeleccionado.id, balance: Int64(balance), entrada: entrada, unidades: Int64(unidades)) else {
+            inventarioAddEntradaDelegate?.inventario(addTransaccionError: "No se pudo crear la transacción")
+            return
+        }
+        
+        // TODO: Notificar que la transacción fue creada
+        inventarioAddEntradaDelegate?.inventario(transaccionCreada: transaccion)
+        
+        if let producto = self.model.updateProducto(id: productoSeleccionado.id, existencias: balance, imagen: nil, nombre: nil, descripcion: nil) {
+            
+            // TODO: Notificar que el producto fue actualizado
+            self.filterSelectedProductTransactions()
+            inventarioDetailsDelegate?.inventario(productoSelected: producto, transacciones: self.model.transaccionesProductoSeleccionado)
+            
         }
     }
 
