@@ -17,6 +17,9 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var descripcionProductoLabel: UILabel!
     
+    @IBOutlet weak var existenciasLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,5 +30,13 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+//    TODO: Crear una entrada de Imagen
+    func setupCell( id: String, nombre: String, descripcion: String, existencias: String) {
+        //self.imageProducto = imageProducto // Casteo
+        self.idProductoLabel.text = id
+        self.nombreProductoLabel.text = nombre
+        self.descripcionProductoLabel.text = descripcion
+        self.existenciasLabel.text = existencias
+    }
+        
 }
