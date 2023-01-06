@@ -49,12 +49,16 @@ class InventarioController {
         var productos: [(producto: ProductoEntity, transacciones: [TransaccionEntity])] = []
 
         for producto in self.model.productos {
+            print("⦿ producto \(producto)")
+            print("⦿ transacciones: \(self.model.transacciones)")
+            let transacciones = self.model.transacciones.filter {
+                transaccion in
+                transaccion.producto == producto
+            }
+            print("⦿ transacciones filtradas: \(transacciones)")
             productos.append((
                 producto: producto,
-                transacciones: self.model.transacciones.filter {
-                    transaccion in
-                    transaccion.producto == producto
-                }
+                transacciones: transacciones
             ))
         }
 
@@ -96,9 +100,11 @@ class InventarioController {
         self.filterSelectedProductTransactions()
 
         inventarioDetailsDelegate?.inventario(productoSelected: productoSeleccionado, transacciones: self.model.transaccionesProductoSeleccionado)
+        inventarioEditProductDelegate?.inventario(productLoaded: productoSeleccionado)
     }
 
     func filterSelectedProductTransactions() {
+        print("Filtrando las transacciones del producto \(self.model.productoSeleccionado?.id ?? Int64(-1))")
         guard let productoSeleccionado = self.model.productoSeleccionado else {
             inventarioDetailsDelegate?.inventario(selectProductError: "No hay producto seleccionado")
             return
@@ -116,13 +122,21 @@ class InventarioController {
     
     /// EditProductView
     func editProduct(nombre: String?, imagen: Data?, descripcion: String?) {
+        print("Recibiendo nuevos datos para editar")
+        
         guard let productoSeleccionado = self.model.productoSeleccionado else {
             inventarioEditProductDelegate?.inventario(editError: "No hay producto seleccionado para editarse")
             return
         }
+        
+        print("Editando producto \(productoSeleccionado.id)")
 
         if let producto = self.model.updateProducto(id: productoSeleccionado.id, existencias: productoSeleccionado.existencias, imagen: imagen, nombre: nombre, descripcion: descripcion) {
+            
+            print("Producto editado \(productoSeleccionado.id)")
+            
             self.inventarioEditProductDelegate?.inventario(productEditted: producto)
+            
         }
     }
     
