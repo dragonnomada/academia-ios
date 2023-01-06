@@ -76,7 +76,7 @@ extension DetailsProductViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TransaccionCell")!
         
         let transaccion = self.transacciones[indexPath.row]
         

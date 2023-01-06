@@ -37,6 +37,7 @@ protocol InventarioDetailsDelegate {
 }
 
 protocol InventarioEditProductDelegate {
+    func inventario(productLoaded: ProductoEntity)
     func inventario(productEditted: ProductoEntity)
     func inventario(editError: String)
 }
