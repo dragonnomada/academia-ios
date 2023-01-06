@@ -11,8 +11,10 @@ class HomeViewController: UIViewController {
     
     @IBOutlet var productTableView: UITableView!
     
-    var productos: [ProductoEntity] = []
-    var transacciones: [TransaccionEntity] = []
+//    var productos: [ProductoEntity] = []
+//    var transacciones: [TransaccionEntity] = []
+    
+    var productos: [(producto: ProductoEntity, transacciones: [TransaccionEntity])] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,7 @@ class HomeViewController: UIViewController {
         productTableView.dataSource = self
         productTableView.delegate = self
         productTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+        InventarioController.shared.inventarioHomeDelegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
