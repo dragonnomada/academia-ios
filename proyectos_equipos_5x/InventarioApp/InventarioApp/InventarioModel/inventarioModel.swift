@@ -47,11 +47,10 @@ class InventModel {
     }
 
     func installUsuariosPruebas() -> Bool {
-        guard let usuarioMaster = self.addUsuario(nombre: "admin", password: "admin123") else { return false }
-        guard let usuarioMaster = self.addUsuario(nombre: "test1", password: "test1") else { return false }
-        guard let usuarioMaster = self.addUsuario(nombre: "test2", password: "test2") else { return false }
-        guard let usuarioMaster = self.addUsuario(nombre: "test3", password: "test3") else { return false }
-        self.loadUsuarios()
+        guard let _ = self.addUsuario(nombre: "admin", password: "admin123") else { return false }
+        guard let _ = self.addUsuario(nombre: "test1", password: "test1") else { return false }
+        guard let _ = self.addUsuario(nombre: "test2", password: "test2") else { return false }
+        guard let _ = self.addUsuario(nombre: "test3", password: "test3") else { return false }
         return true
     }
     
