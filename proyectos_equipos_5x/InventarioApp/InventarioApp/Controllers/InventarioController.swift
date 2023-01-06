@@ -54,6 +54,8 @@ class InventarioController {
             let transacciones = self.model.transacciones.filter {
                 transaccion in
                 transaccion.producto == producto
+            }.reversed().map { reversed in
+                reversed
             }
             print("⦿ transacciones filtradas: \(transacciones)")
             productos.append((
@@ -158,6 +160,11 @@ class InventarioController {
             balance = productoSeleccionado.existencias + Int64(unidades)
         } else {
            balance = productoSeleccionado.existencias - Int64(unidades)
+            
+            guard balance >= 0 else {
+                inventarioAddEntradaDelegate?.inventario(addTransaccionError: "No se pueden retirar más de las unidades disponibles")
+                return
+            }
         }
         
         guard let transaccion = self.model.addTransaccion(productoId: productoSeleccionado.id, balance: Int64(balance), entrada: entrada, unidades: Int64(unidades)) else {
@@ -173,6 +180,7 @@ class InventarioController {
             // TODO: Notificar que el producto fue actualizado
             self.filterSelectedProductTransactions()
             inventarioDetailsDelegate?.inventario(productoSelected: producto, transacciones: self.model.transaccionesProductoSeleccionado)
+            //self.getAllproducts()
             
         }
     }
