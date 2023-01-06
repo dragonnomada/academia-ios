@@ -8,6 +8,8 @@
 import Foundation
 
 class InventarioController {
+    
+    static let shared = InventarioController()
 
     let model = InventModel()
 
@@ -21,21 +23,21 @@ class InventarioController {
     func getUsuario(nombre: String, password: String) {
 
         guard self.model.loadUsuarios() else {
-            inventarioLoginDelegate.loginError(loginError: "No se pueden cargar los usuarios")
+            inventarioLoginDelegate?.loginError(loginError: "No se pueden cargar los usuarios")
             return
         }
 
-        for let usuario in self.model.usuarios {
+        for usuario in self.model.usuarios {
 
             if usuario.nombre == nombre && usuario.password == password {
                 self.model.usuarioIniciado = usuario
-                inventarioLoginDelegate.login(usuarioIniciado: usuario)
+                inventarioLoginDelegate?.login(usuarioIniciado: usuario)
                 return
             }
 
         }
 
-        inventarioLoginDelegate.loginError(loginError: "Credenciales no válidas para el usuario \(nombre)")
+        inventarioLoginDelegate?.loginError(loginError: "Credenciales no válidas para el usuario \(nombre)")
 
     }
     
@@ -49,7 +51,7 @@ class InventarioController {
         for producto in self.model.productos {
             productos.append((
                 producto: producto,
-                transacciones: transacciones.filter {
+                transacciones: self.model.transacciones.filter {
                     transaccion in
                     transaccion.producto == producto
                 }
@@ -57,47 +59,49 @@ class InventarioController {
         }
 
         if productos.count == 0 {
-            self.inventarioHomeDelegate.inventario(inventarioError: "No hay productos")
+            self.inventarioHomeDelegate?.inventario(inventarioError: "No hay productos")
         } else {
-            self.inventarioHomeDelegate.inventario(productos: productos)
+            self.inventarioHomeDelegate?.inventario(productos: productos)
         }
     }
 
     func selectProducto(index: Int) {
         guard index >= 0 && index < self.model.productos.count else {
-            self.inventarioHomeDelegate.inventario(inventarioError: "Error al seleccionar el producto")
+            self.inventarioHomeDelegate?.inventario(inventarioError: "Error al seleccionar el producto")
             return
         }
 
         self.model.productoSeleccionado = self.model.productos[index]
 
-        self.inventarioHomeDelegate.inventario(productoSeleccionado producto: self.model.productoSeleccionado)
+        self.inventarioHomeDelegate?.inventario(productoSeleccionado: self.model.productos[index])
     }
     
     /// AddProductView
     func addProduct(nombre: String, imagen: Data, precio: Double) {
         guard let producto = self.model.addProducto(existencias: 0, image: imagen, nombre: nombre, precio: precio) else {
-            inventarioAddProductDelegate.inventario(addProductError: "Error al crear el producto \(nombre)")
+            inventarioAddProductDelegate?.inventario(addProductError: "Error al crear el producto \(nombre)")
             return
         }
 
-        inventarioAddProductDelegate.inventario(productAdded: producto)
+        inventarioAddProductDelegate?.inventario(productAdded: producto)
     }
     
     /// DetailsProductView
     func getSelectedProduct() {
         guard let productoSeleccionado = self.model.productoSeleccionado else {
-            inventarioDetailsDelegate.inventario(selectProductError: "No hay producto seleccionado")
+            inventarioDetailsDelegate?.inventario(selectProductError: "No hay producto seleccionado")
+            return
         }
 
         self.filterSelectedProductTransactions()
 
-        inventarioDetailsDelegate.inventario(productoSelected: productoSeleccionado, transacciones: self.model.transaccionesProductoSeleccionado)
+        inventarioDetailsDelegate?.inventario(productoSelected: productoSeleccionado, transacciones: self.model.transaccionesProductoSeleccionado)
     }
 
     func filterSelectedProductTransactions() {
         guard let productoSeleccionado = self.model.productoSeleccionado else {
-            inventarioDetailsDelegate.inventario(selectProductError: "No hay producto seleccionado")
+            inventarioDetailsDelegate?.inventario(selectProductError: "No hay producto seleccionado")
+            return
         }
 
         self.model.transaccionesProductoSeleccionado = self.model.transacciones.filter {
@@ -106,47 +110,51 @@ class InventarioController {
         }
 
         if self.model.transaccionesProductoSeleccionado.count == 0 {
-            inventarioDetailsDelegate.inventario(filterTransactionsError: "No hay transacciones para el producto seleccionado")
+            inventarioDetailsDelegate?.inventario(filterTransactionsError: "No hay transacciones para el producto seleccionado")
         }
     }
     
     /// EditProductView
     func editProduct(nombre: String?, imagen: Data?, precio: Double?) {
         guard let productoSeleccionado = self.model.productoSeleccionado else {
-            inventarioEditProductDelegate.inventario(editError: "No hay producto seleccionado para editarse")
+            inventarioEditProductDelegate?.inventario(editError: "No hay producto seleccionado para editarse")
             return
         }
 
-        self.model.updateProducto(id: productoSeleccionado.id, existencias: productoSeleccionado.existencias, imagen: imagen, nombre: nombre, precio: precio)
+        if let producto = self.model.updateProducto(id: productoSeleccionado.id, existencias: productoSeleccionado.existencias, imagen: imagen, nombre: nombre, precio: precio) {
+            self.inventarioEditProductDelegate?.inventario(productEditted: producto)
+        }
     }
     
     /// AddTransaction
     func addSelectedProductTransaccion(entrada: Bool, unidades: Int) {
         guard let productoSeleccionado = self.model.productoSeleccionado else {
-            inventarioAddEntradaDelegate.inventario(addTransaccionError: "No hay producto seleccionado para editarse")
+            inventarioAddEntradaDelegate?.inventario(addTransaccionError: "No hay producto seleccionado para editarse")
             return
         }
 
         guard unidades > 0 else {
-            inventarioAddEntradaDelegate.inventario(addTransaccionError: "Las unidades no pueden ser negativas")
+            inventarioAddEntradaDelegate?.inventario(addTransaccionError: "Las unidades no pueden ser negativas")
             return
         }
 
         if entrada {
-            let balance = productoSeleccionado.existencias + unidades
-            guard let transaccion = self.model.addTransaccion(productoId: productoSeleccionado.id, balance: Int64(balance), entrada: true, unidades: unidades) else {
-                inventarioAddEntradaDelegate.inventario(addTransaccionError: "No se pudo crear la transacción")
+            let balance = productoSeleccionado.existencias + Int64(unidades)
+            guard let transaccion = self.model.addTransaccion(productoId: productoSeleccionado.id, balance: Int64(balance), entrada: true, unidades: Int64(unidades)) else {
+                inventarioAddEntradaDelegate?.inventario(addTransaccionError: "No se pudo crear la transacción")
                 return
             }
-            self.model.updateProducto(id: productoSeleccionado.id, existencias: balance, imagen: nil, nombre: nil, precio: nil)
+            if let producto = self.model.updateProducto(id: productoSeleccionado.id, existencias: balance, imagen: nil, nombre: nil, precio: nil) {
+                //self.inventarioDetailsDelegate.
+            }
         } else {
-            let balance = productoSeleccionado.existencias - unidades
+            let balance = productoSeleccionado.existencias - Int64(unidades)
             guard balance < 0 else {
-                inventarioAddEntradaDelegate.inventario(addTransaccionError: "No se pueden retirar más unidades que las existentes")
+                inventarioAddEntradaDelegate?.inventario(addTransaccionError: "No se pueden retirar más unidades que las existentes")
                 return
             }
-            guard let transaccion = self.model.addTransaccion(productoId: productoSeleccionado.id, balance: Int64(balance), entrada: false, unidades: unidades) else {
-                inventarioAddEntradaDelegate.inventario(addTransaccionError: "No se pudo crear la transacción")
+            guard let transaccion = self.model.addTransaccion(productoId: productoSeleccionado.id, balance: Int64(balance), entrada: false, unidades: Int64(unidades)) else {
+                inventarioAddEntradaDelegate?.inventario(addTransaccionError: "No se pudo crear la transacción")
                 return
             }
             self.model.updateProducto(id: productoSeleccionado.id, existencias: balance, imagen: nil, nombre: nil, precio: nil)
