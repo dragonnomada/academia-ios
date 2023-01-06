@@ -49,12 +49,16 @@ class InventarioController {
         var productos: [(producto: ProductoEntity, transacciones: [TransaccionEntity])] = []
 
         for producto in self.model.productos {
+            print("⦿ producto \(producto)")
+            print("⦿ transacciones: \(self.model.transacciones)")
+            let transacciones = self.model.transacciones.filter {
+                transaccion in
+                transaccion.producto == producto
+            }
+            print("⦿ transacciones filtradas: \(transacciones)")
             productos.append((
                 producto: producto,
-                transacciones: self.model.transacciones.filter {
-                    transaccion in
-                    transaccion.producto == producto
-                }
+                transacciones: transacciones
             ))
         }
 
@@ -100,6 +104,7 @@ class InventarioController {
     }
 
     func filterSelectedProductTransactions() {
+        print("Filtrando las transacciones del producto \(self.model.productoSeleccionado?.id ?? Int64(-1))")
         guard let productoSeleccionado = self.model.productoSeleccionado else {
             inventarioDetailsDelegate?.inventario(selectProductError: "No hay producto seleccionado")
             return

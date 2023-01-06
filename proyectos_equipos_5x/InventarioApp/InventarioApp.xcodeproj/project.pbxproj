@@ -19,6 +19,8 @@
 		FA5F53432964C4A400035FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5F53412964C4A400035FEE /* LaunchScreen.storyboard */; };
 		FA5F534C2964C50400035FEE /* ModelUsuario.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA5F534A2964C50400035FEE /* ModelUsuario.xcdatamodeld */; };
 		FA5F534F2964DCCF00035FEE /* inventarioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F534E2964DCCF00035FEE /* inventarioModel.swift */; };
+		FAA3814C2968983E004550F4 /* TransaccionTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3814A2968983E004550F4 /* TransaccionTableTableViewCell.swift */; };
+		FAA3814D2968983E004550F4 /* TransaccionTableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA3814B2968983E004550F4 /* TransaccionTableTableViewCell.xib */; };
 		FAD4F5F129664EDE00A02BDB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4F5F029664EDE00A02BDB /* LoginViewController.swift */; };
 		FAFEDA9E2967612700B45A3C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEDA992967612700B45A3C /* HomeViewController.swift */; };
 		FAFEDA9F2967612700B45A3C /* AddTransaccionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEDA9A2967612700B45A3C /* AddTransaccionesViewController.swift */; };
@@ -43,6 +45,8 @@
 		FA5F53442964C4A400035FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA5F534B2964C50400035FEE /* ModelUsuario.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelUsuario.xcdatamodel; sourceTree = "<group>"; };
 		FA5F534E2964DCCF00035FEE /* inventarioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventarioModel.swift; sourceTree = "<group>"; };
+		FAA3814A2968983E004550F4 /* TransaccionTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransaccionTableTableViewCell.swift; sourceTree = "<group>"; };
+		FAA3814B2968983E004550F4 /* TransaccionTableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransaccionTableTableViewCell.xib; sourceTree = "<group>"; };
 		FAD4F5F029664EDE00A02BDB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FAFEDA992967612700B45A3C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FAFEDA9A2967612700B45A3C /* AddTransaccionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransaccionesViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				FA5F533C2964C4A300035FEE /* Main.storyboard */,
 				52AE1B4E29664327003AAE8A /* TableViewCell.swift */,
 				52AE1B4F29664327003AAE8A /* TableViewCell.xib */,
+				FAA3814A2968983E004550F4 /* TransaccionTableTableViewCell.swift */,
+				FAA3814B2968983E004550F4 /* TransaccionTableTableViewCell.xib */,
 				FA5F533F2964C4A400035FEE /* Assets.xcassets */,
 				FA5F53412964C4A400035FEE /* LaunchScreen.storyboard */,
 				FA5F53442964C4A400035FEE /* Info.plist */,
@@ -207,6 +213,7 @@
 				FA5F53432964C4A400035FEE /* LaunchScreen.storyboard in Resources */,
 				52AE1B5129664327003AAE8A /* TableViewCell.xib in Resources */,
 				FA5F53402964C4A400035FEE /* Assets.xcassets in Resources */,
+				FAA3814D2968983E004550F4 /* TransaccionTableTableViewCell.xib in Resources */,
 				FA5F533E2964C4A300035FEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +239,7 @@
 				D8993B342968800600F8CDDA /* Alerts.swift in Sources */,
 				52AE1B5029664327003AAE8A /* TableViewCell.swift in Sources */,
 				FA5F534F2964DCCF00035FEE /* inventarioModel.swift in Sources */,
+				FAA3814C2968983E004550F4 /* TransaccionTableTableViewCell.swift in Sources */,
 				FAFEDAA529677B3500B45A3C /* InventarioLoginDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

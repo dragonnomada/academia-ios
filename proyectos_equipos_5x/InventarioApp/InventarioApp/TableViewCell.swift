@@ -19,6 +19,9 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var existenciasLabel: UILabel!
     
+    @IBOutlet weak var transaccionesTableView: UITableView!
+    
+    var transacciones: [TransaccionEntity] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,6 +32,12 @@ class TableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        
+        transaccionesTableView.register(UINib(nibName: "TransaccionTableTableViewCell", bundle: nil), forCellReuseIdentifier: "TransaccionDetallesCell")
+        
+        transaccionesTableView.dataSource = self
+        //transaccionesTableView.delegate = self
+        
     }
 //    TODO: Crear una entrada de Imagen
     func setupCell( id: String, nombre: String, descripcion: String, existencias: String, imagen: Data?, transacciones: [TransaccionEntity]) {
@@ -40,6 +49,30 @@ class TableViewCell: UITableViewCell {
         if let image = imagen {
             imageProducto.image = UIImage(data: image)
         }
+        self.transacciones = transacciones
     }
         
+}
+
+extension TableViewCell: UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Últimas 3 transacciones"
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("Transacciones: \(transacciones.count)")
+        return min(3, transacciones.count)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let transaccion = transacciones[indexPath.row]
+        let cell = transaccionesTableView.dequeueReusableCell(withIdentifier: "TransaccionDetallesCell", for: indexPath) as! TransaccionTableTableViewCell
+        print("PINTANDO CELDA PARA LA TRANSACCIÓN: \(transaccion)")
+        cell.setupCell(transaccion: transaccion)
+        return cell
+    }
 }
