@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 class InventModel {
     
@@ -30,11 +31,24 @@ class InventModel {
     var transacciones: [TransaccionEntity] = []
     var usuarios: [UsuarioEntity] = []
     
+    func installProductosPrueba() {
+        if let producto1 = self.addProducto(existencias: 0, image: (UIImage(named: "gansito")?.pngData())!, nombre: "Gansito", descripcion: "Pan con chocolate") {
+            self.productoSeleccionado = producto1
+            let _ = self.addTransaccion(productoId: producto1.id, balance: producto1.existencias + 10, entrada: true, unidades: 10)
+            let _ = self.addTransaccion(productoId: producto1.id, balance: producto1.existencias + 10 + 20, entrada: true, unidades: 20)
+            let _ = self.addTransaccion(productoId: producto1.id, balance: producto1.existencias + 10 + 20 - 5, entrada: true, unidades: 5)
+        }
+    }
+    
     func loadProductos() {
         let context = self.persistentContainer.viewContext
         let requestProductoEntity = ProductoEntity.fetchRequest()
         if let productoEntity = try? context.fetch(requestProductoEntity) {
             self.productos = productoEntity
+        }
+        
+        if self.productos.isEmpty {
+            installProductosPrueba()
         }
     }
     
@@ -58,7 +72,7 @@ class InventModel {
         let context = self.persistentContainer.viewContext
         let requestUsuarioEntity = UsuarioEntity.fetchRequest()
         if let usuariosEntity = try? context.fetch(requestUsuarioEntity) {
-            if usuariosEntity.count == 0 {
+            if usuariosEntity.isEmpty {
                 return self.installUsuariosPruebas()
             } else {
                 self.usuarios = usuariosEntity

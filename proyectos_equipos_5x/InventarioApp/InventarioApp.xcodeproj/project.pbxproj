@@ -10,6 +10,7 @@
 		52AE1B5029664327003AAE8A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AE1B4E29664327003AAE8A /* TableViewCell.swift */; };
 		52AE1B5129664327003AAE8A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AE1B4F29664327003AAE8A /* TableViewCell.xib */; };
 		52AE1B5329664A0C003AAE8A /* InventarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AE1B5229664A0C003AAE8A /* InventarioController.swift */; };
+		D8993B342968800600F8CDDA /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993B332968800600F8CDDA /* Alerts.swift */; };
 		FA5F53372964C4A300035FEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F53362964C4A300035FEE /* AppDelegate.swift */; };
 		FA5F53392964C4A300035FEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F53382964C4A300035FEE /* SceneDelegate.swift */; };
 		FA5F533B2964C4A300035FEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F533A2964C4A300035FEE /* ViewController.swift */; };
@@ -18,7 +19,6 @@
 		FA5F53432964C4A400035FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5F53412964C4A400035FEE /* LaunchScreen.storyboard */; };
 		FA5F534C2964C50400035FEE /* ModelUsuario.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA5F534A2964C50400035FEE /* ModelUsuario.xcdatamodeld */; };
 		FA5F534F2964DCCF00035FEE /* inventarioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F534E2964DCCF00035FEE /* inventarioModel.swift */; };
-		FA5F53542964F20600035FEE /* TestInventaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F53532964F20600035FEE /* TestInventaryModel.swift */; };
 		FAD4F5F129664EDE00A02BDB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4F5F029664EDE00A02BDB /* LoginViewController.swift */; };
 		FAFEDA9E2967612700B45A3C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEDA992967612700B45A3C /* HomeViewController.swift */; };
 		FAFEDA9F2967612700B45A3C /* AddTransaccionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEDA9A2967612700B45A3C /* AddTransaccionesViewController.swift */; };
@@ -32,6 +32,7 @@
 		52AE1B4E29664327003AAE8A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		52AE1B4F29664327003AAE8A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		52AE1B5229664A0C003AAE8A /* InventarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InventarioController.swift; path = InventarioApp/Controllers/InventarioController.swift; sourceTree = SOURCE_ROOT; };
+		D8993B332968800600F8CDDA /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		FA5F53332964C4A300035FEE /* InventarioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InventarioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5F53362964C4A300035FEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA5F53382964C4A300035FEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		FA5F53442964C4A400035FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA5F534B2964C50400035FEE /* ModelUsuario.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelUsuario.xcdatamodel; sourceTree = "<group>"; };
 		FA5F534E2964DCCF00035FEE /* inventarioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventarioModel.swift; sourceTree = "<group>"; };
-		FA5F53532964F20600035FEE /* TestInventaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInventaryModel.swift; sourceTree = "<group>"; };
 		FAD4F5F029664EDE00A02BDB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FAFEDA992967612700B45A3C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FAFEDA9A2967612700B45A3C /* AddTransaccionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransaccionesViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +71,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		D8993B3229687FC800F8CDDA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D8993B332968800600F8CDDA /* Alerts.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FA5F532A2964C4A300035FEE = {
 			isa = PBXGroup;
 			children = (
@@ -90,10 +98,10 @@
 		FA5F53352964C4A300035FEE /* InventarioApp */ = {
 			isa = PBXGroup;
 			children = (
+				D8993B3229687FC800F8CDDA /* Extensions */,
 				FAFEDAA3296766CC00B45A3C /* Protocolos */,
 				FAD4F5F229664EEF00A02BDB /* Views */,
 				52AE1B5429664A9C003AAE8A /* Controllers */,
-				FA5F53522964F1DC00035FEE /* Tests */,
 				FA5F534D2964DCA100035FEE /* InventarioModel */,
 				FA5F53362964C4A300035FEE /* AppDelegate.swift */,
 				FA5F53382964C4A300035FEE /* SceneDelegate.swift */,
@@ -115,14 +123,6 @@
 				FA5F534E2964DCCF00035FEE /* inventarioModel.swift */,
 			);
 			path = InventarioModel;
-			sourceTree = "<group>";
-		};
-		FA5F53522964F1DC00035FEE /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				FA5F53532964F20600035FEE /* TestInventaryModel.swift */,
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		FAD4F5F229664EEF00A02BDB /* Views */ = {
@@ -227,9 +227,9 @@
 				FAFEDA9E2967612700B45A3C /* HomeViewController.swift in Sources */,
 				FAFEDA9F2967612700B45A3C /* AddTransaccionesViewController.swift in Sources */,
 				FAFEDAA02967612700B45A3C /* DetailsProductViewController.swift in Sources */,
-				FA5F53542964F20600035FEE /* TestInventaryModel.swift in Sources */,
 				FAFEDAA12967612700B45A3C /* AddProductViewController.swift in Sources */,
 				52AE1B5329664A0C003AAE8A /* InventarioController.swift in Sources */,
+				D8993B342968800600F8CDDA /* Alerts.swift in Sources */,
 				52AE1B5029664327003AAE8A /* TableViewCell.swift in Sources */,
 				FA5F534F2964DCCF00035FEE /* inventarioModel.swift in Sources */,
 				FAFEDAA529677B3500B45A3C /* InventarioLoginDelegate.swift in Sources */,
