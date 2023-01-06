@@ -89,6 +89,7 @@ extension HomeViewController: InventarioHomeDelegate{
     ///
     ///
     func inventario(productos: [(producto: ProductoEntity, transacciones: [TransaccionEntity])]) {
+        print("❖ Productos recibidos: \(productos)")
         self.productos = productos
         productTableView.reloadData()
     }
