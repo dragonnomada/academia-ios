@@ -19,6 +19,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //productTableView.estimatedRowHeight = 100
+        //productTableView.rowHeight = UITableView.automaticDimension
         productTableView.dataSource = self
         productTableView.delegate = self
         productTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")

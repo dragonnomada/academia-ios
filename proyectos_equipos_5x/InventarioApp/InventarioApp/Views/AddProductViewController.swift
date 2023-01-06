@@ -16,28 +16,32 @@ class AddProductViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        InventarioController.shared.inventarioEditProductDelegate = self
+        InventarioController.shared.inventarioAddProductDelegate = self
         // Do any additional setup after loading the view.
     }
     
     
     @IBAction func cancelar(_ sender: Any) {
-        performSegue(withIdentifier: "", sender: self)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func agregar(_ sender: Any) {
-        //
+        guard let nombre = addProductName.text else { return }
+        guard let descripcion = addProductDescripcion.text else { return }
+        guard let imagen = addProductImage.image?.pngData() else { return }
+        
+        InventarioController.shared.addProduct(nombre: nombre, imagen: imagen, descripcion: descripcion)
     }
 
 }
 
 extension AddProductViewController: InventarioAddProductDelegate {
     func inventario(productAdded producto: ProductoEntity) {
-        <#code#>
+        self.navigationController?.popViewController(animated: true)
     }
     
     func inventario(addProductError error: String) {
-        <#code#>
+        self.present(UIAlertController.simpleErrorAlert(message: error), animated: true)
     }
     
     
