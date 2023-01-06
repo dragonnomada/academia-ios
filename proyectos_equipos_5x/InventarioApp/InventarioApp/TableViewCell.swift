@@ -32,6 +32,8 @@ class TableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        //transaccionesTableView.estimatedRowHeight = 20
+        //transaccionesTableView.rowHeight = UITableView.automaticDimension
         
         transaccionesTableView.register(UINib(nibName: "TransaccionTableTableViewCell", bundle: nil), forCellReuseIdentifier: "TransaccionDetallesCell")
         
