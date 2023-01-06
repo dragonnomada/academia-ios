@@ -60,7 +60,7 @@ extension AddTransaccionesViewController: InventarioAddEntradaDelegate {
     }
     
     func inventario(addTransaccionError error: String) {
-        print("Error")
+        self.present(UIAlertController.simpleErrorAlert(message: error), animated: true)
     }
     
     
