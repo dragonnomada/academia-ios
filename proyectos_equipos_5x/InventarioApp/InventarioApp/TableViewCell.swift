@@ -52,6 +52,7 @@ class TableViewCell: UITableViewCell {
             imageProducto.image = UIImage(data: image)
         }
         self.transacciones = transacciones
+        self.transaccionesTableView.reloadData()
     }
         
 }

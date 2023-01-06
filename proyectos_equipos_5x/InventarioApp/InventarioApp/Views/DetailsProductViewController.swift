@@ -54,6 +54,8 @@ extension DetailsProductViewController: InventarioDetailsDelegate {
             self.productImageView.image = UIImage(data: imagen)
         }
         self.productExistenciasView.text = "\(producto.existencias)"
+        
+        self.transaccionesTableView.reloadData()
     }
     
     func inventario(filterTransactionsError error: String) {
