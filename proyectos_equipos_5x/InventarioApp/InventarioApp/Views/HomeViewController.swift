@@ -23,6 +23,7 @@ class HomeViewController: UIViewController {
         //productTableView.rowHeight = UITableView.automaticDimension
         productTableView.dataSource = self
         productTableView.delegate = self
+        // asocia la celda con la tabla
         productTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
         // le de decimos al inventaryController que esta clase se va encargar de
         // definir los metodos del delegadoinventario homedelegate
@@ -93,6 +94,7 @@ extension HomeViewController: InventarioHomeDelegate{
     func inventario(productos: [(producto: ProductoEntity, transacciones: [TransaccionEntity])]) {
         print("❖ Productos recibidos: \(productos)")
         self.productos = productos
+        // actualizamos los datos de la table
         productTableView.reloadData()
     }
     

@@ -55,8 +55,11 @@ class InventModel {
     ///recupera los datos  delalmacén persistente de Core Data y la almacena en la lista de productos
     ///
     func loadProductos() {
+        // esperamos recuperar el contexto del contenedor. de donde voy a sacar los dsatos
         let context = self.persistentContainer.viewContext
+        //especificamos que productos queremos recuperar . query
         let requestProductoEntity = ProductoEntity.fetchRequest()
+        // entregarlos
         if let productoEntity = try? context.fetch(requestProductoEntity) {
             self.productos = productoEntity
         }

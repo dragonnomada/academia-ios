@@ -45,6 +45,7 @@ class DetailsProductViewController: UIViewController {
 extension DetailsProductViewController: InventarioDetailsDelegate {
     
     func inventario(productoSelected producto: ProductoEntity, transacciones: [TransaccionEntity]) {
+        "en esta parte llega LA INFORMACION"
         self.producto = producto
         self.transacciones = transacciones
         
