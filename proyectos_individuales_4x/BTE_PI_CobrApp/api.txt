@@ -1,0 +1,6 @@
+http://34.125.242.89/api/cobrapp/login?username=spiderman&password=meriyein
+
+http://34.125.242.89/api/cobrapp/qr/send?code=liverpool-1001&username=spiderman&token=61c4fe7a-26db-4586-805b-4a5609297fb0
+
+
+"http://34.125.242.89/api/cobrapp/qr/send?code=\(qrArticuloText)&username=\(username)&token=\(token)"
