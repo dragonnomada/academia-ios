@@ -9,8 +9,17 @@ import Foundation
 import CoreData
 import UIKit
 
+
+///
+///una clase para recuperar los datos de cora data
+///
 class InventModel {
     
+    ///
+    ///NSPersistentContainer simplifica la creación y administración de la
+    ///pila de datos básicos al manejar la creación del modelo de objetos
+    ///administrados. en nuestro caso para el almacenamiento los productos, transacciones y usuarios
+    ///
     let persistentContainer : NSPersistentContainer = {
         let container = NSPersistentContainer(name: "ModelUsuario")
         container.loadPersistentStores { _, error in
@@ -23,10 +32,12 @@ class InventModel {
         return container
     }()
     
+    ///
+    ///se generan variables para rebir los datos que vienen del almacén persistente de Core Data.
+    ///
     var usuarioIniciado: UsuarioEntity?
     var productoSeleccionado: ProductoEntity?
     var transaccionesProductoSeleccionado: [TransaccionEntity] = []
-    
     var productos: [ProductoEntity] = []
     var transacciones: [TransaccionEntity] = []
     var usuarios: [UsuarioEntity] = []
@@ -40,6 +51,9 @@ class InventModel {
         }
     }
     
+    ///
+    ///recupera los datos  delalmacén persistente de Core Data y la almacena en la lista de productos
+    ///
     func loadProductos() {
         let context = self.persistentContainer.viewContext
         let requestProductoEntity = ProductoEntity.fetchRequest()
@@ -52,6 +66,9 @@ class InventModel {
         }
     }
     
+    ///
+    ///recupera las transacciones del almacén persistente de Core Data la alamcena en la lista de transacciones.
+    ///
     func loadTransacciones() {
         let context = self.persistentContainer.viewContext
         let requestTransaccionEntity = TransaccionEntity.fetchRequest()
@@ -68,6 +85,9 @@ class InventModel {
         return true
     }
     
+    ///
+    ///recuepra los usuarios del almacén persistente de Core Data
+    ///
     func loadUsuarios() -> Bool {
         let context = self.persistentContainer.viewContext
         let requestUsuarioEntity = UsuarioEntity.fetchRequest()
@@ -84,6 +104,9 @@ class InventModel {
         return false
     }
     
+    ///
+    ///recupera un producto de la lista de productos con un numero de id enviado
+    ///
     func getProducto(id: Int64) -> ProductoEntity? {
         var resultado: ProductoEntity?
 
@@ -111,20 +134,19 @@ class InventModel {
 //        }
 //        return self.usuarios[index]
 //    }
-
     
-    
+    ///
+    ///agrega un producto al almacén persistente de Core Data.
+    ///
     func addProducto(existencias: Int64, image: Data, nombre: String, descripcion: String) -> ProductoEntity? {
         // recordemos que la informacion esta en el contexto, hasta que ejecutemos el metodo save del contexto
         let context = self.persistentContainer.viewContext
         let producto = ProductoEntity(context: context)
-        
         producto.id = Int64.random(in: 1...1_000_000)
         producto.image = image
         producto.existencias = existencias
         producto.nombre = nombre
         producto.descripcion = descripcion
-        
         do {
             try context.save()
             self.loadProductos()
@@ -135,12 +157,14 @@ class InventModel {
         }
     }
     
+    ///
+    ///agrega una transaccion al almacén persistente de Core Data
+    ///
     func addTransaccion(productoId: Int64, balance: Int64, entrada: Bool, unidades: Int64) -> TransaccionEntity? {
         
         if let producto = self.getProducto(id: productoId) {
             let context = self.persistentContainer.viewContext
             let transaccion = TransaccionEntity(context: context)
-            
             transaccion.balance = balance
             transaccion.entrada = entrada
             transaccion.unidades = unidades
@@ -157,9 +181,11 @@ class InventModel {
         } else {
             return nil
         }
-        
     }
     
+    ///
+    ///agrega un usuario al almacén persistente de Core Data
+    ///
     func addUsuario(nombre: String, password: String) -> UsuarioEntity? {
         let context = self.persistentContainer.viewContext
         let usuario = UsuarioEntity(context: context)
@@ -177,6 +203,9 @@ class InventModel {
         }
     }
     
+    ///
+    ///agrega un producto al almacén persistente de Core Data
+    ///
     func updateProducto(id: Int64, existencias: Int64?, imagen: Data?, nombre: String?, descripcion: String?) -> ProductoEntity? {
         if let producto = getProducto(id: id) {
             if let existencias = existencias {
