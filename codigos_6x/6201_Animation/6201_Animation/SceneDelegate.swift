@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  6104_Todo_MVVM_Nib
+//  6201_Animation
 //
-//  Created by Dragon on 09/01/23.
+//  Created by Dragon on 10/01/23.
 //
 
 import UIKit
@@ -17,14 +17,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
-        
-        let navigationController = UINavigationController()
-        
-        navigationController.pushViewController(TodoHomeViewController(), animated: true)
-        
-        window?.rootViewController = navigationController
-        
-        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

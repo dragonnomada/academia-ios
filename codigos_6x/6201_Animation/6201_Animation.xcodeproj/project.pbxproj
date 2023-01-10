@@ -7,70 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D8993BD7296CC2F500F8CDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993BD6296CC2F500F8CDDA /* AppDelegate.swift */; };
-		D8993BD9296CC2F500F8CDDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993BD8296CC2F500F8CDDA /* SceneDelegate.swift */; };
-		D8993BDB296CC2F500F8CDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993BDA296CC2F500F8CDDA /* ViewController.swift */; };
-		D8993BDE296CC2F600F8CDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8993BDC296CC2F600F8CDDA /* Main.storyboard */; };
-		D8993BE0296CC30100F8CDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8993BDF296CC30100F8CDDA /* Assets.xcassets */; };
-		D8993BE3296CC30100F8CDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8993BE1296CC30100F8CDDA /* LaunchScreen.storyboard */; };
-		D8993BEE296CC30200F8CDDA /* _104_Todo_MVVM_NibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993BED296CC30200F8CDDA /* _104_Todo_MVVM_NibTests.swift */; };
-		D8993BF8296CC30200F8CDDA /* _104_Todo_MVVM_NibUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993BF7296CC30200F8CDDA /* _104_Todo_MVVM_NibUITests.swift */; };
-		D8993BFA296CC30200F8CDDA /* _104_Todo_MVVM_NibUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993BF9296CC30200F8CDDA /* _104_Todo_MVVM_NibUITestsLaunchTests.swift */; };
-		D8993C09296CC35500F8CDDA /* TodoHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993C07296CC35400F8CDDA /* TodoHomeViewController.swift */; };
-		D8993C0A296CC35500F8CDDA /* TodoHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8993C08296CC35400F8CDDA /* TodoHomeViewController.xib */; };
+		D8993C18296DBB9200F8CDDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993C17296DBB9200F8CDDA /* AppDelegate.swift */; };
+		D8993C1A296DBB9200F8CDDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993C19296DBB9200F8CDDA /* SceneDelegate.swift */; };
+		D8993C1C296DBB9200F8CDDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993C1B296DBB9200F8CDDA /* ViewController.swift */; };
+		D8993C1F296DBB9200F8CDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8993C1D296DBB9200F8CDDA /* Main.storyboard */; };
+		D8993C21296DBB9B00F8CDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8993C20296DBB9B00F8CDDA /* Assets.xcassets */; };
+		D8993C24296DBB9B00F8CDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8993C22296DBB9B00F8CDDA /* LaunchScreen.storyboard */; };
+		D8993C2F296DBB9C00F8CDDA /* _201_AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993C2E296DBB9C00F8CDDA /* _201_AnimationTests.swift */; };
+		D8993C39296DBB9C00F8CDDA /* _201_AnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993C38296DBB9C00F8CDDA /* _201_AnimationUITests.swift */; };
+		D8993C3B296DBB9C00F8CDDA /* _201_AnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993C3A296DBB9C00F8CDDA /* _201_AnimationUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D8993BEA296CC30200F8CDDA /* PBXContainerItemProxy */ = {
+		D8993C2B296DBB9C00F8CDDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D8993BCB296CC2F500F8CDDA /* Project object */;
+			containerPortal = D8993C0C296DBB9100F8CDDA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D8993BD2296CC2F500F8CDDA;
-			remoteInfo = 6104_Todo_MVVM_Nib;
+			remoteGlobalIDString = D8993C13296DBB9200F8CDDA;
+			remoteInfo = 6201_Animation;
 		};
-		D8993BF4296CC30200F8CDDA /* PBXContainerItemProxy */ = {
+		D8993C35296DBB9C00F8CDDA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D8993BCB296CC2F500F8CDDA /* Project object */;
+			containerPortal = D8993C0C296DBB9100F8CDDA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D8993BD2296CC2F500F8CDDA;
-			remoteInfo = 6104_Todo_MVVM_Nib;
+			remoteGlobalIDString = D8993C13296DBB9200F8CDDA;
+			remoteInfo = 6201_Animation;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D8993BD3296CC2F500F8CDDA /* 6104_Todo_MVVM_Nib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6104_Todo_MVVM_Nib.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8993BD6296CC2F500F8CDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8993BD8296CC2F500F8CDDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D8993BDA296CC2F500F8CDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D8993BDD296CC2F600F8CDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D8993BDF296CC30100F8CDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D8993BE2296CC30100F8CDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D8993BE4296CC30100F8CDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8993BE9296CC30200F8CDDA /* 6104_Todo_MVVM_NibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 6104_Todo_MVVM_NibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8993BED296CC30200F8CDDA /* _104_Todo_MVVM_NibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _104_Todo_MVVM_NibTests.swift; sourceTree = "<group>"; };
-		D8993BF3296CC30200F8CDDA /* 6104_Todo_MVVM_NibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 6104_Todo_MVVM_NibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8993BF7296CC30200F8CDDA /* _104_Todo_MVVM_NibUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _104_Todo_MVVM_NibUITests.swift; sourceTree = "<group>"; };
-		D8993BF9296CC30200F8CDDA /* _104_Todo_MVVM_NibUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _104_Todo_MVVM_NibUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D8993C07296CC35400F8CDDA /* TodoHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoHomeViewController.swift; sourceTree = "<group>"; };
-		D8993C08296CC35400F8CDDA /* TodoHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoHomeViewController.xib; sourceTree = "<group>"; };
+		D8993C14296DBB9200F8CDDA /* 6201_Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6201_Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8993C17296DBB9200F8CDDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8993C19296DBB9200F8CDDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D8993C1B296DBB9200F8CDDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8993C1E296DBB9200F8CDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8993C20296DBB9B00F8CDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8993C23296DBB9B00F8CDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8993C25296DBB9B00F8CDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8993C2A296DBB9C00F8CDDA /* 6201_AnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 6201_AnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8993C2E296DBB9C00F8CDDA /* _201_AnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _201_AnimationTests.swift; sourceTree = "<group>"; };
+		D8993C34296DBB9C00F8CDDA /* 6201_AnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 6201_AnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8993C38296DBB9C00F8CDDA /* _201_AnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _201_AnimationUITests.swift; sourceTree = "<group>"; };
+		D8993C3A296DBB9C00F8CDDA /* _201_AnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _201_AnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D8993BD0296CC2F500F8CDDA /* Frameworks */ = {
+		D8993C11296DBB9200F8CDDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8993BE6296CC30200F8CDDA /* Frameworks */ = {
+		D8993C27296DBB9C00F8CDDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8993BF0296CC30200F8CDDA /* Frameworks */ = {
+		D8993C31296DBB9C00F8CDDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,147 +76,137 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D8993BCA296CC2F500F8CDDA = {
+		D8993C0B296DBB9100F8CDDA = {
 			isa = PBXGroup;
 			children = (
-				D8993BD5296CC2F500F8CDDA /* 6104_Todo_MVVM_Nib */,
-				D8993BEC296CC30200F8CDDA /* 6104_Todo_MVVM_NibTests */,
-				D8993BF6296CC30200F8CDDA /* 6104_Todo_MVVM_NibUITests */,
-				D8993BD4296CC2F500F8CDDA /* Products */,
+				D8993C16296DBB9200F8CDDA /* 6201_Animation */,
+				D8993C2D296DBB9C00F8CDDA /* 6201_AnimationTests */,
+				D8993C37296DBB9C00F8CDDA /* 6201_AnimationUITests */,
+				D8993C15296DBB9200F8CDDA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D8993BD4296CC2F500F8CDDA /* Products */ = {
+		D8993C15296DBB9200F8CDDA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8993BD3296CC2F500F8CDDA /* 6104_Todo_MVVM_Nib.app */,
-				D8993BE9296CC30200F8CDDA /* 6104_Todo_MVVM_NibTests.xctest */,
-				D8993BF3296CC30200F8CDDA /* 6104_Todo_MVVM_NibUITests.xctest */,
+				D8993C14296DBB9200F8CDDA /* 6201_Animation.app */,
+				D8993C2A296DBB9C00F8CDDA /* 6201_AnimationTests.xctest */,
+				D8993C34296DBB9C00F8CDDA /* 6201_AnimationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D8993BD5296CC2F500F8CDDA /* 6104_Todo_MVVM_Nib */ = {
+		D8993C16296DBB9200F8CDDA /* 6201_Animation */ = {
 			isa = PBXGroup;
 			children = (
-				D8993C06296CC31700F8CDDA /* Views */,
-				D8993BD6296CC2F500F8CDDA /* AppDelegate.swift */,
-				D8993BD8296CC2F500F8CDDA /* SceneDelegate.swift */,
-				D8993BDA296CC2F500F8CDDA /* ViewController.swift */,
-				D8993BDC296CC2F600F8CDDA /* Main.storyboard */,
-				D8993BDF296CC30100F8CDDA /* Assets.xcassets */,
-				D8993BE1296CC30100F8CDDA /* LaunchScreen.storyboard */,
-				D8993BE4296CC30100F8CDDA /* Info.plist */,
+				D8993C17296DBB9200F8CDDA /* AppDelegate.swift */,
+				D8993C19296DBB9200F8CDDA /* SceneDelegate.swift */,
+				D8993C1B296DBB9200F8CDDA /* ViewController.swift */,
+				D8993C1D296DBB9200F8CDDA /* Main.storyboard */,
+				D8993C20296DBB9B00F8CDDA /* Assets.xcassets */,
+				D8993C22296DBB9B00F8CDDA /* LaunchScreen.storyboard */,
+				D8993C25296DBB9B00F8CDDA /* Info.plist */,
 			);
-			path = 6104_Todo_MVVM_Nib;
+			path = 6201_Animation;
 			sourceTree = "<group>";
 		};
-		D8993BEC296CC30200F8CDDA /* 6104_Todo_MVVM_NibTests */ = {
+		D8993C2D296DBB9C00F8CDDA /* 6201_AnimationTests */ = {
 			isa = PBXGroup;
 			children = (
-				D8993BED296CC30200F8CDDA /* _104_Todo_MVVM_NibTests.swift */,
+				D8993C2E296DBB9C00F8CDDA /* _201_AnimationTests.swift */,
 			);
-			path = 6104_Todo_MVVM_NibTests;
+			path = 6201_AnimationTests;
 			sourceTree = "<group>";
 		};
-		D8993BF6296CC30200F8CDDA /* 6104_Todo_MVVM_NibUITests */ = {
+		D8993C37296DBB9C00F8CDDA /* 6201_AnimationUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D8993BF7296CC30200F8CDDA /* _104_Todo_MVVM_NibUITests.swift */,
-				D8993BF9296CC30200F8CDDA /* _104_Todo_MVVM_NibUITestsLaunchTests.swift */,
+				D8993C38296DBB9C00F8CDDA /* _201_AnimationUITests.swift */,
+				D8993C3A296DBB9C00F8CDDA /* _201_AnimationUITestsLaunchTests.swift */,
 			);
-			path = 6104_Todo_MVVM_NibUITests;
-			sourceTree = "<group>";
-		};
-		D8993C06296CC31700F8CDDA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				D8993C07296CC35400F8CDDA /* TodoHomeViewController.swift */,
-				D8993C08296CC35400F8CDDA /* TodoHomeViewController.xib */,
-			);
-			path = Views;
+			path = 6201_AnimationUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D8993BD2296CC2F500F8CDDA /* 6104_Todo_MVVM_Nib */ = {
+		D8993C13296DBB9200F8CDDA /* 6201_Animation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8993BFD296CC30200F8CDDA /* Build configuration list for PBXNativeTarget "6104_Todo_MVVM_Nib" */;
+			buildConfigurationList = D8993C3E296DBB9C00F8CDDA /* Build configuration list for PBXNativeTarget "6201_Animation" */;
 			buildPhases = (
-				D8993BCF296CC2F500F8CDDA /* Sources */,
-				D8993BD0296CC2F500F8CDDA /* Frameworks */,
-				D8993BD1296CC2F500F8CDDA /* Resources */,
+				D8993C10296DBB9200F8CDDA /* Sources */,
+				D8993C11296DBB9200F8CDDA /* Frameworks */,
+				D8993C12296DBB9200F8CDDA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = 6104_Todo_MVVM_Nib;
-			productName = 6104_Todo_MVVM_Nib;
-			productReference = D8993BD3296CC2F500F8CDDA /* 6104_Todo_MVVM_Nib.app */;
+			name = 6201_Animation;
+			productName = 6201_Animation;
+			productReference = D8993C14296DBB9200F8CDDA /* 6201_Animation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D8993BE8296CC30200F8CDDA /* 6104_Todo_MVVM_NibTests */ = {
+		D8993C29296DBB9C00F8CDDA /* 6201_AnimationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8993C00296CC30200F8CDDA /* Build configuration list for PBXNativeTarget "6104_Todo_MVVM_NibTests" */;
+			buildConfigurationList = D8993C41296DBB9C00F8CDDA /* Build configuration list for PBXNativeTarget "6201_AnimationTests" */;
 			buildPhases = (
-				D8993BE5296CC30200F8CDDA /* Sources */,
-				D8993BE6296CC30200F8CDDA /* Frameworks */,
-				D8993BE7296CC30200F8CDDA /* Resources */,
+				D8993C26296DBB9C00F8CDDA /* Sources */,
+				D8993C27296DBB9C00F8CDDA /* Frameworks */,
+				D8993C28296DBB9C00F8CDDA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D8993BEB296CC30200F8CDDA /* PBXTargetDependency */,
+				D8993C2C296DBB9C00F8CDDA /* PBXTargetDependency */,
 			);
-			name = 6104_Todo_MVVM_NibTests;
-			productName = 6104_Todo_MVVM_NibTests;
-			productReference = D8993BE9296CC30200F8CDDA /* 6104_Todo_MVVM_NibTests.xctest */;
+			name = 6201_AnimationTests;
+			productName = 6201_AnimationTests;
+			productReference = D8993C2A296DBB9C00F8CDDA /* 6201_AnimationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D8993BF2296CC30200F8CDDA /* 6104_Todo_MVVM_NibUITests */ = {
+		D8993C33296DBB9C00F8CDDA /* 6201_AnimationUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8993C03296CC30200F8CDDA /* Build configuration list for PBXNativeTarget "6104_Todo_MVVM_NibUITests" */;
+			buildConfigurationList = D8993C44296DBB9C00F8CDDA /* Build configuration list for PBXNativeTarget "6201_AnimationUITests" */;
 			buildPhases = (
-				D8993BEF296CC30200F8CDDA /* Sources */,
-				D8993BF0296CC30200F8CDDA /* Frameworks */,
-				D8993BF1296CC30200F8CDDA /* Resources */,
+				D8993C30296DBB9C00F8CDDA /* Sources */,
+				D8993C31296DBB9C00F8CDDA /* Frameworks */,
+				D8993C32296DBB9C00F8CDDA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D8993BF5296CC30200F8CDDA /* PBXTargetDependency */,
+				D8993C36296DBB9C00F8CDDA /* PBXTargetDependency */,
 			);
-			name = 6104_Todo_MVVM_NibUITests;
-			productName = 6104_Todo_MVVM_NibUITests;
-			productReference = D8993BF3296CC30200F8CDDA /* 6104_Todo_MVVM_NibUITests.xctest */;
+			name = 6201_AnimationUITests;
+			productName = 6201_AnimationUITests;
+			productReference = D8993C34296DBB9C00F8CDDA /* 6201_AnimationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D8993BCB296CC2F500F8CDDA /* Project object */ = {
+		D8993C0C296DBB9100F8CDDA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					D8993BD2296CC2F500F8CDDA = {
+					D8993C13296DBB9200F8CDDA = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
-					D8993BE8296CC30200F8CDDA = {
+					D8993C29296DBB9C00F8CDDA = {
 						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = D8993BD2296CC2F500F8CDDA;
+						TestTargetID = D8993C13296DBB9200F8CDDA;
 					};
-					D8993BF2296CC30200F8CDDA = {
+					D8993C33296DBB9C00F8CDDA = {
 						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = D8993BD2296CC2F500F8CDDA;
+						TestTargetID = D8993C13296DBB9200F8CDDA;
 					};
 				};
 			};
-			buildConfigurationList = D8993BCE296CC2F500F8CDDA /* Build configuration list for PBXProject "6104_Todo_MVVM_Nib" */;
+			buildConfigurationList = D8993C0F296DBB9100F8CDDA /* Build configuration list for PBXProject "6201_Animation" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -228,38 +214,37 @@
 				en,
 				Base,
 			);
-			mainGroup = D8993BCA296CC2F500F8CDDA;
-			productRefGroup = D8993BD4296CC2F500F8CDDA /* Products */;
+			mainGroup = D8993C0B296DBB9100F8CDDA;
+			productRefGroup = D8993C15296DBB9200F8CDDA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8993BD2296CC2F500F8CDDA /* 6104_Todo_MVVM_Nib */,
-				D8993BE8296CC30200F8CDDA /* 6104_Todo_MVVM_NibTests */,
-				D8993BF2296CC30200F8CDDA /* 6104_Todo_MVVM_NibUITests */,
+				D8993C13296DBB9200F8CDDA /* 6201_Animation */,
+				D8993C29296DBB9C00F8CDDA /* 6201_AnimationTests */,
+				D8993C33296DBB9C00F8CDDA /* 6201_AnimationUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D8993BD1296CC2F500F8CDDA /* Resources */ = {
+		D8993C12296DBB9200F8CDDA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8993BE3296CC30100F8CDDA /* LaunchScreen.storyboard in Resources */,
-				D8993C0A296CC35500F8CDDA /* TodoHomeViewController.xib in Resources */,
-				D8993BE0296CC30100F8CDDA /* Assets.xcassets in Resources */,
-				D8993BDE296CC2F600F8CDDA /* Main.storyboard in Resources */,
+				D8993C24296DBB9B00F8CDDA /* LaunchScreen.storyboard in Resources */,
+				D8993C21296DBB9B00F8CDDA /* Assets.xcassets in Resources */,
+				D8993C1F296DBB9200F8CDDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8993BE7296CC30200F8CDDA /* Resources */ = {
+		D8993C28296DBB9C00F8CDDA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8993BF1296CC30200F8CDDA /* Resources */ = {
+		D8993C32296DBB9C00F8CDDA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,62 +254,61 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D8993BCF296CC2F500F8CDDA /* Sources */ = {
+		D8993C10296DBB9200F8CDDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8993BDB296CC2F500F8CDDA /* ViewController.swift in Sources */,
-				D8993C09296CC35500F8CDDA /* TodoHomeViewController.swift in Sources */,
-				D8993BD7296CC2F500F8CDDA /* AppDelegate.swift in Sources */,
-				D8993BD9296CC2F500F8CDDA /* SceneDelegate.swift in Sources */,
+				D8993C1C296DBB9200F8CDDA /* ViewController.swift in Sources */,
+				D8993C18296DBB9200F8CDDA /* AppDelegate.swift in Sources */,
+				D8993C1A296DBB9200F8CDDA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8993BE5296CC30200F8CDDA /* Sources */ = {
+		D8993C26296DBB9C00F8CDDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8993BEE296CC30200F8CDDA /* _104_Todo_MVVM_NibTests.swift in Sources */,
+				D8993C2F296DBB9C00F8CDDA /* _201_AnimationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8993BEF296CC30200F8CDDA /* Sources */ = {
+		D8993C30296DBB9C00F8CDDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8993BFA296CC30200F8CDDA /* _104_Todo_MVVM_NibUITestsLaunchTests.swift in Sources */,
-				D8993BF8296CC30200F8CDDA /* _104_Todo_MVVM_NibUITests.swift in Sources */,
+				D8993C39296DBB9C00F8CDDA /* _201_AnimationUITests.swift in Sources */,
+				D8993C3B296DBB9C00F8CDDA /* _201_AnimationUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D8993BEB296CC30200F8CDDA /* PBXTargetDependency */ = {
+		D8993C2C296DBB9C00F8CDDA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D8993BD2296CC2F500F8CDDA /* 6104_Todo_MVVM_Nib */;
-			targetProxy = D8993BEA296CC30200F8CDDA /* PBXContainerItemProxy */;
+			target = D8993C13296DBB9200F8CDDA /* 6201_Animation */;
+			targetProxy = D8993C2B296DBB9C00F8CDDA /* PBXContainerItemProxy */;
 		};
-		D8993BF5296CC30200F8CDDA /* PBXTargetDependency */ = {
+		D8993C36296DBB9C00F8CDDA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D8993BD2296CC2F500F8CDDA /* 6104_Todo_MVVM_Nib */;
-			targetProxy = D8993BF4296CC30200F8CDDA /* PBXContainerItemProxy */;
+			target = D8993C13296DBB9200F8CDDA /* 6201_Animation */;
+			targetProxy = D8993C35296DBB9C00F8CDDA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D8993BDC296CC2F600F8CDDA /* Main.storyboard */ = {
+		D8993C1D296DBB9200F8CDDA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D8993BDD296CC2F600F8CDDA /* Base */,
+				D8993C1E296DBB9200F8CDDA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D8993BE1296CC30100F8CDDA /* LaunchScreen.storyboard */ = {
+		D8993C22296DBB9B00F8CDDA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D8993BE2296CC30100F8CDDA /* Base */,
+				D8993C23296DBB9B00F8CDDA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -332,7 +316,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D8993BFB296CC30200F8CDDA /* Debug */ = {
+		D8993C3C296DBB9C00F8CDDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -393,7 +377,7 @@
 			};
 			name = Debug;
 		};
-		D8993BFC296CC30200F8CDDA /* Release */ = {
+		D8993C3D296DBB9C00F8CDDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -448,7 +432,7 @@
 			};
 			name = Release;
 		};
-		D8993BFE296CC30200F8CDDA /* Debug */ = {
+		D8993C3F296DBB9C00F8CDDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -456,7 +440,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 6104_Todo_MVVM_Nib/Info.plist;
+				INFOPLIST_FILE = 6201_Animation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +451,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-104-Todo-MVVM-Nib";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-201-Animation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -475,7 +459,7 @@
 			};
 			name = Debug;
 		};
-		D8993BFF296CC30200F8CDDA /* Release */ = {
+		D8993C40296DBB9C00F8CDDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -483,7 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 6104_Todo_MVVM_Nib/Info.plist;
+				INFOPLIST_FILE = 6201_Animation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -494,7 +478,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-104-Todo-MVVM-Nib";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-201-Animation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -502,7 +486,7 @@
 			};
 			name = Release;
 		};
-		D8993C01296CC30200F8CDDA /* Debug */ = {
+		D8993C42296DBB9C00F8CDDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -512,16 +496,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-104-Todo-MVVM-NibTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-201-AnimationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/6104_Todo_MVVM_Nib.app/6104_Todo_MVVM_Nib";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/6201_Animation.app/6201_Animation";
 			};
 			name = Debug;
 		};
-		D8993C02296CC30200F8CDDA /* Release */ = {
+		D8993C43296DBB9C00F8CDDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -531,16 +515,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-104-Todo-MVVM-NibTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-201-AnimationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/6104_Todo_MVVM_Nib.app/6104_Todo_MVVM_Nib";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/6201_Animation.app/6201_Animation";
 			};
 			name = Release;
 		};
-		D8993C04296CC30200F8CDDA /* Debug */ = {
+		D8993C45296DBB9C00F8CDDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -548,16 +532,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-104-Todo-MVVM-NibUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-201-AnimationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = 6104_Todo_MVVM_Nib;
+				TEST_TARGET_NAME = 6201_Animation;
 			};
 			name = Debug;
 		};
-		D8993C05296CC30200F8CDDA /* Release */ = {
+		D8993C46296DBB9C00F8CDDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -565,55 +549,55 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-104-Todo-MVVM-NibUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-201-AnimationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = 6104_Todo_MVVM_Nib;
+				TEST_TARGET_NAME = 6201_Animation;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D8993BCE296CC2F500F8CDDA /* Build configuration list for PBXProject "6104_Todo_MVVM_Nib" */ = {
+		D8993C0F296DBB9100F8CDDA /* Build configuration list for PBXProject "6201_Animation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8993BFB296CC30200F8CDDA /* Debug */,
-				D8993BFC296CC30200F8CDDA /* Release */,
+				D8993C3C296DBB9C00F8CDDA /* Debug */,
+				D8993C3D296DBB9C00F8CDDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8993BFD296CC30200F8CDDA /* Build configuration list for PBXNativeTarget "6104_Todo_MVVM_Nib" */ = {
+		D8993C3E296DBB9C00F8CDDA /* Build configuration list for PBXNativeTarget "6201_Animation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8993BFE296CC30200F8CDDA /* Debug */,
-				D8993BFF296CC30200F8CDDA /* Release */,
+				D8993C3F296DBB9C00F8CDDA /* Debug */,
+				D8993C40296DBB9C00F8CDDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8993C00296CC30200F8CDDA /* Build configuration list for PBXNativeTarget "6104_Todo_MVVM_NibTests" */ = {
+		D8993C41296DBB9C00F8CDDA /* Build configuration list for PBXNativeTarget "6201_AnimationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8993C01296CC30200F8CDDA /* Debug */,
-				D8993C02296CC30200F8CDDA /* Release */,
+				D8993C42296DBB9C00F8CDDA /* Debug */,
+				D8993C43296DBB9C00F8CDDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8993C03296CC30200F8CDDA /* Build configuration list for PBXNativeTarget "6104_Todo_MVVM_NibUITests" */ = {
+		D8993C44296DBB9C00F8CDDA /* Build configuration list for PBXNativeTarget "6201_AnimationUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D8993C04296CC30200F8CDDA /* Debug */,
-				D8993C05296CC30200F8CDDA /* Release */,
+				D8993C45296DBB9C00F8CDDA /* Debug */,
+				D8993C46296DBB9C00F8CDDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D8993BCB296CC2F500F8CDDA /* Project object */;
+	rootObject = D8993C0C296DBB9100F8CDDA /* Project object */;
 }
