@@ -714,15 +714,15 @@ El equivalente a crear una celda personalizada en SwiftUI
 
 ## Módulo 24: Sumergir a sus usuarios con animación en sus aplicaciones iOS
 
-Usando UIView.animate y UIViewPropertyAnimator
+✅ Usando UIView.animate y UIViewPropertyAnimator
 
-Creando nuestra primera animación
+✅ Creando nuestra primera animación
 
-Trabajando con múltiples animaciones
+✅ Trabajando con múltiples animaciones
 
-Refactorización con UIViewPropertyAnimator
+✅ Refactorización con UIViewPropertyAnimator
 
-Comprender y controlar el progreso de la animación.
+✅ Comprender y controlar el progreso de la animación.
 
 Interacciones con un reconocedor de gestos panorámicos
 
