@@ -1,3 +1,9 @@
 [submodule "proyectos_equipos_5x/ProyectoNominApp"]
 	path = proyectos_equipos_5x/ProyectoNominApp
 	url = https://github.com/JoelBrayan22/ProyectoAdministracionDeNominasEmpleados
+[submodule "proyectos_equipos_6x/BitacorAPP"]
+	path = proyectos_equipos_6x/BitacorAPP
+	url = https://github.com/BrianJM21/BitacorAPP
+[submodule "proyectos_equipos_6x/Ubicapp"]
+	path = proyectos_equipos_6x/Ubicapp
+	url = https://github.com/JoelBrayan22/Ubicapp

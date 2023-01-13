@@ -16,6 +16,8 @@
 		D8993BEE296CC30200F8CDDA /* _104_Todo_MVVM_NibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993BED296CC30200F8CDDA /* _104_Todo_MVVM_NibTests.swift */; };
 		D8993BF8296CC30200F8CDDA /* _104_Todo_MVVM_NibUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993BF7296CC30200F8CDDA /* _104_Todo_MVVM_NibUITests.swift */; };
 		D8993BFA296CC30200F8CDDA /* _104_Todo_MVVM_NibUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993BF9296CC30200F8CDDA /* _104_Todo_MVVM_NibUITestsLaunchTests.swift */; };
+		D8993C09296CC35500F8CDDA /* TodoHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993C07296CC35400F8CDDA /* TodoHomeViewController.swift */; };
+		D8993C0A296CC35500F8CDDA /* TodoHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8993C08296CC35400F8CDDA /* TodoHomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		D8993BF3296CC30200F8CDDA /* 6104_Todo_MVVM_NibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 6104_Todo_MVVM_NibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8993BF7296CC30200F8CDDA /* _104_Todo_MVVM_NibUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _104_Todo_MVVM_NibUITests.swift; sourceTree = "<group>"; };
 		D8993BF9296CC30200F8CDDA /* _104_Todo_MVVM_NibUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _104_Todo_MVVM_NibUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D8993C07296CC35400F8CDDA /* TodoHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoHomeViewController.swift; sourceTree = "<group>"; };
+		D8993C08296CC35400F8CDDA /* TodoHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoHomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,7 @@
 		D8993BD5296CC2F500F8CDDA /* 6104_Todo_MVVM_Nib */ = {
 			isa = PBXGroup;
 			children = (
-				D8993C06296CC31700F8CDDA /* New Group */,
+				D8993C06296CC31700F8CDDA /* Views */,
 				D8993BD6296CC2F500F8CDDA /* AppDelegate.swift */,
 				D8993BD8296CC2F500F8CDDA /* SceneDelegate.swift */,
 				D8993BDA296CC2F500F8CDDA /* ViewController.swift */,
@@ -128,11 +132,13 @@
 			path = 6104_Todo_MVVM_NibUITests;
 			sourceTree = "<group>";
 		};
-		D8993C06296CC31700F8CDDA /* New Group */ = {
+		D8993C06296CC31700F8CDDA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D8993C07296CC35400F8CDDA /* TodoHomeViewController.swift */,
+				D8993C08296CC35400F8CDDA /* TodoHomeViewController.xib */,
 			);
-			name = "New Group";
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8993BE3296CC30100F8CDDA /* LaunchScreen.storyboard in Resources */,
+				D8993C0A296CC35500F8CDDA /* TodoHomeViewController.xib in Resources */,
 				D8993BE0296CC30100F8CDDA /* Assets.xcassets in Resources */,
 				D8993BDE296CC2F600F8CDDA /* Main.storyboard in Resources */,
 			);
@@ -267,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8993BDB296CC2F500F8CDDA /* ViewController.swift in Sources */,
+				D8993C09296CC35500F8CDDA /* TodoHomeViewController.swift in Sources */,
 				D8993BD7296CC2F500F8CDDA /* AppDelegate.swift in Sources */,
 				D8993BD9296CC2F500F8CDDA /* SceneDelegate.swift in Sources */,
 			);
