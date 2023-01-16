@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8098BBA2975A75400567733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098BB92975A75400567733 /* AppDelegate.swift */; };
+		D8098BBC2975A75400567733 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098BBB2975A75400567733 /* SceneDelegate.swift */; };
+		D8098BBE2975A75400567733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098BBD2975A75400567733 /* ViewController.swift */; };
+		D8098BC12975A75400567733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8098BBF2975A75400567733 /* Main.storyboard */; };
+		D8098BC32975A75E00567733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8098BC22975A75E00567733 /* Assets.xcassets */; };
+		D8098BC62975A75E00567733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8098BC42975A75E00567733 /* LaunchScreen.storyboard */; };
+		D8098BD12975A75E00567733 /* _0101_FrutApp_VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098BD02975A75E00567733 /* _0101_FrutApp_VIPERTests.swift */; };
+		D8098BDB2975A75E00567733 /* _0101_FrutApp_VIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098BDA2975A75E00567733 /* _0101_FrutApp_VIPERUITests.swift */; };
+		D8098BDD2975A75E00567733 /* _0101_FrutApp_VIPERUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098BDC2975A75E00567733 /* _0101_FrutApp_VIPERUITestsLaunchTests.swift */; };
+		D8098BF02975A92700567733 /* FrutasHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098BEE2975A92700567733 /* FrutasHomeViewController.swift */; };
+		D8098BF12975A92700567733 /* FrutasHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8098BEF2975A92700567733 /* FrutasHomeViewController.xib */; };
+		D8098BF32975A93700567733 /* FrutasHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098BF22975A93700567733 /* FrutasHomeView.swift */; };
+		D8098BFC2975A9B200567733 /* FrutasAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098BFA2975A9B200567733 /* FrutasAddViewController.swift */; };
+		D8098BFD2975A9B200567733 /* FrutasAddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8098BFB2975A9B200567733 /* FrutasAddViewController.xib */; };
+		D8098C002975A9C500567733 /* FrutasAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098BFF2975A9C500567733 /* FrutasAddView.swift */; };
+		D8098C032975A9E700567733 /* FrutasDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098C012975A9E700567733 /* FrutasDetailsViewController.swift */; };
+		D8098C042975A9E700567733 /* FrutasDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8098C022975A9E700567733 /* FrutasDetailsViewController.xib */; };
+		D8098C062975A9F700567733 /* FrutasDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098C052975A9F700567733 /* FrutasDetailsView.swift */; };
+		D8098C092975AA0E00567733 /* FrutasEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098C072975AA0E00567733 /* FrutasEditViewController.swift */; };
+		D8098C0A2975AA0E00567733 /* FrutasEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8098C082975AA0E00567733 /* FrutasEditViewController.xib */; };
+		D8098C0C2975AA1D00567733 /* FrutasEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098C0B2975AA1D00567733 /* FrutasEditView.swift */; };
+		D8098C0E2975AAB200567733 /* FrutasInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098C0D2975AAB200567733 /* FrutasInteractor.swift */; };
+		D8098C102975AAEF00567733 /* FrutasHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098C0F2975AAEF00567733 /* FrutasHomePresenter.swift */; };
+		D8098C122975AAFB00567733 /* FrutasAddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098C112975AAFB00567733 /* FrutasAddPresenter.swift */; };
+		D8098C142975AB0700567733 /* FrutasDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098C132975AB0700567733 /* FrutasDetailsPresenter.swift */; };
+		D8098C162975AB1700567733 /* FrutasEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098C152975AB1700567733 /* FrutasEditPresenter.swift */; };
+		D8098C182975AB8500567733 /* FrutasService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098C172975AB8500567733 /* FrutasService.swift */; };
+		D8098C1A2975ABBF00567733 /* FrutasRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098C192975ABBF00567733 /* FrutasRouter.swift */; };
+		D8098C1C2975AC4700567733 /* FrutaEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8098C1B2975AC4700567733 /* FrutaEntity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8098BCD2975A75E00567733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8098BAE2975A75300567733 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8098BB52975A75400567733;
+			remoteInfo = 70101_FrutApp_VIPER;
+		};
+		D8098BD72975A75E00567733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8098BAE2975A75300567733 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8098BB52975A75400567733;
+			remoteInfo = 70101_FrutApp_VIPER;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8098BB62975A75400567733 /* 70101_FrutApp_VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 70101_FrutApp_VIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8098BB92975A75400567733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8098BBB2975A75400567733 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D8098BBD2975A75400567733 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8098BC02975A75400567733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8098BC22975A75E00567733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8098BC52975A75E00567733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8098BC72975A75E00567733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8098BCC2975A75E00567733 /* 70101_FrutApp_VIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 70101_FrutApp_VIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8098BD02975A75E00567733 /* _0101_FrutApp_VIPERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0101_FrutApp_VIPERTests.swift; sourceTree = "<group>"; };
+		D8098BD62975A75E00567733 /* 70101_FrutApp_VIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 70101_FrutApp_VIPERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8098BDA2975A75E00567733 /* _0101_FrutApp_VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0101_FrutApp_VIPERUITests.swift; sourceTree = "<group>"; };
+		D8098BDC2975A75E00567733 /* _0101_FrutApp_VIPERUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0101_FrutApp_VIPERUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D8098BEE2975A92700567733 /* FrutasHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasHomeViewController.swift; sourceTree = "<group>"; };
+		D8098BEF2975A92700567733 /* FrutasHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrutasHomeViewController.xib; sourceTree = "<group>"; };
+		D8098BF22975A93700567733 /* FrutasHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasHomeView.swift; sourceTree = "<group>"; };
+		D8098BFA2975A9B200567733 /* FrutasAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasAddViewController.swift; sourceTree = "<group>"; };
+		D8098BFB2975A9B200567733 /* FrutasAddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrutasAddViewController.xib; sourceTree = "<group>"; };
+		D8098BFF2975A9C500567733 /* FrutasAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasAddView.swift; sourceTree = "<group>"; };
+		D8098C012975A9E700567733 /* FrutasDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasDetailsViewController.swift; sourceTree = "<group>"; };
+		D8098C022975A9E700567733 /* FrutasDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrutasDetailsViewController.xib; sourceTree = "<group>"; };
+		D8098C052975A9F700567733 /* FrutasDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasDetailsView.swift; sourceTree = "<group>"; };
+		D8098C072975AA0E00567733 /* FrutasEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasEditViewController.swift; sourceTree = "<group>"; };
+		D8098C082975AA0E00567733 /* FrutasEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrutasEditViewController.xib; sourceTree = "<group>"; };
+		D8098C0B2975AA1D00567733 /* FrutasEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasEditView.swift; sourceTree = "<group>"; };
+		D8098C0D2975AAB200567733 /* FrutasInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasInteractor.swift; sourceTree = "<group>"; };
+		D8098C0F2975AAEF00567733 /* FrutasHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasHomePresenter.swift; sourceTree = "<group>"; };
+		D8098C112975AAFB00567733 /* FrutasAddPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasAddPresenter.swift; sourceTree = "<group>"; };
+		D8098C132975AB0700567733 /* FrutasDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasDetailsPresenter.swift; sourceTree = "<group>"; };
+		D8098C152975AB1700567733 /* FrutasEditPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasEditPresenter.swift; sourceTree = "<group>"; };
+		D8098C172975AB8500567733 /* FrutasService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasService.swift; sourceTree = "<group>"; };
+		D8098C192975ABBF00567733 /* FrutasRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutasRouter.swift; sourceTree = "<group>"; };
+		D8098C1B2975AC4700567733 /* FrutaEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrutaEntity.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8098BB32975A75400567733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8098BC92975A75E00567733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8098BD32975A75E00567733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8098BAD2975A75300567733 = {
+			isa = PBXGroup;
+			children = (
+				D8098BB82975A75400567733 /* 70101_FrutApp_VIPER */,
+				D8098BCF2975A75E00567733 /* 70101_FrutApp_VIPERTests */,
+				D8098BD92975A75E00567733 /* 70101_FrutApp_VIPERUITests */,
+				D8098BB72975A75400567733 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8098BB72975A75400567733 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8098BB62975A75400567733 /* 70101_FrutApp_VIPER.app */,
+				D8098BCC2975A75E00567733 /* 70101_FrutApp_VIPERTests.xctest */,
+				D8098BD62975A75E00567733 /* 70101_FrutApp_VIPERUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8098BB82975A75400567733 /* 70101_FrutApp_VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				D8098BE92975A89A00567733 /* Views */,
+				D8098BEA2975A8AC00567733 /* Interactors */,
+				D8098BED2975A8D200567733 /* Presenters */,
+				D8098BEC2975A8CA00567733 /* Entities */,
+				D8098BEB2975A8C200567733 /* Routers */,
+				D8098BB92975A75400567733 /* AppDelegate.swift */,
+				D8098BBB2975A75400567733 /* SceneDelegate.swift */,
+				D8098BBD2975A75400567733 /* ViewController.swift */,
+				D8098BBF2975A75400567733 /* Main.storyboard */,
+				D8098BC22975A75E00567733 /* Assets.xcassets */,
+				D8098BC42975A75E00567733 /* LaunchScreen.storyboard */,
+				D8098BC72975A75E00567733 /* Info.plist */,
+			);
+			path = 70101_FrutApp_VIPER;
+			sourceTree = "<group>";
+		};
+		D8098BCF2975A75E00567733 /* 70101_FrutApp_VIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8098BD02975A75E00567733 /* _0101_FrutApp_VIPERTests.swift */,
+			);
+			path = 70101_FrutApp_VIPERTests;
+			sourceTree = "<group>";
+		};
+		D8098BD92975A75E00567733 /* 70101_FrutApp_VIPERUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8098BDA2975A75E00567733 /* _0101_FrutApp_VIPERUITests.swift */,
+				D8098BDC2975A75E00567733 /* _0101_FrutApp_VIPERUITestsLaunchTests.swift */,
+			);
+			path = 70101_FrutApp_VIPERUITests;
+			sourceTree = "<group>";
+		};
+		D8098BE92975A89A00567733 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8098BF42975A94500567733 /* FrutasHome */,
+				D8098BF52975A95F00567733 /* FrutasAdd */,
+				D8098BF62975A96800567733 /* FrutasDetails */,
+				D8098BF72975A97000567733 /* FrutasEdit */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D8098BEA2975A8AC00567733 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				D8098C0D2975AAB200567733 /* FrutasInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		D8098BEB2975A8C200567733 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				D8098C192975ABBF00567733 /* FrutasRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		D8098BEC2975A8CA00567733 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D8098C1B2975AC4700567733 /* FrutaEntity.swift */,
+				D8098C172975AB8500567733 /* FrutasService.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D8098BED2975A8D200567733 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				D8098C0F2975AAEF00567733 /* FrutasHomePresenter.swift */,
+				D8098C112975AAFB00567733 /* FrutasAddPresenter.swift */,
+				D8098C132975AB0700567733 /* FrutasDetailsPresenter.swift */,
+				D8098C152975AB1700567733 /* FrutasEditPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		D8098BF42975A94500567733 /* FrutasHome */ = {
+			isa = PBXGroup;
+			children = (
+				D8098BEE2975A92700567733 /* FrutasHomeViewController.swift */,
+				D8098BEF2975A92700567733 /* FrutasHomeViewController.xib */,
+				D8098BF22975A93700567733 /* FrutasHomeView.swift */,
+			);
+			path = FrutasHome;
+			sourceTree = "<group>";
+		};
+		D8098BF52975A95F00567733 /* FrutasAdd */ = {
+			isa = PBXGroup;
+			children = (
+				D8098BFA2975A9B200567733 /* FrutasAddViewController.swift */,
+				D8098BFB2975A9B200567733 /* FrutasAddViewController.xib */,
+				D8098BFF2975A9C500567733 /* FrutasAddView.swift */,
+			);
+			path = FrutasAdd;
+			sourceTree = "<group>";
+		};
+		D8098BF62975A96800567733 /* FrutasDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D8098C012975A9E700567733 /* FrutasDetailsViewController.swift */,
+				D8098C022975A9E700567733 /* FrutasDetailsViewController.xib */,
+				D8098C052975A9F700567733 /* FrutasDetailsView.swift */,
+			);
+			path = FrutasDetails;
+			sourceTree = "<group>";
+		};
+		D8098BF72975A97000567733 /* FrutasEdit */ = {
+			isa = PBXGroup;
+			children = (
+				D8098C072975AA0E00567733 /* FrutasEditViewController.swift */,
+				D8098C082975AA0E00567733 /* FrutasEditViewController.xib */,
+				D8098C0B2975AA1D00567733 /* FrutasEditView.swift */,
+			);
+			path = FrutasEdit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8098BB52975A75400567733 /* 70101_FrutApp_VIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8098BE02975A75E00567733 /* Build configuration list for PBXNativeTarget "70101_FrutApp_VIPER" */;
+			buildPhases = (
+				D8098BB22975A75400567733 /* Sources */,
+				D8098BB32975A75400567733 /* Frameworks */,
+				D8098BB42975A75400567733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 70101_FrutApp_VIPER;
+			productName = 70101_FrutApp_VIPER;
+			productReference = D8098BB62975A75400567733 /* 70101_FrutApp_VIPER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8098BCB2975A75E00567733 /* 70101_FrutApp_VIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8098BE32975A75E00567733 /* Build configuration list for PBXNativeTarget "70101_FrutApp_VIPERTests" */;
+			buildPhases = (
+				D8098BC82975A75E00567733 /* Sources */,
+				D8098BC92975A75E00567733 /* Frameworks */,
+				D8098BCA2975A75E00567733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8098BCE2975A75E00567733 /* PBXTargetDependency */,
+			);
+			name = 70101_FrutApp_VIPERTests;
+			productName = 70101_FrutApp_VIPERTests;
+			productReference = D8098BCC2975A75E00567733 /* 70101_FrutApp_VIPERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8098BD52975A75E00567733 /* 70101_FrutApp_VIPERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8098BE62975A75E00567733 /* Build configuration list for PBXNativeTarget "70101_FrutApp_VIPERUITests" */;
+			buildPhases = (
+				D8098BD22975A75E00567733 /* Sources */,
+				D8098BD32975A75E00567733 /* Frameworks */,
+				D8098BD42975A75E00567733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8098BD82975A75E00567733 /* PBXTargetDependency */,
+			);
+			name = 70101_FrutApp_VIPERUITests;
+			productName = 70101_FrutApp_VIPERUITests;
+			productReference = D8098BD62975A75E00567733 /* 70101_FrutApp_VIPERUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8098BAE2975A75300567733 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D8098BB52975A75400567733 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					D8098BCB2975A75E00567733 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D8098BB52975A75400567733;
+					};
+					D8098BD52975A75E00567733 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D8098BB52975A75400567733;
+					};
+				};
+			};
+			buildConfigurationList = D8098BB12975A75400567733 /* Build configuration list for PBXProject "70101_FrutApp_VIPER" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8098BAD2975A75300567733;
+			productRefGroup = D8098BB72975A75400567733 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8098BB52975A75400567733 /* 70101_FrutApp_VIPER */,
+				D8098BCB2975A75E00567733 /* 70101_FrutApp_VIPERTests */,
+				D8098BD52975A75E00567733 /* 70101_FrutApp_VIPERUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8098BB42975A75400567733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8098BC62975A75E00567733 /* LaunchScreen.storyboard in Resources */,
+				D8098BC32975A75E00567733 /* Assets.xcassets in Resources */,
+				D8098BF12975A92700567733 /* FrutasHomeViewController.xib in Resources */,
+				D8098C0A2975AA0E00567733 /* FrutasEditViewController.xib in Resources */,
+				D8098BC12975A75400567733 /* Main.storyboard in Resources */,
+				D8098C042975A9E700567733 /* FrutasDetailsViewController.xib in Resources */,
+				D8098BFD2975A9B200567733 /* FrutasAddViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8098BCA2975A75E00567733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8098BD42975A75E00567733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8098BB22975A75400567733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8098BF32975A93700567733 /* FrutasHomeView.swift in Sources */,
+				D8098C142975AB0700567733 /* FrutasDetailsPresenter.swift in Sources */,
+				D8098C0C2975AA1D00567733 /* FrutasEditView.swift in Sources */,
+				D8098C1C2975AC4700567733 /* FrutaEntity.swift in Sources */,
+				D8098C1A2975ABBF00567733 /* FrutasRouter.swift in Sources */,
+				D8098C092975AA0E00567733 /* FrutasEditViewController.swift in Sources */,
+				D8098BBE2975A75400567733 /* ViewController.swift in Sources */,
+				D8098C102975AAEF00567733 /* FrutasHomePresenter.swift in Sources */,
+				D8098C032975A9E700567733 /* FrutasDetailsViewController.swift in Sources */,
+				D8098C162975AB1700567733 /* FrutasEditPresenter.swift in Sources */,
+				D8098C0E2975AAB200567733 /* FrutasInteractor.swift in Sources */,
+				D8098BBA2975A75400567733 /* AppDelegate.swift in Sources */,
+				D8098C182975AB8500567733 /* FrutasService.swift in Sources */,
+				D8098BF02975A92700567733 /* FrutasHomeViewController.swift in Sources */,
+				D8098C062975A9F700567733 /* FrutasDetailsView.swift in Sources */,
+				D8098BBC2975A75400567733 /* SceneDelegate.swift in Sources */,
+				D8098BFC2975A9B200567733 /* FrutasAddViewController.swift in Sources */,
+				D8098C002975A9C500567733 /* FrutasAddView.swift in Sources */,
+				D8098C122975AAFB00567733 /* FrutasAddPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8098BC82975A75E00567733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8098BD12975A75E00567733 /* _0101_FrutApp_VIPERTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8098BD22975A75E00567733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8098BDD2975A75E00567733 /* _0101_FrutApp_VIPERUITestsLaunchTests.swift in Sources */,
+				D8098BDB2975A75E00567733 /* _0101_FrutApp_VIPERUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8098BCE2975A75E00567733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8098BB52975A75400567733 /* 70101_FrutApp_VIPER */;
+			targetProxy = D8098BCD2975A75E00567733 /* PBXContainerItemProxy */;
+		};
+		D8098BD82975A75E00567733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8098BB52975A75400567733 /* 70101_FrutApp_VIPER */;
+			targetProxy = D8098BD72975A75E00567733 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8098BBF2975A75400567733 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8098BC02975A75400567733 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8098BC42975A75E00567733 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8098BC52975A75E00567733 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8098BDE2975A75E00567733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8098BDF2975A75E00567733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8098BE12975A75E00567733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 70101_FrutApp_VIPER/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-0101-FrutApp-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8098BE22975A75E00567733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 70101_FrutApp_VIPER/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-0101-FrutApp-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8098BE42975A75E00567733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-0101-FrutApp-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/70101_FrutApp_VIPER.app/70101_FrutApp_VIPER";
+			};
+			name = Debug;
+		};
+		D8098BE52975A75E00567733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-0101-FrutApp-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/70101_FrutApp_VIPER.app/70101_FrutApp_VIPER";
+			};
+			name = Release;
+		};
+		D8098BE72975A75E00567733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-0101-FrutApp-VIPERUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 70101_FrutApp_VIPER;
+			};
+			name = Debug;
+		};
+		D8098BE82975A75E00567733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-0101-FrutApp-VIPERUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 70101_FrutApp_VIPER;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8098BB12975A75400567733 /* Build configuration list for PBXProject "70101_FrutApp_VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8098BDE2975A75E00567733 /* Debug */,
+				D8098BDF2975A75E00567733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8098BE02975A75E00567733 /* Build configuration list for PBXNativeTarget "70101_FrutApp_VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8098BE12975A75E00567733 /* Debug */,
+				D8098BE22975A75E00567733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8098BE32975A75E00567733 /* Build configuration list for PBXNativeTarget "70101_FrutApp_VIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8098BE42975A75E00567733 /* Debug */,
+				D8098BE52975A75E00567733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8098BE62975A75E00567733 /* Build configuration list for PBXNativeTarget "70101_FrutApp_VIPERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8098BE72975A75E00567733 /* Debug */,
+				D8098BE82975A75E00567733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8098BAE2975A75300567733 /* Project object */;
+}
