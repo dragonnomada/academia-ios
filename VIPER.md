@@ -75,7 +75,7 @@ class TodoInteractor {
 }
 ```
 
-## 3. Definir las clases para los *Presentadores* de cada servicio (`Presenter`)
+## 3. Definir las clases para los *Presentadores* de cada servicio (`Presenter`)
 
 Los *presentadores* contienen una referencia al *ruteador*, una al *interactor*, una la *vista* y una *vista-controlador*. 
 
