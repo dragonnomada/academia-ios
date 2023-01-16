@@ -1,6 +1,6 @@
 # Flujo VIPER
 
-## 1. Definir la clase del *Servicio* (`Entity`)
+## 1. Definir la clase del *Servicio* (`Entity`)
 
 La entidades generalmente provienen de *CoreData*, *Estructuras* o consumo de *APIs* y se integran en una clase de *servicios* para consumir todas las transacciones posibiles al sistema.
 
