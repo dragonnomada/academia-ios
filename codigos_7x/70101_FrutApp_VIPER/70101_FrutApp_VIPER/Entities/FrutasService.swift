@@ -39,13 +39,13 @@ enum FrutaEliminadaError: Error {
 
 class FrutasService {
     
-    // State
+    // State: Variables para retener informacion desde nuestro CoreData,
     
     private var frutas: [FrutaEntity] = []
     private var frutaSeleccionada: FrutaEntity?
     private var frutaSeleccionadaIndex: Int?
     
-    // Notifiers
+    // Notifiers: Quienes avisaran al interactor que alguna variable ha sido actualizada o modificada
     
     var frutasListSubject = PassthroughSubject<[FrutaEntity], Never>()
     var frutasAddSubject = PassthroughSubject<FrutaEntity, FrutasAddError>()
@@ -64,14 +64,17 @@ class FrutasService {
         
     }
     
-    // Transactions
+    // Transactions: Operaciones que realizara el servicio con el coredata, api, o donde quiera que se almacene nuestros datos.
     
+    
+    // Actualizamos frutasListSubject cuando se agregue una nueva fruta o se actualice una fruta
     func recargarFrutas() {
         
         self.frutasListSubject.send(self.frutas)
         
     }
     
+    // Cuando modifiquemos la fruta seleccionada, la actualiza
     func recargarFrutaSeleccionada() {
         
         guard let frutaSeleccionadaIndex = self.frutaSeleccionadaIndex else {
@@ -86,6 +89,7 @@ class FrutasService {
         
     }
     
+    // Agrega una fruta y posterior a ello actualiza el arreglo de frutas
     func agregarFruta(nombre: String, cantidad: Double, imagen: Data?) {
         
         guard !nombre.isEmpty else {
@@ -108,6 +112,7 @@ class FrutasService {
         
     }
     
+    // Seleccionar una fruta deseada
     func seleccionarFruta(index: Int) {
         
         guard index >= 0 && index < self.frutas.count else {
@@ -124,6 +129,7 @@ class FrutasService {
         
     }
     
+    // Despues de seleccionar una fruta, procedemos a modificarla
     func editarFrutaSeleccionada(nombre: String?, cantidad: Double?, imagen: Data?) {
         
         guard let frutaSeleccionada = frutaSeleccionada else {
@@ -168,6 +174,7 @@ class FrutasService {
         
     }
     
+    // Eliminar alguna fruta 
     func eliminarFrutaSeleccionada() {
         
         guard let frutaSeleccionadaIndex = frutaSeleccionadaIndex else {
