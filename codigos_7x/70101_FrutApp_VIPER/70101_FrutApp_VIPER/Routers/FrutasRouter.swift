@@ -134,6 +134,9 @@ class FrutasRouter: NSObject, UINavigationControllerDelegate {
         
         self.navigationController.pushViewController(detailsPresenter.viewController, animated: true)
         
+        //detailsPresenter.viewController.modalPresentationStyle = .automatic
+        //self.navigationController.present(detailsPresenter.viewController, animated: true)
+        
     }
     
     func closeFrutasDetails() {
@@ -152,7 +155,9 @@ class FrutasRouter: NSObject, UINavigationControllerDelegate {
         
         self.editPresenter.connectInteractor(interactor: self.interactor)
         
-        self.navigationController.pushViewController(editPresenter.viewController, animated: true)
+        // self.navigationController.pushViewController(editPresenter.viewController, animated: true)
+        editPresenter.viewController.modalPresentationStyle = .automatic
+        self.navigationController.present(editPresenter.viewController, animated: true)
         
     }
     
