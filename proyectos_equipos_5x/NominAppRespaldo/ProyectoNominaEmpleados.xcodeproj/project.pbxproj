@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE93E19C296732DE00D71D43 /* NominaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93E19B296732DE00D71D43 /* NominaModel.swift */; };
+		CE93E19E2967539900D71D43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93E19D2967539900D71D43 /* ViewController.swift */; };
+		CE93E1A029675A0C00D71D43 /* NominaCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE93E19F29675A0C00D71D43 /* NominaCustomTableViewCell.swift */; };
+		FA294E5E2964E55B0046F824 /* CatalogoEmpleadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA294E5D2964E55B0046F824 /* CatalogoEmpleadosViewController.swift */; };
+		FA294E602964E5710046F824 /* AddEmpleadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA294E5F2964E5710046F824 /* AddEmpleadoViewController.swift */; };
+		FA294E622964E5850046F824 /* CalendarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA294E612964E5850046F824 /* CalendarioViewController.swift */; };
+		FA294E642964E5980046F824 /* DetallesEmpleadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA294E632964E5980046F824 /* DetallesEmpleadoViewController.swift */; };
+		FA294E662964E7F60046F824 /* SeleccionarVacacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA294E652964E7F60046F824 /* SeleccionarVacacionesViewController.swift */; };
+		FA294E682964E8100046F824 /* HistorialNominaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA294E672964E8100046F824 /* HistorialNominaViewController.swift */; };
+		FA294E6A2964E8210046F824 /* DetallePagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA294E692964E8200046F824 /* DetallePagoViewController.swift */; };
+		FA294E6C2964E8330046F824 /* AddPagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA294E6B2964E8330046F824 /* AddPagoViewController.swift */; };
+		FA859F4B2967632E0061F46B /* CalendarioDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA859F412967632D0061F46B /* CalendarioDelegate.swift */; };
+		FA859F4C2967632E0061F46B /* DetallesEmpleadoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA859F422967632D0061F46B /* DetallesEmpleadoDelegate.swift */; };
+		FA859F4D2967632E0061F46B /* AddPagoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA859F432967632D0061F46B /* AddPagoDelegate.swift */; };
+		FA859F4E2967632E0061F46B /* HistorialNominaDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA859F442967632D0061F46B /* HistorialNominaDelegate.swift */; };
+		FA859F4F2967632E0061F46B /* DetallePagoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA859F452967632D0061F46B /* DetallePagoDelegate.swift */; };
+		FA859F502967632E0061F46B /* SeleccionarVacacionesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA859F462967632D0061F46B /* SeleccionarVacacionesDelegate.swift */; };
+		FA859F512967632E0061F46B /* CatalogoEmpleadosDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA859F472967632D0061F46B /* CatalogoEmpleadosDelegate.swift */; };
+		FA859F522967632E0061F46B /* AddEmpleadoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA859F482967632E0061F46B /* AddEmpleadoDelegate.swift */; };
+		FA859F532967632E0061F46B /* ViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA859F492967632E0061F46B /* ViewControllerDelegate.swift */; };
+		FA859F542967632E0061F46B /* NominaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA859F4A2967632E0061F46B /* NominaController.swift */; };
+		FAA45DA82967587900195786 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA45DA72967587900195786 /* CustomTableViewCell.swift */; };
+		FAA45DB52968922F00195786 /* Dates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA45DB42968922F00195786 /* Dates.swift */; };
+		FAFB7BE72964ABC100D64A70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB7BE62964ABC100D64A70 /* AppDelegate.swift */; };
+		FAFB7BE92964ABC100D64A70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB7BE82964ABC100D64A70 /* SceneDelegate.swift */; };
+		FAFB7BEE2964ABC100D64A70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFB7BEC2964ABC100D64A70 /* Main.storyboard */; };
+		FAFB7BF12964ABC100D64A70 /* NominApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAFB7BEF2964ABC100D64A70 /* NominApp.xcdatamodeld */; };
+		FAFB7BF32964ABC500D64A70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFB7BF22964ABC500D64A70 /* Assets.xcassets */; };
+		FAFB7BF62964ABC500D64A70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFB7BF42964ABC500D64A70 /* LaunchScreen.storyboard */; };
+		FAFB7C012964ABC500D64A70 /* ProyectoNominaEmpleadosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB7C002964ABC500D64A70 /* ProyectoNominaEmpleadosTests.swift */; };
+		FAFB7C0B2964ABC500D64A70 /* ProyectoNominaEmpleadosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB7C0A2964ABC500D64A70 /* ProyectoNominaEmpleadosUITests.swift */; };
+		FAFB7C0D2964ABC500D64A70 /* ProyectoNominaEmpleadosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB7C0C2964ABC500D64A70 /* ProyectoNominaEmpleadosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAFB7BFD2964ABC500D64A70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFB7BDB2964ABC100D64A70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFB7BE22964ABC100D64A70;
+			remoteInfo = ProyectoNominaEmpleados;
+		};
+		FAFB7C072964ABC500D64A70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFB7BDB2964ABC100D64A70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFB7BE22964ABC100D64A70;
+			remoteInfo = ProyectoNominaEmpleados;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE93E19B296732DE00D71D43 /* NominaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominaModel.swift; sourceTree = "<group>"; };
+		CE93E19D2967539900D71D43 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE93E19F29675A0C00D71D43 /* NominaCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NominaCustomTableViewCell.swift; sourceTree = "<group>"; };
+		FA294E5D2964E55B0046F824 /* CatalogoEmpleadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogoEmpleadosViewController.swift; sourceTree = "<group>"; };
+		FA294E5F2964E5710046F824 /* AddEmpleadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmpleadoViewController.swift; sourceTree = "<group>"; };
+		FA294E612964E5850046F824 /* CalendarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioViewController.swift; sourceTree = "<group>"; };
+		FA294E632964E5980046F824 /* DetallesEmpleadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesEmpleadoViewController.swift; sourceTree = "<group>"; };
+		FA294E652964E7F60046F824 /* SeleccionarVacacionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeleccionarVacacionesViewController.swift; sourceTree = "<group>"; };
+		FA294E672964E8100046F824 /* HistorialNominaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorialNominaViewController.swift; sourceTree = "<group>"; };
+		FA294E692964E8200046F824 /* DetallePagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallePagoViewController.swift; sourceTree = "<group>"; };
+		FA294E6B2964E8330046F824 /* AddPagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPagoViewController.swift; sourceTree = "<group>"; };
+		FA859F412967632D0061F46B /* CalendarioDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarioDelegate.swift; sourceTree = "<group>"; };
+		FA859F422967632D0061F46B /* DetallesEmpleadoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetallesEmpleadoDelegate.swift; sourceTree = "<group>"; };
+		FA859F432967632D0061F46B /* AddPagoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPagoDelegate.swift; sourceTree = "<group>"; };
+		FA859F442967632D0061F46B /* HistorialNominaDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorialNominaDelegate.swift; sourceTree = "<group>"; };
+		FA859F452967632D0061F46B /* DetallePagoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetallePagoDelegate.swift; sourceTree = "<group>"; };
+		FA859F462967632D0061F46B /* SeleccionarVacacionesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionarVacacionesDelegate.swift; sourceTree = "<group>"; };
+		FA859F472967632D0061F46B /* CatalogoEmpleadosDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogoEmpleadosDelegate.swift; sourceTree = "<group>"; };
+		FA859F482967632E0061F46B /* AddEmpleadoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmpleadoDelegate.swift; sourceTree = "<group>"; };
+		FA859F492967632E0061F46B /* ViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDelegate.swift; sourceTree = "<group>"; };
+		FA859F4A2967632E0061F46B /* NominaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NominaController.swift; sourceTree = "<group>"; };
+		FAA45DA72967587900195786 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		FAA45DB42968922F00195786 /* Dates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dates.swift; sourceTree = "<group>"; };
+		FAFB7BE32964ABC100D64A70 /* ProyectoNominaEmpleados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoNominaEmpleados.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFB7BE62964ABC100D64A70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAFB7BE82964ABC100D64A70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAFB7BED2964ABC100D64A70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAFB7BF02964ABC100D64A70 /* ProyectoNominaEmpleados.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProyectoNominaEmpleados.xcdatamodel; sourceTree = "<group>"; };
+		FAFB7BF22964ABC500D64A70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAFB7BF52964ABC500D64A70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAFB7BF72964ABC500D64A70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFB7BFC2964ABC500D64A70 /* ProyectoNominaEmpleadosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoNominaEmpleadosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFB7C002964ABC500D64A70 /* ProyectoNominaEmpleadosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoNominaEmpleadosTests.swift; sourceTree = "<group>"; };
+		FAFB7C062964ABC500D64A70 /* ProyectoNominaEmpleadosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProyectoNominaEmpleadosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFB7C0A2964ABC500D64A70 /* ProyectoNominaEmpleadosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoNominaEmpleadosUITests.swift; sourceTree = "<group>"; };
+		FAFB7C0C2964ABC500D64A70 /* ProyectoNominaEmpleadosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoNominaEmpleadosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAFB7BE02964ABC100D64A70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFB7BF92964ABC500D64A70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFB7C032964ABC500D64A70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA859F40296762DC0061F46B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA859F4A2967632E0061F46B /* NominaController.swift */,
+				FA859F482967632E0061F46B /* AddEmpleadoDelegate.swift */,
+				FA859F432967632D0061F46B /* AddPagoDelegate.swift */,
+				FA859F412967632D0061F46B /* CalendarioDelegate.swift */,
+				FA859F472967632D0061F46B /* CatalogoEmpleadosDelegate.swift */,
+				FA859F452967632D0061F46B /* DetallePagoDelegate.swift */,
+				FA859F422967632D0061F46B /* DetallesEmpleadoDelegate.swift */,
+				FA859F442967632D0061F46B /* HistorialNominaDelegate.swift */,
+				FA859F462967632D0061F46B /* SeleccionarVacacionesDelegate.swift */,
+				FA859F492967632E0061F46B /* ViewControllerDelegate.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAA45DB32968920000195786 /* Extensiones */ = {
+			isa = PBXGroup;
+			children = (
+				FAA45DB42968922F00195786 /* Dates.swift */,
+			);
+			path = Extensiones;
+			sourceTree = "<group>";
+		};
+		FAFB7BDA2964ABC100D64A70 = {
+			isa = PBXGroup;
+			children = (
+				FAFB7BE52964ABC100D64A70 /* ProyectoNominaEmpleados */,
+				FAFB7BFF2964ABC500D64A70 /* ProyectoNominaEmpleadosTests */,
+				FAFB7C092964ABC500D64A70 /* ProyectoNominaEmpleadosUITests */,
+				FAFB7BE42964ABC100D64A70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAFB7BE42964ABC100D64A70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB7BE32964ABC100D64A70 /* ProyectoNominaEmpleados.app */,
+				FAFB7BFC2964ABC500D64A70 /* ProyectoNominaEmpleadosTests.xctest */,
+				FAFB7C062964ABC500D64A70 /* ProyectoNominaEmpleadosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFB7BE52964ABC100D64A70 /* ProyectoNominaEmpleados */ = {
+			isa = PBXGroup;
+			children = (
+				FAA45DB32968920000195786 /* Extensiones */,
+				FAFB7C1A2964AC5500D64A70 /* View */,
+				FA859F40296762DC0061F46B /* Controllers */,
+				FAFB7C192964AC4600D64A70 /* Model */,
+				FAFB7BE62964ABC100D64A70 /* AppDelegate.swift */,
+				FAFB7BE82964ABC100D64A70 /* SceneDelegate.swift */,
+				CE93E19D2967539900D71D43 /* ViewController.swift */,
+				FAFB7BEC2964ABC100D64A70 /* Main.storyboard */,
+				FAFB7BF22964ABC500D64A70 /* Assets.xcassets */,
+				FAFB7BF42964ABC500D64A70 /* LaunchScreen.storyboard */,
+				FAFB7BF72964ABC500D64A70 /* Info.plist */,
+			);
+			path = ProyectoNominaEmpleados;
+			sourceTree = "<group>";
+		};
+		FAFB7BFF2964ABC500D64A70 /* ProyectoNominaEmpleadosTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB7C002964ABC500D64A70 /* ProyectoNominaEmpleadosTests.swift */,
+			);
+			path = ProyectoNominaEmpleadosTests;
+			sourceTree = "<group>";
+		};
+		FAFB7C092964ABC500D64A70 /* ProyectoNominaEmpleadosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB7C0A2964ABC500D64A70 /* ProyectoNominaEmpleadosUITests.swift */,
+				FAFB7C0C2964ABC500D64A70 /* ProyectoNominaEmpleadosUITestsLaunchTests.swift */,
+			);
+			path = ProyectoNominaEmpleadosUITests;
+			sourceTree = "<group>";
+		};
+		FAFB7C192964AC4600D64A70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB7BEF2964ABC100D64A70 /* NominApp.xcdatamodeld */,
+				CE93E19B296732DE00D71D43 /* NominaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAFB7C1A2964AC5500D64A70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAA45DA72967587900195786 /* CustomTableViewCell.swift */,
+				CE93E19F29675A0C00D71D43 /* NominaCustomTableViewCell.swift */,
+				FA294E5D2964E55B0046F824 /* CatalogoEmpleadosViewController.swift */,
+				FA294E5F2964E5710046F824 /* AddEmpleadoViewController.swift */,
+				FA294E612964E5850046F824 /* CalendarioViewController.swift */,
+				FA294E632964E5980046F824 /* DetallesEmpleadoViewController.swift */,
+				FA294E652964E7F60046F824 /* SeleccionarVacacionesViewController.swift */,
+				FA294E672964E8100046F824 /* HistorialNominaViewController.swift */,
+				FA294E692964E8200046F824 /* DetallePagoViewController.swift */,
+				FA294E6B2964E8330046F824 /* AddPagoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAFB7BE22964ABC100D64A70 /* ProyectoNominaEmpleados */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFB7C102964ABC500D64A70 /* Build configuration list for PBXNativeTarget "ProyectoNominaEmpleados" */;
+			buildPhases = (
+				FAFB7BDF2964ABC100D64A70 /* Sources */,
+				FAFB7BE02964ABC100D64A70 /* Frameworks */,
+				FAFB7BE12964ABC100D64A70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProyectoNominaEmpleados;
+			productName = ProyectoNominaEmpleados;
+			productReference = FAFB7BE32964ABC100D64A70 /* ProyectoNominaEmpleados.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAFB7BFB2964ABC500D64A70 /* ProyectoNominaEmpleadosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFB7C132964ABC500D64A70 /* Build configuration list for PBXNativeTarget "ProyectoNominaEmpleadosTests" */;
+			buildPhases = (
+				FAFB7BF82964ABC500D64A70 /* Sources */,
+				FAFB7BF92964ABC500D64A70 /* Frameworks */,
+				FAFB7BFA2964ABC500D64A70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAFB7BFE2964ABC500D64A70 /* PBXTargetDependency */,
+			);
+			name = ProyectoNominaEmpleadosTests;
+			productName = ProyectoNominaEmpleadosTests;
+			productReference = FAFB7BFC2964ABC500D64A70 /* ProyectoNominaEmpleadosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAFB7C052964ABC500D64A70 /* ProyectoNominaEmpleadosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFB7C162964ABC500D64A70 /* Build configuration list for PBXNativeTarget "ProyectoNominaEmpleadosUITests" */;
+			buildPhases = (
+				FAFB7C022964ABC500D64A70 /* Sources */,
+				FAFB7C032964ABC500D64A70 /* Frameworks */,
+				FAFB7C042964ABC500D64A70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAFB7C082964ABC500D64A70 /* PBXTargetDependency */,
+			);
+			name = ProyectoNominaEmpleadosUITests;
+			productName = ProyectoNominaEmpleadosUITests;
+			productReference = FAFB7C062964ABC500D64A70 /* ProyectoNominaEmpleadosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAFB7BDB2964ABC100D64A70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					FAFB7BE22964ABC100D64A70 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					FAFB7BFB2964ABC500D64A70 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = FAFB7BE22964ABC100D64A70;
+					};
+					FAFB7C052964ABC500D64A70 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = FAFB7BE22964ABC100D64A70;
+					};
+				};
+			};
+			buildConfigurationList = FAFB7BDE2964ABC100D64A70 /* Build configuration list for PBXProject "ProyectoNominaEmpleados" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAFB7BDA2964ABC100D64A70;
+			productRefGroup = FAFB7BE42964ABC100D64A70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAFB7BE22964ABC100D64A70 /* ProyectoNominaEmpleados */,
+				FAFB7BFB2964ABC500D64A70 /* ProyectoNominaEmpleadosTests */,
+				FAFB7C052964ABC500D64A70 /* ProyectoNominaEmpleadosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAFB7BE12964ABC100D64A70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFB7BF62964ABC500D64A70 /* LaunchScreen.storyboard in Resources */,
+				FAFB7BF32964ABC500D64A70 /* Assets.xcassets in Resources */,
+				FAFB7BEE2964ABC100D64A70 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFB7BFA2964ABC500D64A70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFB7C042964ABC500D64A70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAFB7BDF2964ABC100D64A70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA859F4B2967632E0061F46B /* CalendarioDelegate.swift in Sources */,
+				FA859F512967632E0061F46B /* CatalogoEmpleadosDelegate.swift in Sources */,
+				CE93E19C296732DE00D71D43 /* NominaModel.swift in Sources */,
+				FA859F522967632E0061F46B /* AddEmpleadoDelegate.swift in Sources */,
+				FA294E682964E8100046F824 /* HistorialNominaViewController.swift in Sources */,
+				FA859F4E2967632E0061F46B /* HistorialNominaDelegate.swift in Sources */,
+				FA294E602964E5710046F824 /* AddEmpleadoViewController.swift in Sources */,
+				FA859F4C2967632E0061F46B /* DetallesEmpleadoDelegate.swift in Sources */,
+				FAFB7BF12964ABC100D64A70 /* NominApp.xcdatamodeld in Sources */,
+				FA294E642964E5980046F824 /* DetallesEmpleadoViewController.swift in Sources */,
+				FA294E6C2964E8330046F824 /* AddPagoViewController.swift in Sources */,
+				FA294E662964E7F60046F824 /* SeleccionarVacacionesViewController.swift in Sources */,
+				FAFB7BE72964ABC100D64A70 /* AppDelegate.swift in Sources */,
+				CE93E1A029675A0C00D71D43 /* NominaCustomTableViewCell.swift in Sources */,
+				CE93E19E2967539900D71D43 /* ViewController.swift in Sources */,
+				FA859F502967632E0061F46B /* SeleccionarVacacionesDelegate.swift in Sources */,
+				FA859F542967632E0061F46B /* NominaController.swift in Sources */,
+				FA859F4F2967632E0061F46B /* DetallePagoDelegate.swift in Sources */,
+				FA859F532967632E0061F46B /* ViewControllerDelegate.swift in Sources */,
+				FA294E622964E5850046F824 /* CalendarioViewController.swift in Sources */,
+				FAA45DA82967587900195786 /* CustomTableViewCell.swift in Sources */,
+				FAA45DB52968922F00195786 /* Dates.swift in Sources */,
+				FA294E6A2964E8210046F824 /* DetallePagoViewController.swift in Sources */,
+				FA859F4D2967632E0061F46B /* AddPagoDelegate.swift in Sources */,
+				FA294E5E2964E55B0046F824 /* CatalogoEmpleadosViewController.swift in Sources */,
+				FAFB7BE92964ABC100D64A70 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFB7BF82964ABC500D64A70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFB7C012964ABC500D64A70 /* ProyectoNominaEmpleadosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFB7C022964ABC500D64A70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFB7C0D2964ABC500D64A70 /* ProyectoNominaEmpleadosUITestsLaunchTests.swift in Sources */,
+				FAFB7C0B2964ABC500D64A70 /* ProyectoNominaEmpleadosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAFB7BFE2964ABC500D64A70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFB7BE22964ABC100D64A70 /* ProyectoNominaEmpleados */;
+			targetProxy = FAFB7BFD2964ABC500D64A70 /* PBXContainerItemProxy */;
+		};
+		FAFB7C082964ABC500D64A70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFB7BE22964ABC100D64A70 /* ProyectoNominaEmpleados */;
+			targetProxy = FAFB7C072964ABC500D64A70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAFB7BEC2964ABC100D64A70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFB7BED2964ABC100D64A70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAFB7BF42964ABC500D64A70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFB7BF52964ABC500D64A70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAFB7C0E2964ABC500D64A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAFB7C0F2964ABC500D64A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAFB7C112964ABC500D64A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProyectoNominaEmpleados/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ProyectoNominaEmpleados;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAFB7C122964ABC500D64A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProyectoNominaEmpleados/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ProyectoNominaEmpleados;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAFB7C142964ABC500D64A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ProyectoNominaEmpleadosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProyectoNominaEmpleados.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProyectoNominaEmpleados";
+			};
+			name = Debug;
+		};
+		FAFB7C152964ABC500D64A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ProyectoNominaEmpleadosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProyectoNominaEmpleados.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProyectoNominaEmpleados";
+			};
+			name = Release;
+		};
+		FAFB7C172964ABC500D64A70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ProyectoNominaEmpleadosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProyectoNominaEmpleados;
+			};
+			name = Debug;
+		};
+		FAFB7C182964ABC500D64A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ProyectoNominaEmpleadosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProyectoNominaEmpleados;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAFB7BDE2964ABC100D64A70 /* Build configuration list for PBXProject "ProyectoNominaEmpleados" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFB7C0E2964ABC500D64A70 /* Debug */,
+				FAFB7C0F2964ABC500D64A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFB7C102964ABC500D64A70 /* Build configuration list for PBXNativeTarget "ProyectoNominaEmpleados" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFB7C112964ABC500D64A70 /* Debug */,
+				FAFB7C122964ABC500D64A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFB7C132964ABC500D64A70 /* Build configuration list for PBXNativeTarget "ProyectoNominaEmpleadosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFB7C142964ABC500D64A70 /* Debug */,
+				FAFB7C152964ABC500D64A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFB7C162964ABC500D64A70 /* Build configuration list for PBXNativeTarget "ProyectoNominaEmpleadosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFB7C172964ABC500D64A70 /* Debug */,
+				FAFB7C182964ABC500D64A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAFB7BEF2964ABC100D64A70 /* NominApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAFB7BF02964ABC100D64A70 /* ProyectoNominaEmpleados.xcdatamodel */,
+			);
+			currentVersion = FAFB7BF02964ABC100D64A70 /* ProyectoNominaEmpleados.xcdatamodel */;
+			path = NominApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FAFB7BDB2964ABC100D64A70 /* Project object */;
+}
