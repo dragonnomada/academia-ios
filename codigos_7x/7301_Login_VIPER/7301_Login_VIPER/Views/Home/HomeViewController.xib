@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="_301_Login_VIPER" customModuleProvider="target">
+            <connections>
+                <outlet property="pictureImageView" destination="TuT-EL-Xl7" id="p4K-3p-SLe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="welcomeLabel" destination="BeC-6Y-lMy" id="L2Y-xG-1oV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCT-az-g37">
+                    <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLL-Jh-7mt">
+                            <rect key="frame" x="0.0" y="0.0" width="428" height="1000"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="KLi-1o-Cq1">
+                                    <rect key="frame" x="40" y="79.999999999999986" width="348" height="253.66666666666663"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frutas" translatesAutoresizingMaskIntoConstraints="NO" id="TuT-EL-Xl7">
+                                            <rect key="frame" x="124" y="0.0" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="fIu-NC-naK"/>
+                                                <constraint firstAttribute="width" constant="100" id="qDJ-6f-OCr"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Pepe Toño" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeC-6Y-lMy">
+                                            <rect key="frame" x="0.0" y="141" width="348" height="40.666666666666657"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOo-Yh-2hf">
+                                            <rect key="frame" x="136" y="222.66666666666669" width="76.333333333333314" height="31"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="SignOut"/>
+                                            <connections>
+                                                <action selector="signOutAction" destination="-1" eventType="touchUpInside" id="MVQ-lv-2VV"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="BeC-6Y-lMy" secondAttribute="trailing" id="Dqu-qo-J7p"/>
+                                        <constraint firstItem="BeC-6Y-lMy" firstAttribute="leading" secondItem="KLi-1o-Cq1" secondAttribute="leading" id="JIf-lo-0do"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="KLi-1o-Cq1" firstAttribute="centerX" secondItem="NLL-Jh-7mt" secondAttribute="centerX" id="A7y-7W-MvC"/>
+                                <constraint firstAttribute="height" constant="1000" id="ThQ-N1-rVZ"/>
+                                <constraint firstAttribute="trailing" secondItem="KLi-1o-Cq1" secondAttribute="trailing" constant="40" id="XjO-hx-Wln"/>
+                                <constraint firstItem="KLi-1o-Cq1" firstAttribute="leading" secondItem="NLL-Jh-7mt" secondAttribute="leading" constant="40" id="YTe-x4-3SH"/>
+                                <constraint firstItem="KLi-1o-Cq1" firstAttribute="top" secondItem="NLL-Jh-7mt" secondAttribute="top" constant="80" id="xJ8-yE-FOr"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="NLL-Jh-7mt" firstAttribute="trailing" secondItem="YrU-cR-fhW" secondAttribute="trailing" id="4Wm-vT-gEM"/>
+                        <constraint firstItem="NLL-Jh-7mt" firstAttribute="width" secondItem="eYy-Mv-gt0" secondAttribute="width" id="FKL-VK-AAj"/>
+                        <constraint firstItem="NLL-Jh-7mt" firstAttribute="top" secondItem="YrU-cR-fhW" secondAttribute="top" id="JTH-sv-Sq6"/>
+                        <constraint firstItem="NLL-Jh-7mt" firstAttribute="bottom" secondItem="YrU-cR-fhW" secondAttribute="bottom" id="lhx-Mn-9dU"/>
+                        <constraint firstItem="NLL-Jh-7mt" firstAttribute="leading" secondItem="YrU-cR-fhW" secondAttribute="leading" id="y4y-jh-sRs"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="YrU-cR-fhW"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="eYy-Mv-gt0"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="xCT-az-g37" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7zg-cf-qaB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xCT-az-g37" secondAttribute="trailing" id="U1C-US-GMg"/>
+                <constraint firstItem="xCT-az-g37" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="r1m-Ov-I8U"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xCT-az-g37" secondAttribute="bottom" id="z7l-tX-304"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="87.723214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="frutas" width="1000" height="589"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

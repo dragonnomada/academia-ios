@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D842C51B2978457900610656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C51A2978457900610656 /* AppDelegate.swift */; };
+		D842C51D2978457900610656 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C51C2978457900610656 /* SceneDelegate.swift */; };
+		D842C51F2978457900610656 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C51E2978457900610656 /* ViewController.swift */; };
+		D842C5222978457900610656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D842C5202978457900610656 /* Main.storyboard */; };
+		D842C5242978458200610656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D842C5232978458200610656 /* Assets.xcassets */; };
+		D842C5272978458200610656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D842C5252978458200610656 /* LaunchScreen.storyboard */; };
+		D842C5322978458300610656 /* _301_Login_VIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C5312978458300610656 /* _301_Login_VIPERTests.swift */; };
+		D842C53C2978458300610656 /* _301_Login_VIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C53B2978458300610656 /* _301_Login_VIPERUITests.swift */; };
+		D842C53E2978458300610656 /* _301_Login_VIPERUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C53D2978458300610656 /* _301_Login_VIPERUITestsLaunchTests.swift */; };
+		D842C5502978466400610656 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C54F2978466400610656 /* LoginService.swift */; };
+		D842C5522978476300610656 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C5512978476300610656 /* UserEntity.swift */; };
+		D842C5542978492100610656 /* RandomUserResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C5532978492000610656 /* RandomUserResponseEntity.swift */; };
+		D842C556297860B700610656 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C555297860B700610656 /* LoginInteractor.swift */; };
+		D842C5582978629500610656 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C5572978629500610656 /* LoginRouter.swift */; };
+		D842C55A297863BC00610656 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C559297863BB00610656 /* LoginPresenter.swift */; };
+		D842C55C2978674900610656 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C55B2978674800610656 /* HomePresenter.swift */; };
+		D842C5612978685B00610656 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C55F2978685B00610656 /* LoginViewController.swift */; };
+		D842C5622978685B00610656 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D842C5602978685B00610656 /* LoginViewController.xib */; };
+		D842C5672978687C00610656 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C5652978687B00610656 /* HomeViewController.swift */; };
+		D842C5682978687C00610656 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D842C5662978687C00610656 /* HomeViewController.xib */; };
+		D842C56A2978689900610656 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C5692978689900610656 /* HomeView.swift */; };
+		D842C56C297868A400610656 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D842C56B297868A400610656 /* LoginView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D842C52E2978458200610656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D842C50F2978457900610656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D842C5162978457900610656;
+			remoteInfo = 7301_Login_VIPER;
+		};
+		D842C5382978458300610656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D842C50F2978457900610656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D842C5162978457900610656;
+			remoteInfo = 7301_Login_VIPER;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D842C5172978457900610656 /* 7301_Login_VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 7301_Login_VIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D842C51A2978457900610656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D842C51C2978457900610656 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D842C51E2978457900610656 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D842C5212978457900610656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D842C5232978458200610656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D842C5262978458200610656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D842C5282978458200610656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D842C52D2978458200610656 /* 7301_Login_VIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 7301_Login_VIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D842C5312978458300610656 /* _301_Login_VIPERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _301_Login_VIPERTests.swift; sourceTree = "<group>"; };
+		D842C5372978458300610656 /* 7301_Login_VIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 7301_Login_VIPERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D842C53B2978458300610656 /* _301_Login_VIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _301_Login_VIPERUITests.swift; sourceTree = "<group>"; };
+		D842C53D2978458300610656 /* _301_Login_VIPERUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _301_Login_VIPERUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D842C54F2978466400610656 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		D842C5512978476300610656 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		D842C5532978492000610656 /* RandomUserResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserResponseEntity.swift; sourceTree = "<group>"; };
+		D842C555297860B700610656 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		D842C5572978629500610656 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		D842C559297863BB00610656 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		D842C55B2978674800610656 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		D842C55F2978685B00610656 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D842C5602978685B00610656 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		D842C5652978687B00610656 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D842C5662978687C00610656 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		D842C5692978689900610656 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D842C56B297868A400610656 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D842C5142978457900610656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D842C52A2978458200610656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D842C5342978458300610656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D842C50E2978457900610656 = {
+			isa = PBXGroup;
+			children = (
+				D842C5192978457900610656 /* 7301_Login_VIPER */,
+				D842C5302978458200610656 /* 7301_Login_VIPERTests */,
+				D842C53A2978458300610656 /* 7301_Login_VIPERUITests */,
+				D842C5182978457900610656 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D842C5182978457900610656 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D842C5172978457900610656 /* 7301_Login_VIPER.app */,
+				D842C52D2978458200610656 /* 7301_Login_VIPERTests.xctest */,
+				D842C5372978458300610656 /* 7301_Login_VIPERUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D842C5192978457900610656 /* 7301_Login_VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				D842C54E297845F500610656 /* Routers */,
+				D842C54D297845E000610656 /* Entities */,
+				D842C54C297845D700610656 /* Presenters */,
+				D842C54B297845CE00610656 /* Interactors */,
+				D842C54A297845C300610656 /* Views */,
+				D842C51A2978457900610656 /* AppDelegate.swift */,
+				D842C51C2978457900610656 /* SceneDelegate.swift */,
+				D842C51E2978457900610656 /* ViewController.swift */,
+				D842C5202978457900610656 /* Main.storyboard */,
+				D842C5232978458200610656 /* Assets.xcassets */,
+				D842C5252978458200610656 /* LaunchScreen.storyboard */,
+				D842C5282978458200610656 /* Info.plist */,
+			);
+			path = 7301_Login_VIPER;
+			sourceTree = "<group>";
+		};
+		D842C5302978458200610656 /* 7301_Login_VIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				D842C5312978458300610656 /* _301_Login_VIPERTests.swift */,
+			);
+			path = 7301_Login_VIPERTests;
+			sourceTree = "<group>";
+		};
+		D842C53A2978458300610656 /* 7301_Login_VIPERUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D842C53B2978458300610656 /* _301_Login_VIPERUITests.swift */,
+				D842C53D2978458300610656 /* _301_Login_VIPERUITestsLaunchTests.swift */,
+			);
+			path = 7301_Login_VIPERUITests;
+			sourceTree = "<group>";
+		};
+		D842C54A297845C300610656 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D842C55E2978684900610656 /* Home */,
+				D842C55D2978684100610656 /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D842C54B297845CE00610656 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				D842C555297860B700610656 /* LoginInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		D842C54C297845D700610656 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				D842C559297863BB00610656 /* LoginPresenter.swift */,
+				D842C55B2978674800610656 /* HomePresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		D842C54D297845E000610656 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D842C5532978492000610656 /* RandomUserResponseEntity.swift */,
+				D842C5512978476300610656 /* UserEntity.swift */,
+				D842C54F2978466400610656 /* LoginService.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D842C54E297845F500610656 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				D842C5572978629500610656 /* LoginRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		D842C55D2978684100610656 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D842C55F2978685B00610656 /* LoginViewController.swift */,
+				D842C5602978685B00610656 /* LoginViewController.xib */,
+				D842C56B297868A400610656 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D842C55E2978684900610656 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D842C5652978687B00610656 /* HomeViewController.swift */,
+				D842C5662978687C00610656 /* HomeViewController.xib */,
+				D842C5692978689900610656 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D842C5162978457900610656 /* 7301_Login_VIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D842C5412978458300610656 /* Build configuration list for PBXNativeTarget "7301_Login_VIPER" */;
+			buildPhases = (
+				D842C5132978457900610656 /* Sources */,
+				D842C5142978457900610656 /* Frameworks */,
+				D842C5152978457900610656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 7301_Login_VIPER;
+			productName = 7301_Login_VIPER;
+			productReference = D842C5172978457900610656 /* 7301_Login_VIPER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D842C52C2978458200610656 /* 7301_Login_VIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D842C5442978458300610656 /* Build configuration list for PBXNativeTarget "7301_Login_VIPERTests" */;
+			buildPhases = (
+				D842C5292978458200610656 /* Sources */,
+				D842C52A2978458200610656 /* Frameworks */,
+				D842C52B2978458200610656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D842C52F2978458200610656 /* PBXTargetDependency */,
+			);
+			name = 7301_Login_VIPERTests;
+			productName = 7301_Login_VIPERTests;
+			productReference = D842C52D2978458200610656 /* 7301_Login_VIPERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D842C5362978458300610656 /* 7301_Login_VIPERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D842C5472978458300610656 /* Build configuration list for PBXNativeTarget "7301_Login_VIPERUITests" */;
+			buildPhases = (
+				D842C5332978458300610656 /* Sources */,
+				D842C5342978458300610656 /* Frameworks */,
+				D842C5352978458300610656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D842C5392978458300610656 /* PBXTargetDependency */,
+			);
+			name = 7301_Login_VIPERUITests;
+			productName = 7301_Login_VIPERUITests;
+			productReference = D842C5372978458300610656 /* 7301_Login_VIPERUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D842C50F2978457900610656 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D842C5162978457900610656 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					D842C52C2978458200610656 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D842C5162978457900610656;
+					};
+					D842C5362978458300610656 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D842C5162978457900610656;
+					};
+				};
+			};
+			buildConfigurationList = D842C5122978457900610656 /* Build configuration list for PBXProject "7301_Login_VIPER" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D842C50E2978457900610656;
+			productRefGroup = D842C5182978457900610656 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D842C5162978457900610656 /* 7301_Login_VIPER */,
+				D842C52C2978458200610656 /* 7301_Login_VIPERTests */,
+				D842C5362978458300610656 /* 7301_Login_VIPERUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D842C5152978457900610656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D842C5622978685B00610656 /* LoginViewController.xib in Resources */,
+				D842C5272978458200610656 /* LaunchScreen.storyboard in Resources */,
+				D842C5682978687C00610656 /* HomeViewController.xib in Resources */,
+				D842C5242978458200610656 /* Assets.xcassets in Resources */,
+				D842C5222978457900610656 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D842C52B2978458200610656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D842C5352978458300610656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D842C5132978457900610656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D842C51F2978457900610656 /* ViewController.swift in Sources */,
+				D842C51B2978457900610656 /* AppDelegate.swift in Sources */,
+				D842C56A2978689900610656 /* HomeView.swift in Sources */,
+				D842C556297860B700610656 /* LoginInteractor.swift in Sources */,
+				D842C55C2978674900610656 /* HomePresenter.swift in Sources */,
+				D842C55A297863BC00610656 /* LoginPresenter.swift in Sources */,
+				D842C51D2978457900610656 /* SceneDelegate.swift in Sources */,
+				D842C5522978476300610656 /* UserEntity.swift in Sources */,
+				D842C56C297868A400610656 /* LoginView.swift in Sources */,
+				D842C5502978466400610656 /* LoginService.swift in Sources */,
+				D842C5582978629500610656 /* LoginRouter.swift in Sources */,
+				D842C5542978492100610656 /* RandomUserResponseEntity.swift in Sources */,
+				D842C5612978685B00610656 /* LoginViewController.swift in Sources */,
+				D842C5672978687C00610656 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D842C5292978458200610656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D842C5322978458300610656 /* _301_Login_VIPERTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D842C5332978458300610656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D842C53E2978458300610656 /* _301_Login_VIPERUITestsLaunchTests.swift in Sources */,
+				D842C53C2978458300610656 /* _301_Login_VIPERUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D842C52F2978458200610656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D842C5162978457900610656 /* 7301_Login_VIPER */;
+			targetProxy = D842C52E2978458200610656 /* PBXContainerItemProxy */;
+		};
+		D842C5392978458300610656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D842C5162978457900610656 /* 7301_Login_VIPER */;
+			targetProxy = D842C5382978458300610656 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D842C5202978457900610656 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D842C5212978457900610656 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D842C5252978458200610656 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D842C5262978458200610656 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D842C53F2978458300610656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D842C5402978458300610656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D842C5422978458300610656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 7301_Login_VIPER/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-301-Login-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D842C5432978458300610656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 7301_Login_VIPER/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-301-Login-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D842C5452978458300610656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-301-Login-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/7301_Login_VIPER.app/7301_Login_VIPER";
+			};
+			name = Debug;
+		};
+		D842C5462978458300610656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-301-Login-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/7301_Login_VIPER.app/7301_Login_VIPER";
+			};
+			name = Release;
+		};
+		D842C5482978458300610656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-301-Login-VIPERUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 7301_Login_VIPER;
+			};
+			name = Debug;
+		};
+		D842C5492978458300610656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.badillosoft.-301-Login-VIPERUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 7301_Login_VIPER;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D842C5122978457900610656 /* Build configuration list for PBXProject "7301_Login_VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D842C53F2978458300610656 /* Debug */,
+				D842C5402978458300610656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D842C5412978458300610656 /* Build configuration list for PBXNativeTarget "7301_Login_VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D842C5422978458300610656 /* Debug */,
+				D842C5432978458300610656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D842C5442978458300610656 /* Build configuration list for PBXNativeTarget "7301_Login_VIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D842C5452978458300610656 /* Debug */,
+				D842C5462978458300610656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D842C5472978458300610656 /* Build configuration list for PBXNativeTarget "7301_Login_VIPERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D842C5482978458300610656 /* Debug */,
+				D842C5492978458300610656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D842C50F2978457900610656 /* Project object */;
+}
