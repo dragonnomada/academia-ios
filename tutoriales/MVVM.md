@@ -26,7 +26,7 @@ class FrutasModel {
 }
 ``` 
 
-## Paso 2 - Definir la Vista
+## Paso 2 - Definir la Vista
 
 La vista es un protocolo que notifica datos que provienen desde el vista-modelo.
 
@@ -43,7 +43,7 @@ protocol FrutasHomeView: NSObject {
 }
 ```
 
-## Paso 3 - Definir la Vista-Modelo
+## Paso 3 - Definir la Vista-Modelo
 
 La vista-modelo es una clase que permite comunicar uno o más modelos a una **única** vista.
 
@@ -131,7 +131,7 @@ extension FrutasHomeViewController: UITableViewDelegate {
 }
 ```
 
-## Paso 5 - Creamos una instancia del Modelo y la Vista-Modelo en SceneDelegate
+## Paso 5 - Creamos una instancia del Modelo y la Vista-Modelo en SceneDelegate
 
 El SceneDelegate es una clase que controla la ventana principal y todas sus pantallas. A través de la ventana podemos asignarle/crearle/proporcionale una pantalla principal o podemos recuperar/obtener alguna pantalla ya creada desde el *storyboard*.
 
