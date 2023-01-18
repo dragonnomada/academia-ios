@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="5120" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BitacoraHomeViewController" customModule="BitacorAPP" customModuleProvider="target">
+            <connections>
+                <outlet property="bitacotaView" destination="enI-BO-84X" id="eXq-AI-XMT"/>
+                <outlet property="homeMapView" destination="Nek-Yd-uwb" id="cDj-Hx-iUH"/>
+                <outlet property="latlonLabel" destination="HFK-ib-e8C" id="yPY-A0-Knn"/>
+                <outlet property="titleLabel" destination="VeG-Uu-Ude" id="rWV-lg-8Pf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nek-Yd-uwb">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <standardMapConfiguration key="preferredConfiguration"/>
+                </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enI-BO-84X">
+                    <rect key="frame" x="20" y="688" width="353" height="100"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="sUV-1d-NP7" userLabel="Bitacora">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="100"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0jf-oG-tr2" userLabel="Boton_Details">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="26.333333333333332"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incidente Lampara" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeG-Uu-Ude">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="26.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VeG-Uu-Ude" firstAttribute="leading" secondItem="0jf-oG-tr2" secondAttribute="leading" id="T0X-Vt-eTD"/>
+                                        <constraint firstAttribute="trailing" secondItem="VeG-Uu-Ude" secondAttribute="trailing" id="zid-va-9EN"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="c4I-wB-shM" userLabel="Titulo">
+                                    <rect key="frame" x="0.0" y="26.333333333333375" width="353" height="39.333333333333343"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="# 15 (Latitud, Longitud)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFK-ib-e8C">
+                                            <rect key="frame" x="0.0" y="5.3333333333332593" width="353" height="28.666666666666671"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="HFK-ib-e8C" firstAttribute="centerY" secondItem="c4I-wB-shM" secondAttribute="centerY" id="6tk-OJ-0xg"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0dk-FB-pts" userLabel="Latitud_Longitud">
+                                    <rect key="frame" x="0.0" y="65.666666666666629" width="353" height="34.333333333333343"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuN-57-SXk">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="View Details"/>
+                                            <connections>
+                                                <action selector="goDetailsAction:" destination="-1" eventType="touchUpInside" id="MBf-JB-fPi"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="c4I-wB-shM" secondAttribute="trailing" id="5GA-ce-avW"/>
+                                <constraint firstItem="c4I-wB-shM" firstAttribute="leading" secondItem="sUV-1d-NP7" secondAttribute="leading" id="5pU-JF-Ggt"/>
+                                <constraint firstAttribute="trailing" secondItem="c4I-wB-shM" secondAttribute="trailing" id="6jB-Kj-h7b"/>
+                                <constraint firstAttribute="trailing" secondItem="0dk-FB-pts" secondAttribute="trailing" id="bq9-IO-VwK"/>
+                                <constraint firstAttribute="trailing" secondItem="0jf-oG-tr2" secondAttribute="trailing" id="dl2-1d-3Kv"/>
+                                <constraint firstItem="0dk-FB-pts" firstAttribute="leading" secondItem="sUV-1d-NP7" secondAttribute="leading" id="e0z-OR-03v"/>
+                                <constraint firstItem="c4I-wB-shM" firstAttribute="leading" secondItem="sUV-1d-NP7" secondAttribute="leading" id="l5X-aA-iNi"/>
+                                <constraint firstItem="0jf-oG-tr2" firstAttribute="leading" secondItem="sUV-1d-NP7" secondAttribute="leading" id="xQk-1s-vCC"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96055740119999999" green="0.94145077470000005" blue="0.92548769710000001" alpha="0.9033003042865273" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="sUV-1d-NP7" secondAttribute="trailing" id="0Yg-IK-s6a"/>
+                        <constraint firstAttribute="bottom" secondItem="sUV-1d-NP7" secondAttribute="bottom" id="Gu9-tp-DhD"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="k2Y-V8-H5X"/>
+                        <constraint firstItem="sUV-1d-NP7" firstAttribute="leading" secondItem="enI-BO-84X" secondAttribute="leading" id="mET-M4-M7p"/>
+                        <constraint firstItem="sUV-1d-NP7" firstAttribute="top" secondItem="enI-BO-84X" secondAttribute="top" id="mII-tU-ZyC"/>
+                        <constraint firstAttribute="height" constant="100" id="wzt-Mu-7np"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Nek-Yd-uwb" secondAttribute="bottom" id="B9v-rD-Z9h"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="enI-BO-84X" secondAttribute="bottom" constant="30" id="XaO-BA-yjL"/>
+                <constraint firstItem="enI-BO-84X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fMg-Nk-STy"/>
+                <constraint firstItem="enI-BO-84X" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gPh-DN-PrS"/>
+                <constraint firstItem="Nek-Yd-uwb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mGo-m1-PD1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="enI-BO-84X" secondAttribute="trailing" constant="20" id="qza-R6-pmc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nek-Yd-uwb" secondAttribute="trailing" id="vfS-pm-Wll"/>
+                <constraint firstItem="Nek-Yd-uwb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xZE-dq-3Fc"/>
+            </constraints>
+            <point key="canvasLocation" x="116.79389312977099" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
