@@ -53,7 +53,17 @@ class LoginRouter {
             
             //self.navigationController.popViewController(animated: true)
             
-            self.navigationController.setViewControllers([viewController], animated: false)
+            var viewControllers = self.navigationController.viewControllers
+            
+            if viewControllers.count > 0 {
+                viewControllers.insert(viewController, at: 0)
+                self.navigationController.setViewControllers(viewControllers, animated: false)
+                self.navigationController.popViewController(animated: true)
+            } else {
+                self.navigationController.setViewControllers([viewController], animated: false)
+            }
+            
+            //self.navigationController.setViewControllers([viewController], animated: false)
             //self.navigationController.present(viewController, animated: true)
         }
         

@@ -15,6 +15,10 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var welcomeLabel: UILabel!
     
+    deinit {
+        print("LIBERANDO HomeViewController")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

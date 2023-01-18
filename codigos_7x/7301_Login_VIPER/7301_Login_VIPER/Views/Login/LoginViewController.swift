@@ -15,6 +15,10 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    deinit {
+        print("LIBERANDO LoginViewController")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
