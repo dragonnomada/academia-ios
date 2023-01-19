@@ -13,3 +13,6 @@
 [submodule "Proyectos_Equipo_7x/MusicApp"]
 	path = Proyectos_Equipo_7x/MusicApp
 	url = https://github.com/HeberJR11/Musicapp
+[submodule "proyectos_equipos_7x/MusicApp"]
+	path = proyectos_equipos_7x/MusicApp
+	url = https://github.com/HeberJR11/Musicapp
