@@ -7,3 +7,6 @@
 [submodule "proyectos_equipos_6x/Ubicapp"]
 	path = proyectos_equipos_6x/Ubicapp
 	url = https://github.com/JoelBrayan22/Ubicapp
+[submodule "codigos_7x/MusicApp"]
+	path = codigos_7x/MusicApp
+	url = https://github.com/HeberJR11/Musicapp
