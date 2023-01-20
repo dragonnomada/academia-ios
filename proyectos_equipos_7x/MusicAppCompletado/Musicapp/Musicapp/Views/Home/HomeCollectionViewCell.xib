@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeCollectionViewCell" customModule="Musicapp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="Musicapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqM-Gl-uvb">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="240"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Portada1" translatesAutoresizingMaskIntoConstraints="NO" id="EZz-JZ-Q0r">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="144"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="0hJ-mu-ptC">
+                                <rect key="frame" x="0.0" y="144" width="180" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título Ejemplo de título extramadamente muy largo para una prueba" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prs-jw-pNn">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="68.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artista Ejemplo de título muy largo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIo-Pm-dpr">
+                                        <rect key="frame" x="0.0" y="68.333333333333343" width="180" height="27.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eIo-Pm-dpr" firstAttribute="leading" secondItem="0hJ-mu-ptC" secondAttribute="leading" id="2Tx-8X-fui"/>
+                                    <constraint firstAttribute="trailing" secondItem="eIo-Pm-dpr" secondAttribute="trailing" id="I11-rA-RF6"/>
+                                    <constraint firstItem="Prs-jw-pNn" firstAttribute="leading" secondItem="0hJ-mu-ptC" secondAttribute="leading" id="QxZ-0c-dre"/>
+                                    <constraint firstAttribute="trailing" secondItem="Prs-jw-pNn" secondAttribute="trailing" id="SOi-eB-StP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EZz-JZ-Q0r" firstAttribute="width" secondItem="SqM-Gl-uvb" secondAttribute="width" id="DHg-Nu-5A5"/>
+                            <constraint firstItem="EZz-JZ-Q0r" firstAttribute="leading" secondItem="SqM-Gl-uvb" secondAttribute="leading" id="Egz-g0-TmU"/>
+                            <constraint firstAttribute="trailing" secondItem="EZz-JZ-Q0r" secondAttribute="trailing" id="H48-UQ-tbN"/>
+                            <constraint firstItem="EZz-JZ-Q0r" firstAttribute="top" secondItem="SqM-Gl-uvb" secondAttribute="top" id="gLy-iF-cBn"/>
+                            <constraint firstItem="EZz-JZ-Q0r" firstAttribute="height" secondItem="SqM-Gl-uvb" secondAttribute="height" multiplier="0.6" id="oB8-vC-Ril"/>
+                            <constraint firstItem="0hJ-mu-ptC" firstAttribute="leading" secondItem="SqM-Gl-uvb" secondAttribute="leading" id="oY7-L5-IDW"/>
+                            <constraint firstAttribute="bottom" secondItem="0hJ-mu-ptC" secondAttribute="bottom" id="pRA-Z2-Rbj"/>
+                            <constraint firstAttribute="trailing" secondItem="0hJ-mu-ptC" secondAttribute="trailing" id="pnz-H5-2pn"/>
+                            <constraint firstItem="0hJ-mu-ptC" firstAttribute="top" secondItem="EZz-JZ-Q0r" secondAttribute="bottom" id="xXy-hz-j87"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SqM-Gl-uvb" secondAttribute="bottom" id="M7N-3k-Twj"/>
+                <constraint firstItem="SqM-Gl-uvb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iQX-kw-Mn5"/>
+                <constraint firstAttribute="trailing" secondItem="SqM-Gl-uvb" secondAttribute="trailing" id="nb7-7E-ZDh"/>
+                <constraint firstItem="SqM-Gl-uvb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yTh-42-Hlm"/>
+            </constraints>
+            <size key="customSize" width="184" height="263"/>
+            <connections>
+                <outlet property="artistLabel" destination="eIo-Pm-dpr" id="9L7-N1-KR3"/>
+                <outlet property="songImage" destination="EZz-JZ-Q0r" id="pca-UH-G2f"/>
+                <outlet property="titleLabel" destination="Prs-jw-pNn" id="PsZ-zy-hDK"/>
+            </connections>
+            <point key="canvasLocation" x="85.496183206106863" y="23.943661971830988"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Portada1" width="1600" height="1600"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

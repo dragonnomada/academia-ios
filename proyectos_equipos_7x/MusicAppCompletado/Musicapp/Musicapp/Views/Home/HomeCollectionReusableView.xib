@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeCollectionReusableView" customModule="Musicapp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionReusableView" id="U6b-Vx-4bR" customClass="HomeCollectionReusableView" customModule="Musicapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9j-kl-0Gd">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROCK 🎸" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HY-pc-0Sn">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" systemColor="opaqueSeparatorColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 canciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBz-2D-mr3">
+                            <rect key="frame" x="0.0" y="28.999999999999996" width="320" height="14.333333333333332"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                            <color key="textColor" systemColor="systemGray2Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="7HY-pc-0Sn" firstAttribute="height" secondItem="t9j-kl-0Gd" secondAttribute="height" multiplier="0.7" id="8f9-2y-wRN"/>
+                        <constraint firstItem="7HY-pc-0Sn" firstAttribute="leading" secondItem="t9j-kl-0Gd" secondAttribute="leading" id="Cjc-cT-wQg"/>
+                        <constraint firstItem="7HY-pc-0Sn" firstAttribute="top" secondItem="t9j-kl-0Gd" secondAttribute="top" id="I7P-TF-gpc"/>
+                        <constraint firstAttribute="trailing" secondItem="7HY-pc-0Sn" secondAttribute="trailing" id="J1f-X1-uCN"/>
+                        <constraint firstAttribute="trailing" secondItem="sBz-2D-mr3" secondAttribute="trailing" id="P97-iR-pqE"/>
+                        <constraint firstItem="sBz-2D-mr3" firstAttribute="top" secondItem="7HY-pc-0Sn" secondAttribute="bottom" constant="-6" id="Qga-mU-hMr"/>
+                        <constraint firstItem="sBz-2D-mr3" firstAttribute="leading" secondItem="t9j-kl-0Gd" secondAttribute="leading" id="n4R-zn-GBr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="t9j-kl-0Gd" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="0f0-f5-Y8G"/>
+                <constraint firstAttribute="bottom" secondItem="t9j-kl-0Gd" secondAttribute="bottom" id="Gkl-4b-Jlf"/>
+                <constraint firstItem="t9j-kl-0Gd" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Ohz-XZ-ng1"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="t9j-kl-0Gd" secondAttribute="trailing" id="dQH-zO-alR"/>
+            </constraints>
+            <connections>
+                <outlet property="generoLabel" destination="7HY-pc-0Sn" id="E1Y-qc-AQt"/>
+                <outlet property="numeroCancionesLabel" destination="sBz-2D-mr3" id="Ax0-W9-J4f"/>
+            </connections>
+            <point key="canvasLocation" x="27" y="20"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
