@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE2BB518297B60D000B100B6 /* AuthenticationFireBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BB517297B60D000B100B6 /* AuthenticationFireBaseDataSource.swift */; };
+		CE2BB51A297B629C00B100B6 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BB519297B629C00B100B6 /* AuthenticationRepository.swift */; };
+		CEA8DE02297B4A4B0043A0B0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEA8DE01297B4A4B0043A0B0 /* FirebaseAnalytics */; };
+		CEA8DE04297B4A4B0043A0B0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CEA8DE03297B4A4B0043A0B0 /* FirebaseAuth */; };
+		CEA8DE06297B4A4B0043A0B0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEA8DE05297B4A4B0043A0B0 /* FirebaseCrashlytics */; };
+		CEA8DE08297B4B2B0043A0B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEA8DE07297B4B2B0043A0B0 /* GoogleService-Info.plist */; };
+		CEC2C7022979CB02005818D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2C7012979CB02005818D2 /* AppDelegate.swift */; };
+		CEC2C7042979CB02005818D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2C7032979CB02005818D2 /* SceneDelegate.swift */; };
+		CEC2C7062979CB03005818D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2C7052979CB03005818D2 /* ViewController.swift */; };
+		CEC2C7092979CB03005818D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC2C7072979CB03005818D2 /* Main.storyboard */; };
+		CEC2C70B2979CB04005818D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC2C70A2979CB04005818D2 /* Assets.xcassets */; };
+		CEC2C70E2979CB04005818D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC2C70C2979CB04005818D2 /* LaunchScreen.storyboard */; };
+		CEC2C7192979CB05005818D2 /* MyCaloriAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2C7182979CB05005818D2 /* MyCaloriAPPTests.swift */; };
+		CEC2C7232979CB05005818D2 /* MyCaloriAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2C7222979CB05005818D2 /* MyCaloriAPPUITests.swift */; };
+		CEC2C7252979CB05005818D2 /* MyCaloriAPPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2C7242979CB05005818D2 /* MyCaloriAPPUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEC2C7152979CB05005818D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC2C6F62979CB02005818D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC2C6FD2979CB02005818D2;
+			remoteInfo = MyCaloriAPP;
+		};
+		CEC2C71F2979CB05005818D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC2C6F62979CB02005818D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC2C6FD2979CB02005818D2;
+			remoteInfo = MyCaloriAPP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE2BB517297B60D000B100B6 /* AuthenticationFireBaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFireBaseDataSource.swift; sourceTree = "<group>"; };
+		CE2BB519297B629C00B100B6 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		CEA8DE07297B4B2B0043A0B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEC2C6FE2979CB02005818D2 /* MyCaloriAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCaloriAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC2C7012979CB02005818D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEC2C7032979CB02005818D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEC2C7052979CB03005818D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEC2C7082979CB03005818D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEC2C70A2979CB04005818D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEC2C70D2979CB04005818D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEC2C70F2979CB04005818D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC2C7142979CB05005818D2 /* MyCaloriAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCaloriAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC2C7182979CB05005818D2 /* MyCaloriAPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCaloriAPPTests.swift; sourceTree = "<group>"; };
+		CEC2C71E2979CB05005818D2 /* MyCaloriAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCaloriAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC2C7222979CB05005818D2 /* MyCaloriAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCaloriAPPUITests.swift; sourceTree = "<group>"; };
+		CEC2C7242979CB05005818D2 /* MyCaloriAPPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCaloriAPPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEC2C6FB2979CB02005818D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA8DE06297B4A4B0043A0B0 /* FirebaseCrashlytics in Frameworks */,
+				CEA8DE02297B4A4B0043A0B0 /* FirebaseAnalytics in Frameworks */,
+				CEA8DE04297B4A4B0043A0B0 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2C7112979CB05005818D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2C71B2979CB05005818D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEC2C6F52979CB02005818D2 = {
+			isa = PBXGroup;
+			children = (
+				CEC2C7002979CB02005818D2 /* MyCaloriAPP */,
+				CEC2C7172979CB05005818D2 /* MyCaloriAPPTests */,
+				CEC2C7212979CB05005818D2 /* MyCaloriAPPUITests */,
+				CEC2C6FF2979CB02005818D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEC2C6FF2979CB02005818D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2C6FE2979CB02005818D2 /* MyCaloriAPP.app */,
+				CEC2C7142979CB05005818D2 /* MyCaloriAPPTests.xctest */,
+				CEC2C71E2979CB05005818D2 /* MyCaloriAPPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEC2C7002979CB02005818D2 /* MyCaloriAPP */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2C7012979CB02005818D2 /* AppDelegate.swift */,
+				CEC2C7032979CB02005818D2 /* SceneDelegate.swift */,
+				CEC2C7052979CB03005818D2 /* ViewController.swift */,
+				CE2BB517297B60D000B100B6 /* AuthenticationFireBaseDataSource.swift */,
+				CE2BB519297B629C00B100B6 /* AuthenticationRepository.swift */,
+				CEC2C7072979CB03005818D2 /* Main.storyboard */,
+				CEC2C70A2979CB04005818D2 /* Assets.xcassets */,
+				CEC2C70C2979CB04005818D2 /* LaunchScreen.storyboard */,
+				CEC2C70F2979CB04005818D2 /* Info.plist */,
+				CEA8DE07297B4B2B0043A0B0 /* GoogleService-Info.plist */,
+			);
+			path = MyCaloriAPP;
+			sourceTree = "<group>";
+		};
+		CEC2C7172979CB05005818D2 /* MyCaloriAPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2C7182979CB05005818D2 /* MyCaloriAPPTests.swift */,
+			);
+			path = MyCaloriAPPTests;
+			sourceTree = "<group>";
+		};
+		CEC2C7212979CB05005818D2 /* MyCaloriAPPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2C7222979CB05005818D2 /* MyCaloriAPPUITests.swift */,
+				CEC2C7242979CB05005818D2 /* MyCaloriAPPUITestsLaunchTests.swift */,
+			);
+			path = MyCaloriAPPUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEC2C6FD2979CB02005818D2 /* MyCaloriAPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC2C7282979CB05005818D2 /* Build configuration list for PBXNativeTarget "MyCaloriAPP" */;
+			buildPhases = (
+				CEC2C6FA2979CB02005818D2 /* Sources */,
+				CEC2C6FB2979CB02005818D2 /* Frameworks */,
+				CEC2C6FC2979CB02005818D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCaloriAPP;
+			packageProductDependencies = (
+				CEA8DE01297B4A4B0043A0B0 /* FirebaseAnalytics */,
+				CEA8DE03297B4A4B0043A0B0 /* FirebaseAuth */,
+				CEA8DE05297B4A4B0043A0B0 /* FirebaseCrashlytics */,
+			);
+			productName = MyCaloriAPP;
+			productReference = CEC2C6FE2979CB02005818D2 /* MyCaloriAPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEC2C7132979CB05005818D2 /* MyCaloriAPPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC2C72B2979CB05005818D2 /* Build configuration list for PBXNativeTarget "MyCaloriAPPTests" */;
+			buildPhases = (
+				CEC2C7102979CB05005818D2 /* Sources */,
+				CEC2C7112979CB05005818D2 /* Frameworks */,
+				CEC2C7122979CB05005818D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEC2C7162979CB05005818D2 /* PBXTargetDependency */,
+			);
+			name = MyCaloriAPPTests;
+			productName = MyCaloriAPPTests;
+			productReference = CEC2C7142979CB05005818D2 /* MyCaloriAPPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEC2C71D2979CB05005818D2 /* MyCaloriAPPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC2C72E2979CB05005818D2 /* Build configuration list for PBXNativeTarget "MyCaloriAPPUITests" */;
+			buildPhases = (
+				CEC2C71A2979CB05005818D2 /* Sources */,
+				CEC2C71B2979CB05005818D2 /* Frameworks */,
+				CEC2C71C2979CB05005818D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEC2C7202979CB05005818D2 /* PBXTargetDependency */,
+			);
+			name = MyCaloriAPPUITests;
+			productName = MyCaloriAPPUITests;
+			productReference = CEC2C71E2979CB05005818D2 /* MyCaloriAPPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEC2C6F62979CB02005818D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					CEC2C6FD2979CB02005818D2 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					CEC2C7132979CB05005818D2 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = CEC2C6FD2979CB02005818D2;
+					};
+					CEC2C71D2979CB05005818D2 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = CEC2C6FD2979CB02005818D2;
+					};
+				};
+			};
+			buildConfigurationList = CEC2C6F92979CB02005818D2 /* Build configuration list for PBXProject "MyCaloriAPP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEC2C6F52979CB02005818D2;
+			packageReferences = (
+				CEA8DE00297B4A4B0043A0B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = CEC2C6FF2979CB02005818D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEC2C6FD2979CB02005818D2 /* MyCaloriAPP */,
+				CEC2C7132979CB05005818D2 /* MyCaloriAPPTests */,
+				CEC2C71D2979CB05005818D2 /* MyCaloriAPPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEC2C6FC2979CB02005818D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC2C70E2979CB04005818D2 /* LaunchScreen.storyboard in Resources */,
+				CEA8DE08297B4B2B0043A0B0 /* GoogleService-Info.plist in Resources */,
+				CEC2C70B2979CB04005818D2 /* Assets.xcassets in Resources */,
+				CEC2C7092979CB03005818D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2C7122979CB05005818D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2C71C2979CB05005818D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEC2C6FA2979CB02005818D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC2C7062979CB03005818D2 /* ViewController.swift in Sources */,
+				CE2BB518297B60D000B100B6 /* AuthenticationFireBaseDataSource.swift in Sources */,
+				CEC2C7022979CB02005818D2 /* AppDelegate.swift in Sources */,
+				CE2BB51A297B629C00B100B6 /* AuthenticationRepository.swift in Sources */,
+				CEC2C7042979CB02005818D2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2C7102979CB05005818D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC2C7192979CB05005818D2 /* MyCaloriAPPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2C71A2979CB05005818D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC2C7252979CB05005818D2 /* MyCaloriAPPUITestsLaunchTests.swift in Sources */,
+				CEC2C7232979CB05005818D2 /* MyCaloriAPPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEC2C7162979CB05005818D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC2C6FD2979CB02005818D2 /* MyCaloriAPP */;
+			targetProxy = CEC2C7152979CB05005818D2 /* PBXContainerItemProxy */;
+		};
+		CEC2C7202979CB05005818D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC2C6FD2979CB02005818D2 /* MyCaloriAPP */;
+			targetProxy = CEC2C71F2979CB05005818D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEC2C7072979CB03005818D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC2C7082979CB03005818D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEC2C70C2979CB04005818D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC2C70D2979CB04005818D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEC2C7262979CB05005818D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEC2C7272979CB05005818D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEC2C7292979CB05005818D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCaloriAPP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academiaios.MyCaloriApp.MyCaloriAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEC2C72A2979CB05005818D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCaloriAPP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academiaios.MyCaloriApp.MyCaloriAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEC2C72C2979CB05005818D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academiaios.MyCaloriApp.MyCaloriAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCaloriAPP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyCaloriAPP";
+			};
+			name = Debug;
+		};
+		CEC2C72D2979CB05005818D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academiaios.MyCaloriApp.MyCaloriAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCaloriAPP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyCaloriAPP";
+			};
+			name = Release;
+		};
+		CEC2C72F2979CB05005818D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academiaios.MyCaloriApp.MyCaloriAPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyCaloriAPP;
+			};
+			name = Debug;
+		};
+		CEC2C7302979CB05005818D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academiaios.MyCaloriApp.MyCaloriAPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyCaloriAPP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEC2C6F92979CB02005818D2 /* Build configuration list for PBXProject "MyCaloriAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC2C7262979CB05005818D2 /* Debug */,
+				CEC2C7272979CB05005818D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC2C7282979CB05005818D2 /* Build configuration list for PBXNativeTarget "MyCaloriAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC2C7292979CB05005818D2 /* Debug */,
+				CEC2C72A2979CB05005818D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC2C72B2979CB05005818D2 /* Build configuration list for PBXNativeTarget "MyCaloriAPPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC2C72C2979CB05005818D2 /* Debug */,
+				CEC2C72D2979CB05005818D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC2C72E2979CB05005818D2 /* Build configuration list for PBXNativeTarget "MyCaloriAPPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC2C72F2979CB05005818D2 /* Debug */,
+				CEC2C7302979CB05005818D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEA8DE00297B4A4B0043A0B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEA8DE01297B4A4B0043A0B0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEA8DE00297B4A4B0043A0B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CEA8DE03297B4A4B0043A0B0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEA8DE00297B4A4B0043A0B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CEA8DE05297B4A4B0043A0B0 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEA8DE00297B4A4B0043A0B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CEC2C6F62979CB02005818D2 /* Project object */;
+}
