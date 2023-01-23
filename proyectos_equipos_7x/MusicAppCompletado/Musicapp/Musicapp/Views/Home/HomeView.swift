@@ -15,4 +15,6 @@ protocol HomeView: NSObject {
     
     func player(songsFetchedError error: SongsFetechedError)
     
+    func player(songsSelected song: SongEntity)
+    
 }

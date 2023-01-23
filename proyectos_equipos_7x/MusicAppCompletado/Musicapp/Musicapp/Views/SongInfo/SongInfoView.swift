@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol SongInfoView: NSObject {
+    
+    var presenter: SongInfoPresenter? { get set }
+    
+    func player(songsSelected song: SongEntity)
+    
+}

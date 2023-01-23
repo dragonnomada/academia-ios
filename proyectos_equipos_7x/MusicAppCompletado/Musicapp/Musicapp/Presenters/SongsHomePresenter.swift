@@ -10,13 +10,14 @@ import Combine
 
 class SongsHomePresenter {
     
-    weak var router: SongsRouter?
+    private weak var router: SongsRouter?
     
-    weak var interactor: SongInteractor?
+    private weak var interactor: SongInteractor?
     
     var view: HomeView?
     
     var songsFetchedSubscriber: AnyCancellable?
+    var songSelectedSubscriber: AnyCancellable?
     
     func start(router: SongsRouter, interactor: SongInteractor) {
         
@@ -61,12 +62,23 @@ class SongsHomePresenter {
             
         })
         
+        self.songSelectedSubscriber = interactor.songSelectedSubject.sink {
+            
+            [weak self] song in
+            
+            self?.view?.player(songsSelected: song)
+            
+        }
+        
     }
     
     func stop() {
         
         self.songsFetchedSubscriber?.cancel()
         self.songsFetchedSubscriber = nil
+        
+        self.songSelectedSubscriber?.cancel()
+        self.songSelectedSubscriber = nil
         
         self.router = nil
         self.interactor = nil
@@ -78,6 +90,16 @@ class SongsHomePresenter {
         
         self.interactor?.requestSongs()
         
+    }
+    
+    func selectSong(song: SongEntity) {
+        
+        self.interactor?.selectSong(song: song)
+        
+    }
+    
+    func goToSongInfo() {
+        self.router?.goToSongInfo()
     }
     
     deinit {

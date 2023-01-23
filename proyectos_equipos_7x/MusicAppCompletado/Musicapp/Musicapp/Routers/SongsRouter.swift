@@ -27,6 +27,7 @@ class SongsRouter {
     }()
     
     var homePresenter: SongsHomePresenter?
+    var songInfoPresenter: SongInfoPresenter?
     
     func goToHome() {
         
@@ -37,6 +38,20 @@ class SongsRouter {
         if let viewController = self.homePresenter?.view as? HomeViewController {
             
             self.navigationController.pushViewController(viewController, animated: false)
+            
+        }
+        
+    }
+    
+    func goToSongInfo() {
+        
+        self.songInfoPresenter = SongInfoPresenter()
+        
+        self.songInfoPresenter?.start(router: self, interactor: self.interactor)
+        
+        if let viewController = self.songInfoPresenter?.view as? SongInfoViewController {
+            
+            self.navigationController.pushViewController(viewController, animated: true)
             
         }
         

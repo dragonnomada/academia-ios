@@ -25,6 +25,14 @@ class SongInteractor {
         self.service.songsFetchedSubject
     }()
     
+    lazy var songSelectedSubject: PassthroughSubject<SongEntity, Never> = {
+        self.service.songSelectedSubject
+    }()
+    
+    lazy var songInfoSubject: PassthroughSubject<SongEntity, Never> = {
+        self.service.songInfoSubject
+    }()
+    
     func requestSongs() {
         
         Task {
@@ -32,6 +40,24 @@ class SongInteractor {
             await service.downloadSongs()
             
         }
+    }
+    
+    func selectSong(song: SongEntity) {
+        
+        self.service.selectSong(byId: song.id)
+        
+    }
+    
+    func requestSongInfo() {
+        
+        self.service.requestSongInfo()
+        
+    }
+    
+    func playSongSelected() {
+        
+        self.service.playSongSelected()
+        
     }
     
 }

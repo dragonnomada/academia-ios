@@ -28,6 +28,7 @@ class HomeViewController: UIViewController {
         self.homeCollectionView.register(UINib(nibName: "HomeCollectionReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HomeCollectionReusableView")
         
         self.homeCollectionView.dataSource = self
+        self.homeCollectionView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,6 +78,10 @@ extension HomeViewController: HomeView {
         
     }
     
+    func player(songsSelected song: SongEntity) {
+        self.presenter?.goToSongInfo()
+    }
+    
 }
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -90,7 +95,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         var i = 0
         
-        for gender in self.songsInGender.keys {
+        for gender in self.songsInGender.keys.sorted(by: { $0.rawValue < $1.rawValue }) {
             if section == i {
                 
                 if let listOfSongsInGender = self.songsInGender[gender] {
@@ -112,7 +117,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         var i = 0
         
-        for gender in self.songsInGender.keys {
+        for gender in self.songsInGender.keys.sorted(by: { $0.rawValue < $1.rawValue }) {
             if indexPath.section == i {
                 
                 if let listOfSongsInGender = self.songsInGender[gender] {
@@ -142,7 +147,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         var i = 0
         
-        for gender in self.songsInGender.keys {
+        for gender in self.songsInGender.keys.sorted(by: { $0.rawValue < $1.rawValue }) {
             if indexPath.section == i {
                 
                 if let listOfSongsInGender = self.songsInGender[gender] {
@@ -161,6 +166,34 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         }
         
         return reusable
+        
+    }
+    
+}
+
+extension HomeViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        var i = 0
+        
+        for gender in self.songsInGender.keys.sorted(by: { $0.rawValue < $1.rawValue }) {
+            if indexPath.section == i {
+                
+                if let listOfSongsInGender = self.songsInGender[gender] {
+                    
+                    let song = listOfSongsInGender[indexPath.row]
+                    
+                    self.presenter?.selectSong(song: song)
+                    
+                    //print(song)
+                    
+                }
+                
+            }
+            
+            i += 1
+        }
         
     }
     
