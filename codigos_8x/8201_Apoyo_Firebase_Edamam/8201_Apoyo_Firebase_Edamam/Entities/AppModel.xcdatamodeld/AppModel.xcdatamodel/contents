@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22C65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="UserCredentialsEntity" representedClassName="UserCredentialsEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="isActiveRemember" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="signedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="token" optional="YES" attributeType="String"/>
+        <attribute name="uid" optional="YES" attributeType="String"/>
+        <relationship name="userInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInfoEntity" inverseName="userCredential" inverseEntity="UserInfoEntity"/>
+    </entity>
+    <entity name="UserInfoEntity" representedClassName="UserInfoEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="picture" optional="YES" attributeType="Binary"/>
+        <relationship name="userCredential" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserCredentialsEntity" inverseName="userInfo" inverseEntity="UserCredentialsEntity"/>
+    </entity>
+</model>

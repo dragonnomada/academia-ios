@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA9BE3DF298042DE0043679B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BE3DE298042DE0043679B /* AppDelegate.swift */; };
+		FA9BE3E1298042DE0043679B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BE3E0298042DE0043679B /* SceneDelegate.swift */; };
+		FA9BE3E3298042DE0043679B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BE3E2298042DE0043679B /* ViewController.swift */; };
+		FA9BE3E6298042DE0043679B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9BE3E4298042DE0043679B /* Main.storyboard */; };
+		FA9BE3E8298042E00043679B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9BE3E7298042E00043679B /* Assets.xcassets */; };
+		FA9BE3EB298042E00043679B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9BE3E9298042E00043679B /* LaunchScreen.storyboard */; };
+		FA9BE3F6298042E00043679B /* _201_Apoyo_Firebase_EdamamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BE3F5298042E00043679B /* _201_Apoyo_Firebase_EdamamTests.swift */; };
+		FA9BE400298042E00043679B /* _201_Apoyo_Firebase_EdamamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BE3FF298042E00043679B /* _201_Apoyo_Firebase_EdamamUITests.swift */; };
+		FA9BE402298042E00043679B /* _201_Apoyo_Firebase_EdamamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BE401298042E00043679B /* _201_Apoyo_Firebase_EdamamUITestsLaunchTests.swift */; };
+		FA9BE410298043070043679B /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BE40F298043070043679B /* FirebaseService.swift */; };
+		FA9BE413298043690043679B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FA9BE412298043690043679B /* FirebaseAuth */; };
+		FA9BE418298043E90043679B /* AppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA9BE416298043E90043679B /* AppModel.xcdatamodeld */; };
+		FA9BE41D29805A880043679B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA9BE41C29805A880043679B /* GoogleService-Info.plist */; };
+		FA9BE42129805B850043679B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FA9BE42029805B850043679B /* FirebaseAuth */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA9BE3F2298042E00043679B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA9BE3D3298042DE0043679B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA9BE3DA298042DE0043679B;
+			remoteInfo = 8201_Apoyo_Firebase_Edamam;
+		};
+		FA9BE3FC298042E00043679B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA9BE3D3298042DE0043679B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA9BE3DA298042DE0043679B;
+			remoteInfo = 8201_Apoyo_Firebase_Edamam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA9BE3DB298042DE0043679B /* 8201_Apoyo_Firebase_Edamam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 8201_Apoyo_Firebase_Edamam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9BE3DE298042DE0043679B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA9BE3E0298042DE0043679B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA9BE3E2298042DE0043679B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA9BE3E5298042DE0043679B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA9BE3E7298042E00043679B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA9BE3EA298042E00043679B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA9BE3EC298042E00043679B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA9BE3F1298042E00043679B /* 8201_Apoyo_Firebase_EdamamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 8201_Apoyo_Firebase_EdamamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9BE3F5298042E00043679B /* _201_Apoyo_Firebase_EdamamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _201_Apoyo_Firebase_EdamamTests.swift; sourceTree = "<group>"; };
+		FA9BE3FB298042E00043679B /* 8201_Apoyo_Firebase_EdamamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 8201_Apoyo_Firebase_EdamamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9BE3FF298042E00043679B /* _201_Apoyo_Firebase_EdamamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _201_Apoyo_Firebase_EdamamUITests.swift; sourceTree = "<group>"; };
+		FA9BE401298042E00043679B /* _201_Apoyo_Firebase_EdamamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _201_Apoyo_Firebase_EdamamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA9BE40F298043070043679B /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		FA9BE417298043E90043679B /* AppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppModel.xcdatamodel; sourceTree = "<group>"; };
+		FA9BE41C29805A880043679B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA9BE3D8298042DE0043679B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9BE413298043690043679B /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9BE3EE298042E00043679B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9BE42129805B850043679B /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9BE3F8298042E00043679B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA9BE3D2298042DE0043679B = {
+			isa = PBXGroup;
+			children = (
+				FA9BE3DD298042DE0043679B /* 8201_Apoyo_Firebase_Edamam */,
+				FA9BE3F4298042E00043679B /* 8201_Apoyo_Firebase_EdamamTests */,
+				FA9BE3FE298042E00043679B /* 8201_Apoyo_Firebase_EdamamUITests */,
+				FA9BE3DC298042DE0043679B /* Products */,
+				FA9BE419298057800043679B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA9BE3DC298042DE0043679B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA9BE3DB298042DE0043679B /* 8201_Apoyo_Firebase_Edamam.app */,
+				FA9BE3F1298042E00043679B /* 8201_Apoyo_Firebase_EdamamTests.xctest */,
+				FA9BE3FB298042E00043679B /* 8201_Apoyo_Firebase_EdamamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA9BE3DD298042DE0043679B /* 8201_Apoyo_Firebase_Edamam */ = {
+			isa = PBXGroup;
+			children = (
+				FA9BE40E298042EA0043679B /* Entities */,
+				FA9BE3DE298042DE0043679B /* AppDelegate.swift */,
+				FA9BE3E0298042DE0043679B /* SceneDelegate.swift */,
+				FA9BE3E2298042DE0043679B /* ViewController.swift */,
+				FA9BE3E4298042DE0043679B /* Main.storyboard */,
+				FA9BE3E7298042E00043679B /* Assets.xcassets */,
+				FA9BE3E9298042E00043679B /* LaunchScreen.storyboard */,
+				FA9BE3EC298042E00043679B /* Info.plist */,
+				FA9BE41C29805A880043679B /* GoogleService-Info.plist */,
+			);
+			path = 8201_Apoyo_Firebase_Edamam;
+			sourceTree = "<group>";
+		};
+		FA9BE3F4298042E00043679B /* 8201_Apoyo_Firebase_EdamamTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA9BE3F5298042E00043679B /* _201_Apoyo_Firebase_EdamamTests.swift */,
+			);
+			path = 8201_Apoyo_Firebase_EdamamTests;
+			sourceTree = "<group>";
+		};
+		FA9BE3FE298042E00043679B /* 8201_Apoyo_Firebase_EdamamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA9BE3FF298042E00043679B /* _201_Apoyo_Firebase_EdamamUITests.swift */,
+				FA9BE401298042E00043679B /* _201_Apoyo_Firebase_EdamamUITestsLaunchTests.swift */,
+			);
+			path = 8201_Apoyo_Firebase_EdamamUITests;
+			sourceTree = "<group>";
+		};
+		FA9BE40E298042EA0043679B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FA9BE40F298043070043679B /* FirebaseService.swift */,
+				FA9BE416298043E90043679B /* AppModel.xcdatamodeld */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FA9BE419298057800043679B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA9BE3DA298042DE0043679B /* 8201_Apoyo_Firebase_Edamam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9BE405298042E00043679B /* Build configuration list for PBXNativeTarget "8201_Apoyo_Firebase_Edamam" */;
+			buildPhases = (
+				FA9BE3D7298042DE0043679B /* Sources */,
+				FA9BE3D8298042DE0043679B /* Frameworks */,
+				FA9BE3D9298042DE0043679B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 8201_Apoyo_Firebase_Edamam;
+			packageProductDependencies = (
+				FA9BE412298043690043679B /* FirebaseAuth */,
+			);
+			productName = 8201_Apoyo_Firebase_Edamam;
+			productReference = FA9BE3DB298042DE0043679B /* 8201_Apoyo_Firebase_Edamam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA9BE3F0298042E00043679B /* 8201_Apoyo_Firebase_EdamamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9BE408298042E00043679B /* Build configuration list for PBXNativeTarget "8201_Apoyo_Firebase_EdamamTests" */;
+			buildPhases = (
+				FA9BE3ED298042E00043679B /* Sources */,
+				FA9BE3EE298042E00043679B /* Frameworks */,
+				FA9BE3EF298042E00043679B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA9BE3F3298042E00043679B /* PBXTargetDependency */,
+			);
+			name = 8201_Apoyo_Firebase_EdamamTests;
+			packageProductDependencies = (
+				FA9BE42029805B850043679B /* FirebaseAuth */,
+			);
+			productName = 8201_Apoyo_Firebase_EdamamTests;
+			productReference = FA9BE3F1298042E00043679B /* 8201_Apoyo_Firebase_EdamamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA9BE3FA298042E00043679B /* 8201_Apoyo_Firebase_EdamamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9BE40B298042E00043679B /* Build configuration list for PBXNativeTarget "8201_Apoyo_Firebase_EdamamUITests" */;
+			buildPhases = (
+				FA9BE3F7298042E00043679B /* Sources */,
+				FA9BE3F8298042E00043679B /* Frameworks */,
+				FA9BE3F9298042E00043679B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA9BE3FD298042E00043679B /* PBXTargetDependency */,
+			);
+			name = 8201_Apoyo_Firebase_EdamamUITests;
+			productName = 8201_Apoyo_Firebase_EdamamUITests;
+			productReference = FA9BE3FB298042E00043679B /* 8201_Apoyo_Firebase_EdamamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA9BE3D3298042DE0043679B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					FA9BE3DA298042DE0043679B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					FA9BE3F0298042E00043679B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = FA9BE3DA298042DE0043679B;
+					};
+					FA9BE3FA298042E00043679B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = FA9BE3DA298042DE0043679B;
+					};
+				};
+			};
+			buildConfigurationList = FA9BE3D6298042DE0043679B /* Build configuration list for PBXProject "8201_Apoyo_Firebase_Edamam" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA9BE3D2298042DE0043679B;
+			packageReferences = (
+				FA9BE411298043690043679B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = FA9BE3DC298042DE0043679B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA9BE3DA298042DE0043679B /* 8201_Apoyo_Firebase_Edamam */,
+				FA9BE3F0298042E00043679B /* 8201_Apoyo_Firebase_EdamamTests */,
+				FA9BE3FA298042E00043679B /* 8201_Apoyo_Firebase_EdamamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA9BE3D9298042DE0043679B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9BE3EB298042E00043679B /* LaunchScreen.storyboard in Resources */,
+				FA9BE41D29805A880043679B /* GoogleService-Info.plist in Resources */,
+				FA9BE3E8298042E00043679B /* Assets.xcassets in Resources */,
+				FA9BE3E6298042DE0043679B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9BE3EF298042E00043679B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9BE3F9298042E00043679B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA9BE3D7298042DE0043679B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9BE3E3298042DE0043679B /* ViewController.swift in Sources */,
+				FA9BE3DF298042DE0043679B /* AppDelegate.swift in Sources */,
+				FA9BE410298043070043679B /* FirebaseService.swift in Sources */,
+				FA9BE3E1298042DE0043679B /* SceneDelegate.swift in Sources */,
+				FA9BE418298043E90043679B /* AppModel.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9BE3ED298042E00043679B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9BE3F6298042E00043679B /* _201_Apoyo_Firebase_EdamamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9BE3F7298042E00043679B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9BE400298042E00043679B /* _201_Apoyo_Firebase_EdamamUITests.swift in Sources */,
+				FA9BE402298042E00043679B /* _201_Apoyo_Firebase_EdamamUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA9BE3F3298042E00043679B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA9BE3DA298042DE0043679B /* 8201_Apoyo_Firebase_Edamam */;
+			targetProxy = FA9BE3F2298042E00043679B /* PBXContainerItemProxy */;
+		};
+		FA9BE3FD298042E00043679B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA9BE3DA298042DE0043679B /* 8201_Apoyo_Firebase_Edamam */;
+			targetProxy = FA9BE3FC298042E00043679B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA9BE3E4298042DE0043679B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9BE3E5298042DE0043679B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA9BE3E9298042E00043679B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9BE3EA298042E00043679B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA9BE403298042E00043679B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA9BE404298042E00043679B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA9BE406298042E00043679B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 8201_Apoyo_Firebase_Edamam/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonnomada.-201-Apoyo-Firebase-Edamam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA9BE407298042E00043679B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = 8201_Apoyo_Firebase_Edamam/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonnomada.-201-Apoyo-Firebase-Edamam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA9BE409298042E00043679B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonnomada.-201-Apoyo-Firebase-EdamamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/8201_Apoyo_Firebase_Edamam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/8201_Apoyo_Firebase_Edamam";
+			};
+			name = Debug;
+		};
+		FA9BE40A298042E00043679B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonnomada.-201-Apoyo-Firebase-EdamamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/8201_Apoyo_Firebase_Edamam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/8201_Apoyo_Firebase_Edamam";
+			};
+			name = Release;
+		};
+		FA9BE40C298042E00043679B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonnomada.-201-Apoyo-Firebase-EdamamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 8201_Apoyo_Firebase_Edamam;
+			};
+			name = Debug;
+		};
+		FA9BE40D298042E00043679B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dragonnomada.-201-Apoyo-Firebase-EdamamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = 8201_Apoyo_Firebase_Edamam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA9BE3D6298042DE0043679B /* Build configuration list for PBXProject "8201_Apoyo_Firebase_Edamam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9BE403298042E00043679B /* Debug */,
+				FA9BE404298042E00043679B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9BE405298042E00043679B /* Build configuration list for PBXNativeTarget "8201_Apoyo_Firebase_Edamam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9BE406298042E00043679B /* Debug */,
+				FA9BE407298042E00043679B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9BE408298042E00043679B /* Build configuration list for PBXNativeTarget "8201_Apoyo_Firebase_EdamamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9BE409298042E00043679B /* Debug */,
+				FA9BE40A298042E00043679B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9BE40B298042E00043679B /* Build configuration list for PBXNativeTarget "8201_Apoyo_Firebase_EdamamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9BE40C298042E00043679B /* Debug */,
+				FA9BE40D298042E00043679B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA9BE411298043690043679B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA9BE412298043690043679B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA9BE411298043690043679B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FA9BE42029805B850043679B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA9BE411298043690043679B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		FA9BE416298043E90043679B /* AppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA9BE417298043E90043679B /* AppModel.xcdatamodel */,
+			);
+			currentVersion = FA9BE417298043E90043679B /* AppModel.xcdatamodel */;
+			path = AppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA9BE3D3298042DE0043679B /* Project object */;
+}
