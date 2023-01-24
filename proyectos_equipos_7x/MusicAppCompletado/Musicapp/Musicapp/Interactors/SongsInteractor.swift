@@ -33,6 +33,18 @@ class SongInteractor {
         self.service.songInfoSubject
     }()
     
+    lazy var songPlayedSubject: PassthroughSubject<SongEntity, Never> = {
+        self.service.songPlayedSubject
+    }()
+    
+    lazy var songPlayingSubject: PassthroughSubject<Bool, Never> = {
+        self.service.songPlayingSubject
+    }()
+    
+    lazy var songTimeSubject: PassthroughSubject<(time: Int, duration: Int, progress: Double), Never> = {
+        self.service.songTimeSubject
+    }()
+    
     func requestSongs() {
         
         Task {
@@ -54,9 +66,19 @@ class SongInteractor {
         
     }
     
+    func requestSongIsPlaying() {
+        self.service.requestSongIsPlaying()
+    }
+    
     func playSongSelected() {
         
         self.service.playSongSelected()
+        
+    }
+    
+    func togglePlay() {
+        
+        self.service.togglePlay()
         
     }
     

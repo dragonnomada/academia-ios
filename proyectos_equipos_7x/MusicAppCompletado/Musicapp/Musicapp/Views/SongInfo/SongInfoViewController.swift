@@ -38,6 +38,12 @@ class SongInfoViewController: UIViewController {
 
 extension SongInfoViewController: SongInfoView {
     
+    func player(songsPlayed song: SongEntity) {
+        
+        self.presenter?.goToPlayer()
+        
+    }
+    
     func player(songsSelected song: SongEntity) {
         
         print("Canción seleccionada: \(song.title)")

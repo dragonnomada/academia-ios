@@ -17,6 +17,7 @@ class SongInfoPresenter {
     var view: SongInfoView?
     
     var songInfoSubscriber: AnyCancellable?
+    var songPlayedSubscriber: AnyCancellable?
     
     func start(router: SongsRouter, interactor: SongInteractor) {
         
@@ -37,16 +38,32 @@ class SongInfoPresenter {
             
         }
         
+        self.songPlayedSubscriber = interactor.songPlayedSubject.sink {
+            
+            [weak self] song in
+            
+            self?.view?.player(songsPlayed: song)
+            
+        }
+        
     }
     
     func stop() {
         
         self.songInfoSubscriber?.cancel()
         self.songInfoSubscriber = nil
+        self.songPlayedSubscriber?.cancel()
+        self.songPlayedSubscriber = nil
         
         self.router = nil
         self.interactor = nil
         self.view = nil
+        
+    }
+    
+    func goToPlayer() {
+        
+        self.router?.goToPlayerFromInfo()
         
     }
     

@@ -13,4 +13,6 @@ protocol SongInfoView: NSObject {
     
     func player(songsSelected song: SongEntity)
     
+    func player(songsPlayed song: SongEntity)
+    
 }

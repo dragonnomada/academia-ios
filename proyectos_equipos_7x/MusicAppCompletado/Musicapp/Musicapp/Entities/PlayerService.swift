@@ -50,6 +50,9 @@ class PlayerService: NSObject {
     
     var songSelectedSubject = PassthroughSubject<SongEntity, Never>()
     var songInfoSubject = PassthroughSubject<SongEntity, Never>()
+    var songPlayedSubject = PassthroughSubject<SongEntity, Never>()
+    var songTimeSubject = PassthroughSubject<(time: Int, duration: Int, progress: Double), Never>()
+    var songPlayingSubject = PassthroughSubject<Bool, Never>()
     
     deinit {
         
@@ -84,6 +87,7 @@ class PlayerService: NSObject {
                         // TODO: Notificar que el reproductor está listo
                         print("Estatus del reproductor listo")
                         self.play()
+                        self.isReady = true
                     case .failed:
                         print("Estatus del reproductor fallido")
                     case .unknown:
@@ -112,11 +116,41 @@ class PlayerService: NSObject {
                 
                 let seconds = player.currentTime().seconds
                 
-                if !seconds.isFinite && !seconds.isNaN {
+                print("SECONDS: \(seconds)")
+                
+                if !seconds.isInfinite && !seconds.isNaN {
                     
-                    self?.currentTime = Int(seconds)
+                    let time = Int(seconds)
+                    
+                    print("TIME: \(time)")
+                    
+                    self?.currentTime = time
+                    
+                    if let playerItem = self?.playerItem {
+                        
+                        let durationSeconds = playerItem.duration.seconds
+                        
+                        print("DURATION SECONDS: \(durationSeconds)")
+                        
+                        if !durationSeconds.isInfinite && !durationSeconds.isNaN {
+                            
+                            let duration = Int(durationSeconds)
+                            
+                            self?.currentDuration = duration
+                            
+                            let progress = Double(time) / Double(duration)
+                            
+                            print("PROGRESS: \(progress)")
+                            
+                            self?.songTimeSubject.send((time: time, duration: duration, progress: progress))
+                            
+                        }
+                        
+                    }
                     
                     // TODO: Notificar a la vista que currentTime cambió
+                    
+                    
                     
                 }
                 
@@ -225,6 +259,18 @@ class PlayerService: NSObject {
                 
                 self.player?.replaceCurrentItem(with: self.playerItem)
                 
+                self.isLoaded = true
+                self.isLocked = false
+                
+                if let songPlayed = self.songPlayed {
+                    self.songPlayedSubject.send(songPlayed)
+                }
+                
+                if self.isReady {
+                    self.player?.play()
+                    self.isPlaying = true
+                }
+                
                 // TODO: Notificar que la canción está lista (deprecated)
             }
             
@@ -237,12 +283,33 @@ class PlayerService: NSObject {
         
     }
     
+    func togglePlay() {
+        
+        if self.isPlaying {
+            self.pause()
+        } else {
+            self.play()
+        }
+        
+    }
+    
+    func requestSongIsPlaying() {
+        self.songPlayingSubject.send(self.isPlaying)
+    }
+    
     func play() {
         self.player?.play()
+        self.isPlaying = true
+        self.isPaused = false
+        self.songPlayingSubject.send(true)
+        
     }
     
     func pause() {
-        
+        self.player?.pause()
+        self.isPlaying = false
+        self.isPaused = true
+        self.songPlayingSubject.send(false)
     }
     
     func backward() {

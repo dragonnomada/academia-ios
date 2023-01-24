@@ -10,6 +10,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SongPlayerViewController" customModule="Musicapp" customModuleProvider="target">
             <connections>
+                <outlet property="albumLabel" destination="8BI-5S-am2" id="dQG-Pk-jxT"/>
+                <outlet property="artistLabel" destination="P8J-1t-8zg" id="OcC-so-ORw"/>
+                <outlet property="lyricsTextView" destination="Bxh-6b-fWB" id="KP3-Dg-G2m"/>
+                <outlet property="pictureImageView" destination="57w-Ha-2Jr" id="cRS-Hp-7gI"/>
+                <outlet property="playButton" destination="FQN-Qo-AAj" id="cJB-b3-Rbb"/>
+                <outlet property="timeEndLabel" destination="WRT-UU-Imb" id="8w4-c9-IYv"/>
+                <outlet property="timeProgress" destination="Bpn-Zm-VVj" id="6B3-75-CIz"/>
+                <outlet property="timeStartLabel" destination="MeR-RA-uDU" id="x3t-0G-jGo"/>
+                <outlet property="titleLabel" destination="2GT-Bq-zum" id="vy9-fx-Kpc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -127,6 +136,9 @@
                                             <rect key="frame" x="105.33333333333333" y="0.0" width="43.333333333333329" height="34.333333333333336"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="play" catalog="system"/>
+                                            <connections>
+                                                <action selector="togglePlayAction:" destination="-1" eventType="touchUpInside" id="qg5-cN-luz"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQw-ye-EMB">
                                             <rect key="frame" x="151.66666666666669" y="0.0" width="45.666666666666657" height="34.333333333333336"/>
