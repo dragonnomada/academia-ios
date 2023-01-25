@@ -16,3 +16,6 @@
 [submodule "proyectos_equipos_7x/MusicApp"]
 	path = proyectos_equipos_7x/MusicApp
 	url = https://github.com/HeberJR11/Musicapp
+[submodule "proyectos_equipos_8x/myDailyDiet"]
+	path = proyectos_equipos_8x/myDailyDiet
+	url = https://gitlab.com/joelnavorjimenez/mydailydiet
