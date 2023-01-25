@@ -19,3 +19,6 @@
 [submodule "proyectos_equipos_8x/myDailyDiet"]
 	path = proyectos_equipos_8x/myDailyDiet
 	url = https://gitlab.com/joelnavorjimenez/mydailydiet
+[submodule "proyectos_equipos_8x/MyCaloriAPP"]
+	path = proyectos_equipos_8x/MyCaloriAPP
+	url = https://github.com/BrianJM21/MyCaloriAPP.git
