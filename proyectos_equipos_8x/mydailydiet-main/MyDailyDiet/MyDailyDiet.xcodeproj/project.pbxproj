@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FACC8DE1297EFDBF00ECE91A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8DE0297EFDBF00ECE91A /* AppDelegate.swift */; };
+		FACC8DE3297EFDBF00ECE91A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8DE2297EFDBF00ECE91A /* SceneDelegate.swift */; };
+		FACC8DE5297EFDBF00ECE91A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8DE4297EFDBF00ECE91A /* ViewController.swift */; };
+		FACC8DE8297EFDBF00ECE91A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACC8DE6297EFDBF00ECE91A /* Main.storyboard */; };
+		FACC8DEB297EFDBF00ECE91A /* MyDailyDiet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FACC8DE9297EFDBF00ECE91A /* MyDailyDiet.xcdatamodeld */; };
+		FACC8DED297EFDC200ECE91A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACC8DEC297EFDC200ECE91A /* Assets.xcassets */; };
+		FACC8DF0297EFDC200ECE91A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACC8DEE297EFDC200ECE91A /* LaunchScreen.storyboard */; };
+		FACC8DFB297EFDC300ECE91A /* MyDailyDietTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8DFA297EFDC300ECE91A /* MyDailyDietTests.swift */; };
+		FACC8E05297EFDC300ECE91A /* MyDailyDietUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E04297EFDC300ECE91A /* MyDailyDietUITests.swift */; };
+		FACC8E07297EFDC300ECE91A /* MyDailyDietUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E06297EFDC300ECE91A /* MyDailyDietUITestsLaunchTests.swift */; };
+		FACC8E1F297F0BF200ECE91A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E1E297F0BF200ECE91A /* UserService.swift */; };
+		FACC8E21297F0C3600ECE91A /* EdemamApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E20297F0C3500ECE91A /* EdemamApiService.swift */; };
+		FACC8E23297F0DE600ECE91A /* EdamamApiInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E22297F0DE600ECE91A /* EdamamApiInteractor.swift */; };
+		FACC8E25297F0DF400ECE91A /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E24297F0DF400ECE91A /* UserInteractor.swift */; };
+		FACC8E27297F0E0E00ECE91A /* MyDailyDietRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E26297F0E0E00ECE91A /* MyDailyDietRouter.swift */; };
+		FACC8E2C297F1BA200ECE91A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FACC8E2B297F1BA200ECE91A /* FirebaseAnalytics */; };
+		FACC8E2E297F1BA200ECE91A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FACC8E2D297F1BA200ECE91A /* FirebaseAuth */; };
+		FACC8E30297F1BA200ECE91A /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = FACC8E2F297F1BA200ECE91A /* FirebaseCrashlytics */; };
+		FACC8E35297F575A00ECE91A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FACC8E34297F575A00ECE91A /* FirebaseAuth */; };
+		FACC8E37297F576F00ECE91A /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = FACC8E36297F576F00ECE91A /* FirebaseCrashlytics */; };
+		FACC8E39297F585500ECE91A /* RecipeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E38297F585500ECE91A /* RecipeEntity.swift */; };
+		FACC8E3B297F5EE700ECE91A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FACC8E3A297F5EE700ECE91A /* GoogleService-Info.plist */; };
+		FACC8E3E29806F5600ECE91A /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E3C29806F5600ECE91A /* RegisterUserViewController.swift */; };
+		FACC8E3F29806F5600ECE91A /* logInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC8E3D29806F5600ECE91A /* logInViewController.xib */; };
+		FACC8E4229806F6E00ECE91A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E4029806F6E00ECE91A /* HomeViewController.swift */; };
+		FACC8E4329806F6E00ECE91A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC8E4129806F6E00ECE91A /* HomeViewController.xib */; };
+		FACC8E4629806FA700ECE91A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E4429806FA700ECE91A /* LogInViewController.swift */; };
+		FACC8E4729806FA700ECE91A /* RegisterUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC8E4529806FA700ECE91A /* RegisterUserViewController.xib */; };
+		FACC8E4C29806FED00ECE91A /* RecipeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E4A29806FED00ECE91A /* RecipeInfoViewController.swift */; };
+		FACC8E4D29806FED00ECE91A /* RecipeInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC8E4B29806FED00ECE91A /* RecipeInfoViewController.xib */; };
+		FACC8E50298185AE00ECE91A /* PlanDietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E4E298185AE00ECE91A /* PlanDietViewController.swift */; };
+		FACC8E51298185AE00ECE91A /* PlanDietViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC8E4F298185AE00ECE91A /* PlanDietViewController.xib */; };
+		FACC8E542981862500ECE91A /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E522981862500ECE91A /* UserProfileViewController.swift */; };
+		FACC8E552981862500ECE91A /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC8E532981862500ECE91A /* UserProfileViewController.xib */; };
+		FACC8E582981868200ECE91A /* WeightHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E562981868200ECE91A /* WeightHistoryViewController.swift */; };
+		FACC8E592981868200ECE91A /* WeightHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC8E572981868200ECE91A /* WeightHistoryViewController.xib */; };
+		FACC8E5C298186A900ECE91A /* UpdateWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E5A298186A900ECE91A /* UpdateWeightViewController.swift */; };
+		FACC8E5D298186A900ECE91A /* UpdateWeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC8E5B298186A900ECE91A /* UpdateWeightViewController.xib */; };
+		FACC8E5F2981872300ECE91A /* RegisterUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E5E2981872300ECE91A /* RegisterUserPresenter.swift */; };
+		FACC8E612981873700ECE91A /* LoginUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E602981873700ECE91A /* LoginUserPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FACC8DF7297EFDC300ECE91A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACC8DD5297EFDBF00ECE91A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACC8DDC297EFDBF00ECE91A;
+			remoteInfo = MyDailyDiet;
+		};
+		FACC8E01297EFDC300ECE91A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACC8DD5297EFDBF00ECE91A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACC8DDC297EFDBF00ECE91A;
+			remoteInfo = MyDailyDiet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FACC8DDD297EFDBF00ECE91A /* MyDailyDiet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDailyDiet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACC8DE0297EFDBF00ECE91A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FACC8DE2297EFDBF00ECE91A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FACC8DE4297EFDBF00ECE91A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FACC8DE7297EFDBF00ECE91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FACC8DEA297EFDBF00ECE91A /* MyDailyDiet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDailyDiet.xcdatamodel; sourceTree = "<group>"; };
+		FACC8DEC297EFDC200ECE91A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FACC8DEF297EFDC200ECE91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FACC8DF1297EFDC200ECE91A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACC8DF6297EFDC300ECE91A /* MyDailyDietTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDailyDietTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACC8DFA297EFDC300ECE91A /* MyDailyDietTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDailyDietTests.swift; sourceTree = "<group>"; };
+		FACC8E00297EFDC300ECE91A /* MyDailyDietUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDailyDietUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACC8E04297EFDC300ECE91A /* MyDailyDietUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDailyDietUITests.swift; sourceTree = "<group>"; };
+		FACC8E06297EFDC300ECE91A /* MyDailyDietUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDailyDietUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FACC8E1E297F0BF200ECE91A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		FACC8E20297F0C3500ECE91A /* EdemamApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdemamApiService.swift; sourceTree = "<group>"; };
+		FACC8E22297F0DE600ECE91A /* EdamamApiInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamApiInteractor.swift; sourceTree = "<group>"; };
+		FACC8E24297F0DF400ECE91A /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		FACC8E26297F0E0E00ECE91A /* MyDailyDietRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDailyDietRouter.swift; sourceTree = "<group>"; };
+		FACC8E38297F585500ECE91A /* RecipeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeEntity.swift; sourceTree = "<group>"; };
+		FACC8E3A297F5EE700ECE91A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FACC8E3C29806F5600ECE91A /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
+		FACC8E3D29806F5600ECE91A /* logInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = logInViewController.xib; sourceTree = "<group>"; };
+		FACC8E4029806F6E00ECE91A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FACC8E4129806F6E00ECE91A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		FACC8E4429806FA700ECE91A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		FACC8E4529806FA700ECE91A /* RegisterUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterUserViewController.xib; sourceTree = "<group>"; };
+		FACC8E4A29806FED00ECE91A /* RecipeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInfoViewController.swift; sourceTree = "<group>"; };
+		FACC8E4B29806FED00ECE91A /* RecipeInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipeInfoViewController.xib; sourceTree = "<group>"; };
+		FACC8E4E298185AE00ECE91A /* PlanDietViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDietViewController.swift; sourceTree = "<group>"; };
+		FACC8E4F298185AE00ECE91A /* PlanDietViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanDietViewController.xib; sourceTree = "<group>"; };
+		FACC8E522981862500ECE91A /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		FACC8E532981862500ECE91A /* UserProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
+		FACC8E562981868200ECE91A /* WeightHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightHistoryViewController.swift; sourceTree = "<group>"; };
+		FACC8E572981868200ECE91A /* WeightHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeightHistoryViewController.xib; sourceTree = "<group>"; };
+		FACC8E5A298186A900ECE91A /* UpdateWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWeightViewController.swift; sourceTree = "<group>"; };
+		FACC8E5B298186A900ECE91A /* UpdateWeightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateWeightViewController.xib; sourceTree = "<group>"; };
+		FACC8E5E2981872300ECE91A /* RegisterUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserPresenter.swift; sourceTree = "<group>"; };
+		FACC8E602981873700ECE91A /* LoginUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FACC8DDA297EFDBF00ECE91A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACC8E30297F1BA200ECE91A /* FirebaseCrashlytics in Frameworks */,
+				FACC8E2C297F1BA200ECE91A /* FirebaseAnalytics in Frameworks */,
+				FACC8E2E297F1BA200ECE91A /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACC8DF3297EFDC300ECE91A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACC8E35297F575A00ECE91A /* FirebaseAuth in Frameworks */,
+				FACC8E37297F576F00ECE91A /* FirebaseCrashlytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACC8DFD297EFDC300ECE91A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FACC8DD4297EFDBF00ECE91A = {
+			isa = PBXGroup;
+			children = (
+				FACC8DDF297EFDBF00ECE91A /* MyDailyDiet */,
+				FACC8DF9297EFDC300ECE91A /* MyDailyDietTests */,
+				FACC8E03297EFDC300ECE91A /* MyDailyDietUITests */,
+				FACC8DDE297EFDBF00ECE91A /* Products */,
+				FACC8E33297F575A00ECE91A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FACC8DDE297EFDBF00ECE91A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FACC8DDD297EFDBF00ECE91A /* MyDailyDiet.app */,
+				FACC8DF6297EFDC300ECE91A /* MyDailyDietTests.xctest */,
+				FACC8E00297EFDC300ECE91A /* MyDailyDietUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FACC8DDF297EFDBF00ECE91A /* MyDailyDiet */ = {
+			isa = PBXGroup;
+			children = (
+				FACC8E1D297F03E600ECE91A /* Entities */,
+				FACC8E1C297F03DB00ECE91A /* Presenters */,
+				FACC8E1B297F03CE00ECE91A /* Interactors */,
+				FACC8E1A297F03C200ECE91A /* Routers */,
+				FACC8E19297F03BC00ECE91A /* Views */,
+				FACC8DE0297EFDBF00ECE91A /* AppDelegate.swift */,
+				FACC8DE2297EFDBF00ECE91A /* SceneDelegate.swift */,
+				FACC8DE4297EFDBF00ECE91A /* ViewController.swift */,
+				FACC8DE6297EFDBF00ECE91A /* Main.storyboard */,
+				FACC8DEC297EFDC200ECE91A /* Assets.xcassets */,
+				FACC8DEE297EFDC200ECE91A /* LaunchScreen.storyboard */,
+				FACC8DF1297EFDC200ECE91A /* Info.plist */,
+				FACC8E3A297F5EE700ECE91A /* GoogleService-Info.plist */,
+			);
+			path = MyDailyDiet;
+			sourceTree = "<group>";
+		};
+		FACC8DF9297EFDC300ECE91A /* MyDailyDietTests */ = {
+			isa = PBXGroup;
+			children = (
+				FACC8DFA297EFDC300ECE91A /* MyDailyDietTests.swift */,
+			);
+			path = MyDailyDietTests;
+			sourceTree = "<group>";
+		};
+		FACC8E03297EFDC300ECE91A /* MyDailyDietUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FACC8E04297EFDC300ECE91A /* MyDailyDietUITests.swift */,
+				FACC8E06297EFDC300ECE91A /* MyDailyDietUITestsLaunchTests.swift */,
+			);
+			path = MyDailyDietUITests;
+			sourceTree = "<group>";
+		};
+		FACC8E19297F03BC00ECE91A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FACC8E3D29806F5600ECE91A /* logInViewController.xib */,
+				FACC8E3C29806F5600ECE91A /* RegisterUserViewController.swift */,
+				FACC8E4029806F6E00ECE91A /* HomeViewController.swift */,
+				FACC8E4129806F6E00ECE91A /* HomeViewController.xib */,
+				FACC8E4429806FA700ECE91A /* LogInViewController.swift */,
+				FACC8E4529806FA700ECE91A /* RegisterUserViewController.xib */,
+				FACC8E4A29806FED00ECE91A /* RecipeInfoViewController.swift */,
+				FACC8E4B29806FED00ECE91A /* RecipeInfoViewController.xib */,
+				FACC8E4E298185AE00ECE91A /* PlanDietViewController.swift */,
+				FACC8E4F298185AE00ECE91A /* PlanDietViewController.xib */,
+				FACC8E522981862500ECE91A /* UserProfileViewController.swift */,
+				FACC8E532981862500ECE91A /* UserProfileViewController.xib */,
+				FACC8E562981868200ECE91A /* WeightHistoryViewController.swift */,
+				FACC8E572981868200ECE91A /* WeightHistoryViewController.xib */,
+				FACC8E5A298186A900ECE91A /* UpdateWeightViewController.swift */,
+				FACC8E5B298186A900ECE91A /* UpdateWeightViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FACC8E1A297F03C200ECE91A /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				FACC8E26297F0E0E00ECE91A /* MyDailyDietRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		FACC8E1B297F03CE00ECE91A /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				FACC8E22297F0DE600ECE91A /* EdamamApiInteractor.swift */,
+				FACC8E24297F0DF400ECE91A /* UserInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		FACC8E1C297F03DB00ECE91A /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FACC8E5E2981872300ECE91A /* RegisterUserPresenter.swift */,
+				FACC8E602981873700ECE91A /* LoginUserPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		FACC8E1D297F03E600ECE91A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FACC8DE9297EFDBF00ECE91A /* MyDailyDiet.xcdatamodeld */,
+				FACC8E1E297F0BF200ECE91A /* UserService.swift */,
+				FACC8E20297F0C3500ECE91A /* EdemamApiService.swift */,
+				FACC8E38297F585500ECE91A /* RecipeEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FACC8E33297F575A00ECE91A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FACC8DDC297EFDBF00ECE91A /* MyDailyDiet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACC8E0A297EFDC300ECE91A /* Build configuration list for PBXNativeTarget "MyDailyDiet" */;
+			buildPhases = (
+				FACC8DD9297EFDBF00ECE91A /* Sources */,
+				FACC8DDA297EFDBF00ECE91A /* Frameworks */,
+				FACC8DDB297EFDBF00ECE91A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDailyDiet;
+			packageProductDependencies = (
+				FACC8E2B297F1BA200ECE91A /* FirebaseAnalytics */,
+				FACC8E2D297F1BA200ECE91A /* FirebaseAuth */,
+				FACC8E2F297F1BA200ECE91A /* FirebaseCrashlytics */,
+			);
+			productName = MyDailyDiet;
+			productReference = FACC8DDD297EFDBF00ECE91A /* MyDailyDiet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FACC8DF5297EFDC300ECE91A /* MyDailyDietTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACC8E0D297EFDC300ECE91A /* Build configuration list for PBXNativeTarget "MyDailyDietTests" */;
+			buildPhases = (
+				FACC8DF2297EFDC300ECE91A /* Sources */,
+				FACC8DF3297EFDC300ECE91A /* Frameworks */,
+				FACC8DF4297EFDC300ECE91A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACC8DF8297EFDC300ECE91A /* PBXTargetDependency */,
+			);
+			name = MyDailyDietTests;
+			packageProductDependencies = (
+				FACC8E34297F575A00ECE91A /* FirebaseAuth */,
+				FACC8E36297F576F00ECE91A /* FirebaseCrashlytics */,
+			);
+			productName = MyDailyDietTests;
+			productReference = FACC8DF6297EFDC300ECE91A /* MyDailyDietTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FACC8DFF297EFDC300ECE91A /* MyDailyDietUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACC8E10297EFDC300ECE91A /* Build configuration list for PBXNativeTarget "MyDailyDietUITests" */;
+			buildPhases = (
+				FACC8DFC297EFDC300ECE91A /* Sources */,
+				FACC8DFD297EFDC300ECE91A /* Frameworks */,
+				FACC8DFE297EFDC300ECE91A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACC8E02297EFDC300ECE91A /* PBXTargetDependency */,
+			);
+			name = MyDailyDietUITests;
+			productName = MyDailyDietUITests;
+			productReference = FACC8E00297EFDC300ECE91A /* MyDailyDietUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FACC8DD5297EFDBF00ECE91A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					FACC8DDC297EFDBF00ECE91A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					FACC8DF5297EFDC300ECE91A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = FACC8DDC297EFDBF00ECE91A;
+					};
+					FACC8DFF297EFDC300ECE91A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = FACC8DDC297EFDBF00ECE91A;
+					};
+				};
+			};
+			buildConfigurationList = FACC8DD8297EFDBF00ECE91A /* Build configuration list for PBXProject "MyDailyDiet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FACC8DD4297EFDBF00ECE91A;
+			packageReferences = (
+				FACC8E2A297F1BA200ECE91A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = FACC8DDE297EFDBF00ECE91A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FACC8DDC297EFDBF00ECE91A /* MyDailyDiet */,
+				FACC8DF5297EFDC300ECE91A /* MyDailyDietTests */,
+				FACC8DFF297EFDC300ECE91A /* MyDailyDietUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FACC8DDB297EFDBF00ECE91A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACC8E4D29806FED00ECE91A /* RecipeInfoViewController.xib in Resources */,
+				FACC8DF0297EFDC200ECE91A /* LaunchScreen.storyboard in Resources */,
+				FACC8DED297EFDC200ECE91A /* Assets.xcassets in Resources */,
+				FACC8DE8297EFDBF00ECE91A /* Main.storyboard in Resources */,
+				FACC8E51298185AE00ECE91A /* PlanDietViewController.xib in Resources */,
+				FACC8E5D298186A900ECE91A /* UpdateWeightViewController.xib in Resources */,
+				FACC8E552981862500ECE91A /* UserProfileViewController.xib in Resources */,
+				FACC8E3B297F5EE700ECE91A /* GoogleService-Info.plist in Resources */,
+				FACC8E592981868200ECE91A /* WeightHistoryViewController.xib in Resources */,
+				FACC8E3F29806F5600ECE91A /* logInViewController.xib in Resources */,
+				FACC8E4329806F6E00ECE91A /* HomeViewController.xib in Resources */,
+				FACC8E4729806FA700ECE91A /* RegisterUserViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACC8DF4297EFDC300ECE91A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACC8DFE297EFDC300ECE91A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FACC8DD9297EFDBF00ECE91A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACC8DE5297EFDBF00ECE91A /* ViewController.swift in Sources */,
+				FACC8E3E29806F5600ECE91A /* RegisterUserViewController.swift in Sources */,
+				FACC8E4C29806FED00ECE91A /* RecipeInfoViewController.swift in Sources */,
+				FACC8E25297F0DF400ECE91A /* UserInteractor.swift in Sources */,
+				FACC8E1F297F0BF200ECE91A /* UserService.swift in Sources */,
+				FACC8E50298185AE00ECE91A /* PlanDietViewController.swift in Sources */,
+				FACC8DE1297EFDBF00ECE91A /* AppDelegate.swift in Sources */,
+				FACC8E27297F0E0E00ECE91A /* MyDailyDietRouter.swift in Sources */,
+				FACC8E4629806FA700ECE91A /* LogInViewController.swift in Sources */,
+				FACC8E542981862500ECE91A /* UserProfileViewController.swift in Sources */,
+				FACC8E21297F0C3600ECE91A /* EdemamApiService.swift in Sources */,
+				FACC8E612981873700ECE91A /* LoginUserPresenter.swift in Sources */,
+				FACC8E582981868200ECE91A /* WeightHistoryViewController.swift in Sources */,
+				FACC8DE3297EFDBF00ECE91A /* SceneDelegate.swift in Sources */,
+				FACC8DEB297EFDBF00ECE91A /* MyDailyDiet.xcdatamodeld in Sources */,
+				FACC8E5C298186A900ECE91A /* UpdateWeightViewController.swift in Sources */,
+				FACC8E39297F585500ECE91A /* RecipeEntity.swift in Sources */,
+				FACC8E5F2981872300ECE91A /* RegisterUserPresenter.swift in Sources */,
+				FACC8E23297F0DE600ECE91A /* EdamamApiInteractor.swift in Sources */,
+				FACC8E4229806F6E00ECE91A /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACC8DF2297EFDC300ECE91A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACC8DFB297EFDC300ECE91A /* MyDailyDietTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACC8DFC297EFDC300ECE91A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACC8E07297EFDC300ECE91A /* MyDailyDietUITestsLaunchTests.swift in Sources */,
+				FACC8E05297EFDC300ECE91A /* MyDailyDietUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FACC8DF8297EFDC300ECE91A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACC8DDC297EFDBF00ECE91A /* MyDailyDiet */;
+			targetProxy = FACC8DF7297EFDC300ECE91A /* PBXContainerItemProxy */;
+		};
+		FACC8E02297EFDC300ECE91A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACC8DDC297EFDBF00ECE91A /* MyDailyDiet */;
+			targetProxy = FACC8E01297EFDC300ECE91A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FACC8DE6297EFDBF00ECE91A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACC8DE7297EFDBF00ECE91A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FACC8DEE297EFDC200ECE91A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACC8DEF297EFDC200ECE91A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FACC8E08297EFDC300ECE91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FACC8E09297EFDC300ECE91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FACC8E0B297EFDC300ECE91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyDailyDiet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyDailyDiet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FACC8E0C297EFDC300ECE91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyDailyDiet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyDailyDiet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FACC8E0E297EFDC300ECE91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyDailyDietTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyDailyDiet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyDailyDiet";
+			};
+			name = Debug;
+		};
+		FACC8E0F297EFDC300ECE91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyDailyDietTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyDailyDiet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyDailyDiet";
+			};
+			name = Release;
+		};
+		FACC8E11297EFDC300ECE91A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyDailyDietUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyDailyDiet;
+			};
+			name = Debug;
+		};
+		FACC8E12297EFDC300ECE91A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyDailyDietUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyDailyDiet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FACC8DD8297EFDBF00ECE91A /* Build configuration list for PBXProject "MyDailyDiet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACC8E08297EFDC300ECE91A /* Debug */,
+				FACC8E09297EFDC300ECE91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACC8E0A297EFDC300ECE91A /* Build configuration list for PBXNativeTarget "MyDailyDiet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACC8E0B297EFDC300ECE91A /* Debug */,
+				FACC8E0C297EFDC300ECE91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACC8E0D297EFDC300ECE91A /* Build configuration list for PBXNativeTarget "MyDailyDietTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACC8E0E297EFDC300ECE91A /* Debug */,
+				FACC8E0F297EFDC300ECE91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACC8E10297EFDC300ECE91A /* Build configuration list for PBXNativeTarget "MyDailyDietUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACC8E11297EFDC300ECE91A /* Debug */,
+				FACC8E12297EFDC300ECE91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FACC8E2A297F1BA200ECE91A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FACC8E2B297F1BA200ECE91A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FACC8E2A297F1BA200ECE91A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		FACC8E2D297F1BA200ECE91A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FACC8E2A297F1BA200ECE91A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FACC8E2F297F1BA200ECE91A /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FACC8E2A297F1BA200ECE91A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		FACC8E34297F575A00ECE91A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FACC8E2A297F1BA200ECE91A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FACC8E36297F576F00ECE91A /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FACC8E2A297F1BA200ECE91A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		FACC8DE9297EFDBF00ECE91A /* MyDailyDiet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FACC8DEA297EFDBF00ECE91A /* MyDailyDiet.xcdatamodel */,
+			);
+			currentVersion = FACC8DEA297EFDBF00ECE91A /* MyDailyDiet.xcdatamodel */;
+			path = MyDailyDiet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FACC8DD5297EFDBF00ECE91A /* Project object */;
+}

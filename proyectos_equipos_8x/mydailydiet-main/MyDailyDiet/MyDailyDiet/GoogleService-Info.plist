@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1059243738549-h16lpo3mbl7qvtuq7j96psqc01hkl7d7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1059243738549-h16lpo3mbl7qvtuq7j96psqc01hkl7d7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD1oec--ICvkfGP5jVoaENwdrYltZ88nVY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1059243738549</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.MyDailyDiet</string>
+	<key>PROJECT_ID</key>
+	<string>testauth-a0ed8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>testauth-a0ed8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1059243738549:ios:871e990e44a5fafb0545fc</string>
+</dict>
+</plist>
