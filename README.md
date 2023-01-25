@@ -29,6 +29,38 @@ Fecha | Sesión | Módulos | Semana Efectiva | Práctica de la Sesión | Examen 
 `X14/12/22`| `10` | `m214`, `m215`         | `2` | `p23` | -
 `J15/12/22`| `11` | `m216`, `m217`         | `2` | `p24` | -
 `V16/12/22`| `12` | `m218`, `m219`         | `2` | -     | `e2`
+`L19/12/22`| `13` | `m320`, `m321`, `m322` | `3` | `p31` | -
+`M20/12/22`| `14` | `m323`, `m324`, `m325` | `3` | `p32` | -
+`X21/12/22`| `15` | `m326`, `m327`, `m328` | `3` | `p33` | -
+`J22/12/22`| `16` | `m329`, `m330`, `m331` | `3` | `p34` | -
+`V23/12/22`| `17` | `m332`, `m333`, `m334` | `3` | -     | `e3`
+`L26/12/22`| `18` | `PROYECTO INDIVIDUAL`  | `4` | -     | -
+`M27/12/22`| `19` | `PROYECTO INDIVIDUAL`  | `4` | -     | -
+`X28/12/22`| `20` | `PROYECTO INDIVIDUAL`  | `4` | -     | -
+`J29/12/22`| `21` | `PROYECTO INDIVIDUAL`  | `4` | -     | -
+`V30/12/22`| `22` | `PROYECTO INDIVIDUAL`  | `4` | -     | `ENTREGA PROYECTO`
+`L02/01/23`| `23` | `PROYECTO EQUIPOS I`   | `5` | -     | -
+`M03/01/23`| `24` | `PROYECTO EQUIPOS I`   | `5` | -     | -
+`X04/01/23`| `25` | `PROYECTO EQUIPOS I`   | `5` | -     | -
+`J05/01/23`| `26` | `PROYECTO EQUIPOS I`   | `5` | -     | -
+`V06/01/23`| `27` | `PROYECTO EQUIPOS I`   | `5` | -     | `ENTREGA PROYECTO`
+`L09/01/23`| `23` | `PROYECTO EQUIPOS II`  | `6` | -     | -
+`M10/01/23`| `24` | `PROYECTO EQUIPOS II`  | `6` | -     | -
+`X11/01/23`| `25` | `PROYECTO EQUIPOS II`  | `6` | -     | -
+`J12/01/23`| `26` | `PROYECTO EQUIPOS II`  | `6` | -     | -
+`V13/01/23`| `27` | `PROYECTO EQUIPOS II`  | `6` | -     | `ENTREGA PROYECTO`
+`L16/01/23`| `28` | `PROYECTO EQUIPOS III` | `7` | -     | -
+`M17/01/23`| `29` | `PROYECTO EQUIPOS III` | `7` | -     | -
+`X18/01/23`| `30` | `PROYECTO EQUIPOS III` | `7` | -     | -
+`J19/01/23`| `31` | `PROYECTO EQUIPOS III` | `7` | -     | -
+`V20/01/23`| `32` | `PROYECTO EQUIPOS III` | `7` | -     | `ENTREGA PROYECTO`
+`L23/01/23`| `33` | `PROYECTO EQUIPOS IV`  | `8` | -     | -
+`M24/01/23`| `34` | `PROYECTO EQUIPOS IV`  | `8` | -     | -
+`X25/01/23`| `35` | `PROYECTO EQUIPOS IV`  | `8` | -     | -
+`J26/01/23`| `36` | `PROYECTO EQUIPOS IV`  | `8` | -     | -
+`V27/01/23`| `37` | `PROYECTO EQUIPOS IV`  | `8` | -     | `ENTREGA PROYECTO`
+`L30/01/23`| `38` | `PROYECTO EQUIPOS V`   | `9` | -     | -
+`M31/01/23`| `39` | `PROYECTO EQUIPOS V`   | `9` | -     | `ENTREGA PROYECTO`
 
 * **Nota:** El calendario aún no está completo, pero durante la próxima semana será actualizado.
 
