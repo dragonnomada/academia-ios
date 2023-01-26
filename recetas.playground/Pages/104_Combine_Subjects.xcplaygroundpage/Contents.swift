@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 
 //
-// 102 - Usar el Centro de Notificaciones
+// 104 - Usar de Sujetos de Combine
 //
 // Por Alan Badillo Salas (alan@nomadacode.com)
 //
@@ -9,6 +9,7 @@
 //
 
 import Foundation
+import Combine
 import UIKit
 import PlaygroundSupport
 
@@ -17,43 +18,42 @@ import PlaygroundSupport
 ///
 /// El servicio `ContadorService` es responsable de incrementar
 /// y decrementar un conteo
-class ContadorService: NSObject {
-    
-    /// El `NotificationCenter` es un transmisor de eventos
-    /// global que permite publicar y observar objetos
-    /// entre distintas clases
-    let notificationCenter = NotificationCenter.default
+class ContadorService {
     
     /// Retenemos el estado del conteo
     var conteo: Int = 0
     
-    /// Incrementamos el conteo y publicamos una notificación,
-    /// es decir, transmitimos un evento
+    /// Los sujetos permiten emitir objetos de un tipo dado
+    /// y un error de completado personalizado (generalmente Never).
+    /// Usamos este sujeto para transmitir el valor del conteo
+    /// cada que este se incrementa.
+    let incrementadoSubject = PassthroughSubject<Int, Never>()
+    
+    /// Los sujetos permiten emitir objetos de un tipo dado
+    /// y un error de completado personalizado (generalmente Never).
+    /// Usamos este sujeto para transmitir el valor del conteo
+    /// cada que este se decrementa.
+    let decrementadoSubject = PassthroughSubject<Int, Never>()
+    
+    /// Incrementa la propiedad conteo
     func incrementar() {
         
         self.conteo += 1
         
-        print("Incrementando: \(self.conteo)")
-        
-        // La notificación requiere un nombre
-        // dónde los observadores de ese nombre
-        // recibirán los objetos transmitidos
-        self.notificationCenter.post(name: NSNotification.Name(rawValue: "contador.incrementar"), object: self.conteo)
+        // Notificamos el conteo a los suscriptores
+        // del sujeto que informa que se ha incrementado
+        self.incrementadoSubject.send(self.conteo)
         
     }
     
-    /// Decrementamos el conteo y publicamos una notificación,
-    /// es decir, transmitimos un evento
+    /// Decrementa la propiedad conteo
     func decrementar() {
         
         self.conteo -= 1
         
-        print("Decrementando: \(self.conteo)")
-        
-        // La notificación requiere un nombre
-        // dónde los observadores de ese nombre
-        // recibirán los objetos transmitidos
-        self.notificationCenter.post(name: NSNotification.Name(rawValue: "contador.decrementar"), object: self.conteo)
+        // Notificamos el conteo a los suscriptores
+        // del sujeto que informa que se ha decrementado
+        self.decrementadoSubject.send(self.conteo)
         
     }
     
@@ -72,10 +72,12 @@ class AppManager {
 /// Definimos una Vista para mostrar el contador e interactuar con él
 class ContadorViewController: UIViewController {
     
-    /// Para escuchar las notificaciones usamos
-    /// el `NotificationCenter` para observar los eventos
-    /// transmitidos bajo el nombre que se publicaron
-    let notificationCenter = NotificationCenter.default
+    /// Creamos un suscriptor para el sujeto del servicio
+    /// que notifica cada que el contado se ha incrementado
+    var incrementadoSubscriber: AnyCancellable?
+    /// Creamos un suscriptor para el sujeto del servicio
+    /// que notifica cada que el contado se ha decrementado
+    var decrementadoSubscriber: AnyCancellable?
     
     /// Definimos el `UILabel` que mostrará el valor del contador
     var conteoLabel: UILabel!
@@ -84,8 +86,8 @@ class ContadorViewController: UIViewController {
     /// Definimos el `UIButton` que permitirá decrementar el contador
     var decrementarButton: UIButton!
     
-    /// Al cargar la Vista generamos los controles y suscribimos los
-    /// eventos del centro de notificaciones
+    /// Al cargar la Vista generamos los controles y suscribimos el
+    /// publicador que reportará el valor modificado
     override func viewDidLoad() {
         
         // Definimos la vista principal
@@ -126,69 +128,67 @@ class ContadorViewController: UIViewController {
         // Definimos que el `UIView` es el principal
         self.view = view
         
-        // Observamos los objetos publicados en el
-        // centro de notificaciones mediante el nombre
-        // de evento `contador.incrementar`
-        self.notificationCenter.addObserver(self, selector: #selector(self.incrementarObserver), name: NSNotification.Name(rawValue: "contador.incrementar"), object: nil)
+        // Suscribimos el sujeto que notifica que el
+        // contado ha incrementado
+        self.incrementadoSubscriber = AppManager.contadorService.incrementadoSubject.sink(receiveValue: {
+            
+            // Las clausuras atrapan automáticamente
+            // a `self` por lo que debemos cuidar
+            // que no se cree un ciclo de referencias
+            // mediante `[weak self]`.
+            // La clausura recibe el valor publicado.
+            [weak self] conteo in
+            
+            // Debemos cuidar no actualizar la vista
+            // sobre otro hilo que no sea el principal
+            DispatchQueue.main.async {
+                
+                // Actualiza el `UILabel` en el hilo
+                // principal
+                self?.conteoLabel.text = "\(conteo) INC"
+                
+            }
+            
+        })
         
-        // Observamos los objetos publicados en el
-        // centro de notificaciones mediante el nombre
-        // de evento `contador.decrementar`
-        self.notificationCenter.addObserver(self, selector: #selector(self.decrementarObserver), name: NSNotification.Name(rawValue: "contador.decrementar"), object: nil)
+        // Suscribimos el sujeto que notifica que el
+        // contado ha decrementado
+        self.decrementadoSubscriber = AppManager.contadorService.decrementadoSubject.sink(receiveValue: {
+            
+            // Las clausuras atrapan automáticamente
+            // a `self` por lo que debemos cuidar
+            // que no se cree un ciclo de referencias
+            // mediante `[weak self]`.
+            // La clausura recibe el valor publicado.
+            [weak self] conteo in
+            
+            // Debemos cuidar no actualizar la vista
+            // sobre otro hilo que no sea el principal
+            DispatchQueue.main.async {
+                
+                // Actualiza el `UILabel` en el hilo
+                // principal
+                self?.conteoLabel.text = "\(conteo) DEC"
+                
+            }
+            
+        })
         
     }
     
-    /// Al destruirse esta vista debemos dejar de observar lo que ocurre
-    /// en el centro de notificacioens
+    /// Al destruirse esta vista debemos dejar de observar las publicaciones
+    /// a las que nos suscribimos
     deinit {
         
-        // Dejamos de observar el centro de notificaciones
-        // para el nombre de evento `contador.incrementar`
-        self.notificationCenter.removeObserver(self, name: NSNotification.Name(rawValue: "contador.incrementar"), object: nil)
+        // Cancelamos la suscripción
+        self.incrementadoSubscriber?.cancel()
+        // Liberamos la propiedad
+        self.incrementadoSubscriber = nil
         
-        // Dejamos de observar el centro de notificaciones
-        // para el nombre de evento `contador.decrementar`
-        self.notificationCenter.removeObserver(self, name: NSNotification.Name(rawValue: "contador.decrementar"), object: nil)
-        
-    }
-    
-    /// Este método es usado por el observador para llamarse cada
-    /// que la notificación `contador.incrementar` sea publicada
-    @objc func incrementarObserver(notification: Notification) {
-        
-        print("Notificación de contador.incrementar")
-        
-        // Recuperamos el objeto publicado
-        // en la notificación para actualizar el `UILabel`
-        if let conteo = notification.object as? Int {
-            
-            DispatchQueue.main.async {
-                
-                self.conteoLabel.text = "\(conteo)"
-                
-            }
-            
-        }
-        
-    }
-    
-    /// Este método es usado por el observador para llamarse cada
-    /// que la notificación `contador.decrementar` sea publicada
-    @objc func decrementarObserver(notification: Notification) {
-        
-        print("Notificación de contador.decrementar")
-        
-        // Recuperamos el objeto publicado
-        // en la notificación para actualizar el `UILabel`
-        if let conteo = notification.object as? Int {
-            
-            DispatchQueue.main.async {
-                
-                self.conteoLabel.text = "\(conteo)"
-                
-            }
-            
-        }
+        // Cancelamos la suscripción
+        self.decrementadoSubscriber?.cancel()
+        // Liberamos la propiedad
+        self.decrementadoSubscriber = nil
         
     }
     
@@ -228,22 +228,6 @@ class ContadorViewController: UIViewController {
 
 // Definimos una instancia manual de la Vista
 let contadorViewController = ContadorViewController()
-
-let thread = Thread(block: {
-    
-    while true {
-        
-        print("Esperando 5 segundos")
-        
-        Thread.sleep(forTimeInterval: 5)
-        
-        AppManager.contadorService.incrementar()
-        
-    }
-    
-})
-
-thread.start()
 
 // Ajustamos el Playground para que muestre la Vista
 PlaygroundPage.current.liveView = contadorViewController

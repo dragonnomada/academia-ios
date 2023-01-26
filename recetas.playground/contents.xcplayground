@@ -4,5 +4,6 @@
         <page name='101_Protocolos_Delegados'/>
         <page name='102_NotificationCenter'/>
         <page name='103_Combine_Published'/>
+        <page name='104_Combine_Subjects'/>
     </pages>
 </playground>
