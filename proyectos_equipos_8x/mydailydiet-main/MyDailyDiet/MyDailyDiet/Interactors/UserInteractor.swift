@@ -60,9 +60,9 @@ class UserInteractor {
     
     // Funciones
     
-    func registerAuthUser(password: String, email: String) {
+    func registerAuthUser(email: String, password: String) {
         
-        self.service.registerAuthUser(password: password, email: email)
+        self.service.registerAuthUser(email: email, password: password)
     }
     
     func updateUserInfo(name: String?, surname: String?, lastname: String?, birthDate: Date, height: Double, weight: Double, gender: String, phoneNumber: String) {
@@ -72,7 +72,7 @@ class UserInteractor {
     }
     
     func LogInUser(email: String, password: String, active: Bool) {
-        
+        print("Interactor loginUser")
         service.LogInUser(email: email, password: password, active: active)
         
     }

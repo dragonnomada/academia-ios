@@ -30,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         self.window?.makeKeyAndVisible()
         
-        self.router.goToHome()
+        self.router.goToLogin()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

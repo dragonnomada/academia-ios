@@ -12,6 +12,21 @@ import CoreData
 import FirebaseAuth
 import UIKit
 
+
+//Enumerable para el manejo de errores
+enum ServiceErrors: Error {
+    
+    case invalidUser
+    case getContext
+    case createUser(Error)
+    case saveContext(Error)
+    case signIn(Error)
+    case getUserByUid
+    case getUserLogged
+    case signOut(Error)
+    case getActiveUserNotExist
+}
+
 class UserLoginService {
     
     //Creación del contenedor para cargar los datos persistentes
@@ -34,35 +49,14 @@ class UserLoginService {
         return container
         
     }()
-    
-    //Enumerable para los distintos tipos de auteticación en firebase
-    enum ProviderType: String {
-        
-        case email_password
-        
-    }
-    
-    //Enumerable para el manejo de errores
-    enum ServiceErrors: Error {
-        
-        case invalidUser
-        case getContext
-        case createUser
-        case saveContext(Error)
-        case signIn(Error)
-        case getUserByUid
-        case getUserLogged
-        case signOut(Error)
-        case getActiveUserNotExist
-    }
 
-    private let provider: ProviderType = .email_password
     
     // STATES
+    
     var userLogged: UserAuthEntity?
     
-    
     // NOTIFICATORS
+    
     let userSignInSubject = PassthroughSubject<(UserAuthEntity?, ServiceErrors?), Never>()
     let userSignOutSubject = PassthroughSubject<(UserAuthEntity?, ServiceErrors?), Never>()
     let recurrentSignInSubject = PassthroughSubject<(UserAuthEntity?, ServiceErrors?), Never>()
@@ -71,12 +65,21 @@ class UserLoginService {
     let userIsActiveSubject = PassthroughSubject<(UserAuthEntity?, ServiceErrors?), Never>()
     
     // TRANSACTIONS
-    func registerAuthUser(password: String, email: String) {
+    
+    func registerAuthUser(email: String, password: String) {
             
         Auth.auth().createUser(withEmail: email, password: password) {
             [weak self] (result, error) in
             
-            if let result = result, error == nil {
+            if let error = error {
+                
+                self?.userAuthCreatedSubject.send((nil, .createUser(error)))
+                
+                return
+                
+            }
+            
+            if let result = result {
                 
                 guard let context = self?.containerUserInfo.viewContext else {
                     
@@ -105,10 +108,6 @@ class UserLoginService {
                     self?.userAuthCreatedSubject.send((nil, .saveContext(error)))
                     
                 }
-                
-            } else {
-                
-                self?.userAuthCreatedSubject.send((nil, .createUser))
                 
             }
             
@@ -162,6 +161,14 @@ class UserLoginService {
             
             [weak self] (result, error) in
             
+            if let error = error {
+                
+                print("[UserLoginService] Error: \(error)")
+                
+                self?.userSignInSubject.send((nil, .signIn(error)))
+                
+            }
+            
             if let result = result {
                 
                 guard let context = self?.containerUserInfo.viewContext else {
@@ -174,6 +181,8 @@ class UserLoginService {
                 let uid = result.user.uid
                 
                 guard let userCredentials = try? context.fetch(UserAuthEntity.fetchRequest()).filter({ $0.uid == uid }).first else {
+                    
+                    print("[UserLoginService] No se encuentran las credenciales del usuario localmente (CoreData)")
                     
                     self?.userSignInSubject.send((nil, .getUserByUid))
                     
@@ -189,6 +198,8 @@ class UserLoginService {
                     
                     self?.userLogged = userCredentials
                     
+                    print("[UserLoginService] Sesión iniciada: \(userCredentials)")
+                    
                     self?.userSignInSubject.send((userCredentials, nil))
                     
                 } catch {
@@ -198,12 +209,6 @@ class UserLoginService {
                     self?.userSignInSubject.send((nil, .saveContext(error)))
                     
                 }
-                
-            }
-            
-            if let error = error {
-                
-                self?.userSignInSubject.send((nil, .signIn(error)))
                 
             }
             
@@ -219,11 +224,7 @@ class UserLoginService {
             
             return
         }
-        
-        switch provider {
-            
-        case .email_password:
-            
+  
             do {
                 
                 try Auth.auth().signOut()
@@ -231,6 +232,8 @@ class UserLoginService {
                 userLogged.isActive = false
                 
                 let context = self.containerUserInfo.viewContext
+                
+                //self.userSignOutSubject.send((userLogged, nil))
                 
                 do {
                     
@@ -255,7 +258,7 @@ class UserLoginService {
             
         }
 
-    }
+    
     
     func getLastUserActive() {
         

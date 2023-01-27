@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAA73DBC298194EF00212F52 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA73DBB298194EF00212F52 /* LoginView.swift */; };
+		FAA73DBE2981C68C00212F52 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA73DBD2981C68C00212F52 /* RegisterView.swift */; };
 		FACC8DE1297EFDBF00ECE91A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8DE0297EFDBF00ECE91A /* AppDelegate.swift */; };
 		FACC8DE3297EFDBF00ECE91A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8DE2297EFDBF00ECE91A /* SceneDelegate.swift */; };
 		FACC8DE5297EFDBF00ECE91A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8DE4297EFDBF00ECE91A /* ViewController.swift */; };
@@ -18,7 +20,7 @@
 		FACC8E05297EFDC300ECE91A /* MyDailyDietUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E04297EFDC300ECE91A /* MyDailyDietUITests.swift */; };
 		FACC8E07297EFDC300ECE91A /* MyDailyDietUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E06297EFDC300ECE91A /* MyDailyDietUITestsLaunchTests.swift */; };
 		FACC8E1F297F0BF200ECE91A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E1E297F0BF200ECE91A /* UserService.swift */; };
-		FACC8E21297F0C3600ECE91A /* EdemamApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E20297F0C3500ECE91A /* EdemamApiService.swift */; };
+		FACC8E21297F0C3600ECE91A /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E20297F0C3500ECE91A /* ApiService.swift */; };
 		FACC8E23297F0DE600ECE91A /* EdamamApiInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E22297F0DE600ECE91A /* EdamamApiInteractor.swift */; };
 		FACC8E25297F0DF400ECE91A /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E24297F0DF400ECE91A /* UserInteractor.swift */; };
 		FACC8E27297F0E0E00ECE91A /* MyDailyDietRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E26297F0E0E00ECE91A /* MyDailyDietRouter.swift */; };
@@ -30,7 +32,7 @@
 		FACC8E39297F585500ECE91A /* RecipeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E38297F585500ECE91A /* RecipeEntity.swift */; };
 		FACC8E3B297F5EE700ECE91A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FACC8E3A297F5EE700ECE91A /* GoogleService-Info.plist */; };
 		FACC8E3E29806F5600ECE91A /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E3C29806F5600ECE91A /* RegisterUserViewController.swift */; };
-		FACC8E3F29806F5600ECE91A /* logInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC8E3D29806F5600ECE91A /* logInViewController.xib */; };
+		FACC8E3F29806F5600ECE91A /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC8E3D29806F5600ECE91A /* LogInViewController.xib */; };
 		FACC8E4229806F6E00ECE91A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E4029806F6E00ECE91A /* HomeViewController.swift */; };
 		FACC8E4329806F6E00ECE91A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACC8E4129806F6E00ECE91A /* HomeViewController.xib */; };
 		FACC8E4629806FA700ECE91A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACC8E4429806FA700ECE91A /* LogInViewController.swift */; };
@@ -67,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FAA73DBB298194EF00212F52 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FAA73DBD2981C68C00212F52 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		FACC8DDD297EFDBF00ECE91A /* MyDailyDiet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDailyDiet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACC8DE0297EFDBF00ECE91A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FACC8DE2297EFDBF00ECE91A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,14 +86,14 @@
 		FACC8E04297EFDC300ECE91A /* MyDailyDietUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDailyDietUITests.swift; sourceTree = "<group>"; };
 		FACC8E06297EFDC300ECE91A /* MyDailyDietUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDailyDietUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FACC8E1E297F0BF200ECE91A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
-		FACC8E20297F0C3500ECE91A /* EdemamApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdemamApiService.swift; sourceTree = "<group>"; };
+		FACC8E20297F0C3500ECE91A /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		FACC8E22297F0DE600ECE91A /* EdamamApiInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdamamApiInteractor.swift; sourceTree = "<group>"; };
 		FACC8E24297F0DF400ECE91A /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
 		FACC8E26297F0E0E00ECE91A /* MyDailyDietRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDailyDietRouter.swift; sourceTree = "<group>"; };
 		FACC8E38297F585500ECE91A /* RecipeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeEntity.swift; sourceTree = "<group>"; };
 		FACC8E3A297F5EE700ECE91A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FACC8E3C29806F5600ECE91A /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
-		FACC8E3D29806F5600ECE91A /* logInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = logInViewController.xib; sourceTree = "<group>"; };
+		FACC8E3D29806F5600ECE91A /* LogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
 		FACC8E4029806F6E00ECE91A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FACC8E4129806F6E00ECE91A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		FACC8E4429806FA700ECE91A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -199,11 +203,13 @@
 		FACC8E19297F03BC00ECE91A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FACC8E3D29806F5600ECE91A /* logInViewController.xib */,
-				FACC8E3C29806F5600ECE91A /* RegisterUserViewController.swift */,
+				FAA73DBB298194EF00212F52 /* LoginView.swift */,
+				FACC8E3D29806F5600ECE91A /* LogInViewController.xib */,
+				FACC8E4429806FA700ECE91A /* LogInViewController.swift */,
 				FACC8E4029806F6E00ECE91A /* HomeViewController.swift */,
 				FACC8E4129806F6E00ECE91A /* HomeViewController.xib */,
-				FACC8E4429806FA700ECE91A /* LogInViewController.swift */,
+				FAA73DBD2981C68C00212F52 /* RegisterView.swift */,
+				FACC8E3C29806F5600ECE91A /* RegisterUserViewController.swift */,
 				FACC8E4529806FA700ECE91A /* RegisterUserViewController.xib */,
 				FACC8E4A29806FED00ECE91A /* RecipeInfoViewController.swift */,
 				FACC8E4B29806FED00ECE91A /* RecipeInfoViewController.xib */,
@@ -250,7 +256,7 @@
 			children = (
 				FACC8DE9297EFDBF00ECE91A /* MyDailyDiet.xcdatamodeld */,
 				FACC8E1E297F0BF200ECE91A /* UserService.swift */,
-				FACC8E20297F0C3500ECE91A /* EdemamApiService.swift */,
+				FACC8E20297F0C3500ECE91A /* ApiService.swift */,
 				FACC8E38297F585500ECE91A /* RecipeEntity.swift */,
 			);
 			path = Entities;
@@ -388,7 +394,7 @@
 				FACC8E552981862500ECE91A /* UserProfileViewController.xib in Resources */,
 				FACC8E3B297F5EE700ECE91A /* GoogleService-Info.plist in Resources */,
 				FACC8E592981868200ECE91A /* WeightHistoryViewController.xib in Resources */,
-				FACC8E3F29806F5600ECE91A /* logInViewController.xib in Resources */,
+				FACC8E3F29806F5600ECE91A /* LogInViewController.xib in Resources */,
 				FACC8E4329806F6E00ECE91A /* HomeViewController.xib in Resources */,
 				FACC8E4729806FA700ECE91A /* RegisterUserViewController.xib in Resources */,
 			);
@@ -425,11 +431,13 @@
 				FACC8E27297F0E0E00ECE91A /* MyDailyDietRouter.swift in Sources */,
 				FACC8E4629806FA700ECE91A /* LogInViewController.swift in Sources */,
 				FACC8E542981862500ECE91A /* UserProfileViewController.swift in Sources */,
-				FACC8E21297F0C3600ECE91A /* EdemamApiService.swift in Sources */,
+				FACC8E21297F0C3600ECE91A /* ApiService.swift in Sources */,
+				FAA73DBE2981C68C00212F52 /* RegisterView.swift in Sources */,
 				FACC8E612981873700ECE91A /* LoginUserPresenter.swift in Sources */,
 				FACC8E582981868200ECE91A /* WeightHistoryViewController.swift in Sources */,
 				FACC8DE3297EFDBF00ECE91A /* SceneDelegate.swift in Sources */,
 				FACC8DEB297EFDBF00ECE91A /* MyDailyDiet.xcdatamodeld in Sources */,
+				FAA73DBC298194EF00212F52 /* LoginView.swift in Sources */,
 				FACC8E5C298186A900ECE91A /* UpdateWeightViewController.swift in Sources */,
 				FACC8E39297F585500ECE91A /* RecipeEntity.swift in Sources */,
 				FACC8E5F2981872300ECE91A /* RegisterUserPresenter.swift in Sources */,

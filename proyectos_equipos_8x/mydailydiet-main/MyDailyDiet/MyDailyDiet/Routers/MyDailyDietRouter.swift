@@ -38,23 +38,35 @@ class MyDailyDietRouter {
         
         self.loginUserPresenter?.start(router: self, interactor: self.interactor)
         
-        if let viewController = self.loginUserPresenter?.view as? LoginViewController {
+        if let viewController = self.loginUserPresenter?.view as? LogInViewController {
             
             self.navigationController.pushViewController(viewController, animated: false)
             
         }
     }
     
-    func goToRegister() {
+    // Peticion desde el LoginUserPresenter para navegar a la pantalla de RegisterUserVC
+    func goToRegisterUser() {
         
-        self.registerUserPresenter = LoginUserPresenter()
+        print("[MyDailyDietRouter] Abriendo RegisterUser")
+        
+        // Presenter de la pantalla destino
+        self.registerUserPresenter = RegisterUserPresenter()
         
         self.registerUserPresenter?.start(router: self, interactor: self.interactor)
         
+        // Comprobar que la pantalla es a la que deseamos navegar
         if let viewController = self.registerUserPresenter?.view as? RegisterUserViewController {
             
-            self.navigationController.pushViewController(viewController, animated: false)
+            self.navigationController.pushViewController(viewController, animated: true)
             
         }
     }
+    
+    func goToHome() {
+        
+        
+        
+    }
+    
 }

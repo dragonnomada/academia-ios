@@ -8,8 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterUserViewController" customModule="MyDailyDiet" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogInViewController" customModule="MyDailyDiet" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="GKg-ig-Q9P" id="R66-vQ-dXK"/>
+                <outlet property="passwordTextField" destination="IWB-5p-4WG" id="hFX-m5-W1H"/>
+                <outlet property="signInRememberSwitch" destination="yB4-k2-0wu" id="V8f-8W-id0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,7 +34,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="1fT-pE-YX7">
-                    <rect key="frame" x="20" y="314" width="353" height="236.33333333333337"/>
+                    <rect key="frame" x="20" y="314" width="353" height="322.33333333333326"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aUr-n4-pxO">
                             <rect key="frame" x="0.0" y="0.0" width="353" height="166"/>
@@ -42,7 +45,7 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex. academiaios@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKg-ig-Q9P">
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GKg-ig-Q9P">
                                     <rect key="frame" x="0.0" y="44" width="353" height="34"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -53,32 +56,60 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ex. *********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IWB-5p-4WG">
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IWB-5p-4WG">
                                     <rect key="frame" x="0.0" y="132" width="353" height="34"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 </textField>
                             </subviews>
                         </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-oL-jS1">
+                            <rect key="frame" x="0.0" y="202" width="353" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuerdame" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCn-KT-S2o">
+                                    <rect key="frame" x="0.0" y="0.0" width="304" height="50"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yB4-k2-0wu">
+                                    <rect key="frame" x="304" y="0.0" width="51" height="50"/>
+                                    <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                </switch>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="VLz-mA-sKj"/>
+                            </constraints>
+                        </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="2II-ZJ-04o">
-                            <rect key="frame" x="64.666666666666686" y="202" width="224" height="34.333333333333343"/>
+                            <rect key="frame" x="29" y="288" width="295.33333333333331" height="34.333333333333314"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVG-YR-wgV">
-                                    <rect key="frame" x="0.0" y="0.0" width="87" height="34.333333333333336"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="122.66666666666667" height="34.333333333333336"/>
+                                    <color key="tintColor" systemColor="systemGreenColor"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Register"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Registrar"/>
+                                    <connections>
+                                        <action selector="registerButton:" destination="-1" eventType="touchUpInside" id="VZb-dM-1dj"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLV-cN-cU0">
-                                    <rect key="frame" x="137" y="0.0" width="87" height="34.333333333333336"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLV-cN-cU0">
+                                    <rect key="frame" x="172.66666666666666" y="0.0" width="122.66666666666666" height="34.333333333333336"/>
+                                    <color key="tintColor" systemColor="systemGreenColor"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="SignIn"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Iniciar sesion"/>
+                                    <connections>
+                                        <action selector="signInButton:" destination="-1" eventType="touchUpInside" id="U4z-Wj-L6L"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="aUr-n4-pxO" secondAttribute="trailing" id="C59-z2-rox"/>
+                        <constraint firstItem="Uby-oL-jS1" firstAttribute="leading" secondItem="1fT-pE-YX7" secondAttribute="leading" id="CwU-3d-2H7"/>
                         <constraint firstItem="aUr-n4-pxO" firstAttribute="top" secondItem="1fT-pE-YX7" secondAttribute="top" id="CyL-9y-7Qk"/>
+                        <constraint firstAttribute="trailing" secondItem="Uby-oL-jS1" secondAttribute="trailing" id="IEO-gU-stC"/>
                         <constraint firstItem="2II-ZJ-04o" firstAttribute="centerX" secondItem="1fT-pE-YX7" secondAttribute="centerX" id="cdp-P5-qnN"/>
                         <constraint firstItem="aUr-n4-pxO" firstAttribute="leading" secondItem="1fT-pE-YX7" secondAttribute="leading" id="uE2-8T-5IV"/>
                     </constraints>
@@ -101,6 +132,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
