@@ -672,17 +672,17 @@ Subclasificación de la clase Operation
 
 ✅ Selección de celdas en vistas de tabla
 
-Trabajando con UICollectionView
+✅ Trabajando con UICollectionView
 
-Configurando nuestra vista de colección
+✅ Configurando nuestra vista de colección
 
-Implementación de diseño con UICollectionViewDelegateFlowLayout
+✅ Implementación de diseño con UICollectionViewDelegateFlowLayout
 
 Explorando UICollectionVer más
 
 Implementando un UICollectionViewLayout personalizado
 
-Selección de celdas en vistas de colección
+✅ Selección de celdas en vistas de colección
 
 Trabajar con listas en SwiftUI
 
@@ -800,7 +800,7 @@ Visualización de varios subprocesos
 
 Grabación de video y toma de fotografías.
 
-Tomar y almacenar una imagen
+✅ Tomar y almacenar una imagen
 
 Grabación y almacenamiento de vídeo.
 
@@ -808,13 +808,13 @@ Manipulación de fotos con Core Image
 
 ## Módulo 30: Mejora de aplicaciones iOS con Location Services
 
-Solicitar la ubicación de un usuario
+🎓 Solicitar la ubicación de un usuario
 
-Solicitar permiso para acceder a los datos de ubicación
+🎓 Solicitar permiso para acceder a los datos de ubicación
 
-Obtener la ubicación de un usuario
+🎓 Obtener la ubicación de un usuario
 
-Suscripción a cambios de ubicación
+🎓 Suscripción a cambios de ubicación
 
 Configuración de geofences
 
@@ -905,7 +905,7 @@ Usando Observables con ViewModels
 
 ✅ Comunicando Presenter e Interactor
 
-La plantilla de VIPER
+✅ La plantilla de VIPER
 
 Comunicar ExternalDataManager, Interactor, Presenter, View, y
 
@@ -913,13 +913,13 @@ Wireframe
 
 Serializar JSON
 
-Lógica en el Interactor
+✅ Lógica en el Interactor
 
-Mostrando datos en vista de tabla
+✅ Mostrando datos en vista de tabla
 
 Cista principal y crear nuevo módulo
 
-Creando y configurando la vista detalle
+✅ Creando y configurando la vista detalle
 
 ## Módulo 35: Envío de su aplicación a la tienda de aplicaciones
 
@@ -941,3 +941,9 @@ adquiridas a lo largo de las 160 horas de capacitación. Esto
 reforzará el aprendizaje, finalizando con perfiles aptos para
 cubrir necesidades profesionales de la vida real en un ambiente
 productivo.
+
+## Temas adicionales
+
+✅ Uso de `NotificationCenter`
+
+✅ Uso de `AVPlayer`
