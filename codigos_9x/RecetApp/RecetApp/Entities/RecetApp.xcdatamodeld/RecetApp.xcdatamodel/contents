@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22C65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AuthEntity" representedClassName="AuthEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserEntity" inverseName="auth" inverseEntity="UserEntity"/>
+    </entity>
+    <entity name="RecipeInfoEntity" representedClassName="RecipeInfoEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="calories" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="carbohydrates" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cookTimeMinutes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="details" optional="YES" attributeType="String"/>
+        <attribute name="fat" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fiber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="language" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="numServings" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pictureUrl" optional="YES" attributeType="String"/>
+        <attribute name="prepTimeMinutes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="protein" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sugar" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalTimeMinutes" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="videoUrl" optional="YES" attributeType="String"/>
+        <relationship name="ingredients" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RecipeInfoIngredientEntity" inverseName="recipeInfo" inverseEntity="RecipeInfoIngredientEntity"/>
+        <relationship name="instructions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RecipeInfoInstructionEntity" inverseName="recipeInfo" inverseEntity="RecipeInfoInstructionEntity"/>
+    </entity>
+    <entity name="RecipeInfoIngredientEntity" representedClassName="RecipeInfoIngredientEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="label" optional="YES" attributeType="String"/>
+        <relationship name="recipeInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RecipeInfoEntity" inverseName="ingredients" inverseEntity="RecipeInfoEntity"/>
+    </entity>
+    <entity name="RecipeInfoInstructionEntity" representedClassName="RecipeInfoInstructionEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="label" optional="YES" attributeType="String"/>
+        <relationship name="recipeInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RecipeInfoEntity" inverseName="instructions" inverseEntity="RecipeInfoEntity"/>
+    </entity>
+    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="picture" optional="YES" attributeType="Binary"/>
+        <relationship name="auth" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AuthEntity" inverseName="user" inverseEntity="AuthEntity"/>
+    </entity>
+</model>
