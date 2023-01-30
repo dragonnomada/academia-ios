@@ -25,3 +25,6 @@
 [submodule "proyectos_equipos_9x/UserLoginViper"]
 	path = proyectos_equipos_9x/UserLoginViper
 	url = https://github.com/JoelBrayan22/UserLoginViper.git
+[submodule "proyectos_equipos_9x/HomeModule"]
+	path = proyectos_equipos_9x/HomeModule
+	url = https://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@github.com/BrianJM21/HomeModule.git
