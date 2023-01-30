@@ -34,3 +34,6 @@
 [submodule "proyectos_equipos_9x/UserAuthSubmodule"]
 	path = proyectos_equipos_9x/UserAuthSubmodule
 	url = https://github.com/JoelBrayan22/UserLoginViper
+[submodule "proyectos_equipos_9x/DetailsModule"]
+	path = proyectos_equipos_9x/DetailsModule
+	url = git@github.com:HeberJR11/iOSTraining.git
