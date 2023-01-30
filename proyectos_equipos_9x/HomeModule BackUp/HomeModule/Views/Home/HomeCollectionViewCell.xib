@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeCollectionViewCell" customModule="HomeModule" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionFoodCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="HomeModule" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="75"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHv-KO-CAH">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="75"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frying.pan" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yU0-Q8-kPW">
+                                <rect key="frame" x="0.0" y="0.6666666666666643" width="61" height="73.666666666666686"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150 cal x pza" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7J-KC-VtB">
+                                <rect key="frame" x="66" y="54" width="134" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDc-hN-VAo">
+                                <rect key="frame" x="66" y="10" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yU0-Q8-kPW" firstAttribute="width" secondItem="LHv-KO-CAH" secondAttribute="width" multiplier="0.3" constant="1" id="2Yb-BF-kZR"/>
+                            <constraint firstAttribute="trailing" secondItem="V7J-KC-VtB" secondAttribute="trailing" id="5U9-Jq-zWx"/>
+                            <constraint firstItem="EDc-hN-VAo" firstAttribute="top" secondItem="LHv-KO-CAH" secondAttribute="top" constant="10" id="Bap-Ah-LfV"/>
+                            <constraint firstAttribute="bottom" secondItem="yU0-Q8-kPW" secondAttribute="bottom" id="QEr-xX-gZs"/>
+                            <constraint firstItem="V7J-KC-VtB" firstAttribute="leading" secondItem="yU0-Q8-kPW" secondAttribute="trailing" constant="5" id="QlH-gN-YYU"/>
+                            <constraint firstItem="yU0-Q8-kPW" firstAttribute="leading" secondItem="LHv-KO-CAH" secondAttribute="leading" id="Qvg-nY-Wmy"/>
+                            <constraint firstItem="yU0-Q8-kPW" firstAttribute="top" secondItem="LHv-KO-CAH" secondAttribute="top" id="UlQ-z5-goh"/>
+                            <constraint firstAttribute="trailing" secondItem="EDc-hN-VAo" secondAttribute="trailing" id="VTy-vE-Qy5"/>
+                            <constraint firstAttribute="bottom" secondItem="V7J-KC-VtB" secondAttribute="bottom" constant="5" id="ZWp-FO-eoq"/>
+                            <constraint firstItem="EDc-hN-VAo" firstAttribute="leading" secondItem="yU0-Q8-kPW" secondAttribute="trailing" constant="5" id="iAd-F2-bOB"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="LHv-KO-CAH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4Mu-CX-4v1"/>
+                <constraint firstAttribute="bottom" secondItem="LHv-KO-CAH" secondAttribute="bottom" id="Fns-oZ-ty6"/>
+                <constraint firstItem="LHv-KO-CAH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SVy-OJ-AGk"/>
+                <constraint firstAttribute="trailing" secondItem="LHv-KO-CAH" secondAttribute="trailing" id="j3g-W5-euK"/>
+            </constraints>
+            <connections>
+                <outlet property="detailsLabel" destination="V7J-KC-VtB" id="HtT-1A-4aS"/>
+                <outlet property="imageCell" destination="yU0-Q8-kPW" id="X4A-wh-Qol"/>
+                <outlet property="titleLabel" destination="EDc-hN-VAo" id="Jsl-Z1-Woc"/>
+            </connections>
+            <point key="canvasLocation" x="25.954198473282442" y="19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="frying.pan" catalog="system" width="128" height="81"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
