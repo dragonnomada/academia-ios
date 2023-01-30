@@ -5,5 +5,6 @@
         <page name='102_NotificationCenter'/>
         <page name='103_Combine_Published'/>
         <page name='104_Combine_Subjects'/>
+        <page name='105_Alertas'/>
     </pages>
 </playground>
