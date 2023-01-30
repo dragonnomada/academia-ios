@@ -31,3 +31,6 @@
 [submodule "proyectos_equipos_9x/ProfileModule"]
 	path = proyectos_equipos_9x/ProfileModule
 	url = git@github.com:batista-eduardo-mat/ProfileModule.git
+[submodule "proyectos_equipos_9x/UserAuthSubmodule"]
+	path = proyectos_equipos_9x/UserAuthSubmodule
+	url = https://github.com/JoelBrayan22/UserLoginViper
