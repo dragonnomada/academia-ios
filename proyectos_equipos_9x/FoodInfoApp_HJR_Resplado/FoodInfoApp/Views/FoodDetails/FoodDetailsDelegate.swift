@@ -22,6 +22,8 @@ protocol FoodDetailsDelegate: UIViewController {
     
     func todos(todoSelectError error: FoodServiceError)
     
+    func food(foodUpdated food: FoodEntity)
+    
 }
 
 extension FoodDetailsDelegate {

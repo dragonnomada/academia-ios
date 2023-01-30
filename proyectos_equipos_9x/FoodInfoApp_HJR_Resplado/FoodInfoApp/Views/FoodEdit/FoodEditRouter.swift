@@ -10,7 +10,7 @@ import Foundation
 
 extension DetailsEditRouter {
     
-    func openAdd(presenter: FoodEditPresenter) {
+    func openDetails(presenter: FoodEditPresenter) {
         
         presenter.createView()
         
@@ -22,7 +22,7 @@ extension DetailsEditRouter {
         
     }
     
-    func closeAdd(presenter: FoodEditPresenter) {
+    func closeDetails(presenter: FoodEditPresenter) {
         
         self.navigationController.popViewController(animated: true)
         

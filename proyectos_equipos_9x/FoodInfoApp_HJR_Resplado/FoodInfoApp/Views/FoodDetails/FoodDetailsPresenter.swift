@@ -45,6 +45,9 @@ class FoodDetailsPresenter: NSObject {
         // Me subscribo al notificador del servicio, que informa cual fue el food seleccionado
         NotificationCenter.default.addObserver(self, selector: #selector(self.foodSelectedObserver), name: NSNotification.Name("foodServiceFoodSelected"), object: nil)
         
+        // Me subscribo al notificador del servicio que me indica cual fue el alimento modificado
+        NotificationCenter.default.addObserver(self, selector: #selector(self.foodUpdatedObserver), name: NSNotification.Name("foodUpdatedService"), object: nil)
+        
         self.view?.viewDidCreate()
         
     }
@@ -54,6 +57,16 @@ class FoodDetailsPresenter: NSObject {
         if let foodSelected = notification.object as? FoodEntity {
             
             self.view?.food(foodSelected: foodSelected)
+            
+        }
+        
+    }
+    
+    @objc func foodUpdatedObserver(notification: Notification) {
+        
+        if let foodUpdated = notification.object as? FoodEntity {
+            
+            self.view?.food(foodUpdated: foodUpdated)
             
         }
         
@@ -70,11 +83,18 @@ class FoodDetailsPresenter: NSObject {
         
     }
     
+    func requestFoodSelected() {
+        
+        self.interactor.requestFoodSelected()
+        
+    }
+    
     func goToEdit() {
         
         // Publico que quiero navegar a la vista edit
         NotificationCenter.default.post(name: NSNotification.Name("foodScene.goToEdit"), object: self)
         
     }
+    
     
 }

@@ -19,12 +19,24 @@ class FoodService {
     private let foodStorage = FoodStorage()
     private var totalFood: [FoodEntity] = []
     private var foodSelected: FoodEntity?
+    private var foodUpdateed: FoodEntity?
     
     func requestFood() {
         
         self.totalFood = self.foodStorage.getFood()
         
         NotificationCenter.default.post(name: NSNotification.Name("requestFoodService"), object: totalFood)
+        
+    }
+    
+    func requestFoodSelected() {
+        
+        guard let foodSelected = self.foodSelected else {
+            NotificationCenter.default.post(name: NSNotification.Name("foodServiceFoodSelectedError"), object: nil)
+            return
+        }
+        
+        NotificationCenter.default.post(name: NSNotification.Name("foodServiceFoodSelected"), object: foodSelected)
         
     }
     
@@ -45,14 +57,36 @@ class FoodService {
         }
         
     }
-    
-    func updateFood(name: String, id: Int32, calorias: Double, carbs: Double, fat: Double, fiber: Double, protein: Double, suggar: Double, units: Double) {
+
+    func createFood(id: Int32, name: String, calorias: Double, carbs: Double, fat: Double, fiber: Double, protein: Double, suggar: Double, units: Double) {
         
-        if let food = self.foodStorage.updateFood(name: name, id: id, calorias: calorias, carbs: carbs, fat: fat, fiber: fiber, protein: protein, suggar: suggar, units: units) {
+        if let food = self.foodStorage.createFood(id: id, name: name, calorias: calorias, carbs: carbs, fat: fat, fiber: fiber, protein: protein, suggar: suggar, units: units) {
+            
+            self.foodSelected = food
+            
+            NotificationCenter.default.post(name: NSNotification.Name("foodCreatedService"), object: food)
+            
+        }
+        
+    }
+    
+    
+    func updateFood(name: String, calorias: Double, carbs: Double, fat: Double, fiber: Double, protein: Double, suggar: Double, units: Double) {
+        
+        guard let foodSelected = self.foodSelected else {
+            // TODO: Informar error no seleccionado
+            NotificationCenter.default.post(name: NSNotification.Name("foodUpdatedServiceError"), object: FoodServiceError.updateFood)
+            return
+        }
+        
+        if let foodUpdateed = self.foodStorage.updateFood(id: foodSelected.id, name: name, calorias: calorias, carbs: carbs, fat: fat, fiber: fiber, protein: protein, suggar: suggar, units: units) {
             
             self.requestFood()
             
-            NotificationCenter.default.post(name: NSNotification.Name("foodUpdatedService"), object: food)
+            self.foodSelected = foodUpdateed
+            
+            // Envia la notificacion de que un alimento ha sido modificado(actualizado)
+            NotificationCenter.default.post(name: NSNotification.Name("foodUpdatedService"), object: foodUpdateed)
             
         } else {
             

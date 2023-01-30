@@ -22,15 +22,26 @@ class FoodInteractor {
         self.service.requestFood()
     }
     
+    func requestFoodSelected() {
+        
+        self.service.requestFoodSelected()
+    }
+    
     func selectFood(byId id: Int32) {
     
         self.service.selectFood(byId: id)
         
     }
     
-    func updateFood(name: String, id: Int32, calorias: Double, carbs: Double, fat: Double, fiber: Double, protein: Double, suggar: Double, units: Double) {
+    func createFood(id: Int32, name: String, calorias: Double, carbs: Double, fat: Double, fiber: Double, protein: Double, suggar: Double, units: Double) {
         
-        self.service.updateFood(name: name, id: id, calorias: calorias, carbs: carbs, fat: fat, fiber: fiber, protein: protein, suggar: suggar, units: units)
+        self.service.createFood(id: id, name: name, calorias: calorias, carbs: carbs, fat: fat, fiber: fiber, protein: protein, suggar: suggar, units: units)
+        
+    }
+    
+    func updateFood(name: String, calorias: Double, carbs: Double, fat: Double, fiber: Double, protein: Double, suggar: Double, units: Double) {
+        
+        self.service.updateFood(name: name, calorias: calorias, carbs: carbs, fat: fat, fiber: fiber, protein: protein, suggar: suggar, units: units)
         
     }
     

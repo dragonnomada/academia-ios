@@ -10,10 +10,10 @@ import CoreData
 
 class FoodStorage {
     
-    // Generando un ocntenedor persistente
+    // Generando un contenedor persistente
     private lazy var container: NSPersistentContainer = {
         
-        let container = NSPersistentContainer(name: "FoodEntity")
+        let container = NSPersistentContainer(name: "FoodModel")
         
         container.loadPersistentStores {
             
@@ -21,7 +21,7 @@ class FoodStorage {
             
             if let error = error {
                 
-                fatalError("[TodoStorage/Container] HomeModel loadPersistentStores")
+                fatalError("[FoodStorage/Container] FoodModel loadPersistentStores")
                 
             }
             
@@ -82,21 +82,46 @@ class FoodStorage {
         
     }
     
-    // Edita el almiento previamente seleccionado
-    func updateFood(name: String, id: Int32, calorias: Double, carbs: Double, fat: Double, fiber: Double, protein: Double, suggar: Double, units: Double) -> FoodEntity? {
+    //Crea un alimento
+    func createFood(id: Int32, name: String, calorias: Double, carbs: Double, fat: Double, fiber: Double, protein: Double, suggar: Double, units: Double) -> FoodEntity? {
         
         let food = FoodEntity(context: self.context)
         
-        food.name = "Anonimo"
-        food.id = Int32.random(in: 1...10)
-        food.calorias = Double.random(in: 1...30)
-        food.carbs = Double.random(in: 1...30)
-        food.fat = Double.random(in: 1...30)
-        food.fiber = Double.random(in: 1...30)
-        food.protein = Double.random(in: 1...30)
-        food.suggar = Double.random(in: 1...30)
-        food.units = Double.random(in: 1...30)
+        food.id = id
+        food.name = name
+        food.calorias = calorias
+        food.carbs = carbs
+        food.fat = fat
+        food.fiber = fiber
+        food.protein = protein
+        food.suggar = suggar
+        food.units = units
         
+        print("Creado food")
+
+        return self.save() ? food : nil
+        
+    }
+    
+    // Edita el almiento
+    func updateFood(id: Int32, name: String, calorias: Double, carbs: Double, fat: Double, fiber: Double, protein: Double, suggar: Double, units: Double) -> FoodEntity? {
+        
+        guard let food = self.getFoodSelect(byId: id) else {
+            return nil
+        }
+        
+        food.name = name
+        food.id = Int32.random(in: 1...10)
+        food.calorias = calorias
+        food.carbs = carbs
+        food.fat = fat
+        food.fiber = fiber
+        food.protein = protein
+        food.suggar = suggar
+        food.units = units
+        
+        print("Guardando food")
+
         return self.save() ? food : nil
         
     }

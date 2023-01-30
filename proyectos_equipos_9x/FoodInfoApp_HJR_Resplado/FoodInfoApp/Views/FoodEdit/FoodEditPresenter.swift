@@ -22,15 +22,15 @@ class FoodEditPresenter: NSObject {
         
     }
     
-    func openAdd() {
+    func openDetails() {
         
-        self.router.openAdd(presenter: self)
+        self.router.openDetails(presenter: self)
         
     }
     
-    func closeAdd() {
+    func closeDetails() {
         
-        self.router.closeAdd(presenter: self)
+        self.router.closeDetails(presenter: self)
         
     }
     
@@ -44,13 +44,13 @@ class FoodEditPresenter: NSObject {
         
         // Subscribe interactor events
         
-        NotificationCenter.default.addObserver(self, selector: #selector(self.todoCreatedObserver), name: NSNotification.Name("home.service.todoCreated"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.foodEditeddObserver), name: NSNotification.Name("foodServiceFoodSelected"), object: nil)
         
         self.view?.viewDidCreate()
         
     }
     
-    @objc func todoCreatedObserver(notification: Notification) {
+    @objc func foodEditeddObserver(notification: Notification) {
         
         if let food = notification.object as? FoodEntity {
             
@@ -69,15 +69,31 @@ class FoodEditPresenter: NSObject {
         
         // Unsubscribe interactor events
         
+        NotificationCenter.default.addObserver(self, selector: #selector(self.foodSelectedObserver), name: NSNotification.Name("foodServiceFoodSelected"), object: nil)
+        
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name("home.service.todoCreated"), object: nil)
         
         self.view = nil
         
     }
     
-    func updateFood(name: String, id: Int32, calorias: Double, carbs: Double, fat: Double, fiber: Double, protein: Double, suggar: Double, units: Double) {
+    @objc func foodSelectedObserver(notification: Notification) {
         
-        self.interactor.updateFood(name: name, id: id, calorias: calorias, carbs: carbs, fat: fat, fiber: fiber, protein: protein, suggar: suggar, units: units)
+        if let foodSelected = notification.object as? FoodEntity {
+            
+            self.view?.food(foodEdited: foodSelected)
+            
+        }
+        
+    }
+    
+    func requestFoodSelected() {
+        self.interactor.requestFoodSelected()
+    }
+    
+    func updateFood(name: String, calorias: Double, carbs: Double, fat: Double, fiber: Double, protein: Double, suggar: Double, units: Double) {
+        
+        self.interactor.updateFood(name: name, calorias: calorias, carbs: carbs, fat: fat, fiber: fiber, protein: protein, suggar: suggar, units: units)
         
     }
     
