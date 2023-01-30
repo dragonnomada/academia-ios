@@ -973,3 +973,19 @@ let contadorViewController = ContadorViewController()
 PlaygroundPage.current.liveView = contadorViewController
 PlaygroundPage.current.needsIndefiniteExecution = true
 ```
+
+# 105 - Uso de Alertas
+
+Las alertas son pantallas flotantes prediseñadas que se pueden utilizar para mostrar mensajes y acciones al usuario.
+
+Cada acción debe ser registrada en la alerta y esta se puede mostrar como una ventana de acciones o como una alerta clásica.
+
+> Ejemplo de una alerta clásica
+
+```swift
+let alert = UIAlertController(title: "Alerta simple", message: "Esta es una alerta simple 😁", preferredStyle: .alert)
+        
+alert.addAction(UIAlertAction(title: "Oki Doki", style: .default))
+
+self.present(alert, animated: true)
+```
