@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='2 Make it compile'/>
+        <page name='3 Compute the answer'/>
+        <page name='4 Add parentheses'/>
+        <page name='1 Variables'/>
+        <page name='5 Average rating'/>
+        <page name='6 Electrical power'/>
+        <page name='7 Electrical resistance '/>
+        <page name='8 Random integer '/>
+        <page name='9 Quadratic equations '/>
+    </pages>
+</playground>

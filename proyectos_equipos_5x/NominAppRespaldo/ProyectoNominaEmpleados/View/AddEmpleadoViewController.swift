@@ -103,11 +103,7 @@ class AddEmpleadoViewController: UIViewController {
     }
     
 }
-<<<<<<< HEAD
-///Extension para la implementación de los metodos de AddEmpleadoDelegate.
-=======
 
->>>>>>> 7840d4b84fb66e939871412a5151249f3d8f3ab6
 extension AddEmpleadoViewController: AddEmpleadoDelegate {
     
     func empleado(fechaContratado fecha: Date) {
