@@ -1,0 +1,961 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE1020372982EDA700FDD5E3 /* UserServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1020362982EDA700FDD5E3 /* UserServiceTests.swift */; };
+		CE10203A2983083100FDD5E3 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1020392983083100FDD5E3 /* HomeTabBarController.swift */; };
+		CE10203D2983087600FDD5E3 /* MyDietsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10203B2983087600FDD5E3 /* MyDietsViewController.swift */; };
+		CE10203E2983087600FDD5E3 /* MyDietsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE10203C2983087600FDD5E3 /* MyDietsViewController.xib */; };
+		CE102041298308AE00FDD5E3 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10203F298308AE00FDD5E3 /* MyProfileViewController.swift */; };
+		CE102042298308AE00FDD5E3 /* MyProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE102040298308AE00FDD5E3 /* MyProfileViewController.xib */; };
+		CE102045298308C500FDD5E3 /* MySettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE102043298308C500FDD5E3 /* MySettingViewController.swift */; };
+		CE102046298308C500FDD5E3 /* MySettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE102044298308C500FDD5E3 /* MySettingViewController.xib */; };
+		CE1020482983491A00FDD5E3 /* MyDietsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1020472983491A00FDD5E3 /* MyDietsPresenter.swift */; };
+		CE10204A2983494100FDD5E3 /* MyProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1020492983494100FDD5E3 /* MyProfilePresenter.swift */; };
+		CE10204C2983496900FDD5E3 /* MySettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10204B2983496900FDD5E3 /* MySettingPresenter.swift */; };
+		CE10204E2983498500FDD5E3 /* HomeTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10204D2983498500FDD5E3 /* HomeTabBarPresenter.swift */; };
+		CE102050298349A900FDD5E3 /* MyDietsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10204F298349A900FDD5E3 /* MyDietsView.swift */; };
+		CE102052298349CF00FDD5E3 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE102051298349CF00FDD5E3 /* MyProfileView.swift */; };
+		CE102054298349EE00FDD5E3 /* MySettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE102053298349EE00FDD5E3 /* MySettingView.swift */; };
+		CE10205629834A1900FDD5E3 /* HomeTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE10205529834A1900FDD5E3 /* HomeTabBarView.swift */; };
+		CE1912EC297F4EF1008E7228 /* MyCaloriAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE1912EA297F4EF1008E7228 /* MyCaloriAPP.xcdatamodeld */; };
+		CE1912EE297F4FDA008E7228 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1912ED297F4FDA008E7228 /* UserService.swift */; };
+		CE1912F0297F4FF9008E7228 /* DietService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1912EF297F4FF9008E7228 /* DietService.swift */; };
+		CE1912F2297F51EC008E7228 /* UserFoodEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1912F1297F51EC008E7228 /* UserFoodEntity.swift */; };
+		CE1912F8297F5454008E7228 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1912F7297F5454008E7228 /* UserInteractor.swift */; };
+		CE1912FA297F5477008E7228 /* DietInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1912F9297F5477008E7228 /* DietInteractor.swift */; };
+		CE1912FC297F54A9008E7228 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1912FB297F54A9008E7228 /* HomePresenter.swift */; };
+		CE1912FE297F54CE008E7228 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1912FD297F54CE008E7228 /* HomeView.swift */; };
+		CE191301297F5514008E7228 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1912FF297F5514008E7228 /* HomeViewController.swift */; };
+		CE191302297F5514008E7228 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE191300297F5514008E7228 /* HomeViewController.xib */; };
+		CE191304297F55BA008E7228 /* CaloriappRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191303297F55BA008E7228 /* CaloriappRouter.swift */; };
+		CE191306297F5897008E7228 /* DefaultLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191305297F5897008E7228 /* DefaultLoginView.swift */; };
+		CE191309297F58BD008E7228 /* DefaultLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191307297F58BD008E7228 /* DefaultLoginViewController.swift */; };
+		CE19130A297F58BD008E7228 /* DefaultLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE191308297F58BD008E7228 /* DefaultLoginViewController.xib */; };
+		CE19130C297F58E3008E7228 /* LoginAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19130B297F58E3008E7228 /* LoginAView.swift */; };
+		CE19130F297F58FC008E7228 /* LoginAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19130D297F58FC008E7228 /* LoginAViewController.swift */; };
+		CE191310297F58FC008E7228 /* LoginAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE19130E297F58FC008E7228 /* LoginAViewController.xib */; };
+		CE191312297F5915008E7228 /* LoginBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191311297F5915008E7228 /* LoginBView.swift */; };
+		CE191316297F5972008E7228 /* LoginBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191314297F5972008E7228 /* LoginBViewController.swift */; };
+		CE191317297F5972008E7228 /* LoginBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE191315297F5972008E7228 /* LoginBViewController.xib */; };
+		CE191319297F59A4008E7228 /* LoginPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191318297F59A4008E7228 /* LoginPasswordView.swift */; };
+		CE19131C297F59C6008E7228 /* LoginPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19131A297F59C6008E7228 /* LoginPasswordViewController.swift */; };
+		CE19131D297F59C6008E7228 /* LoginPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE19131B297F59C6008E7228 /* LoginPasswordViewController.xib */; };
+		CE19131F297F59DA008E7228 /* LoginTouchIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19131E297F59DA008E7228 /* LoginTouchIdView.swift */; };
+		CE191322297F59FF008E7228 /* LoginTouchIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191320297F59FF008E7228 /* LoginTouchIdViewController.swift */; };
+		CE191323297F59FF008E7228 /* LoginTouchIdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE191321297F59FF008E7228 /* LoginTouchIdViewController.xib */; };
+		CE191325297F5A6C008E7228 /* SigninAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191324297F5A6C008E7228 /* SigninAView.swift */; };
+		CE191328297F5A99008E7228 /* SigninAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191326297F5A99008E7228 /* SigninAViewController.swift */; };
+		CE191329297F5A99008E7228 /* SigninAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE191327297F5A99008E7228 /* SigninAViewController.xib */; };
+		CE19132B297F5AB7008E7228 /* SigninBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19132A297F5AB7008E7228 /* SigninBView.swift */; };
+		CE19132E297F5ADB008E7228 /* SigninBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19132C297F5ADB008E7228 /* SigninBViewController.swift */; };
+		CE19132F297F5ADB008E7228 /* SigninBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE19132D297F5ADB008E7228 /* SigninBViewController.xib */; };
+		CE21529E2982D973007EE4EA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CE21529D2982D973007EE4EA /* FirebaseAuth */; };
+		CE2152A02982DA1E007EE4EA /* Combine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE21529F2982DA1E007EE4EA /* Combine.framework */; };
+		CE2D3B1F2981849D00918CC2 /* DefaultLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D3B1E2981849D00918CC2 /* DefaultLoginPresenter.swift */; };
+		CE2D3B21298184C200918CC2 /* LoginAPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D3B20298184C200918CC2 /* LoginAPresenter.swift */; };
+		CE2D3B23298184D200918CC2 /* LoginBPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D3B22298184D200918CC2 /* LoginBPresenter.swift */; };
+		CE2D3B25298184F500918CC2 /* LoginPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D3B24298184F500918CC2 /* LoginPasswordPresenter.swift */; };
+		CE2D3B272981851400918CC2 /* LoginTouchIdPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D3B262981851400918CC2 /* LoginTouchIdPresenter.swift */; };
+		CE2D3B292981853800918CC2 /* SigninAPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D3B282981853800918CC2 /* SigninAPresenter.swift */; };
+		CE2D3B2B2981855500918CC2 /* SigninBPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D3B2A2981855500918CC2 /* SigninBPresenter.swift */; };
+		CEA8DE02297B4A4B0043A0B0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEA8DE01297B4A4B0043A0B0 /* FirebaseAnalytics */; };
+		CEA8DE04297B4A4B0043A0B0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CEA8DE03297B4A4B0043A0B0 /* FirebaseAuth */; };
+		CEA8DE06297B4A4B0043A0B0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEA8DE05297B4A4B0043A0B0 /* FirebaseCrashlytics */; };
+		CEA8DE08297B4B2B0043A0B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEA8DE07297B4B2B0043A0B0 /* GoogleService-Info.plist */; };
+		CEC2C7022979CB02005818D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2C7012979CB02005818D2 /* AppDelegate.swift */; };
+		CEC2C7042979CB02005818D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2C7032979CB02005818D2 /* SceneDelegate.swift */; };
+		CEC2C7062979CB03005818D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2C7052979CB03005818D2 /* ViewController.swift */; };
+		CEC2C7092979CB03005818D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC2C7072979CB03005818D2 /* Main.storyboard */; };
+		CEC2C70B2979CB04005818D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC2C70A2979CB04005818D2 /* Assets.xcassets */; };
+		CEC2C70E2979CB04005818D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC2C70C2979CB04005818D2 /* LaunchScreen.storyboard */; };
+		CEC2C7232979CB05005818D2 /* MyCaloriAPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2C7222979CB05005818D2 /* MyCaloriAPPUITests.swift */; };
+		CEC2C7252979CB05005818D2 /* MyCaloriAPPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2C7242979CB05005818D2 /* MyCaloriAPPUITestsLaunchTests.swift */; };
+		CEE5583F298043ED002F4237 /* ApiResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5583E298043ED002F4237 /* ApiResponseEntity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEC2C7152979CB05005818D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC2C6F62979CB02005818D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC2C6FD2979CB02005818D2;
+			remoteInfo = MyCaloriAPP;
+		};
+		CEC2C71F2979CB05005818D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC2C6F62979CB02005818D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC2C6FD2979CB02005818D2;
+			remoteInfo = MyCaloriAPP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE1020362982EDA700FDD5E3 /* UserServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceTests.swift; sourceTree = "<group>"; };
+		CE1020392983083100FDD5E3 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		CE10203B2983087600FDD5E3 /* MyDietsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDietsViewController.swift; sourceTree = "<group>"; };
+		CE10203C2983087600FDD5E3 /* MyDietsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyDietsViewController.xib; sourceTree = "<group>"; };
+		CE10203F298308AE00FDD5E3 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		CE102040298308AE00FDD5E3 /* MyProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileViewController.xib; sourceTree = "<group>"; };
+		CE102043298308C500FDD5E3 /* MySettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettingViewController.swift; sourceTree = "<group>"; };
+		CE102044298308C500FDD5E3 /* MySettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySettingViewController.xib; sourceTree = "<group>"; };
+		CE1020472983491A00FDD5E3 /* MyDietsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDietsPresenter.swift; sourceTree = "<group>"; };
+		CE1020492983494100FDD5E3 /* MyProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfilePresenter.swift; sourceTree = "<group>"; };
+		CE10204B2983496900FDD5E3 /* MySettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettingPresenter.swift; sourceTree = "<group>"; };
+		CE10204D2983498500FDD5E3 /* HomeTabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarPresenter.swift; sourceTree = "<group>"; };
+		CE10204F298349A900FDD5E3 /* MyDietsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDietsView.swift; sourceTree = "<group>"; };
+		CE102051298349CF00FDD5E3 /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
+		CE102053298349EE00FDD5E3 /* MySettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySettingView.swift; sourceTree = "<group>"; };
+		CE10205529834A1900FDD5E3 /* HomeTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarView.swift; sourceTree = "<group>"; };
+		CE1912EB297F4EF1008E7228 /* MyCaloriAPP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCaloriAPP.xcdatamodel; sourceTree = "<group>"; };
+		CE1912ED297F4FDA008E7228 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		CE1912EF297F4FF9008E7228 /* DietService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietService.swift; sourceTree = "<group>"; };
+		CE1912F1297F51EC008E7228 /* UserFoodEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFoodEntity.swift; sourceTree = "<group>"; };
+		CE1912F7297F5454008E7228 /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		CE1912F9297F5477008E7228 /* DietInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietInteractor.swift; sourceTree = "<group>"; };
+		CE1912FB297F54A9008E7228 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		CE1912FD297F54CE008E7228 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CE1912FF297F5514008E7228 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE191300297F5514008E7228 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		CE191303297F55BA008E7228 /* CaloriappRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriappRouter.swift; sourceTree = "<group>"; };
+		CE191305297F5897008E7228 /* DefaultLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginView.swift; sourceTree = "<group>"; };
+		CE191307297F58BD008E7228 /* DefaultLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginViewController.swift; sourceTree = "<group>"; };
+		CE191308297F58BD008E7228 /* DefaultLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultLoginViewController.xib; sourceTree = "<group>"; };
+		CE19130B297F58E3008E7228 /* LoginAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAView.swift; sourceTree = "<group>"; };
+		CE19130D297F58FC008E7228 /* LoginAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAViewController.swift; sourceTree = "<group>"; };
+		CE19130E297F58FC008E7228 /* LoginAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginAViewController.xib; sourceTree = "<group>"; };
+		CE191311297F5915008E7228 /* LoginBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBView.swift; sourceTree = "<group>"; };
+		CE191314297F5972008E7228 /* LoginBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBViewController.swift; sourceTree = "<group>"; };
+		CE191315297F5972008E7228 /* LoginBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginBViewController.xib; sourceTree = "<group>"; };
+		CE191318297F59A4008E7228 /* LoginPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordView.swift; sourceTree = "<group>"; };
+		CE19131A297F59C6008E7228 /* LoginPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordViewController.swift; sourceTree = "<group>"; };
+		CE19131B297F59C6008E7228 /* LoginPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginPasswordViewController.xib; sourceTree = "<group>"; };
+		CE19131E297F59DA008E7228 /* LoginTouchIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTouchIdView.swift; sourceTree = "<group>"; };
+		CE191320297F59FF008E7228 /* LoginTouchIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTouchIdViewController.swift; sourceTree = "<group>"; };
+		CE191321297F59FF008E7228 /* LoginTouchIdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginTouchIdViewController.xib; sourceTree = "<group>"; };
+		CE191324297F5A6C008E7228 /* SigninAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninAView.swift; sourceTree = "<group>"; };
+		CE191326297F5A99008E7228 /* SigninAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninAViewController.swift; sourceTree = "<group>"; };
+		CE191327297F5A99008E7228 /* SigninAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SigninAViewController.xib; sourceTree = "<group>"; };
+		CE19132A297F5AB7008E7228 /* SigninBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninBView.swift; sourceTree = "<group>"; };
+		CE19132C297F5ADB008E7228 /* SigninBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninBViewController.swift; sourceTree = "<group>"; };
+		CE19132D297F5ADB008E7228 /* SigninBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SigninBViewController.xib; sourceTree = "<group>"; };
+		CE21529F2982DA1E007EE4EA /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk/System/Library/Frameworks/Combine.framework; sourceTree = DEVELOPER_DIR; };
+		CE2D3B1E2981849D00918CC2 /* DefaultLoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLoginPresenter.swift; sourceTree = "<group>"; };
+		CE2D3B20298184C200918CC2 /* LoginAPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPresenter.swift; sourceTree = "<group>"; };
+		CE2D3B22298184D200918CC2 /* LoginBPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBPresenter.swift; sourceTree = "<group>"; };
+		CE2D3B24298184F500918CC2 /* LoginPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPasswordPresenter.swift; sourceTree = "<group>"; };
+		CE2D3B262981851400918CC2 /* LoginTouchIdPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTouchIdPresenter.swift; sourceTree = "<group>"; };
+		CE2D3B282981853800918CC2 /* SigninAPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninAPresenter.swift; sourceTree = "<group>"; };
+		CE2D3B2A2981855500918CC2 /* SigninBPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninBPresenter.swift; sourceTree = "<group>"; };
+		CEA8DE07297B4B2B0043A0B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEC2C6FE2979CB02005818D2 /* MyCaloriAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCaloriAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC2C7012979CB02005818D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEC2C7032979CB02005818D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEC2C7052979CB03005818D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEC2C7082979CB03005818D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEC2C70A2979CB04005818D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEC2C70D2979CB04005818D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEC2C70F2979CB04005818D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC2C7142979CB05005818D2 /* MyCaloriAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCaloriAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC2C71E2979CB05005818D2 /* MyCaloriAPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCaloriAPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC2C7222979CB05005818D2 /* MyCaloriAPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCaloriAPPUITests.swift; sourceTree = "<group>"; };
+		CEC2C7242979CB05005818D2 /* MyCaloriAPPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCaloriAPPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEE5583E298043ED002F4237 /* ApiResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseEntity.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEC2C6FB2979CB02005818D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA8DE06297B4A4B0043A0B0 /* FirebaseCrashlytics in Frameworks */,
+				CEA8DE02297B4A4B0043A0B0 /* FirebaseAnalytics in Frameworks */,
+				CEA8DE04297B4A4B0043A0B0 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2C7112979CB05005818D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2152A02982DA1E007EE4EA /* Combine.framework in Frameworks */,
+				CE21529E2982D973007EE4EA /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2C71B2979CB05005818D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE102038298307AF00FDD5E3 /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE1912FD297F54CE008E7228 /* HomeView.swift */,
+				CE1912FF297F5514008E7228 /* HomeViewController.swift */,
+				CE191300297F5514008E7228 /* HomeViewController.xib */,
+				CE1020392983083100FDD5E3 /* HomeTabBarController.swift */,
+				CE10203B2983087600FDD5E3 /* MyDietsViewController.swift */,
+				CE10203C2983087600FDD5E3 /* MyDietsViewController.xib */,
+				CE10203F298308AE00FDD5E3 /* MyProfileViewController.swift */,
+				CE102040298308AE00FDD5E3 /* MyProfileViewController.xib */,
+				CE102043298308C500FDD5E3 /* MySettingViewController.swift */,
+				CE102044298308C500FDD5E3 /* MySettingViewController.xib */,
+				CE10204F298349A900FDD5E3 /* MyDietsView.swift */,
+				CE102051298349CF00FDD5E3 /* MyProfileView.swift */,
+				CE102053298349EE00FDD5E3 /* MySettingView.swift */,
+				CE10205529834A1900FDD5E3 /* HomeTabBarView.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+		CE1912E6297F4E7C008E7228 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CE1912EA297F4EF1008E7228 /* MyCaloriAPP.xcdatamodeld */,
+				CE1912ED297F4FDA008E7228 /* UserService.swift */,
+				CE1912EF297F4FF9008E7228 /* DietService.swift */,
+				CE1912F1297F51EC008E7228 /* UserFoodEntity.swift */,
+				CEE5583E298043ED002F4237 /* ApiResponseEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CE1912F3297F52C4008E7228 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CE1912F7297F5454008E7228 /* UserInteractor.swift */,
+				CE1912F9297F5477008E7228 /* DietInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CE1912F4297F52E7008E7228 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				CE1912FB297F54A9008E7228 /* HomePresenter.swift */,
+				CE2D3B1E2981849D00918CC2 /* DefaultLoginPresenter.swift */,
+				CE2D3B20298184C200918CC2 /* LoginAPresenter.swift */,
+				CE2D3B22298184D200918CC2 /* LoginBPresenter.swift */,
+				CE2D3B24298184F500918CC2 /* LoginPasswordPresenter.swift */,
+				CE2D3B262981851400918CC2 /* LoginTouchIdPresenter.swift */,
+				CE2D3B282981853800918CC2 /* SigninAPresenter.swift */,
+				CE2D3B2A2981855500918CC2 /* SigninBPresenter.swift */,
+				CE1020472983491A00FDD5E3 /* MyDietsPresenter.swift */,
+				CE1020492983494100FDD5E3 /* MyProfilePresenter.swift */,
+				CE10204B2983496900FDD5E3 /* MySettingPresenter.swift */,
+				CE10204D2983498500FDD5E3 /* HomeTabBarPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		CE1912F5297F52F8008E7228 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE102038298307AF00FDD5E3 /* HomeViews */,
+				CE191313297F5928008E7228 /* LoginViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE1912F6297F5305008E7228 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CE191303297F55BA008E7228 /* CaloriappRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CE191313297F5928008E7228 /* LoginViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE191305297F5897008E7228 /* DefaultLoginView.swift */,
+				CE191307297F58BD008E7228 /* DefaultLoginViewController.swift */,
+				CE191308297F58BD008E7228 /* DefaultLoginViewController.xib */,
+				CE19130B297F58E3008E7228 /* LoginAView.swift */,
+				CE19130D297F58FC008E7228 /* LoginAViewController.swift */,
+				CE19130E297F58FC008E7228 /* LoginAViewController.xib */,
+				CE191311297F5915008E7228 /* LoginBView.swift */,
+				CE191314297F5972008E7228 /* LoginBViewController.swift */,
+				CE191315297F5972008E7228 /* LoginBViewController.xib */,
+				CE191318297F59A4008E7228 /* LoginPasswordView.swift */,
+				CE19131A297F59C6008E7228 /* LoginPasswordViewController.swift */,
+				CE19131B297F59C6008E7228 /* LoginPasswordViewController.xib */,
+				CE19131E297F59DA008E7228 /* LoginTouchIdView.swift */,
+				CE191320297F59FF008E7228 /* LoginTouchIdViewController.swift */,
+				CE191321297F59FF008E7228 /* LoginTouchIdViewController.xib */,
+				CE191324297F5A6C008E7228 /* SigninAView.swift */,
+				CE191326297F5A99008E7228 /* SigninAViewController.swift */,
+				CE191327297F5A99008E7228 /* SigninAViewController.xib */,
+				CE19132A297F5AB7008E7228 /* SigninBView.swift */,
+				CE19132C297F5ADB008E7228 /* SigninBViewController.swift */,
+				CE19132D297F5ADB008E7228 /* SigninBViewController.xib */,
+			);
+			path = LoginViews;
+			sourceTree = "<group>";
+		};
+		CE21529C2982D973007EE4EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE21529F2982DA1E007EE4EA /* Combine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEC2C6F52979CB02005818D2 = {
+			isa = PBXGroup;
+			children = (
+				CEC2C7002979CB02005818D2 /* MyCaloriAPP */,
+				CEC2C7172979CB05005818D2 /* MyCaloriAPPTests */,
+				CEC2C7212979CB05005818D2 /* MyCaloriAPPUITests */,
+				CEC2C6FF2979CB02005818D2 /* Products */,
+				CE21529C2982D973007EE4EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEC2C6FF2979CB02005818D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2C6FE2979CB02005818D2 /* MyCaloriAPP.app */,
+				CEC2C7142979CB05005818D2 /* MyCaloriAPPTests.xctest */,
+				CEC2C71E2979CB05005818D2 /* MyCaloriAPPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEC2C7002979CB02005818D2 /* MyCaloriAPP */ = {
+			isa = PBXGroup;
+			children = (
+				CE1912F6297F5305008E7228 /* Router */,
+				CE1912F5297F52F8008E7228 /* Views */,
+				CE1912F4297F52E7008E7228 /* Presenters */,
+				CE1912F3297F52C4008E7228 /* Interactor */,
+				CE1912E6297F4E7C008E7228 /* Entities */,
+				CEC2C7012979CB02005818D2 /* AppDelegate.swift */,
+				CEC2C7032979CB02005818D2 /* SceneDelegate.swift */,
+				CEC2C7052979CB03005818D2 /* ViewController.swift */,
+				CEC2C7072979CB03005818D2 /* Main.storyboard */,
+				CEC2C70A2979CB04005818D2 /* Assets.xcassets */,
+				CEC2C70C2979CB04005818D2 /* LaunchScreen.storyboard */,
+				CEC2C70F2979CB04005818D2 /* Info.plist */,
+				CEA8DE07297B4B2B0043A0B0 /* GoogleService-Info.plist */,
+			);
+			path = MyCaloriAPP;
+			sourceTree = "<group>";
+		};
+		CEC2C7172979CB05005818D2 /* MyCaloriAPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE1020362982EDA700FDD5E3 /* UserServiceTests.swift */,
+			);
+			path = MyCaloriAPPTests;
+			sourceTree = "<group>";
+		};
+		CEC2C7212979CB05005818D2 /* MyCaloriAPPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2C7222979CB05005818D2 /* MyCaloriAPPUITests.swift */,
+				CEC2C7242979CB05005818D2 /* MyCaloriAPPUITestsLaunchTests.swift */,
+			);
+			path = MyCaloriAPPUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEC2C6FD2979CB02005818D2 /* MyCaloriAPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC2C7282979CB05005818D2 /* Build configuration list for PBXNativeTarget "MyCaloriAPP" */;
+			buildPhases = (
+				CEC2C6FA2979CB02005818D2 /* Sources */,
+				CEC2C6FB2979CB02005818D2 /* Frameworks */,
+				CEC2C6FC2979CB02005818D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCaloriAPP;
+			packageProductDependencies = (
+				CEA8DE01297B4A4B0043A0B0 /* FirebaseAnalytics */,
+				CEA8DE03297B4A4B0043A0B0 /* FirebaseAuth */,
+				CEA8DE05297B4A4B0043A0B0 /* FirebaseCrashlytics */,
+			);
+			productName = MyCaloriAPP;
+			productReference = CEC2C6FE2979CB02005818D2 /* MyCaloriAPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEC2C7132979CB05005818D2 /* MyCaloriAPPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC2C72B2979CB05005818D2 /* Build configuration list for PBXNativeTarget "MyCaloriAPPTests" */;
+			buildPhases = (
+				CEC2C7102979CB05005818D2 /* Sources */,
+				CEC2C7112979CB05005818D2 /* Frameworks */,
+				CEC2C7122979CB05005818D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEC2C7162979CB05005818D2 /* PBXTargetDependency */,
+			);
+			name = MyCaloriAPPTests;
+			packageProductDependencies = (
+				CE21529D2982D973007EE4EA /* FirebaseAuth */,
+			);
+			productName = MyCaloriAPPTests;
+			productReference = CEC2C7142979CB05005818D2 /* MyCaloriAPPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEC2C71D2979CB05005818D2 /* MyCaloriAPPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC2C72E2979CB05005818D2 /* Build configuration list for PBXNativeTarget "MyCaloriAPPUITests" */;
+			buildPhases = (
+				CEC2C71A2979CB05005818D2 /* Sources */,
+				CEC2C71B2979CB05005818D2 /* Frameworks */,
+				CEC2C71C2979CB05005818D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEC2C7202979CB05005818D2 /* PBXTargetDependency */,
+			);
+			name = MyCaloriAPPUITests;
+			productName = MyCaloriAPPUITests;
+			productReference = CEC2C71E2979CB05005818D2 /* MyCaloriAPPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEC2C6F62979CB02005818D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					CEC2C6FD2979CB02005818D2 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					CEC2C7132979CB05005818D2 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = CEC2C6FD2979CB02005818D2;
+					};
+					CEC2C71D2979CB05005818D2 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = CEC2C6FD2979CB02005818D2;
+					};
+				};
+			};
+			buildConfigurationList = CEC2C6F92979CB02005818D2 /* Build configuration list for PBXProject "MyCaloriAPP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEC2C6F52979CB02005818D2;
+			packageReferences = (
+				CEA8DE00297B4A4B0043A0B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = CEC2C6FF2979CB02005818D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEC2C6FD2979CB02005818D2 /* MyCaloriAPP */,
+				CEC2C7132979CB05005818D2 /* MyCaloriAPPTests */,
+				CEC2C71D2979CB05005818D2 /* MyCaloriAPPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEC2C6FC2979CB02005818D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC2C70E2979CB04005818D2 /* LaunchScreen.storyboard in Resources */,
+				CE191310297F58FC008E7228 /* LoginAViewController.xib in Resources */,
+				CEA8DE08297B4B2B0043A0B0 /* GoogleService-Info.plist in Resources */,
+				CE19132F297F5ADB008E7228 /* SigninBViewController.xib in Resources */,
+				CE102046298308C500FDD5E3 /* MySettingViewController.xib in Resources */,
+				CE102042298308AE00FDD5E3 /* MyProfileViewController.xib in Resources */,
+				CE191329297F5A99008E7228 /* SigninAViewController.xib in Resources */,
+				CE191317297F5972008E7228 /* LoginBViewController.xib in Resources */,
+				CE19130A297F58BD008E7228 /* DefaultLoginViewController.xib in Resources */,
+				CE191302297F5514008E7228 /* HomeViewController.xib in Resources */,
+				CE10203E2983087600FDD5E3 /* MyDietsViewController.xib in Resources */,
+				CEC2C70B2979CB04005818D2 /* Assets.xcassets in Resources */,
+				CEC2C7092979CB03005818D2 /* Main.storyboard in Resources */,
+				CE19131D297F59C6008E7228 /* LoginPasswordViewController.xib in Resources */,
+				CE191323297F59FF008E7228 /* LoginTouchIdViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2C7122979CB05005818D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2C71C2979CB05005818D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEC2C6FA2979CB02005818D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE191316297F5972008E7228 /* LoginBViewController.swift in Sources */,
+				CE19131C297F59C6008E7228 /* LoginPasswordViewController.swift in Sources */,
+				CE191319297F59A4008E7228 /* LoginPasswordView.swift in Sources */,
+				CE19130C297F58E3008E7228 /* LoginAView.swift in Sources */,
+				CE191309297F58BD008E7228 /* DefaultLoginViewController.swift in Sources */,
+				CE2D3B1F2981849D00918CC2 /* DefaultLoginPresenter.swift in Sources */,
+				CE102045298308C500FDD5E3 /* MySettingViewController.swift in Sources */,
+				CEC2C7062979CB03005818D2 /* ViewController.swift in Sources */,
+				CE2D3B272981851400918CC2 /* LoginTouchIdPresenter.swift in Sources */,
+				CE1912F8297F5454008E7228 /* UserInteractor.swift in Sources */,
+				CE102052298349CF00FDD5E3 /* MyProfileView.swift in Sources */,
+				CE1912F2297F51EC008E7228 /* UserFoodEntity.swift in Sources */,
+				CE1912FC297F54A9008E7228 /* HomePresenter.swift in Sources */,
+				CE10203D2983087600FDD5E3 /* MyDietsViewController.swift in Sources */,
+				CE102041298308AE00FDD5E3 /* MyProfileViewController.swift in Sources */,
+				CE19132B297F5AB7008E7228 /* SigninBView.swift in Sources */,
+				CE2D3B292981853800918CC2 /* SigninAPresenter.swift in Sources */,
+				CE1912FA297F5477008E7228 /* DietInteractor.swift in Sources */,
+				CE10205629834A1900FDD5E3 /* HomeTabBarView.swift in Sources */,
+				CE10203A2983083100FDD5E3 /* HomeTabBarController.swift in Sources */,
+				CE2D3B21298184C200918CC2 /* LoginAPresenter.swift in Sources */,
+				CE2D3B23298184D200918CC2 /* LoginBPresenter.swift in Sources */,
+				CE102054298349EE00FDD5E3 /* MySettingView.swift in Sources */,
+				CE1912FE297F54CE008E7228 /* HomeView.swift in Sources */,
+				CE19131F297F59DA008E7228 /* LoginTouchIdView.swift in Sources */,
+				CE1912F0297F4FF9008E7228 /* DietService.swift in Sources */,
+				CE1912EE297F4FDA008E7228 /* UserService.swift in Sources */,
+				CE1020482983491A00FDD5E3 /* MyDietsPresenter.swift in Sources */,
+				CE191325297F5A6C008E7228 /* SigninAView.swift in Sources */,
+				CEE5583F298043ED002F4237 /* ApiResponseEntity.swift in Sources */,
+				CE1912EC297F4EF1008E7228 /* MyCaloriAPP.xcdatamodeld in Sources */,
+				CE191312297F5915008E7228 /* LoginBView.swift in Sources */,
+				CEC2C7022979CB02005818D2 /* AppDelegate.swift in Sources */,
+				CE19132E297F5ADB008E7228 /* SigninBViewController.swift in Sources */,
+				CE191304297F55BA008E7228 /* CaloriappRouter.swift in Sources */,
+				CE10204E2983498500FDD5E3 /* HomeTabBarPresenter.swift in Sources */,
+				CEC2C7042979CB02005818D2 /* SceneDelegate.swift in Sources */,
+				CE102050298349A900FDD5E3 /* MyDietsView.swift in Sources */,
+				CE10204C2983496900FDD5E3 /* MySettingPresenter.swift in Sources */,
+				CE2D3B2B2981855500918CC2 /* SigninBPresenter.swift in Sources */,
+				CE191322297F59FF008E7228 /* LoginTouchIdViewController.swift in Sources */,
+				CE2D3B25298184F500918CC2 /* LoginPasswordPresenter.swift in Sources */,
+				CE191306297F5897008E7228 /* DefaultLoginView.swift in Sources */,
+				CE10204A2983494100FDD5E3 /* MyProfilePresenter.swift in Sources */,
+				CE191328297F5A99008E7228 /* SigninAViewController.swift in Sources */,
+				CE191301297F5514008E7228 /* HomeViewController.swift in Sources */,
+				CE19130F297F58FC008E7228 /* LoginAViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2C7102979CB05005818D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1020372982EDA700FDD5E3 /* UserServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC2C71A2979CB05005818D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC2C7252979CB05005818D2 /* MyCaloriAPPUITestsLaunchTests.swift in Sources */,
+				CEC2C7232979CB05005818D2 /* MyCaloriAPPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEC2C7162979CB05005818D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC2C6FD2979CB02005818D2 /* MyCaloriAPP */;
+			targetProxy = CEC2C7152979CB05005818D2 /* PBXContainerItemProxy */;
+		};
+		CEC2C7202979CB05005818D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC2C6FD2979CB02005818D2 /* MyCaloriAPP */;
+			targetProxy = CEC2C71F2979CB05005818D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEC2C7072979CB03005818D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC2C7082979CB03005818D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEC2C70C2979CB04005818D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC2C70D2979CB04005818D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEC2C7262979CB05005818D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEC2C7272979CB05005818D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEC2C7292979CB05005818D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCaloriAPP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academiaios.MyCaloriApp.MyCaloriAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEC2C72A2979CB05005818D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyCaloriAPP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academiaios.MyCaloriApp.MyCaloriAPP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEC2C72C2979CB05005818D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academiaios.MyCaloriApp.MyCaloriAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCaloriAPP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyCaloriAPP";
+			};
+			name = Debug;
+		};
+		CEC2C72D2979CB05005818D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academiaios.MyCaloriApp.MyCaloriAPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCaloriAPP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyCaloriAPP";
+			};
+			name = Release;
+		};
+		CEC2C72F2979CB05005818D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academiaios.MyCaloriApp.MyCaloriAPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyCaloriAPP;
+			};
+			name = Debug;
+		};
+		CEC2C7302979CB05005818D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academiaios.MyCaloriApp.MyCaloriAPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyCaloriAPP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEC2C6F92979CB02005818D2 /* Build configuration list for PBXProject "MyCaloriAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC2C7262979CB05005818D2 /* Debug */,
+				CEC2C7272979CB05005818D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC2C7282979CB05005818D2 /* Build configuration list for PBXNativeTarget "MyCaloriAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC2C7292979CB05005818D2 /* Debug */,
+				CEC2C72A2979CB05005818D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC2C72B2979CB05005818D2 /* Build configuration list for PBXNativeTarget "MyCaloriAPPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC2C72C2979CB05005818D2 /* Debug */,
+				CEC2C72D2979CB05005818D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC2C72E2979CB05005818D2 /* Build configuration list for PBXNativeTarget "MyCaloriAPPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC2C72F2979CB05005818D2 /* Debug */,
+				CEC2C7302979CB05005818D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEA8DE00297B4A4B0043A0B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE21529D2982D973007EE4EA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEA8DE00297B4A4B0043A0B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CEA8DE01297B4A4B0043A0B0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEA8DE00297B4A4B0043A0B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CEA8DE03297B4A4B0043A0B0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEA8DE00297B4A4B0043A0B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CEA8DE05297B4A4B0043A0B0 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEA8DE00297B4A4B0043A0B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CE1912EA297F4EF1008E7228 /* MyCaloriAPP.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE1912EB297F4EF1008E7228 /* MyCaloriAPP.xcdatamodel */,
+			);
+			currentVersion = CE1912EB297F4EF1008E7228 /* MyCaloriAPP.xcdatamodel */;
+			path = MyCaloriAPP.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CEC2C6F62979CB02005818D2 /* Project object */;
+}

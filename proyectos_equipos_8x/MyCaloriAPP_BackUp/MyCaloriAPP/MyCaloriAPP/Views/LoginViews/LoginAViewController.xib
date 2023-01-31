@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginAViewController" customModule="MyCaloriAPP" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfl-RF-RCu">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ka4-HU-cSG">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="780"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My CaloriAPP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hue-sC-ckQ">
+                                    <rect key="frame" x="101" y="140" width="191" height="36"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="IDS-7f-py8">
+                                    <rect key="frame" x="26.666666666666657" y="236" width="340" height="176.33333333333337"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U35-UM-1g1">
+                                            <rect key="frame" x="0.0" y="0.0" width="340" height="60"/>
+                                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="340" id="Irj-bF-Iab"/>
+                                                <constraint firstAttribute="height" constant="60" id="Jf6-Au-woB"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gis-7G-dRo">
+                                            <rect key="frame" x="0.0" y="71" width="340" height="60"/>
+                                            <color key="backgroundColor" red="0.32549019607843138" green="0.74509803921568629" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="340" id="Yo3-WC-WL1"/>
+                                                <constraint firstAttribute="height" constant="60" id="gNf-KS-QCO"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Continuar"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="loginContinueAction:" destination="-1" eventType="touchUpInside" id="zla-Ez-1mD"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wok-nN-qgM">
+                                            <rect key="frame" x="0.0" y="142" width="110.33333333333333" height="34.333333333333343"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Registrarse"/>
+                                            <connections>
+                                                <action selector="signinAction:" destination="-1" eventType="touchUpInside" id="uET-Zl-iVr"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="IDS-7f-py8" firstAttribute="top" secondItem="Hue-sC-ckQ" secondAttribute="bottom" constant="60" id="0WI-7r-WXj"/>
+                                <constraint firstItem="Hue-sC-ckQ" firstAttribute="top" secondItem="ka4-HU-cSG" secondAttribute="top" constant="140" id="3fm-oS-Khy"/>
+                                <constraint firstItem="IDS-7f-py8" firstAttribute="centerX" secondItem="ka4-HU-cSG" secondAttribute="centerX" id="Zt6-gS-Ucs"/>
+                                <constraint firstItem="Hue-sC-ckQ" firstAttribute="centerX" secondItem="ka4-HU-cSG" secondAttribute="centerX" id="a7J-cI-Cpp"/>
+                                <constraint firstAttribute="height" constant="780" id="rKc-kH-SDG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ka4-HU-cSG" firstAttribute="trailing" secondItem="d6y-Yx-aS8" secondAttribute="trailing" id="DXG-Ke-3gF"/>
+                        <constraint firstItem="ka4-HU-cSG" firstAttribute="leading" secondItem="d6y-Yx-aS8" secondAttribute="leading" id="a3P-JA-Sto"/>
+                        <constraint firstItem="ka4-HU-cSG" firstAttribute="top" secondItem="d6y-Yx-aS8" secondAttribute="top" id="coB-vI-3lq"/>
+                        <constraint firstItem="ka4-HU-cSG" firstAttribute="width" secondItem="W7Q-rt-odf" secondAttribute="width" id="jhP-Qb-mC6"/>
+                        <constraint firstItem="ka4-HU-cSG" firstAttribute="bottom" secondItem="d6y-Yx-aS8" secondAttribute="bottom" id="skn-Sn-fP8"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="d6y-Yx-aS8"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="W7Q-rt-odf"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rfl-RF-RCu" secondAttribute="bottom" id="3YJ-ub-93I"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rfl-RF-RCu" secondAttribute="trailing" id="JUB-o9-CRh"/>
+                <constraint firstItem="rfl-RF-RCu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ycu-g5-kFa"/>
+                <constraint firstItem="rfl-RF-RCu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="qmc-dm-jIM"/>
+            </constraints>
+            <point key="canvasLocation" x="-135.1145038167939" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
