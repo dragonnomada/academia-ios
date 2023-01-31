@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class UserAuthScene: NSObject {
+public class UserAuthScene: NSObject {
     
     let interactor = UserInteractor()
     

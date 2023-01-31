@@ -11,7 +11,7 @@
 import Foundation
 import CoreData // Importación de coredata para el uso de datos persistentes
 
-class UserAuthStorage {
+public class UserAuthStorage {
     
     private lazy var container: NSPersistentContainer = {
         
