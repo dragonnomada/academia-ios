@@ -21,6 +21,7 @@ class TodoController {
     // var addDelegate: [TodoAddDelegate] = []
     
     func selectTodo(index: Int, todo: TodoEntity) {
+        
         model.selectTodo(index: index, todo: todo)
         detailDelegate?.todo(todoUpdated: todo)
     }
@@ -82,7 +83,6 @@ class TodoController {
             
         }
         
-        
     }
     
     func updateTodoCheck(checked: Bool) {
@@ -131,7 +131,5 @@ class TodoController {
         }
         
     }
-    
-    
     
 }

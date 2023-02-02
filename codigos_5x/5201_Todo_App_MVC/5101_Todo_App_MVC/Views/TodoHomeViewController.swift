@@ -11,6 +11,7 @@ class TodoHomeViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
+    // Variable global donde se giuardaran todos los "Todos"
     var todos: [TodoEntity] = []
     
     override func viewDidLoad() {
